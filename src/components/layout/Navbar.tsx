@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Search, 
@@ -13,7 +13,9 @@ import {
   Building2,
   Palmtree,
   Ship,
-  Compass
+  Compass,
+  LogOut,
+  LayoutDashboard
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,8 +24,11 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
+import { useAuth } from "@/contexts/AuthContext";
+import { toast } from "sonner";
 
 const dubaiCategories = [
   { name: "Theme Parks", href: "/dubai/theme-parks", icon: Palmtree },
@@ -47,6 +52,8 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
+  const { user, signOut, loading } = useAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,6 +66,12 @@ export function Navbar() {
   useEffect(() => {
     setIsMobileMenuOpen(false);
   }, [location]);
+
+  const handleSignOut = async () => {
+    await signOut();
+    toast.success("Signed out successfully");
+    navigate("/");
+  };
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -225,12 +238,30 @@ export function Navbar() {
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end" className="w-48 bg-popover border border-border shadow-xl">
-                  <DropdownMenuItem asChild>
-                    <Link to="/login" className="cursor-pointer">Sign In</Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem asChild>
-                    <Link to="/signup" className="cursor-pointer">Sign Up</Link>
-                  </DropdownMenuItem>
+                  {user ? (
+                    <>
+                      <DropdownMenuItem asChild>
+                        <Link to="/dashboard" className="cursor-pointer flex items-center gap-2">
+                          <LayoutDashboard className="h-4 w-4" />
+                          Dashboard
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuSeparator />
+                      <DropdownMenuItem onClick={handleSignOut} className="cursor-pointer flex items-center gap-2 text-destructive">
+                        <LogOut className="h-4 w-4" />
+                        Sign Out
+                      </DropdownMenuItem>
+                    </>
+                  ) : (
+                    <>
+                      <DropdownMenuItem asChild>
+                        <Link to="/auth" className="cursor-pointer">Sign In</Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <Link to="/auth?mode=signup" className="cursor-pointer">Sign Up</Link>
+                      </DropdownMenuItem>
+                    </>
+                  )}
                 </DropdownMenuContent>
               </DropdownMenu>
 
@@ -338,9 +369,24 @@ export function Navbar() {
 
                 {/* Mobile Auth */}
                 <div className="border-t border-border pt-4 mt-4 space-y-2">
-                  <Button variant="outline" className="w-full" asChild>
-                    <Link to="/login">Sign In</Link>
-                  </Button>
+                  {user ? (
+                    <>
+                      <Button variant="outline" className="w-full" asChild>
+                        <Link to="/dashboard">
+                          <LayoutDashboard className="h-4 w-4 mr-2" />
+                          Dashboard
+                        </Link>
+                      </Button>
+                      <Button variant="outline" className="w-full text-destructive" onClick={handleSignOut}>
+                        <LogOut className="h-4 w-4 mr-2" />
+                        Sign Out
+                      </Button>
+                    </>
+                  ) : (
+                    <Button variant="outline" className="w-full" asChild>
+                      <Link to="/auth">Sign In</Link>
+                    </Button>
+                  )}
                   <Button className="w-full bg-primary text-primary-foreground" asChild>
                     <Link to="/deals">Book Now</Link>
                   </Button>
