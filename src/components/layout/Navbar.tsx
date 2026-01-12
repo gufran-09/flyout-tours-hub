@@ -28,7 +28,24 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/contexts/AuthContext";
+import { useCart } from "@/contexts/CartContext";
 import { toast } from "sonner";
+
+function CartLink() {
+  const { totalItems } = useCart();
+  return (
+    <Link to="/cart">
+      <Button variant="ghost" size="icon" className="relative">
+        <ShoppingCart className="h-5 w-5" />
+        {totalItems > 0 && (
+          <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-primary text-[10px] font-medium text-primary-foreground flex items-center justify-center">
+            {totalItems > 99 ? "99+" : totalItems}
+          </span>
+        )}
+      </Button>
+    </Link>
+  );
+}
 
 const dubaiCategories = [
   { name: "Theme Parks", href: "/dubai/theme-parks", icon: Palmtree },
@@ -221,14 +238,7 @@ export function Navbar() {
               </Button>
 
               {/* Cart */}
-              <Link to="/cart">
-                <Button variant="ghost" size="icon" className="relative">
-                  <ShoppingCart className="h-5 w-5" />
-                  <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-primary text-[10px] font-medium text-primary-foreground flex items-center justify-center">
-                    0
-                  </span>
-                </Button>
-              </Link>
+              <CartLink />
 
               {/* User Menu */}
               <DropdownMenu>

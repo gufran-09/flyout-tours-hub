@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { MapPin, Star, Clock, ArrowRight, SlidersHorizontal, X } from "lucide-react";
+import { MapPin, Star, Clock, ArrowRight, SlidersHorizontal, X, ShoppingCart } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -33,6 +33,8 @@ import {
   staycations,
 } from "@/data/tours";
 import { Tour } from "@/components/home/ExperienceSection";
+import { useCart } from "@/contexts/CartContext";
+import { toast } from "sonner";
 
 // Limousine data (not in tours.ts yet)
 const dubaiLimousine: Tour[] = [
@@ -93,9 +95,17 @@ const staycationsData = {
 };
 
 function TourCard({ tour, index }: { tour: Tour; index: number }) {
+  const { addToCart } = useCart();
   const discount = tour.originalPrice
     ? Math.round(((tour.originalPrice - tour.price) / tour.originalPrice) * 100)
     : 0;
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    addToCart(tour);
+    toast.success(`${tour.name} added to cart`);
+  };
 
   return (
     <motion.div
@@ -103,8 +113,8 @@ function TourCard({ tour, index }: { tour: Tour; index: number }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: index * 0.05 }}
     >
-      <Link to={`/tour/${tour.id}`} className="block group">
-        <div className="tour-card overflow-hidden">
+      <div className="tour-card overflow-hidden group">
+        <Link to={`/tour/${tour.id}`} className="block">
           <div className="relative aspect-[4/3] overflow-hidden">
             <img
               src={tour.image}
@@ -137,53 +147,55 @@ function TourCard({ tour, index }: { tour: Tour; index: number }) {
               </div>
             </div>
           </div>
+        </Link>
 
-          <div className="p-4">
+        <div className="p-4">
+          <Link to={`/tour/${tour.id}`}>
             <h3 className="font-semibold text-lg mb-2 line-clamp-2 group-hover:text-primary transition-colors">
               {tour.name}
             </h3>
+          </Link>
 
-            <div className="flex items-center gap-4 mb-3">
-              <div className="flex items-center gap-1">
-                <Star className="h-4 w-4 fill-gold text-gold" />
-                <span className="font-medium text-sm">{tour.rating}</span>
-                <span className="text-muted-foreground text-sm">
-                  ({tour.reviewCount})
-                </span>
-              </div>
-
-              <div className="flex items-center gap-1 text-muted-foreground text-sm">
-                <Clock className="h-4 w-4" />
-                <span>{tour.duration}</span>
-              </div>
+          <div className="flex items-center gap-4 mb-3">
+            <div className="flex items-center gap-1">
+              <Star className="h-4 w-4 fill-gold text-gold" />
+              <span className="font-medium text-sm">{tour.rating}</span>
+              <span className="text-muted-foreground text-sm">
+                ({tour.reviewCount})
+              </span>
             </div>
 
-            <div className="flex items-center justify-between">
-              <div>
-                <span className="text-sm text-muted-foreground">From</span>
-                <div className="flex items-center gap-2">
-                  <span className="text-xl font-bold text-primary">
-                    AED {tour.price}
-                  </span>
-                  {tour.originalPrice && (
-                    <span className="text-sm text-muted-foreground line-through">
-                      AED {tour.originalPrice}
-                    </span>
-                  )}
-                </div>
-              </div>
-              <Button
-                size="sm"
-                variant="ghost"
-                className="text-primary hover:text-primary/90 hover:bg-primary/10"
-              >
-                View Details
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </Button>
+            <div className="flex items-center gap-1 text-muted-foreground text-sm">
+              <Clock className="h-4 w-4" />
+              <span>{tour.duration}</span>
             </div>
           </div>
+
+          <div className="flex items-center justify-between">
+            <div>
+              <span className="text-sm text-muted-foreground">From</span>
+              <div className="flex items-center gap-2">
+                <span className="text-xl font-bold text-primary">
+                  AED {tour.price}
+                </span>
+                {tour.originalPrice && (
+                  <span className="text-sm text-muted-foreground line-through">
+                    AED {tour.originalPrice}
+                  </span>
+                )}
+              </div>
+            </div>
+            <Button
+              size="sm"
+              onClick={handleAddToCart}
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+            >
+              <ShoppingCart className="mr-1 h-4 w-4" />
+              Add
+            </Button>
+          </div>
         </div>
-      </Link>
+      </div>
     </motion.div>
   );
 }
