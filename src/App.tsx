@@ -12,6 +12,11 @@ import CategoryPage from "./pages/CategoryPage";
 import Cart from "./pages/Cart";
 import PaymentSuccess from "./pages/PaymentSuccess";
 import PaymentCanceled from "./pages/PaymentCanceled";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
+import RefundPolicy from "./pages/RefundPolicy";
+import CancellationPolicy from "./pages/CancellationPolicy";
+import Blogs from "./pages/Blogs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -31,6 +36,15 @@ const App = () => (
               <Route path="/cart" element={<Cart />} />
               <Route path="/payment-success" element={<PaymentSuccess />} />
               <Route path="/payment-canceled" element={<PaymentCanceled />} />
+              
+              {/* Policy Pages */}
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/terms" element={<TermsConditions />} />
+              <Route path="/refund" element={<RefundPolicy />} />
+              <Route path="/cancellation" element={<CancellationPolicy />} />
+              
+              {/* Blogs */}
+              <Route path="/blogs" element={<Blogs />} />
               
               {/* Dubai Category Pages */}
               <Route path="/dubai/theme-parks" element={<CategoryPage />} />
