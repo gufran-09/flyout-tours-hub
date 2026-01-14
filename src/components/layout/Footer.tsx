@@ -12,8 +12,7 @@ import {
   CreditCard,
   Shield
 } from "lucide-react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { NewsletterSection } from "./NewsletterSection";
 
 const quickLinks = [
   { name: "Home", href: "/" },
@@ -44,30 +43,7 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-background">
       {/* Newsletter Section */}
-      <div className="bg-primary">
-        <div className="section-container py-12">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <h3 className="text-2xl font-bold text-primary-foreground mb-2">
-                Subscribe to Our Newsletter
-              </h3>
-              <p className="text-primary-foreground/80">
-                Get exclusive deals and travel tips straight to your inbox
-              </p>
-            </div>
-            <div className="flex w-full md:w-auto gap-2">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full md:w-80 bg-primary-foreground text-foreground border-0"
-              />
-              <Button variant="secondary" className="whitespace-nowrap">
-                Subscribe
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <NewsletterSection />
 
       {/* Main Footer Content */}
       <div className="section-container py-16">
