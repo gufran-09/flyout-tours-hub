@@ -17,6 +17,7 @@ import TermsConditions from "./pages/TermsConditions";
 import RefundPolicy from "./pages/RefundPolicy";
 import CancellationPolicy from "./pages/CancellationPolicy";
 import Blogs from "./pages/Blogs";
+import AdminNewsletter from "./pages/AdminNewsletter";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -45,6 +46,9 @@ const App = () => (
               
               {/* Blogs */}
               <Route path="/blogs" element={<Blogs />} />
+              
+              {/* Admin Pages */}
+              <Route path="/admin/newsletter" element={<AdminNewsletter />} />
               
               {/* Dubai Category Pages */}
               <Route path="/dubai/theme-parks" element={<CategoryPage />} />
