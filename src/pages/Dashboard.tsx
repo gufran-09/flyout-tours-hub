@@ -12,7 +12,9 @@ import {
   Clock,
   CheckCircle,
   XCircle,
-  Loader2
+  Loader2,
+  Shield,
+  Mail
 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -77,6 +79,7 @@ export default function Dashboard() {
   const [wishlist, setWishlist] = useState<WishlistItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(false);
   const [formData, setFormData] = useState({
     full_name: "",
     phone: "",
@@ -91,8 +94,22 @@ export default function Dashboard() {
   useEffect(() => {
     if (user) {
       fetchUserData();
+      checkAdminRole();
     }
   }, [user]);
+
+  const checkAdminRole = async () => {
+    if (!user) return;
+    try {
+      const { data } = await supabase.rpc("has_role", {
+        _user_id: user.id,
+        _role: "admin",
+      });
+      setIsAdmin(data === true);
+    } catch (error) {
+      console.error("Error checking admin role:", error);
+    }
+  };
 
   const fetchUserData = async () => {
     if (!user) return;
@@ -232,14 +249,23 @@ export default function Dashboard() {
                 Welcome back, {profile?.full_name || user.email}
               </p>
             </div>
-            <Button
-              variant="outline"
-              onClick={handleSignOut}
-              className="mt-4 md:mt-0"
-            >
-              <LogOut className="h-4 w-4 mr-2" />
-              Sign Out
-            </Button>
+            <div className="flex gap-2 mt-4 md:mt-0">
+              {isAdmin && (
+                <Button variant="outline" asChild>
+                  <Link to="/admin/newsletter">
+                    <Mail className="h-4 w-4 mr-2" />
+                    Newsletter Admin
+                  </Link>
+                </Button>
+              )}
+              <Button
+                variant="outline"
+                onClick={handleSignOut}
+              >
+                <LogOut className="h-4 w-4 mr-2" />
+                Sign Out
+              </Button>
+            </div>
           </div>
 
           {/* Tabs */}
