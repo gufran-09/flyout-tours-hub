@@ -18,6 +18,7 @@ import RefundPolicy from "./pages/RefundPolicy";
 import CancellationPolicy from "./pages/CancellationPolicy";
 import Blogs from "./pages/Blogs";
 import AdminNewsletter from "./pages/AdminNewsletter";
+import SearchResults from "./pages/SearchResults";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +47,9 @@ const App = () => (
               
               {/* Blogs */}
               <Route path="/blogs" element={<Blogs />} />
+              
+              {/* Search */}
+              <Route path="/search" element={<SearchResults />} />
               
               {/* Admin Pages */}
               <Route path="/admin/newsletter" element={<AdminNewsletter />} />
