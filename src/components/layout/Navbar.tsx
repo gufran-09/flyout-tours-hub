@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
-  Search, 
   ShoppingCart, 
   User, 
   Menu, 
@@ -18,7 +17,6 @@ import {
   LayoutDashboard
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -30,6 +28,8 @@ import { cn } from "@/lib/utils";
 import { useAuth } from "@/contexts/AuthContext";
 import { useCart } from "@/contexts/CartContext";
 import { toast } from "sonner";
+import { SearchAutocomplete } from "@/components/search/SearchAutocomplete";
+import { MobileSearchSheet } from "@/components/search/MobileSearchSheet";
 
 function CartLink() {
   const { totalItems } = useCart();
@@ -67,7 +67,6 @@ const destinationsCategories = [
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const { user, signOut, loading } = useAuth();
@@ -210,32 +209,13 @@ export function Navbar() {
 
             {/* Right Side Actions */}
             <div className="flex items-center gap-2">
-              {/* Search */}
-              <AnimatePresence>
-                {isSearchOpen && (
-                  <motion.div
-                    initial={{ width: 0, opacity: 0 }}
-                    animate={{ width: 200, opacity: 1 }}
-                    exit={{ width: 0, opacity: 0 }}
-                    className="hidden md:block overflow-hidden"
-                  >
-                    <Input
-                      type="search"
-                      placeholder="Search tours..."
-                      className="h-9"
-                      autoFocus
-                    />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="hidden md:flex"
-                onClick={() => setIsSearchOpen(!isSearchOpen)}
-              >
-                <Search className="h-5 w-5" />
-              </Button>
+              {/* Desktop Search */}
+              <div className="hidden lg:block w-64">
+                <SearchAutocomplete />
+              </div>
+
+              {/* Mobile Search */}
+              <MobileSearchSheet className="lg:hidden" />
 
               {/* Cart */}
               <CartLink />
@@ -309,11 +289,7 @@ export function Navbar() {
               <div className="section-container py-4 space-y-2">
                 {/* Search */}
                 <div className="mb-4">
-                  <Input
-                    type="search"
-                    placeholder="Search tours..."
-                    className="w-full"
-                  />
+                  <SearchAutocomplete onClose={() => setIsMobileMenuOpen(false)} />
                 </div>
 
                 {navLinks.map((link) => (
