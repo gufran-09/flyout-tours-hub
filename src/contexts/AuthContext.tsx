@@ -48,7 +48,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signUp = async (email: string, password: string, fullName?: string) => {
     const redirectUrl = `${window.location.origin}/`;
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
     const { error } = await supabase.auth.signUp({
       email,
       password,
@@ -59,7 +63,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         },
       },
     });
+<<<<<<< HEAD
 
+=======
+
+>>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
     return { error: error as Error | null };
   };
 
@@ -75,7 +83,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
+<<<<<<< HEAD
         redirectTo: `${window.location.origin}/auth/callback`,
+=======
+        redirectTo: `${window.location.origin}/`,
+>>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
       },
     });
     return { error: error as Error | null };
@@ -97,6 +109,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return { error: error as Error | null };
   };
 
+<<<<<<< HEAD
   const verifyEmailOTP = async (email: string, token: string) => {
     const { error } = await supabase.auth.verifyOtp({
       email,
@@ -114,6 +127,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return { error: error as Error | null };
   };
 
+=======
+>>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
   const signOut = async () => {
     await supabase.auth.signOut();
   };
@@ -136,8 +151,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         signInWithGoogle,
         signInWithPhone,
         verifyOTP,
+<<<<<<< HEAD
         verifyEmailOTP,
         resendEmailOTP,
+=======
+>>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
         signOut,
         resetPassword,
       }}

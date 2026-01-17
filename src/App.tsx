@@ -44,7 +44,6 @@ const App = () => (
               <Route path="/cart" element={<Cart />} />
               <Route path="/payment-success" element={<PaymentSuccess />} />
               <Route path="/payment-canceled" element={<PaymentCanceled />} />
-
               {/* Policy Pages */}
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/terms" element={<TermsConditions />} />

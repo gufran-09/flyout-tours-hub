@@ -56,7 +56,11 @@ export function TestimonialsSection() {
             What Our Travelers Say
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
+<<<<<<< HEAD
             Don't just take our word for it. Here's what tourists from around the world
+=======
+            Don't just take our word for it. Here's what tourists from around the world 
+>>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
             have to say about their UAE adventures with Flyout Tours.
           </p>
         </motion.div>
