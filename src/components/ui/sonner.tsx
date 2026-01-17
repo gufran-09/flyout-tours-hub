@@ -9,16 +9,47 @@ const Toaster = ({ ...props }: ToasterProps) => {
   return (
     <Sonner
       theme={theme as ToasterProps["theme"]}
-      className="toaster group"
+      position="bottom-right"
+      richColors
+      closeButton
+      duration={3500}
       toastOptions={{
         classNames: {
-          toast:
-            "group toast group-[.toaster]:bg-background group-[.toaster]:text-foreground group-[.toaster]:border-border group-[.toaster]:shadow-lg",
-          description: "group-[.toast]:text-muted-foreground",
-          actionButton: "group-[.toast]:bg-primary group-[.toast]:text-primary-foreground",
-          cancelButton: "group-[.toast]:bg-muted group-[.toast]:text-muted-foreground",
+          toast: `
+      group toast
+      bg-white/60 dark:bg-white/10
+      backdrop-blur-2xl
+      text-foreground
+      border border-white/50 dark:border-white/15
+      shadow-[0_4px_20px_rgba(0,0,0,0.08)]
+      rounded-2xl
+      px-5 py-4
+      flex items-center gap-3
+    `,
+          title: "font-semibold text-[15px]",
+          description: "text-sm text-foreground/70",
+          actionButton: `
+      bg-white/70 dark:bg-white/15
+      text-foreground
+      hover:bg-white/90 dark:hover:bg-white/25
+      rounded-lg px-3 py-1.5 text-sm font-medium
+      backdrop-blur-md
+    `,
+          cancelButton: `
+      bg-white/60 dark:bg-white/10
+      text-foreground/60
+      hover:bg-white/80 dark:hover:bg-white/20
+      rounded-lg px-3 py-1.5 text-sm
+      backdrop-blur-md
+    `,
+          success: "border-emerald-400/40",
+          error: "border-red-400/40",
+          warning: "border-yellow-400/40",
+          info: "border-sky-400/40",
         },
       }}
+
+
       {...props}
     />
   );

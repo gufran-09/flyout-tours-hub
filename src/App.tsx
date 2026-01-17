@@ -11,7 +11,15 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import Dashboard from "./pages/Dashboard";
 import AuthCallback from "./pages/AuthCallback";
-import CategoryPage from "./pages/CategoryPage";
+import ThemeParks from "./pages/ThemeParks";
+import WaterParks from "./pages/WaterParks";
+import Attractions from "./pages/Attractions";
+import WaterSports from "./pages/WaterSports";
+import DinnerCruise from "./pages/DinnerCruise";
+import Yacht from "./pages/Yacht";
+import Limousine from "./pages/Limousine";
+import AbuDhabi from "./pages/AbuDhabi";
+import Staycations from "./pages/Staycations";
 import Cart from "./pages/Cart";
 import PaymentSuccess from "./pages/PaymentSuccess";
 import PaymentCanceled from "./pages/PaymentCanceled";
@@ -60,17 +68,17 @@ const App = () => (
               <Route path="/admin/newsletter" element={<AdminNewsletter />} />
 
               {/* Dubai Category Pages */}
-              <Route path="/dubai/theme-parks" element={<CategoryPage />} />
-              <Route path="/dubai/water-parks" element={<CategoryPage />} />
-              <Route path="/dubai/attractions" element={<CategoryPage />} />
-              <Route path="/dubai/water-sports" element={<CategoryPage />} />
-              <Route path="/dubai/dinner-cruise" element={<CategoryPage />} />
-              <Route path="/dubai/yacht" element={<CategoryPage />} />
-              <Route path="/dubai/limousine" element={<CategoryPage />} />
+              <Route path="/dubai/theme-parks" element={<ThemeParks />} />
+              <Route path="/dubai/water-parks" element={<WaterParks />} />
+              <Route path="/dubai/attractions" element={<Attractions />} />
+              <Route path="/dubai/water-sports" element={<WaterSports />} />
+              <Route path="/dubai/dinner-cruise" element={<DinnerCruise />} />
+              <Route path="/dubai/yacht" element={<Yacht />} />
+              <Route path="/dubai/limousine" element={<Limousine />} />
 
               {/* Other Pages */}
-              <Route path="/abu-dhabi" element={<CategoryPage />} />
-              <Route path="/staycations" element={<CategoryPage />} />
+              <Route path="/abu-dhabi" element={<AbuDhabi />} />
+              <Route path="/staycations" element={<Staycations />} />
 
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
