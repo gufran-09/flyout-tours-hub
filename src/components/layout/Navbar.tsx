@@ -262,10 +262,10 @@ export function Navbar() {
                   ) : (
                     <>
                       <DropdownMenuItem asChild>
-                        <Link to="/auth" className="cursor-pointer">Sign In</Link>
+                        <Link to="/sign-in" className="cursor-pointer">Sign In</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
-                        <Link to="/auth?mode=signup" className="cursor-pointer">Sign Up</Link>
+                        <Link to="/sign-up" className="cursor-pointer">Sign Up</Link>
                       </DropdownMenuItem>
                     </>
                   )}
@@ -387,7 +387,7 @@ export function Navbar() {
                     </>
                   ) : (
                     <Button variant="outline" className="w-full" asChild>
-                      <Link to="/auth">Sign In</Link>
+                      <Link to="/sign-in">Sign In</Link>
                     </Button>
                   )}
                   <Button className="w-full bg-primary text-primary-foreground" asChild>

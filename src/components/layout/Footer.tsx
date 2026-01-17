@@ -7,6 +7,7 @@ import {
   Clock,
   Facebook,
   Instagram,
+  Linkedin,
   Twitter,
   Youtube,
   CreditCard,
@@ -144,7 +145,7 @@ export function Footer() {
               <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
               <div className="flex gap-3">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/flyouttours"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-background/10 hover:bg-primary transition-colors"
@@ -152,7 +153,7 @@ export function Footer() {
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/flyout_tours/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-background/10 hover:bg-primary transition-colors"
@@ -160,12 +161,12 @@ export function Footer() {
                   <Instagram className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://www.linkedin.com/company/flyout-tours-llc/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-background/10 hover:bg-primary transition-colors"
                 >
-                  <Twitter className="h-5 w-5" />
+                  <Linkedin className="h-5 w-5" />
                 </a>
                 <a
                   href="https://youtube.com"

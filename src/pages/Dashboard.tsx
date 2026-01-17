@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { 
-  User, 
-  Calendar, 
-  Heart, 
-  History, 
-  Settings, 
+import {
+  User,
+  Calendar,
+  Heart,
+  History,
+  Settings,
   LogOut,
   MapPin,
   Clock,
@@ -24,15 +24,15 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { 
-  dubaiThemeParks, 
-  dubaiWaterParks, 
+import {
+  dubaiThemeParks,
+  dubaiWaterParks,
   dubaiAttractions,
   dubaiWaterSports,
   dubaiDinnerCruise,
   dubaiYacht,
   abuDhabiExperiences,
-  staycations 
+  staycations
 } from "@/data/tours";
 
 const allTours = [
@@ -363,7 +363,7 @@ export default function Dashboard() {
                     {wishlist.map((item) => {
                       const tour = getWishlistTour(item.tour_id);
                       if (!tour) return null;
-                      
+
                       return (
                         <div
                           key={item.id}
