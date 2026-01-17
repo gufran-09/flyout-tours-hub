@@ -90,7 +90,7 @@ export default function Auth() {
     setIsLoading(true);
     const { error } = await signIn(data.email, data.password);
     setIsLoading(false);
-    
+
     if (error) {
       if (error.message.includes("Invalid login credentials")) {
         toast.error("Invalid email or password. Please try again.");
@@ -107,7 +107,7 @@ export default function Auth() {
     setIsLoading(true);
     const { error } = await signUp(data.email, data.password, data.fullName);
     setIsLoading(false);
-    
+
     if (error) {
       if (error.message.includes("already registered")) {
         toast.error("This email is already registered. Please sign in instead.");
@@ -124,7 +124,7 @@ export default function Auth() {
     setIsLoading(true);
     const { error } = await signInWithGoogle();
     setIsLoading(false);
-    
+
     if (error) {
       toast.error(error.message);
     }
@@ -135,7 +135,7 @@ export default function Auth() {
     setPhoneNumber(data.phone);
     const { error } = await signInWithPhone(data.phone);
     setIsLoading(false);
-    
+
     if (error) {
       toast.error(error.message);
     } else {
@@ -148,7 +148,7 @@ export default function Auth() {
     setIsLoading(true);
     const { error } = await verifyOTP(phoneNumber, data.otp);
     setIsLoading(false);
-    
+
     if (error) {
       toast.error("Invalid OTP. Please try again.");
     } else {
@@ -161,7 +161,7 @@ export default function Auth() {
     setIsLoading(true);
     const { error } = await resetPassword(data.email);
     setIsLoading(false);
-    
+
     if (error) {
       toast.error(error.message);
     } else {
@@ -179,12 +179,12 @@ export default function Auth() {
       >
         {/* Logo */}
         <div className="text-center mb-8">
-          <a href="/" className="inline-flex items-center gap-2">
-            <Plane className="h-10 w-10 text-primary" />
-            <span className="text-2xl font-bold">
-              <span className="text-primary">Flyout</span>
-              <span className="text-foreground">Tours</span>
-            </span>
+          <a href="/" className="inline-block">
+            <img
+              src="/logo.png"
+              alt="Flyout Tours"
+              className="h-16 w-auto object-contain mx-auto"
+            />
           </a>
         </div>
 

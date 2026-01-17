@@ -17,7 +17,7 @@
     --popover-foreground: 220 20% 15%;
 
     /* Primary - Deep Teal/Blue (Agency Blue) */
-    --primary: 195 85% 35%;
+    --primary: 203 85% 43%;
     --primary-foreground: 0 0% 100%;
 
     /* Secondary - Sand/Warm Beige */
@@ -65,12 +65,12 @@
     --gold-foreground: 45 80% 15%;
     --sky: 200 90% 60%;
     --sky-foreground: 0 0% 100%;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(195 85% 35%), hsl(175 65% 45%));
-    --gradient-hero: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.5) 100%);
-    --gradient-card: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.7) 100%);
-    
+    --gradient-hero: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.5) 100%);
+    --gradient-card: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.7) 100%);
+
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -141,17 +141,23 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-semibold tracking-tight;
   }
 }
 
 @layer components {
+
   /* Card hover effects */
   .card-hover {
     @apply transition-all duration-300 ease-out;
   }
-  
+
   .card-hover:hover {
     @apply -translate-y-1;
     box-shadow: var(--shadow-card-hover);
@@ -237,6 +243,7 @@
 }
 
 @layer utilities {
+
   /* Animation utilities */
   .animate-fade-in {
     animation: fadeIn 0.5s ease-out;
@@ -254,6 +261,7 @@
     from {
       opacity: 0;
     }
+
     to {
       opacity: 1;
     }
@@ -264,6 +272,7 @@
       opacity: 0;
       transform: translateY(20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -275,6 +284,7 @@
       opacity: 0;
       transform: scale(0.95);
     }
+
     to {
       opacity: 1;
       transform: scale(1);
@@ -282,8 +292,19 @@
   }
 
   /* Stagger animations */
-  .stagger-1 { animation-delay: 0.1s; }
-  .stagger-2 { animation-delay: 0.2s; }
-  .stagger-3 { animation-delay: 0.3s; }
-  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-1 {
+    animation-delay: 0.1s;
+  }
+
+  .stagger-2 {
+    animation-delay: 0.2s;
+  }
+
+  .stagger-3 {
+    animation-delay: 0.3s;
+  }
+
+  .stagger-4 {
+    animation-delay: 0.4s;
+  }
 }

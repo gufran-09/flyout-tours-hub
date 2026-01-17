@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { 
-  Plane, 
-  MapPin, 
-  Phone, 
-  Mail, 
+import {
+  Plane,
+  MapPin,
+  Phone,
+  Mail,
   Clock,
   Facebook,
   Instagram,
@@ -50,15 +50,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="space-y-6">
-            <Link to="/" className="flex items-center gap-2">
-              <Plane className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">
-                <span className="text-primary">Flyout</span>
-                <span className="text-background">Tours</span>
-              </span>
+            <Link to="/" className="inline-block">
+              <img
+                src="/logo-footer.png"
+                alt="Flyout Tours"
+                className="h-24 w-auto object-contain"
+              />
             </Link>
             <p className="text-background/70 text-sm leading-relaxed">
-              Your trusted UAE travel partner. We provide curated experiences, 
+              Your trusted UAE travel partner. We provide curated experiences,
               adventure activities, and unforgettable memories across the Emirates.
             </p>
             <div className="space-y-3">
