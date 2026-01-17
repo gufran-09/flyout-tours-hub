@@ -55,7 +55,7 @@ export function TourCard({ tour, index = 0 }: TourCardProps) {
               className="tour-card-image w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-card opacity-60" />
-            
+
             {/* Badges */}
             <div className="absolute top-3 left-3 flex gap-2">
               {tour.badge && (

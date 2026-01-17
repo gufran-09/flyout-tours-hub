@@ -1,21 +1,12 @@
 import { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-<<<<<<< HEAD
 import {
   User,
   Calendar,
   Heart,
   History,
   Settings,
-=======
-import { 
-  User, 
-  Calendar, 
-  Heart, 
-  History, 
-  Settings, 
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
   LogOut,
   MapPin,
   Clock,
@@ -33,25 +24,15 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useAuth } from "@/contexts/AuthContext";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-<<<<<<< HEAD
 import {
   dubaiThemeParks,
   dubaiWaterParks,
-=======
-import { 
-  dubaiThemeParks, 
-  dubaiWaterParks, 
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
   dubaiAttractions,
   dubaiWaterSports,
   dubaiDinnerCruise,
   dubaiYacht,
   abuDhabiExperiences,
-<<<<<<< HEAD
   staycations
-=======
-  staycations 
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
 } from "@/data/tours";
 
 const allTours = [
@@ -382,11 +363,6 @@ export default function Dashboard() {
                     {wishlist.map((item) => {
                       const tour = getWishlistTour(item.tour_id);
                       if (!tour) return null;
-<<<<<<< HEAD
-
-=======
-                      
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
                       return (
                         <div
                           key={item.id}

@@ -1,20 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-<<<<<<< HEAD
 import {
   Search,
   ShoppingCart,
   User,
   Menu,
   X,
-=======
-import { 
-  ShoppingCart, 
-  User, 
-  Menu, 
-  X, 
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
   ChevronDown,
   Plane,
   MapPin,
@@ -76,10 +68,7 @@ const destinationsCategories = [
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-<<<<<<< HEAD
   const [isSearchOpen, setIsSearchOpen] = useState(false);
-=======
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
   const location = useLocation();
   const navigate = useNavigate();
   const { user, signOut, loading } = useAuth();
@@ -94,10 +83,7 @@ export function Navbar() {
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
-<<<<<<< HEAD
     setIsSearchOpen(false);
-=======
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
   }, [location]);
 
   const handleSignOut = async () => {
@@ -126,22 +112,8 @@ export function Navbar() {
         <nav className="section-container">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-<<<<<<< HEAD
             <Link to="/" className="flex items-center gap-2 -ml-2">
               <img src="/logo.png" alt="Flyout Tours" className="h-12 w-auto object-contain" />
-=======
-            <Link to="/" className="flex items-center gap-2">
-              <div className="relative">
-                <Plane className="h-8 w-8 text-primary" />
-              </div>
-              <span className="text-xl font-bold tracking-tight">
-                <span className="text-primary">Flyout</span>
-                <span className={cn(
-                  "transition-colors",
-                  isScrolled ? "text-foreground" : "text-foreground"
-                )}>Tours</span>
-              </span>
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
             </Link>
 
             {/* Desktop Navigation */}
@@ -230,7 +202,6 @@ export function Navbar() {
             </div>
 
             {/* Right Side Actions */}
-<<<<<<< HEAD
             <div className="flex items-center gap-6">
               {/* Desktop Search */}
               <div className="hidden lg:block">
@@ -258,12 +229,6 @@ export function Navbar() {
                     <Search className="h-5 w-5" />
                   </Button>
                 )}
-=======
-            <div className="flex items-center gap-2">
-              {/* Desktop Search */}
-              <div className="hidden lg:block w-64">
-                <SearchAutocomplete />
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
               </div>
 
               {/* Mobile Search */}
@@ -297,17 +262,10 @@ export function Navbar() {
                   ) : (
                     <>
                       <DropdownMenuItem asChild>
-<<<<<<< HEAD
                         <Link to="/sign-in" className="cursor-pointer">Sign In</Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
                         <Link to="/sign-up" className="cursor-pointer">Sign Up</Link>
-=======
-                        <Link to="/auth" className="cursor-pointer">Sign In</Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild>
-                        <Link to="/auth?mode=signup" className="cursor-pointer">Sign Up</Link>
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
                       </DropdownMenuItem>
                     </>
                   )}
@@ -429,11 +387,7 @@ export function Navbar() {
                     </>
                   ) : (
                     <Button variant="outline" className="w-full" asChild>
-<<<<<<< HEAD
                       <Link to="/sign-in">Sign In</Link>
-=======
-                      <Link to="/auth">Sign In</Link>
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
                     </Button>
                   )}
                   <Button className="w-full bg-primary text-primary-foreground" asChild>

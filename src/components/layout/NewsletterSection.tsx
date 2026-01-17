@@ -15,7 +15,7 @@ export function NewsletterSection() {
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Validate email
     const result = emailSchema.safeParse(email);
     if (!result.success) {
@@ -91,9 +91,9 @@ export function NewsletterSection() {
               disabled={isLoading}
               required
             />
-            <Button 
-              type="submit" 
-              variant="secondary" 
+            <Button
+              type="submit"
+              variant="secondary"
               className="whitespace-nowrap"
               disabled={isLoading}
             >

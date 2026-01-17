@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
 import {
   Plane,
   MapPin,
@@ -9,16 +8,6 @@ import {
   Facebook,
   Instagram,
   Linkedin,
-=======
-import { 
-  Plane, 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock,
-  Facebook,
-  Instagram,
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
   Twitter,
   Youtube,
   CreditCard,
@@ -62,7 +51,6 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand Column */}
           <div className="space-y-6">
-<<<<<<< HEAD
             <Link to="/" className="inline-block">
               <img
                 src="/logo-footer.png"
@@ -72,17 +60,6 @@ export function Footer() {
             </Link>
             <p className="text-background/70 text-sm leading-relaxed">
               Your trusted UAE travel partner. We provide curated experiences,
-=======
-            <Link to="/" className="flex items-center gap-2">
-              <Plane className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold">
-                <span className="text-primary">Flyout</span>
-                <span className="text-background">Tours</span>
-              </span>
-            </Link>
-            <p className="text-background/70 text-sm leading-relaxed">
-              Your trusted UAE travel partner. We provide curated experiences, 
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
               adventure activities, and unforgettable memories across the Emirates.
             </p>
             <div className="space-y-3">
@@ -168,11 +145,7 @@ export function Footer() {
               <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
               <div className="flex gap-3">
                 <a
-<<<<<<< HEAD
                   href="https://www.facebook.com/flyouttours"
-=======
-                  href="https://facebook.com"
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-background/10 hover:bg-primary transition-colors"
@@ -180,11 +153,7 @@ export function Footer() {
                   <Facebook className="h-5 w-5" />
                 </a>
                 <a
-<<<<<<< HEAD
                   href="https://www.instagram.com/flyout_tours/"
-=======
-                  href="https://instagram.com"
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-background/10 hover:bg-primary transition-colors"
@@ -192,20 +161,12 @@ export function Footer() {
                   <Instagram className="h-5 w-5" />
                 </a>
                 <a
-<<<<<<< HEAD
                   href="https://www.linkedin.com/company/flyout-tours-llc/"
-=======
-                  href="https://twitter.com"
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-background/10 hover:bg-primary transition-colors"
                 >
-<<<<<<< HEAD
                   <Linkedin className="h-5 w-5" />
-=======
-                  <Twitter className="h-5 w-5" />
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
                 </a>
                 <a
                   href="https://youtube.com"

@@ -55,11 +55,7 @@ export function ComboDealsSection() {
               Combo Deals & Packages
             </h2>
             <p className="text-muted-foreground max-w-xl">
-<<<<<<< HEAD
               Save more with our exclusive combo packages. Bundle your favorite
-=======
-              Save more with our exclusive combo packages. Bundle your favorite 
->>>>>>> 60d4dfb783a5b22e37f11b9b9f4195113a978a96
               experiences for the best value.
             </p>
           </motion.div>
