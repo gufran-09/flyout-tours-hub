@@ -63,24 +63,37 @@ export function Footer() {
               adventure activities, and unforgettable memories across the Emirates.
             </p>
             <div className="space-y-3">
-              <div className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                <span className="text-sm text-background/70">
-                  Dubai, United Arab Emirates
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Sharjah+Media+City,+Sharjah+515000+United+Arab+Emirates"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 hover:text-primary transition-colors cursor-pointer group"
+              >
+                <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5 group-hover:text-primary/80" />
+                <span className="text-sm text-background/70 group-hover:text-primary">
+                  Sharjah Media City, Sharjah 515000<br />United Arab Emirates
                 </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span className="text-sm text-background/70">
-                  +971 50 123 4567
+              </a>
+              <a
+                href="https://wa.me/971544661317"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-primary transition-colors cursor-pointer group"
+              >
+                <Phone className="h-5 w-5 text-primary shrink-0 group-hover:text-primary/80" />
+                <span className="text-sm text-background/70 group-hover:text-primary">
+                  +971 54 466 1317
                 </span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-primary shrink-0" />
-                <span className="text-sm text-background/70">
+              </a>
+              <a
+                href="mailto:info@flyouttours.com"
+                className="flex items-center gap-3 hover:text-primary transition-colors cursor-pointer group"
+              >
+                <Mail className="h-5 w-5 text-primary shrink-0 group-hover:text-primary/80" />
+                <span className="text-sm text-background/70 group-hover:text-primary">
                   info@flyouttours.com
                 </span>
-              </div>
+              </a>
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-primary shrink-0" />
                 <span className="text-sm text-background/70">

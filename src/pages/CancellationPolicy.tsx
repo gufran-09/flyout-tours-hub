@@ -18,7 +18,7 @@ export default function CancellationPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Cancellation by Customer</h2>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                We understand that plans can change. You may cancel your booking at any time, subject to the 
+                We understand that plans can change. You may cancel your booking at any time, subject to the
                 following conditions and fees:
               </p>
               <div className="bg-muted rounded-lg p-6 space-y-4">
@@ -53,7 +53,7 @@ export default function CancellationPolicy() {
               <ul className="list-disc pl-6 space-y-2 text-foreground/80">
                 <li>Log into your account and cancel through the dashboard</li>
                 <li>Email us at bookings@flyouttours.com with your booking reference</li>
-                <li>Call our customer service at +971 50 123 4567</li>
+                <li>Call our customer service at +971 54 466 1317</li>
                 <li>Use WhatsApp to reach our support team</li>
               </ul>
             </section>
@@ -91,8 +91,8 @@ export default function CancellationPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">5. No-Show Policy</h2>
               <p className="text-foreground/80 leading-relaxed">
-                If you fail to arrive at the designated meeting point without prior cancellation or notification, 
-                it will be considered a no-show. No refunds will be provided for no-shows, and the full booking 
+                If you fail to arrive at the designated meeting point without prior cancellation or notification,
+                it will be considered a no-show. No refunds will be provided for no-shows, and the full booking
                 amount will be forfeited.
               </p>
             </section>
@@ -100,7 +100,7 @@ export default function CancellationPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">6. Group Bookings</h2>
               <p className="text-foreground/80 leading-relaxed">
-                For group bookings of 10 or more participants, special cancellation terms may apply. 
+                For group bookings of 10 or more participants, special cancellation terms may apply.
                 Please contact our group sales team for specific terms and conditions related to your booking.
               </p>
             </section>
@@ -108,8 +108,8 @@ export default function CancellationPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">7. Special Packages</h2>
               <p className="text-foreground/80 leading-relaxed">
-                Some promotional packages, flash sales, or special offers may have different cancellation 
-                terms. These will be clearly stated at the time of booking. Please review the specific terms 
+                Some promotional packages, flash sales, or special offers may have different cancellation
+                terms. These will be clearly stated at the time of booking. Please review the specific terms
                 before completing your purchase.
               </p>
             </section>
@@ -121,8 +121,8 @@ export default function CancellationPolicy() {
               </p>
               <div className="mt-4 p-4 bg-muted rounded-lg">
                 <p className="text-foreground/80">Email: bookings@flyouttours.com</p>
-                <p className="text-foreground/80">Phone: +971 50 123 4567</p>
-                <p className="text-foreground/80">WhatsApp: +971 50 123 4567</p>
+                <p className="text-foreground/80">Phone: +971 54 466 1317</p>
+                <p className="text-foreground/80">WhatsApp: +971 54 466 1317</p>
                 <p className="text-foreground/80">Available 24/7 for urgent cancellations</p>
               </div>
             </section>

@@ -486,7 +486,7 @@ export default function Dashboard() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="+971 50 123 4567"
+                      placeholder="+971 54 466 1317"
                       className="mt-1"
                     />
                   </div>

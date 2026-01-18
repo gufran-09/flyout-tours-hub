@@ -18,8 +18,8 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Introduction</h2>
               <p className="text-foreground/80 leading-relaxed">
-                Welcome to Flyout Tours ("we," "our," or "us"). We are committed to protecting your personal information 
-                and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard 
+                Welcome to Flyout Tours ("we," "our," or "us"). We are committed to protecting your personal information
+                and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard
                 your information when you visit our website or use our travel booking services.
               </p>
             </section>
@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
                 <li>Participate in surveys or promotions</li>
               </ul>
               <p className="text-foreground/80 leading-relaxed mt-4">
-                This information may include your name, email address, phone number, billing address, 
+                This information may include your name, email address, phone number, billing address,
                 payment information, and travel preferences.
               </p>
             </section>
@@ -57,8 +57,8 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">4. Information Sharing</h2>
               <p className="text-foreground/80 leading-relaxed">
-                We may share your information with trusted third parties including tour operators, payment processors, 
-                and service providers who assist us in operating our website and conducting our business. 
+                We may share your information with trusted third parties including tour operators, payment processors,
+                and service providers who assist us in operating our website and conducting our business.
                 We ensure these parties agree to keep this information confidential.
               </p>
             </section>
@@ -66,8 +66,8 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">5. Data Security</h2>
               <p className="text-foreground/80 leading-relaxed">
-                We implement appropriate technical and organizational security measures to protect your personal 
-                information against unauthorized access, alteration, disclosure, or destruction. All payment 
+                We implement appropriate technical and organizational security measures to protect your personal
+                information against unauthorized access, alteration, disclosure, or destruction. All payment
                 transactions are encrypted using SSL technology.
               </p>
             </section>
@@ -87,8 +87,8 @@ export default function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">7. Cookies</h2>
               <p className="text-foreground/80 leading-relaxed">
-                We use cookies and similar tracking technologies to enhance your browsing experience, 
-                analyze site traffic, and personalize content. You can control cookie preferences through 
+                We use cookies and similar tracking technologies to enhance your browsing experience,
+                analyze site traffic, and personalize content. You can control cookie preferences through
                 your browser settings.
               </p>
             </section>
@@ -100,7 +100,7 @@ export default function PrivacyPolicy() {
               </p>
               <div className="mt-4 p-4 bg-muted rounded-lg">
                 <p className="text-foreground/80">Email: privacy@flyouttours.com</p>
-                <p className="text-foreground/80">Phone: +971 50 123 4567</p>
+                <p className="text-foreground/80">Phone: +971 54 466 1317</p>
                 <p className="text-foreground/80">Address: Dubai, United Arab Emirates</p>
               </div>
             </section>

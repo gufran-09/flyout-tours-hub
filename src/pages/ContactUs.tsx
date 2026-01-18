@@ -46,33 +46,45 @@ export default function ContactUs() {
                         <div>
                             <h2 className="text-2xl font-bold text-foreground mb-6">Get in Touch</h2>
                             <div className="space-y-6">
-                                <div className="flex items-start">
-                                    <MapPin className="h-6 w-6 text-primary mt-1" />
+                                <a
+                                    href="https://www.google.com/maps/search/?api=1&query=Sharjah+Media+City,+Sharjah+515000+United+Arab+Emirates"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-start group hover:text-primary transition-colors cursor-pointer"
+                                >
+                                    <MapPin className="h-6 w-6 text-primary mt-1 group-hover:text-primary/80" />
                                     <div className="ml-4">
-                                        <h3 className="text-lg font-medium text-foreground">Office Address</h3>
-                                        <p className="mt-1 text-muted-foreground">
-                                            Dubai, United Arab Emirates<br />
-                                            Business Bay, Office 123
+                                        <h3 className="text-lg font-medium text-foreground group-hover:text-primary">Office Address</h3>
+                                        <p className="mt-1 text-muted-foreground group-hover:text-primary/80">
+                                            Sharjah Media City, Sharjah 515000<br />
+                                            United Arab Emirates
                                         </p>
                                     </div>
-                                </div>
+                                </a>
 
-                                <div className="flex items-start">
-                                    <Phone className="h-6 w-6 text-primary mt-1" />
+                                <a
+                                    href="https://wa.me/971544661317"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-start group hover:text-primary transition-colors cursor-pointer"
+                                >
+                                    <Phone className="h-6 w-6 text-primary mt-1 group-hover:text-primary/80" />
                                     <div className="ml-4">
-                                        <h3 className="text-lg font-medium text-foreground">Phone</h3>
-                                        <p className="mt-1 text-muted-foreground">+971 50 123 4567</p>
+                                        <h3 className="text-lg font-medium text-foreground group-hover:text-primary">Phone</h3>
+                                        <p className="mt-1 text-muted-foreground group-hover:text-primary/80">+971 54 466 1317</p>
                                     </div>
-                                </div>
+                                </a>
 
-                                <div className="flex items-start">
-                                    <Mail className="h-6 w-6 text-primary mt-1" />
+                                <a
+                                    href="mailto:info@flyouttours.com"
+                                    className="flex items-start group hover:text-primary transition-colors cursor-pointer"
+                                >
+                                    <Mail className="h-6 w-6 text-primary mt-1 group-hover:text-primary/80" />
                                     <div className="ml-4">
-                                        <h3 className="text-lg font-medium text-foreground">Email</h3>
-                                        <p className="mt-1 text-muted-foreground">info@flyouttours.com</p>
+                                        <h3 className="text-lg font-medium text-foreground group-hover:text-primary">Email</h3>
+                                        <p className="mt-1 text-muted-foreground group-hover:text-primary/80">info@flyouttours.com</p>
                                     </div>
-                                </div>
-
+                                </a>
                                 <div className="flex items-start">
                                     <Clock className="h-6 w-6 text-primary mt-1" />
                                     <div className="ml-4">

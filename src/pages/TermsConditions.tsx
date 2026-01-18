@@ -18,7 +18,7 @@ export default function TermsConditions() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Agreement to Terms</h2>
               <p className="text-foreground/80 leading-relaxed">
-                By accessing or using Flyout Tours website and services, you agree to be bound by these 
+                By accessing or using Flyout Tours website and services, you agree to be bound by these
                 Terms and Conditions. If you disagree with any part of these terms, you may not access our services.
               </p>
             </section>
@@ -37,7 +37,7 @@ export default function TermsConditions() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">3. Payment Terms</h2>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                We accept major credit cards and online payment methods. Payment must be made in full at the time 
+                We accept major credit cards and online payment methods. Payment must be made in full at the time
                 of booking unless otherwise agreed. All prices include applicable taxes unless stated otherwise.
               </p>
             </section>
@@ -56,8 +56,8 @@ export default function TermsConditions() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">5. Health and Safety</h2>
               <p className="text-foreground/80 leading-relaxed">
-                Participants must disclose any medical conditions that may affect their ability to participate 
-                in activities. We reserve the right to refuse participation if we believe it poses a safety risk. 
+                Participants must disclose any medical conditions that may affect their ability to participate
+                in activities. We reserve the right to refuse participation if we believe it poses a safety risk.
                 Some activities have age, height, or health restrictions.
               </p>
             </section>
@@ -65,7 +65,7 @@ export default function TermsConditions() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">6. Intellectual Property</h2>
               <p className="text-foreground/80 leading-relaxed">
-                All content on our website, including text, graphics, logos, and images, is the property of 
+                All content on our website, including text, graphics, logos, and images, is the property of
                 Flyout Tours and protected by copyright laws. Unauthorized use or reproduction is prohibited.
               </p>
             </section>
@@ -73,8 +73,8 @@ export default function TermsConditions() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">7. Limitation of Liability</h2>
               <p className="text-foreground/80 leading-relaxed">
-                Flyout Tours shall not be liable for any indirect, incidental, special, or consequential damages 
-                arising from your use of our services. Our total liability shall not exceed the amount paid for 
+                Flyout Tours shall not be liable for any indirect, incidental, special, or consequential damages
+                arising from your use of our services. Our total liability shall not exceed the amount paid for
                 the specific service giving rise to the claim.
               </p>
             </section>
@@ -82,7 +82,7 @@ export default function TermsConditions() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">8. Force Majeure</h2>
               <p className="text-foreground/80 leading-relaxed">
-                We shall not be liable for any failure to perform our obligations due to circumstances beyond 
+                We shall not be liable for any failure to perform our obligations due to circumstances beyond
                 our reasonable control, including natural disasters, war, strikes, government actions, or pandemics.
               </p>
             </section>
@@ -90,8 +90,8 @@ export default function TermsConditions() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">9. Governing Law</h2>
               <p className="text-foreground/80 leading-relaxed">
-                These Terms and Conditions shall be governed by and construed in accordance with the laws of 
-                the United Arab Emirates. Any disputes shall be subject to the exclusive jurisdiction of the 
+                These Terms and Conditions shall be governed by and construed in accordance with the laws of
+                the United Arab Emirates. Any disputes shall be subject to the exclusive jurisdiction of the
                 courts of Dubai.
               </p>
             </section>
@@ -100,7 +100,7 @@ export default function TermsConditions() {
               <h2 className="text-2xl font-semibold text-foreground mb-4">10. Contact Information</h2>
               <div className="mt-4 p-4 bg-muted rounded-lg">
                 <p className="text-foreground/80">Email: legal@flyouttours.com</p>
-                <p className="text-foreground/80">Phone: +971 50 123 4567</p>
+                <p className="text-foreground/80">Phone: +971 54 466 1317</p>
                 <p className="text-foreground/80">Address: Dubai, United Arab Emirates</p>
               </div>
             </section>

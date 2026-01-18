@@ -18,8 +18,8 @@ export default function RefundPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">1. Overview</h2>
               <p className="text-foreground/80 leading-relaxed">
-                At Flyout Tours, we strive to provide exceptional travel experiences. We understand that 
-                circumstances may change, and we have established this refund policy to ensure transparency 
+                At Flyout Tours, we strive to provide exceptional travel experiences. We understand that
+                circumstances may change, and we have established this refund policy to ensure transparency
                 and fairness in our dealings with customers.
               </p>
             </section>
@@ -86,8 +86,8 @@ export default function RefundPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">6. Partial Refunds</h2>
               <p className="text-foreground/80 leading-relaxed">
-                If you participated in part of a tour and wish to claim a partial refund for unused services, 
-                please contact our support team. Each case will be evaluated individually based on the 
+                If you participated in part of a tour and wish to claim a partial refund for unused services,
+                please contact our support team. Each case will be evaluated individually based on the
                 circumstances and remaining services.
               </p>
             </section>
@@ -95,7 +95,7 @@ export default function RefundPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-foreground mb-4">7. Credit Option</h2>
               <p className="text-foreground/80 leading-relaxed">
-                Instead of a refund, you may opt to receive a credit for future bookings. Credits are valid 
+                Instead of a refund, you may opt to receive a credit for future bookings. Credits are valid
                 for 12 months from the date of issue and can be applied to any Flyout Tours service.
               </p>
             </section>
@@ -107,7 +107,7 @@ export default function RefundPolicy() {
               </p>
               <div className="mt-4 p-4 bg-muted rounded-lg">
                 <p className="text-foreground/80">Email: refunds@flyouttours.com</p>
-                <p className="text-foreground/80">Phone: +971 50 123 4567</p>
+                <p className="text-foreground/80">Phone: +971 54 466 1317</p>
                 <p className="text-foreground/80">Available: Sunday - Thursday, 9 AM - 6 PM GST</p>
               </div>
             </section>
