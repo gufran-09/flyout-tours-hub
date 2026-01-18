@@ -20,6 +20,7 @@ import Yacht from "./pages/Yacht";
 import Limousine from "./pages/Limousine";
 import AbuDhabi from "./pages/AbuDhabi";
 import Staycations from "./pages/Staycations";
+import Deals from "./pages/Deals";
 import Cart from "./pages/Cart";
 import PaymentSuccess from "./pages/PaymentSuccess";
 import PaymentCanceled from "./pages/PaymentCanceled";
@@ -31,6 +32,9 @@ import Blogs from "./pages/Blogs";
 import AdminNewsletter from "./pages/AdminNewsletter";
 import SearchResults from "./pages/SearchResults";
 import NotFound from "./pages/NotFound";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import FAQ from "./pages/FAQ";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +48,7 @@ const App = () => (
           <CartProvider>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/deals" element={<Deals />} />
               <Route path="/sign-in" element={<SignIn />} />
               <Route path="/sign-up" element={<SignUp />} />
               <Route path="/auth" element={<Auth />} />
@@ -79,6 +84,11 @@ const App = () => (
               {/* Other Pages */}
               <Route path="/abu-dhabi" element={<AbuDhabi />} />
               <Route path="/staycations" element={<Staycations />} />
+
+              {/* Information Pages */}
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/contact" element={<ContactUs />} />
+              <Route path="/faq" element={<FAQ />} />
 
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
