@@ -97,6 +97,16 @@ export function Navbar() {
     { name: "All Deals UAE", href: "/deals" },
   ];
 
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <>
       <motion.header
@@ -112,7 +122,7 @@ export function Navbar() {
         <nav className="section-container">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 -ml-2">
+            <Link to="/" onClick={handleLogoClick} className="flex items-center gap-2 -ml-2">
               <img src="/logo.png" alt="Flyout Tours" className="h-12 w-auto object-contain" />
             </Link>
 
