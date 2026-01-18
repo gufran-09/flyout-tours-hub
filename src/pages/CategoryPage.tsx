@@ -35,6 +35,7 @@ import {
 import { Tour } from "@/components/home/ExperienceSection";
 import { useCart } from "@/contexts/CartContext";
 import { toast } from "sonner";
+import { AdvancedTourCard } from "@/components/ui/AdvancedTourCard";
 
 // Limousine data (not in tours.ts yet)
 const dubaiLimousine: Tour[] = [
@@ -93,112 +94,6 @@ const staycationsData = {
   subtitle: "Luxurious getaways and resort experiences in the UAE",
   tours: staycations,
 };
-
-function TourCard({ tour, index }: { tour: Tour; index: number }) {
-  const { addToCart } = useCart();
-  const discount = tour.originalPrice
-    ? Math.round(((tour.originalPrice - tour.price) / tour.originalPrice) * 100)
-    : 0;
-
-  const handleAddToCart = (e: React.MouseEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    addToCart(tour);
-    toast.success(`${tour.name} added to cart`);
-  };
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4, delay: index * 0.05 }}
-    >
-      <div className="tour-card overflow-hidden group">
-        <Link to={`/tour/${tour.id}`} className="block">
-          <div className="relative aspect-[4/3] overflow-hidden">
-            <img
-              src={tour.image}
-              alt={tour.name}
-              className="tour-card-image w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-card opacity-60" />
-
-            <div className="absolute top-3 left-3 flex gap-2">
-              {tour.badge && (
-                <span className="badge-offer">{tour.badge}</span>
-              )}
-              {discount > 0 && (
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-destructive text-destructive-foreground">
-                  {discount}% OFF
-                </span>
-              )}
-            </div>
-
-            <div className="absolute top-3 right-3">
-              <span className="badge-category bg-background/90 backdrop-blur-sm">
-                {tour.category}
-              </span>
-            </div>
-
-            <div className="absolute bottom-3 left-3 right-3">
-              <div className="flex items-center gap-2 text-white/90 text-sm">
-                <MapPin className="h-4 w-4" />
-                <span>{tour.location}</span>
-              </div>
-            </div>
-          </div>
-        </Link>
-
-        <div className="p-4">
-          <Link to={`/tour/${tour.id}`}>
-            <h3 className="font-semibold text-lg mb-2 line-clamp-2 group-hover:text-primary transition-colors">
-              {tour.name}
-            </h3>
-          </Link>
-
-          <div className="flex items-center gap-4 mb-3">
-            <div className="flex items-center gap-1">
-              <Star className="h-4 w-4 fill-gold text-gold" />
-              <span className="font-medium text-sm">{tour.rating}</span>
-              <span className="text-muted-foreground text-sm">
-                ({tour.reviewCount})
-              </span>
-            </div>
-
-            <div className="flex items-center gap-1 text-muted-foreground text-sm">
-              <Clock className="h-4 w-4" />
-              <span>{tour.duration}</span>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-between">
-            <div>
-              <span className="text-sm text-muted-foreground">From</span>
-              <div className="flex items-center gap-2">
-                <span className="text-xl font-bold text-primary">
-                  AED {tour.price}
-                </span>
-                {tour.originalPrice && (
-                  <span className="text-sm text-muted-foreground line-through">
-                    AED {tour.originalPrice}
-                  </span>
-                )}
-              </div>
-            </div>
-            <Button
-              size="sm"
-              onClick={handleAddToCart}
-              className="bg-primary hover:bg-[#FFBF19] transition-colors duration-300 ease-in-out text-primary-foreground"
-            >
-              <ShoppingCart className="mr-1 h-4 w-4" />
-              Add
-            </Button>
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
 
 export default function CategoryPage() {
   const { city, category } = useParams();
@@ -462,7 +357,25 @@ export default function CategoryPage() {
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredTours.map((tour, index) => (
-                  <TourCard key={tour.id} tour={tour} index={index} />
+                  <motion.div
+                    key={tour.id}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                  >
+                    <AdvancedTourCard
+                      id={tour.id}
+                      title={tour.name}
+                      image={tour.image}
+                      price={tour.price}
+                      originalPrice={tour.originalPrice}
+                      rating={tour.rating}
+                      reviews={tour.reviewCount}
+                      duration={tour.duration}
+                      badge={tour.badge}
+                      location={tour.location}
+                    />
+                  </motion.div>
                 ))}
               </div>
             )}

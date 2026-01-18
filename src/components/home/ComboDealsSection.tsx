@@ -1,146 +1,171 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Clock, Percent, ArrowRight } from "lucide-react";
+import { Percent, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AdvancedTourCard } from "@/components/ui/AdvancedTourCard";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const comboDeals = [
   {
     id: "combo-1",
     title: "Dubai Ultimate Experience",
-    description: "Desert Safari + Burj Khalifa + Dubai Frame - 3 Day Package",
-    image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80",
+    // description: "Desert Safari + Burj Khalifa + Dubai Frame - 3 Day Package",
+    image:
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80",
     originalPrice: 899,
     discountedPrice: 649,
-    discount: 28,
-    validUntil: "Limited Time",
+    rating: 4.9,
+    reviews: 1250,
+    duration: "3 Days",
+    badge: "Best Seller",
   },
   {
     id: "combo-2",
     title: "Water Adventure Bundle",
-    description: "Jet Ski + Flyboarding + Parasailing - Full Day Package",
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80",
+    // description: "Jet Ski + Flyboarding + Parasailing - Full Day Package",
+    image:
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&q=80",
     originalPrice: 750,
     discountedPrice: 550,
-    discount: 27,
-    validUntil: "This Week Only",
+    rating: 4.8,
+    reviews: 850,
+    duration: "Full Day",
+    badge: "Adventure",
   },
   {
     id: "combo-3",
     title: "Luxury Dubai Tour",
-    description: "Yacht Tour + Helicopter Ride + Limousine City Tour",
-    image: "https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=800&q=80",
+    // description: "Yacht Tour + Helicopter Ride + Limousine City Tour",
+    image:
+      "https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=800&q=80",
     originalPrice: 2499,
     discountedPrice: 1899,
-    discount: 24,
-    validUntil: "Special Offer",
+    rating: 5.0,
+    reviews: 420,
+    duration: "2 Days",
+    badge: "Luxury",
+  },
+  {
+    id: "combo-4",
+    title: "Family Fun Pass",
+    image: "https://images.unsplash.com/photo-1513889961551-628c1e5e2ee9?w=800&q=80",
+    originalPrice: 1200,
+    discountedPrice: 899,
+    rating: 4.7,
+    reviews: 2100,
+    duration: "Flexible",
+    badge: "Family",
+  },
+  {
+    id: "combo-5",
+    title: "Cultural Heritage Tour",
+    image: "https://images.unsplash.com/photo-1578556795304-30491fae929d?w=800&q=80",
+    originalPrice: 450,
+    discountedPrice: 299,
+    rating: 4.6,
+    reviews: 530,
+    duration: "5 Hours",
+    badge: "Culture",
   },
 ];
 
 export function ComboDealsSection() {
   return (
-    <section className="py-20 bg-primary/5">
-      <div className="section-container">
+    <section className="py-20 bg-gradient-to-b from-background to-primary/5 overflow-hidden">
+      <div className="section-container relative">
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 px-4 md:px-0">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            className="max-w-2xl"
           >
-            <span className="inline-flex items-center gap-2 text-primary font-medium mb-2">
-              <Percent className="h-5 w-5" />
-              Special Offers
+            <span className="inline-flex items-center gap-2 text-primary font-bold tracking-wider text-sm uppercase mb-3">
+              <Percent className="h-4 w-4" />
+              Limited Time Offers
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold mb-2">
-              Combo Deals & Packages
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+              Trending Experiences
             </h2>
-            <p className="text-muted-foreground max-w-xl">
-              Save more with our exclusive combo packages. Bundle your favorite
-              experiences for the best value.
+            <p className="text-muted-foreground text-lg">
+              Unlock exclusive savings on our most popular hand-picked tour packages.
             </p>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            className="hidden md:block"
           >
             <Link to="/deals">
               <Button
-                variant="outline"
-                className="mt-4 sm:mt-0 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                variant="ghost"
+                className="group text-primary hover:bg-primary/10 hover:text-primary text-lg font-semibold"
               >
                 View All Deals
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Button>
             </Link>
           </motion.div>
         </div>
 
-        {/* Deals Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {comboDeals.map((deal, index) => (
-            <motion.div
-              key={deal.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
+        {/* Carousel */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-4 py-6">
+              {comboDeals.map((deal) => (
+                <CarouselItem key={deal.id} className="pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                  <AdvancedTourCard
+                    id={deal.id}
+                    title={deal.title}
+                    image={deal.image}
+                    price={deal.discountedPrice}
+                    originalPrice={deal.originalPrice}
+                    rating={deal.rating}
+                    reviews={deal.reviews}
+                    duration={deal.duration}
+                    badge={deal.badge}
+                    location="Dubai"
+                  />
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="hidden md:block">
+              <CarouselPrevious className="-left-6 h-12 w-12 border-none bg-white/80 backdrop-blur shadow-md hover:bg-white text-primary" />
+              <CarouselNext className="-right-6 h-12 w-12 border-none bg-white/80 backdrop-blur shadow-md hover:bg-white text-primary" />
+            </div>
+          </Carousel>
+        </motion.div>
+
+        {/* Mobile View All Button */}
+        <div className="mt-8 md:hidden text-center">
+          <Link to="/deals">
+            <Button
+              size="lg"
+              className="w-full sm:w-auto bg-primary text-primary-foreground font-bold shadow-lg shadow-primary/20"
             >
-              <Link to={`/deal/${deal.id}`} className="block group">
-                <div className="relative bg-card rounded-3xl overflow-hidden shadow-card card-hover">
-                  {/* Image */}
-                  <div className="relative aspect-[16/10] overflow-hidden">
-                    <img
-                      src={deal.image}
-                      alt={deal.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-card" />
-
-                    {/* Discount Badge */}
-                    <div className="absolute top-4 right-4">
-                      <span className="inline-flex items-center px-4 py-2 rounded-full bg-destructive text-destructive-foreground font-bold text-lg">
-                        {deal.discount}% OFF
-                      </span>
-                    </div>
-
-                    {/* Valid Until */}
-                    <div className="absolute bottom-4 left-4">
-                      <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-background/90 backdrop-blur-sm text-sm font-medium">
-                        <Clock className="h-4 w-4 text-primary" />
-                        {deal.validUntil}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
-                      {deal.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm mb-4">
-                      {deal.description}
-                    </p>
-
-                    {/* Price */}
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <span className="text-sm text-muted-foreground line-through">
-                          AED {deal.originalPrice}
-                        </span>
-                        <p className="text-2xl font-bold text-primary">
-                          AED {deal.discountedPrice}
-                        </p>
-                      </div>
-                      <Button className="bg-primary hover:bg-[#FFBF19] transition-colors duration-300 ease-in-out">
-                        Book Now
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
-          ))}
+              Explore All Deals
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
