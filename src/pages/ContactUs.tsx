@@ -1,10 +1,37 @@
 import { Layout } from "@/components/layout/Layout";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { useState } from "react";
+import { toast } from "sonner";
 
 export default function ContactUs() {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        // Simulate API call
+        setTimeout(() => {
+            setIsSubmitting(false);
+            setIsSubmitted(true);
+            toast.success("Message sent successfully!");
+        }, 1500);
+    };
+
+    const handleReset = () => {
+        setIsSubmitted(false);
+        setFormData({ name: "", email: "", message: "" });
+    };
+
     return (
         <Layout>
             <div className="bg-background min-h-screen">
@@ -59,35 +86,76 @@ export default function ContactUs() {
                             </div>
                         </div>
 
-                        {/* Contact Form */}
+                        {/* Contact Form or Success Message */}
                         <div className="bg-card shadow-lg rounded-lg p-8 border">
-                            <h2 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
-                            <form className="space-y-6">
-                                <div>
-                                    <label htmlFor="name" className="block text-sm font-medium text-foreground">
-                                        Name
-                                    </label>
-                                    <Input id="name" type="text" placeholder="Your Name" className="mt-1" />
+                            {isSubmitted ? (
+                                <div className="flex flex-col items-center justify-center text-center space-y-4 py-8 pointer-events-auto">
+                                    <CheckCircle className="h-16 w-16 text-primary mb-4" />
+                                    <h2 className="text-2xl font-bold text-foreground">Thank you, {formData.name}!</h2>
+                                    <p className="text-muted-foreground">
+                                        We have received your message and will get back to you shortly at <span className="font-semibold text-foreground">{formData.email}</span>.
+                                    </p>
+                                    <Button onClick={handleReset} variant="outline" className="mt-6">
+                                        Send another message
+                                    </Button>
                                 </div>
+                            ) : (
+                                <>
+                                    <h2 className="text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
+                                    <form onSubmit={handleSubmit} className="space-y-6">
+                                        <div>
+                                            <label htmlFor="name" className="block text-sm font-medium text-foreground">
+                                                Name
+                                            </label>
+                                            <Input
+                                                id="name"
+                                                type="text"
+                                                placeholder="Your Name"
+                                                className="mt-1"
+                                                required
+                                                value={formData.name}
+                                                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                                                disabled={isSubmitting}
+                                            />
+                                        </div>
 
-                                <div>
-                                    <label htmlFor="email" className="block text-sm font-medium text-foreground">
-                                        Email
-                                    </label>
-                                    <Input id="email" type="email" placeholder="you@example.com" className="mt-1" />
-                                </div>
+                                        <div>
+                                            <label htmlFor="email" className="block text-sm font-medium text-foreground">
+                                                Email
+                                            </label>
+                                            <Input
+                                                id="email"
+                                                type="email"
+                                                placeholder="you@example.com"
+                                                className="mt-1"
+                                                required
+                                                value={formData.email}
+                                                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                                disabled={isSubmitting}
+                                            />
+                                        </div>
 
-                                <div>
-                                    <label htmlFor="message" className="block text-sm font-medium text-foreground">
-                                        Message
-                                    </label>
-                                    <Textarea id="message" placeholder="How can we help you?" className="mt-1 h-32" />
-                                </div>
+                                        <div>
+                                            <label htmlFor="message" className="block text-sm font-medium text-foreground">
+                                                Message
+                                            </label>
+                                            <Textarea
+                                                id="message"
+                                                placeholder="How can we help you?"
+                                                className="mt-1 h-32"
+                                                required
+                                                value={formData.message}
+                                                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                                                disabled={isSubmitting}
+                                            />
+                                        </div>
 
-                                <Button type="submit" className="w-full">
-                                    Send Message
-                                </Button>
-                            </form>
+                                        <Button type="submit" className="w-full" disabled={isSubmitting}>
+                                            {isSubmitting ? "Sending..." : "Send Message"}
+                                        </Button>
+                                    </form>
+                                </>
+                            )}
                         </div>
                     </div>
                 </div>
