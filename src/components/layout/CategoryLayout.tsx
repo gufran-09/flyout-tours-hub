@@ -126,7 +126,7 @@ function TourCard({ tour, index }: { tour: Tour; index: number }) {
                         <Button
                             size="sm"
                             onClick={handleAddToCart}
-                            className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                            className="bg-primary hover:bg-[#FFBF19] transition-colors duration-300 ease-in-out text-primary-foreground"
                         >
                             <ShoppingCart className="mr-1 h-4 w-4" />
                             Add

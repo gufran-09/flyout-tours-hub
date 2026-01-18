@@ -132,7 +132,7 @@ export function ComboDealsSection() {
                           AED {deal.discountedPrice}
                         </p>
                       </div>
-                      <Button className="bg-primary hover:bg-primary/90">
+                      <Button className="bg-primary hover:bg-[#FFBF19] transition-colors duration-300 ease-in-out">
                         Book Now
                       </Button>
                     </div>

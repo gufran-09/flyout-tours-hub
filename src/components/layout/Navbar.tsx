@@ -283,7 +283,7 @@ export function Navbar() {
               </DropdownMenu>
 
               {/* Book Now CTA */}
-              <Button className="hidden md:flex bg-primary hover:bg-primary/90 text-primary-foreground" asChild>
+              <Button className="hidden md:flex bg-primary hover:bg-[#FFBF19] transition-colors duration-300 ease-in-out text-primary-foreground" asChild>
                 <Link to="/deals">Book Now</Link>
               </Button>
 
@@ -400,7 +400,7 @@ export function Navbar() {
                       <Link to="/sign-in">Sign In</Link>
                     </Button>
                   )}
-                  <Button className="w-full bg-primary text-primary-foreground" asChild>
+                  <Button className="w-full bg-primary hover:bg-[#FFBF19] transition-colors duration-300 ease-in-out text-primary-foreground" asChild>
                     <Link to="/deals">Book Now</Link>
                   </Button>
                 </div>
