@@ -62,3 +62,27 @@ export const dubaiLimousine: Tour[] = [
   { id: "lm-3", name: "Wedding Limousine Package", location: "Dubai", category: "Limousine", price: 999, rating: 5.0, reviewCount: 120, duration: "6 Hours", image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=600&q=80", badge: "Premium" },
   { id: "lm-4", name: "Night Out Limousine", location: "Dubai", category: "Limousine", price: 449, originalPrice: 550, rating: 4.7, reviewCount: 230, duration: "5 Hours", image: "https://images.unsplash.com/photo-1532581140115-3e355d1ed1de?w=600&q=80" },
 ];
+
+export const sharjahExperiences: Tour[] = [
+  { id: "sh-1", name: "Al Noor Island", location: "Sharjah", category: "Attractions", price: 35, originalPrice: 50, rating: 4.6, reviewCount: 1200, duration: "2 Hours", image: "https://images.unsplash.com/photo-1596899223071-7c3a27777090?w=600&q=80", badge: "Nature" },
+  { id: "sh-2", name: "Sharjah Aquarium", location: "Sharjah", category: "Aquarium", price: 25, rating: 4.5, reviewCount: 980, duration: "1.5 Hours", image: "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=600&q=80" },
+  { id: "sh-3", name: "Sharjah Museum of Islamic Civilization", location: "Sharjah", category: "Museum", price: 15, rating: 4.7, reviewCount: 850, duration: "2 Hours", image: "https://images.unsplash.com/photo-1588523306939-f8319cd30bc7?w=600&q=80", badge: "Cultural" },
+  { id: "sh-4", name: "Al Majaz Waterfront", location: "Sharjah", category: "Attractions", price: 0, rating: 4.8, reviewCount: 3000, duration: "Evening", image: "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80" },
+];
+
+export const rasAlKhaimahExperiences: Tour[] = [
+  { id: "rak-1", name: "Jebel Jais Flight Zipline", location: "Ras Al Khaimah", category: "Adventure", price: 350, originalPrice: 450, rating: 4.9, reviewCount: 1500, duration: "1 Hour", image: "https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?w=600&q=80", badge: "Must Try" },
+  { id: "rak-2", name: "Dhayah Fort", location: "Ras Al Khaimah", category: "Historical", price: 0, rating: 4.6, reviewCount: 450, duration: "1 Hour", image: "https://images.unsplash.com/photo-1548680678-b11874246835?w=600&q=80" },
+  { id: "rak-3", name: "Suwaidi Pearls Farm", location: "Ras Al Khaimah", category: "Cultural", price: 150, rating: 4.7, reviewCount: 320, duration: "2 Hours", image: "https://images.unsplash.com/photo-1589308107877-a87f7bdc5264?w=600&q=80" },
+  { id: "rak-4", name: "Desert Safari RAK", location: "Ras Al Khaimah", category: "Desert Safari", price: 199, originalPrice: 299, rating: 4.8, reviewCount: 670, duration: "6 Hours", image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80", badge: "Adventure" },
+];
+
+export const allDubaiExperiences: Tour[] = [
+  ...dubaiThemeParks,
+  ...dubaiWaterParks,
+  ...dubaiAttractions,
+  ...dubaiWaterSports,
+  ...dubaiDinnerCruise,
+  ...dubaiYacht,
+  ...dubaiLimousine,
+];

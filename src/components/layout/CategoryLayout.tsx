@@ -51,7 +51,7 @@ function TourCard({ tour, index }: { tour: Tour; index: number }) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
         >
-            <div className="tour-card overflow-hidden group">
+            <div className="tour-card overflow-hidden group rounded-[40px]">
                 <Link to={`/tour/${tour.id}`} className="block">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img

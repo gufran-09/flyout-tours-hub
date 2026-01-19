@@ -19,6 +19,9 @@ import DinnerCruise from "./pages/DinnerCruise";
 import Yacht from "./pages/Yacht";
 import Limousine from "./pages/Limousine";
 import AbuDhabi from "./pages/AbuDhabi";
+import Dubai from "./pages/Dubai";
+import Sharjah from "./pages/Sharjah";
+import RasAlKhaimah from "./pages/RasAlKhaimah";
 import Staycations from "./pages/Staycations";
 import Deals from "./pages/Deals";
 import Cart from "./pages/Cart";
@@ -86,7 +89,10 @@ const App = () => (
               <Route path="/dubai/limousine" element={<Limousine />} />
 
               {/* Other Pages */}
+              <Route path="/dubai" element={<Dubai />} />
               <Route path="/abu-dhabi" element={<AbuDhabi />} />
+              <Route path="/sharjah" element={<Sharjah />} />
+              <Route path="/ras-al-khaimah" element={<RasAlKhaimah />} />
               <Route path="/staycations" element={<Staycations />} />
 
               {/* Information Pages */}

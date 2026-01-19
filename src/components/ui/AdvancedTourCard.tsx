@@ -62,7 +62,7 @@ export function AdvancedTourCard({
         <motion.div
             whileHover={{ y: -5 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className={cn("group relative h-[420px] w-full overflow-visible rounded-3xl", className)}
+            className={cn("group relative h-[420px] w-full overflow-hidden rounded-[40px]", className)}
         >
             <Link to={`/tour/${id}`} className="block h-full w-full">
                 {/* Background Image */}
