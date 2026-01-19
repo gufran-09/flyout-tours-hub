@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, Calendar, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+
 import { cn } from "@/lib/utils";
 
 const heroSlides = [
@@ -110,44 +110,7 @@ export function HeroSection() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Search Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="mt-12 max-w-4xl"
-        >
-          <div className="bg-background/95 backdrop-blur-md rounded-2xl p-4 shadow-xl">
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="flex-1 relative">
-                <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                <Input
-                  placeholder="Where do you want to go?"
-                  className="pl-10 h-12 border-0 bg-muted/50"
-                />
-              </div>
-              <div className="flex-1 relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                <Input
-                  placeholder="Search activities..."
-                  className="pl-10 h-12 border-0 bg-muted/50"
-                />
-              </div>
-              <div className="flex-1 relative">
-                <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
-                <Input
-                  type="date"
-                  placeholder="Select date"
-                  className="pl-10 h-12 border-0 bg-muted/50"
-                />
-              </div>
-              <Button className="h-12 px-8 bg-primary hover:bg-primary/90">
-                <Search className="h-5 w-5 mr-2" />
-                Search
-              </Button>
-            </div>
-          </div>
-        </motion.div>
+
       </div>
 
       {/* Navigation Arrows */}
