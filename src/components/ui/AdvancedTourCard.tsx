@@ -1,10 +1,11 @@
 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Clock, Star, ArrowRight, ShoppingCart } from "lucide-react";
+import { Clock, Star, ArrowRight, ShoppingCart, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
+import { useWishlist } from "@/contexts/WishlistContext";
 import { toast } from "sonner";
 
 export interface TourCardProps {
@@ -35,6 +36,8 @@ export function AdvancedTourCard({
     location,
 }: TourCardProps) {
     const { addToCart } = useCart();
+    const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
+    const isWishlisted = isInWishlist(id);
 
     const discount = originalPrice
         ? Math.round(((originalPrice - price) / originalPrice) * 100)
@@ -56,6 +59,27 @@ export function AdvancedTourCard({
             category: "Tour", // Default
         });
         toast.success(`${title} added to cart`);
+    };
+
+    const handleWishlistClick = (e: React.MouseEvent) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (isWishlisted) {
+            removeFromWishlist(id);
+        } else {
+            addToWishlist({
+                id,
+                title,
+                image,
+                price,
+                originalPrice,
+                rating,
+                reviews,
+                duration,
+                badge,
+                location
+            });
+        }
     };
 
     return (
@@ -88,6 +112,15 @@ export function AdvancedTourCard({
                         </span>
                     )}
                 </div>
+
+                {/* Wishlist Button */}
+                <Button
+                    size="icon"
+                    className="absolute right-4 top-4 z-10 h-8 w-8 rounded-full bg-black/20 backdrop-blur-md hover:bg-white/20 text-white border-none transition-transform active:scale-95"
+                    onClick={handleWishlistClick}
+                >
+                    <Heart className={cn("h-5 w-5 transition-colors", isWishlisted ? "fill-red-500 text-red-500" : "text-white")} />
+                </Button>
 
                 {/* Content - Glassmorphism Card */}
                 <div className="absolute bottom-4 left-4 right-4">

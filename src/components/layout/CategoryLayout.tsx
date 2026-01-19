@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { MapPin, Star, Clock, ShoppingCart, SlidersHorizontal, X } from "lucide-react";
+import { MapPin, Star, Clock, ShoppingCart, SlidersHorizontal, X, Heart } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import {
@@ -23,6 +23,8 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Tour } from "@/components/home/ExperienceSection";
 import { useCart } from "@/contexts/CartContext";
+import { useWishlist } from "@/contexts/WishlistContext";
+import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 
 interface CategoryLayoutProps {
@@ -34,6 +36,8 @@ interface CategoryLayoutProps {
 
 function TourCard({ tour, index }: { tour: Tour; index: number }) {
     const { addToCart } = useCart();
+    const { addToWishlist, removeFromWishlist, isInWishlist } = useWishlist();
+    const isWishlisted = isInWishlist(tour.id);
     const discount = tour.originalPrice
         ? Math.round(((tour.originalPrice - tour.price) / tour.originalPrice) * 100)
         : 0;
@@ -43,6 +47,27 @@ function TourCard({ tour, index }: { tour: Tour; index: number }) {
         e.stopPropagation();
         addToCart(tour);
         toast.success(`${tour.name} added to cart`);
+    };
+
+    const handleWishlistClick = (e: React.MouseEvent) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (isWishlisted) {
+            removeFromWishlist(tour.id);
+        } else {
+            addToWishlist({
+                id: tour.id,
+                title: tour.name,
+                image: tour.image,
+                price: tour.price,
+                originalPrice: tour.originalPrice,
+                rating: tour.rating,
+                reviews: tour.reviewCount,
+                duration: tour.duration,
+                badge: tour.badge,
+                location: tour.location
+            });
+        }
     };
 
     return (
@@ -72,11 +97,20 @@ function TourCard({ tour, index }: { tour: Tour; index: number }) {
                             )}
                         </div>
 
-                        <div className="absolute top-3 right-3">
+                        <div className="absolute top-12 right-3">
                             <span className="badge-category bg-background/90 backdrop-blur-sm">
                                 {tour.category}
                             </span>
                         </div>
+
+                        {/* Wishlist Button */}
+                        <Button
+                            size="icon"
+                            className="absolute right-3 top-3 z-10 h-8 w-8 rounded-full bg-black/20 backdrop-blur-md hover:bg-white/20 text-white border-none transition-transform active:scale-95"
+                            onClick={handleWishlistClick}
+                        >
+                            <Heart className={cn("h-5 w-5 transition-colors", isWishlisted ? "fill-red-500 text-red-500" : "text-white")} />
+                        </Button>
 
                         <div className="absolute bottom-3 left-3 right-3">
                             <div className="flex items-center gap-2 text-white/90 text-sm">

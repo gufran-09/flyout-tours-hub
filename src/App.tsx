@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { CartProvider } from "@/contexts/CartContext";
+import { WishlistProvider } from "@/contexts/WishlistContext";
 import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import SignIn from "./pages/SignIn";
@@ -53,56 +54,58 @@ const App = () => (
         <FloatingActionButtons />
         <AuthProvider>
           <CartProvider>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/deals" element={<Deals />} />
-              <Route path="/sign-in" element={<SignIn />} />
-              <Route path="/sign-up" element={<SignUp />} />
-              <Route path="/auth" element={<Auth />} />
-              <Route path="/auth/callback" element={<AuthCallback />} />
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route path="/cart" element={<Cart />} />
-              <Route path="/payment-success" element={<PaymentSuccess />} />
-              <Route path="/payment-canceled" element={<PaymentCanceled />} />
-              {/* Policy Pages */}
-              <Route path="/privacy" element={<PrivacyPolicy />} />
-              <Route path="/terms" element={<TermsConditions />} />
-              <Route path="/refund" element={<RefundPolicy />} />
-              <Route path="/cancellation" element={<CancellationPolicy />} />
+            <WishlistProvider>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/deals" element={<Deals />} />
+                <Route path="/sign-in" element={<SignIn />} />
+                <Route path="/sign-up" element={<SignUp />} />
+                <Route path="/auth" element={<Auth />} />
+                <Route path="/auth/callback" element={<AuthCallback />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/cart" element={<Cart />} />
+                <Route path="/payment-success" element={<PaymentSuccess />} />
+                <Route path="/payment-canceled" element={<PaymentCanceled />} />
+                {/* Policy Pages */}
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/terms" element={<TermsConditions />} />
+                <Route path="/refund" element={<RefundPolicy />} />
+                <Route path="/cancellation" element={<CancellationPolicy />} />
 
-              {/* Blogs */}
-              <Route path="/blogs" element={<Blogs />} />
+                {/* Blogs */}
+                <Route path="/blogs" element={<Blogs />} />
 
-              {/* Search */}
-              <Route path="/search" element={<SearchResults />} />
+                {/* Search */}
+                <Route path="/search" element={<SearchResults />} />
 
-              {/* Admin Pages */}
-              <Route path="/admin/newsletter" element={<AdminNewsletter />} />
+                {/* Admin Pages */}
+                <Route path="/admin/newsletter" element={<AdminNewsletter />} />
 
-              {/* Dubai Category Pages */}
-              <Route path="/dubai/theme-parks" element={<ThemeParks />} />
-              <Route path="/dubai/water-parks" element={<WaterParks />} />
-              <Route path="/dubai/attractions" element={<Attractions />} />
-              <Route path="/dubai/water-sports" element={<WaterSports />} />
-              <Route path="/dubai/dinner-cruise" element={<DinnerCruise />} />
-              <Route path="/dubai/yacht" element={<Yacht />} />
-              <Route path="/dubai/limousine" element={<Limousine />} />
+                {/* Dubai Category Pages */}
+                <Route path="/dubai/theme-parks" element={<ThemeParks />} />
+                <Route path="/dubai/water-parks" element={<WaterParks />} />
+                <Route path="/dubai/attractions" element={<Attractions />} />
+                <Route path="/dubai/water-sports" element={<WaterSports />} />
+                <Route path="/dubai/dinner-cruise" element={<DinnerCruise />} />
+                <Route path="/dubai/yacht" element={<Yacht />} />
+                <Route path="/dubai/limousine" element={<Limousine />} />
 
-              {/* Other Pages */}
-              <Route path="/dubai" element={<Dubai />} />
-              <Route path="/abu-dhabi" element={<AbuDhabi />} />
-              <Route path="/sharjah" element={<Sharjah />} />
-              <Route path="/ras-al-khaimah" element={<RasAlKhaimah />} />
-              <Route path="/staycations" element={<Staycations />} />
+                {/* Other Pages */}
+                <Route path="/dubai" element={<Dubai />} />
+                <Route path="/abu-dhabi" element={<AbuDhabi />} />
+                <Route path="/sharjah" element={<Sharjah />} />
+                <Route path="/ras-al-khaimah" element={<RasAlKhaimah />} />
+                <Route path="/staycations" element={<Staycations />} />
 
-              {/* Information Pages */}
-              <Route path="/about" element={<AboutUs />} />
-              <Route path="/contact" element={<ContactUs />} />
-              <Route path="/faq" element={<FAQ />} />
+                {/* Information Pages */}
+                <Route path="/about" element={<AboutUs />} />
+                <Route path="/contact" element={<ContactUs />} />
+                <Route path="/faq" element={<FAQ />} />
 
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </WishlistProvider>
           </CartProvider>
         </AuthProvider>
       </BrowserRouter>
