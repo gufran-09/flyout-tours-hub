@@ -17,7 +17,8 @@ import {
   LogOut,
   LayoutDashboard,
   Bell,
-  Store
+  Store,
+  Coins
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -141,10 +142,16 @@ export function Navbar() {
 
             {/* Right Side Actions */}
             <div className="flex items-center gap-2 md:gap-4">
+              {/* Flyout Credit */}
+              <Link to="/credit" className="hidden lg:flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+                <Coins className="h-5 w-5 text-yellow-500" />
+                <span className="hidden xl:inline font-bold">FLYOUT POINTS</span>
+              </Link>
+
               {/* Sell on Flyout Tour */}
               <Link to="/sell" className="hidden lg:flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
                 <Store className="h-5 w-5" />
-                <span className="hidden xl:inline">Join Flyout Network</span>
+                <span className="hidden xl:inline font-bold">PARTNER WITH FLYOUT</span>
               </Link>
 
               {/* Notifications */}
