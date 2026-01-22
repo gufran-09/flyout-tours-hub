@@ -15,7 +15,9 @@ import {
   Ship,
   Compass,
   LogOut,
-  LayoutDashboard
+  LayoutDashboard,
+  Bell,
+  Store
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -113,136 +115,42 @@ export function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border/10",
           isScrolled
             ? "bg-background/95 backdrop-blur-md shadow-md"
-            : "bg-transparent"
+            : "bg-background/95 backdrop-blur-md"
         )}
       >
-        <nav className="section-container">
-          <div className="flex items-center justify-between h-20">
+        <nav className="section-container py-2">
+          {/* Row 1: Logo, Search, Actions */}
+          <div className="flex items-center justify-between gap-4 mb-2">
             {/* Logo */}
-            <Link to="/" onClick={handleLogoClick} className="flex items-center gap-2 -ml-2">
+            <Link to="/" onClick={handleLogoClick} className="flex-shrink-0 flex items-center gap-2 -ml-2">
               <img src="/logo.png" alt="Flyout Tours" className="h-12 w-auto object-contain" />
             </Link>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-1">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  className={cn(
-                    "px-4 py-2 text-sm font-medium rounded-lg transition-colors",
-                    location.pathname === link.href
-                      ? "text-primary bg-primary/10"
-                      : "text-foreground/80 hover:text-primary hover:bg-primary/5"
-                  )}
-                >
-                  {link.name}
-                </Link>
-              ))}
-
-              {/* Destinations Dropdown */}
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary hover:bg-primary/5 transition-colors">
-                    Destinations
-                    <ChevronDown className="h-4 w-4" />
-                  </button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="start" className="w-48 bg-popover border border-border shadow-xl">
-                  {destinationsCategories.map((item) => (
-                    <DropdownMenuItem key={item.name} asChild>
-                      <Link
-                        to={item.href}
-                        className="flex items-center gap-2 cursor-pointer"
-                      >
-                        <item.icon className="h-4 w-4 text-primary" />
-                        {item.name}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-
-              {/* Dubai Dropdown */}
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary hover:bg-primary/5 transition-colors">
-                    Dubai
-                    <ChevronDown className="h-4 w-4" />
-                  </button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="start" className="w-48 bg-popover border border-border shadow-xl">
-                  {dubaiCategories.map((item) => (
-                    <DropdownMenuItem key={item.name} asChild>
-                      <Link
-                        to={item.href}
-                        className="flex items-center gap-2 cursor-pointer"
-                      >
-                        <item.icon className="h-4 w-4 text-primary" />
-                        {item.name}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-
-              <Link
-                to="/abu-dhabi"
-                className="px-4 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary hover:bg-primary/5 transition-colors"
-              >
-                Abu Dhabi
-              </Link>
-
-              <Link
-                to="/staycations"
-                className="px-4 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary hover:bg-primary/5 transition-colors"
-              >
-                Staycations
-              </Link>
-
-              <Link
-                to="/blogs"
-                className="px-4 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary hover:bg-primary/5 transition-colors"
-              >
-                Blogs
-              </Link>
+            {/* Desktop Search - Always Visible */}
+            <div className="hidden lg:block flex-1 max-w-xl px-4">
+              <div className="relative">
+                <SearchAutocomplete
+                  className="w-full"
+                  onClose={() => { }} // No-op since it's always visible in this view
+                />
+              </div>
             </div>
 
             {/* Right Side Actions */}
-            <div className="flex items-center gap-6">
-              {/* Desktop Search */}
-              <div className="hidden lg:block">
-                {isSearchOpen ? (
-                  <div className="w-64 relative animate-in fade-in slide-in-from-right-4 duration-300">
-                    <SearchAutocomplete
-                      autoFocus
-                      onClose={() => setIsSearchOpen(false)}
-                    />
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className="absolute -right-10 top-0 h-10 w-10"
-                      onClick={() => setIsSearchOpen(false)}
-                    >
-                      <X className="h-4 w-4" />
-                    </Button>
-                  </div>
-                ) : (
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    onClick={() => setIsSearchOpen(true)}
-                  >
-                    <Search className="h-5 w-5" />
-                  </Button>
-                )}
-              </div>
+            <div className="flex items-center gap-2 md:gap-4">
+              {/* Sell on Flyout Tour */}
+              <Link to="/sell" className="hidden lg:flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
+                <Store className="h-5 w-5" />
+                <span className="hidden xl:inline">Sell on Flyout Tour</span>
+              </Link>
 
-              {/* Mobile Search */}
-              <MobileSearchSheet className="lg:hidden" />
+              {/* Notifications */}
+              <Button variant="ghost" size="icon" className="hidden lg:flex text-foreground/80 hover:text-primary">
+                <Bell className="h-5 w-5" />
+              </Button>
 
               {/* Cart */}
               <CartLink />
@@ -282,16 +190,11 @@ export function Navbar() {
                 </DropdownMenuContent>
               </DropdownMenu>
 
-              {/* Book Now CTA */}
-              <Button className="hidden md:flex bg-primary hover:bg-[#FFBF19] transition-colors duration-300 ease-in-out text-primary-foreground" asChild>
-                <Link to="/deals">Book Now</Link>
-              </Button>
-
               {/* Mobile Menu Toggle */}
               <Button
                 variant="ghost"
                 size="icon"
-                className="lg:hidden"
+                className="lg:hidden ml-2"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               >
                 {isMobileMenuOpen ? (
@@ -301,6 +204,91 @@ export function Navbar() {
                 )}
               </Button>
             </div>
+          </div>
+
+          {/* Row 2: Navigation Links (Desktop Only) */}
+          <div className="hidden lg:flex items-center justify-center gap-6 border-t border-border/10 pt-2">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className={cn(
+                  "px-3 py-2 text-sm font-medium rounded-lg transition-colors",
+                  location.pathname === link.href
+                    ? "text-primary"
+                    : "text-foreground/80 hover:text-primary"
+                )}
+              >
+                {link.name}
+              </Link>
+            ))}
+
+            {/* Destinations Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary transition-colors focus:outline-none">
+                  Destinations
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-48 bg-popover border border-border shadow-xl">
+                {destinationsCategories.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link
+                      to={item.href}
+                      className="flex items-center gap-2 cursor-pointer"
+                    >
+                      <item.icon className="h-4 w-4 text-primary" />
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            {/* Dubai Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary transition-colors focus:outline-none">
+                  Dubai
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="w-48 bg-popover border border-border shadow-xl">
+                {dubaiCategories.map((item) => (
+                  <DropdownMenuItem key={item.name} asChild>
+                    <Link
+                      to={item.href}
+                      className="flex items-center gap-2 cursor-pointer"
+                    >
+                      <item.icon className="h-4 w-4 text-primary" />
+                      {item.name}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <Link
+              to="/abu-dhabi"
+              className="px-3 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary transition-colors"
+            >
+              Abu Dhabi
+            </Link>
+
+            <Link
+              to="/staycations"
+              className="px-3 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary transition-colors"
+            >
+              Staycations
+            </Link>
+
+            <Link
+              to="/blogs"
+              className="px-3 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary transition-colors"
+            >
+              Blogs
+            </Link>
           </div>
         </nav>
 
@@ -314,7 +302,7 @@ export function Navbar() {
               className="lg:hidden bg-background border-t border-border overflow-hidden"
             >
               <div className="section-container py-4 space-y-2">
-                {/* Search */}
+                {/* Mobile Search */}
                 <div className="mb-4">
                   <SearchAutocomplete onClose={() => setIsMobileMenuOpen(false)} />
                 </div>
@@ -378,6 +366,13 @@ export function Navbar() {
                   >
                     Blogs
                   </Link>
+                  <Link
+                    to="/sell"
+                    className="flex items-center gap-2 px-4 py-3 text-foreground hover:bg-muted rounded-lg"
+                  >
+                    <Store className="h-4 w-4" />
+                    Sell on Flyout Tour
+                  </Link>
                 </div>
 
                 {/* Mobile Auth */}
@@ -410,8 +405,8 @@ export function Navbar() {
         </AnimatePresence>
       </motion.header>
 
-      {/* Spacer for fixed navbar */}
-      <div className="h-20" />
+      {/* Spacer for fixed navbar - Increased height for double row */}
+      <div className="h-32 lg:h-40" />
     </>
   );
 }
