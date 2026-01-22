@@ -144,7 +144,7 @@ export function Navbar() {
               {/* Sell on Flyout Tour */}
               <Link to="/sell" className="hidden lg:flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
                 <Store className="h-5 w-5" />
-                <span className="hidden xl:inline">Sell on Flyout Tour</span>
+                <span className="hidden xl:inline">Join Flyout Network</span>
               </Link>
 
               {/* Notifications */}

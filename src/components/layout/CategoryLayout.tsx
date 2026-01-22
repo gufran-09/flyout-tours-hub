@@ -32,6 +32,7 @@ interface CategoryLayoutProps {
     subtitle: string;
     tours: Tour[];
     backgroundImage?: string;
+    featuredSection?: React.ReactNode;
 }
 
 function TourCard({ tour, index }: { tour: Tour; index: number }) {
@@ -172,7 +173,7 @@ function TourCard({ tour, index }: { tour: Tour; index: number }) {
     );
 }
 
-export function CategoryLayout({ title, subtitle, tours, backgroundImage }: CategoryLayoutProps) {
+export function CategoryLayout({ title, subtitle, tours, backgroundImage, featuredSection }: CategoryLayoutProps) {
     const [sortBy, setSortBy] = useState("popular");
     const [priceRange, setPriceRange] = useState([0, 3000]);
     const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
@@ -238,6 +239,9 @@ export function CategoryLayout({ title, subtitle, tours, backgroundImage }: Cate
                     </motion.div>
                 </div>
             </div>
+
+            {/* Featured Section */}
+            {featuredSection && featuredSection}
 
             {/* Main Content */}
             <div className="section-container py-8">
