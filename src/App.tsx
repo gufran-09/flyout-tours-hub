@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { CartProvider } from "@/contexts/CartContext";
 import { WishlistProvider } from "@/contexts/WishlistContext";
+
 import Index from "./pages/Index";
 import Auth from "./pages/Auth";
 import SignIn from "./pages/SignIn";
@@ -39,78 +40,95 @@ import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import FAQ from "./pages/FAQ";
+
 import ScrollToTop from "./components/ScrollToTop";
 import FloatingActionButtons from "./components/FloatingActionButtons";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <FloatingActionButtons />
-        <AuthProvider>
-          <CartProvider>
-            <WishlistProvider>
-              <Routes>
-                <Route path="/" element={<Index />} />
-                <Route path="/deals" element={<Deals />} />
-                <Route path="/sign-in" element={<SignIn />} />
-                <Route path="/sign-up" element={<SignUp />} />
-                <Route path="/auth" element={<Auth />} />
-                <Route path="/auth/callback" element={<AuthCallback />} />
-                <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/cart" element={<Cart />} />
-                <Route path="/payment-success" element={<PaymentSuccess />} />
-                <Route path="/payment-canceled" element={<PaymentCanceled />} />
-                {/* Policy Pages */}
-                <Route path="/privacy" element={<PrivacyPolicy />} />
-                <Route path="/terms" element={<TermsConditions />} />
-                <Route path="/refund" element={<RefundPolicy />} />
-                <Route path="/cancellation" element={<CancellationPolicy />} />
+const App = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
 
-                {/* Blogs */}
-                <Route path="/blogs" element={<Blogs />} />
+        <BrowserRouter>
+          <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white relative overflow-hidden">
 
-                {/* Search */}
-                <Route path="/search" element={<SearchResults />} />
+            {/* Global atmosphere layer */}
+            <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(16,131,206,0.12),transparent_60%)] pointer-events-none z-0" />
 
-                {/* Admin Pages */}
-                <Route path="/admin/newsletter" element={<AdminNewsletter />} />
+            <ScrollToTop />
+            <FloatingActionButtons />
 
-                {/* Dubai Category Pages */}
-                <Route path="/dubai/theme-parks" element={<ThemeParks />} />
-                <Route path="/dubai/water-parks" element={<WaterParks />} />
-                <Route path="/dubai/attractions" element={<Attractions />} />
-                <Route path="/dubai/water-sports" element={<WaterSports />} />
-                <Route path="/dubai/dinner-cruise" element={<DinnerCruise />} />
-                <Route path="/dubai/yacht" element={<Yacht />} />
-                <Route path="/dubai/limousine" element={<Limousine />} />
+            <AuthProvider>
+              <CartProvider>
+                <WishlistProvider>
 
-                {/* Other Pages */}
-                <Route path="/dubai" element={<Dubai />} />
-                <Route path="/abu-dhabi" element={<AbuDhabi />} />
-                <Route path="/sharjah" element={<Sharjah />} />
-                <Route path="/ras-al-khaimah" element={<RasAlKhaimah />} />
-                <Route path="/staycations" element={<Staycations />} />
+                  {/* App content */}
+                  <div className="relative z-10">
+                    <Routes>
+                      <Route path="/" element={<Index />} />
+                      <Route path="/deals" element={<Deals />} />
+                      <Route path="/sign-in" element={<SignIn />} />
+                      <Route path="/sign-up" element={<SignUp />} />
+                      <Route path="/auth" element={<Auth />} />
+                      <Route path="/auth/callback" element={<AuthCallback />} />
+                      <Route path="/dashboard" element={<Dashboard />} />
+                      <Route path="/cart" element={<Cart />} />
+                      <Route path="/payment-success" element={<PaymentSuccess />} />
+                      <Route path="/payment-canceled" element={<PaymentCanceled />} />
 
-                {/* Information Pages */}
-                <Route path="/about" element={<AboutUs />} />
-                <Route path="/contact" element={<ContactUs />} />
-                <Route path="/faq" element={<FAQ />} />
+                      {/* Policy Pages */}
+                      <Route path="/privacy" element={<PrivacyPolicy />} />
+                      <Route path="/terms" element={<TermsConditions />} />
+                      <Route path="/refund" element={<RefundPolicy />} />
+                      <Route path="/cancellation" element={<CancellationPolicy />} />
 
-                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </WishlistProvider>
-          </CartProvider>
-        </AuthProvider>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+                      {/* Blogs */}
+                      <Route path="/blogs" element={<Blogs />} />
+
+                      {/* Search */}
+                      <Route path="/search" element={<SearchResults />} />
+
+                      {/* Admin Pages */}
+                      <Route path="/admin/newsletter" element={<AdminNewsletter />} />
+
+                      {/* Dubai Category Pages */}
+                      <Route path="/dubai/theme-parks" element={<ThemeParks />} />
+                      <Route path="/dubai/water-parks" element={<WaterParks />} />
+                      <Route path="/dubai/attractions" element={<Attractions />} />
+                      <Route path="/dubai/water-sports" element={<WaterSports />} />
+                      <Route path="/dubai/dinner-cruise" element={<DinnerCruise />} />
+                      <Route path="/dubai/yacht" element={<Yacht />} />
+                      <Route path="/dubai/limousine" element={<Limousine />} />
+
+                      {/* Other Pages */}
+                      <Route path="/dubai" element={<Dubai />} />
+                      <Route path="/abu-dhabi" element={<AbuDhabi />} />
+                      <Route path="/sharjah" element={<Sharjah />} />
+                      <Route path="/ras-al-khaimah" element={<RasAlKhaimah />} />
+                      <Route path="/staycations" element={<Staycations />} />
+
+                      {/* Information Pages */}
+                      <Route path="/about" element={<AboutUs />} />
+                      <Route path="/contact" element={<ContactUs />} />
+                      <Route path="/faq" element={<FAQ />} />
+
+                      {/* Catch all */}
+                      <Route path="*" element={<NotFound />} />
+                    </Routes>
+                  </div>
+
+                </WishlistProvider>
+              </CartProvider>
+            </AuthProvider>
+          </div>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

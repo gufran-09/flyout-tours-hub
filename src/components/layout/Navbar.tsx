@@ -126,8 +126,8 @@ export function Navbar() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border/10",
           isScrolled
-            ? "bg-background/95 backdrop-blur-md shadow-md"
-            : "bg-background/95 backdrop-blur-md"
+            ? "bg-white/80 backdrop-blur-xl shadow-xl border-white/20"
+            : "bg-white/5 backdrop-blur-sm border-transparent"
         )}
       >
         <nav className="section-container py-2 flex flex-col gap-2">
