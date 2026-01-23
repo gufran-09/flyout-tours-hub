@@ -76,6 +76,7 @@ export function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
   const { user, signOut, loading } = useAuth();
+  const { totalItems } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -129,56 +130,73 @@ export function Navbar() {
             : "bg-background/95 backdrop-blur-md"
         )}
       >
-        <nav className="section-container py-2 flex gap-6 items-center">
-          {/* Left Side: Logo */}
-          <Link to="/" onClick={handleLogoClick} className="flex-shrink-0 flex items-center -ml-2">
-            <img src="/logo.png" alt="Flyout Tours" className="h-16 lg:h-16 w-auto object-contain" />
-          </Link>
+        <nav className="section-container py-2 flex flex-col gap-2">
+          {/* Row 1: Left (Logo+Search) and Right (Brand+Actions) */}
+          <div className="flex items-center justify-between gap-4">
 
-          {/* Right Side: Two Rows */}
-          <div className="flex-1 flex flex-col gap-2">
-            {/* Row 1: Search, Actions */}
-            <div className="flex items-center justify-between gap-4">
-              {/* Desktop Search - Always Visible */}
-              <div className="hidden lg:block flex-1 max-w-xl px-4">
+            {/* Left Group: Logo + Search */}
+            <div className="flex items-center gap-4 lg:gap-8">
+              {/* Logo */}
+              <Link to="/" onClick={handleLogoClick} className="flex-shrink-0 flex items-center -ml-2">
+                <img src="/logo.png" alt="Flyout Tours" className="h-16 lg:h-16 w-auto object-contain" />
+              </Link>
+
+              {/* Search (Desktop) */}
+              <div className="hidden lg:block w-[280px] xl:w-[340px]">
                 <div className="relative">
                   <SearchAutocomplete
                     className="w-full"
-                    onClose={() => { }} // No-op since it's always visible in this view
+                    onClose={() => { }}
                   />
                 </div>
               </div>
+            </div>
 
-              {/* Right Side Actions */}
-              <div className="flex items-center gap-2 md:gap-4 ml-auto">
-                {/* Flyout Credit */}
-                <Link to="/sell" className="hidden lg:flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
-                  <Store className="h-5 w-5" />
-                  <span className="hidden xl:inline font-bold">PARTNER WITH FLYOUT</span>
+            {/* Right Group: Brand Links + Actions */}
+            <div className="flex items-center gap-4 lg:gap-8">
+              {/* Brand Links (Desktop) */}
+              <div className="hidden lg:flex items-center gap-4">
+                <Link to="/sell" className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">
+                  <Store className="h-4 w-4" />
+                  <span className="font-bold">PARTNER WITH FLYOUT</span>
                 </Link>
-                <Link to="/credit" className="hidden lg:flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
-                  <Coins className="h-5 w-5 text-yellow-500" />
-                  <span className="hidden xl:inline font-bold">FLYOUT POINTS</span>
+                <Link to="/credit" className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">
+                  <Coins className="h-4 w-4 text-yellow-500" />
+                  <span className="font-bold">FLYOUT POINTS</span>
                 </Link>
+              </div>
 
+              {/* Right Side User Actions (Bell, Cart, Profile, Mobile Menu) */}
+              <div className="flex items-center gap-2 md:gap-4 shrink-0">
                 {/* Notifications */}
-                <Button variant="ghost" size="icon" className="hidden lg:flex text-foreground/80 hover:text-primary">
+                <Button variant="ghost" size="icon" className="hidden lg:flex text-foreground/80 hover:bg-primary hover:text-primary-foreground transition-colors">
                   <Bell className="h-5 w-5" />
                 </Button>
 
                 {/* Cart */}
-                <CartLink />
+                <Link to="/cart">
+                  <Button variant="ghost" size="icon" className="relative hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <ShoppingCart className="h-5 w-5" />
+                    {totalItems > 0 && (
+                      <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-primary text-[10px] font-medium text-primary-foreground flex items-center justify-center border-2 border-background">
+                        {totalItems > 99 ? "99+" : totalItems}
+                      </span>
+                    )}
+                  </Button>
+                </Link>
 
                 {/* User Menu */}
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Avatar className="h-9 w-9 cursor-pointer border border-border hover:border-primary transition-colors hidden md:flex">
-                      <AvatarImage src={user?.user_metadata?.avatar_url} />
-                      <AvatarFallback className="bg-primary/10 text-primary font-medium">
-                        {user ? getInitials(user.email) : <User className="h-5 w-5" />}
-                      </AvatarFallback>
-                    </Avatar>
+                    <button className="hidden md:flex items-center">
+                      <img
+                        src="/profile.png"
+                        alt="Profile"
+                        className="w-24 h-18 object-contain opacity-80 hover:opacity-100 transition cursor-pointer"
+                      />
+                    </button>
                   </DropdownMenuTrigger>
+
                   <DropdownMenuContent align="end" className="w-48 bg-popover border border-border shadow-xl">
                     {user ? (
                       <>
@@ -188,8 +206,13 @@ export function Navbar() {
                             Dashboard
                           </Link>
                         </DropdownMenuItem>
+
                         <DropdownMenuSeparator />
-                        <DropdownMenuItem onClick={handleSignOut} className="cursor-pointer flex items-center gap-2 text-destructive">
+
+                        <DropdownMenuItem
+                          onClick={handleSignOut}
+                          className="cursor-pointer flex items-center gap-2 text-destructive"
+                        >
                           <LogOut className="h-4 w-4" />
                           Sign Out
                         </DropdownMenuItem>
@@ -207,6 +230,7 @@ export function Navbar() {
                   </DropdownMenuContent>
                 </DropdownMenu>
 
+
                 {/* Mobile Menu Toggle */}
                 <Button
                   variant="ghost"
@@ -222,17 +246,17 @@ export function Navbar() {
                 </Button>
               </div>
             </div>
+          </div>
 
-            {/* Row 2: Navigation Links (Desktop Only) */}
-            <div className="hidden lg:flex items-center gap-6 border-t border-border/10 pt-2">
-              <Link to="/dubai" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Dubai</Link>
-              <Link to="/abu-dhabi" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Abu Dhabi</Link>
-              <Link to="/ras-al-khaimah" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Ras Al Khaimah</Link>
-              <Link to="/sharjah" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Sharjah</Link>
-              <Link to="/ajman" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Ajman</Link>
-              <Link to="/staycations" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Staycations</Link>
-              <Link to="/blogs" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">Blogs</Link>
-            </div>
+          {/* Row 2: Navigation Links (Desktop Only) */}
+          <div className="hidden lg:flex items-center justify-center border-t border-border/10 pt-2 gap-6">
+            <Link to="/dubai" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Dubai</Link>
+            <Link to="/abu-dhabi" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Abu Dhabi</Link>
+            <Link to="/ras-al-khaimah" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Ras Al Khaimah</Link>
+            <Link to="/sharjah" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Sharjah</Link>
+            <Link to="/ajman" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Ajman</Link>
+            <Link to="/staycations" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Staycations</Link>
+            <Link to="/blogs" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Blogs</Link>
           </div>
         </nav>
 
