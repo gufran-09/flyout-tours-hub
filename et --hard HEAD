@@ -1,0 +1,45 @@
+[33m79b3580[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mNavbar[m[33m)[m Resized logo in navvbar
+[33m38ec082[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/Hero-Section[m[33m, [m[1;32mmain[m[33m, [m[1;32mCoins[m[33m)[m added vercel.json
+[33m6e1cdbb[m Added Video to hero-section
+[33m41d49e6[m Changed text into bold
+[33m5884ac9[m Created Dubai Page with burj khali travelling info
+[33m6427b1d[m navbar updated
+[33md978762[m minor commits
+[33ma2b7715[m Removed Search Filter Bar from HeroSection
+[33mf381c77[m Added minor changes
+[33m3b972fc[m Adding little modifications
+[33mdac436f[m Added wishlist button on each tour card
+[33m44b681a[m Added Dubai,Shajah, Ras Al Khaimah pages
+[33m64d0715[m Changed the styling to card present in home page
+[33mc89d02a[m Gave hover effect to addToCard and BookNow button on website
+[33m4190534[m Added scrollToTop onClick to logo in navbar for home page
+[33m79ab31d[m Added scrollToTop feature on each page
+[33mca291db[m Added Whatsapp icon to website each page
+[33m1e85959[m Written Company contact details
+[33m7df9904[m Implemented the logic of Contact us form
+[33mdaf5929[m Created ScrollToTop component and added to each link
+[33m51d1989[m Created About-Us, Contact-Us, FAQ pages
+[33m7eb0a5f[m Created different pages for each destination
+[33mfc41b01[m resolved merge conflict
+[33mfdf6094[m Merge branch 'main' of https://github.com/gufran-09/flyout-tours-hub
+[33mde89b7c[m Fixed minor issues
+[33mee7c65c[m Implemented Sign-in and Sign-up option using supabase auth
+[33mede7fc7[m Placed brand logo correctly on navbar, footer and auth page
+[33mec607cf[m Search icon and cart icon issue in navbar
+[33m60d4dfb[m Add global search system
+[33mb81d294[m Changes
+[33m5791ed0[m Add admin newsletter route
+[33m3644295[m Changes
+[33m11b69ee[m Add admin newsletter dashboard
+[33m8806443[m Changes
+[33mf1e76a7[m Add policy pages routes
+[33mc7ce5c0[m Changes
+[33m4d887e6[m Add authentication & cart pages
+[33m45dd194[m Changes
+[33m120b666[m Add authentication & user pages
+[33m039b303[m Changes
+[33m37e2c3a[m Lovable update
+[33mb0d5374[m Changes
+[33mbd03e3c[m Design system and home page
+[33m679d571[m Changes
+[33mbebc3a2[m template: new_style_vite_react_shadcn_ts
