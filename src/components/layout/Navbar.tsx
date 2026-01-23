@@ -18,8 +18,15 @@ import {
   LayoutDashboard,
   Bell,
   Store,
-  Coins
+  Coins,
+  Heart,
+  Star,
+  Moon,
+  Zap,
+  Utensils,
+  Car
 } from "lucide-react";
+import { MegaMenu } from "./MegaMenu";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -249,14 +256,65 @@ export function Navbar() {
           </div>
 
           {/* Row 2: Navigation Links (Desktop Only) */}
-          <div className="hidden lg:flex items-center justify-center border-t border-border/10 pt-2 gap-6 ">
-            <Link to="/dubai" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Dubai</Link>
-            <Link to="/abu-dhabi" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Abu Dhabi</Link>
-            <Link to="/ras-al-khaimah" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Ras Al Khaimah</Link>
-            <Link to="/sharjah" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Sharjah</Link>
-            <Link to="/ajman" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Ajman</Link>
-            <Link to="/staycations" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Staycations</Link>
-            <Link to="/blogs" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Blogs</Link>
+          <div className="hidden lg:flex items-center justify-center border-t border-border/10 pt-2 gap-2">
+
+            <MegaMenu
+              triggerLabel="Categories"
+              type="grid"
+              columns={4}
+              items={[
+                { title: "Theme Parks", href: "/dubai/theme-parks", icon: Palmtree },
+                { title: "Water Parks", href: "/dubai/water-parks", icon: Ship },
+                { title: "Desert Safari", href: "/dubai/desert-safari", icon: Compass },
+                { title: "City Tours", href: "/dubai/city-tours", icon: Building2 },
+                { title: "Cruises", href: "/dubai/dinner-cruise", icon: Ship },
+                { title: "Adventure", href: "/dubai/water-sports", icon: Compass },
+                { title: "Family", href: "/dubai/family", icon: User },
+                { title: "Romantic", href: "/dubai/romantic", icon: Heart },
+                { title: "Shopping", href: "/dubai/shopping", icon: ShoppingCart },
+              ]}
+            />
+
+            <MegaMenu
+              triggerLabel="Select Emirate"
+              type="list"
+              items={[
+                { title: "Dubai", href: "/dubai", badge: "Popular", icon: Building2 },
+                { title: "Abu Dhabi", href: "/abu-dhabi", icon: MapPin },
+                { title: "Sharjah", href: "/sharjah", icon: MapPin },
+                { title: "Ras Al Khaimah", href: "/ras-al-khaimah", icon: MapPin },
+                { title: "Ajman", href: "/ajman", icon: MapPin },
+              ]}
+            />
+
+            <MegaMenu
+              triggerLabel="Experiences"
+              type="list"
+              items={[
+                { title: "Signature Experiences", href: "/experiences/signature", icon: Star },
+                { title: "Sunset & Nightlife", href: "/experiences/sunset", icon: Moon },
+                { title: "Desert & Adventure", href: "/dubai/desert-safari", icon: Compass },
+                { title: "Luxury & Yacht", href: "/dubai/yacht", icon: Ship },
+                { title: "Thrill & Theme Parks", href: "/dubai/theme-parks", icon: Zap },
+                { title: "Dining & Cruises", href: "/dubai/dinner-cruise", icon: Utensils },
+              ]}
+            />
+
+            <MegaMenu
+              triggerLabel="Luxury"
+              type="list"
+              items={[
+                { title: "Yacht Experiences", href: "/dubai/yacht", icon: Ship, badge: "Exclusive" },
+                { title: "Private Tours", href: "/dubai/private-tours", icon: User },
+                { title: "Helicopter Rides", href: "/dubai/helicopter", icon: Plane },
+                { title: "VIP Theme Parks", href: "/dubai/vip-theme-parks", icon: Star },
+                { title: "Supercar Drives", href: "/dubai/supercars", icon: Car },
+              ]}
+            />
+
+            {/* Simple LInks */}
+            <Link to="/staycations" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap px-3 py-2">Staycations</Link>
+            <Link to="/blogs" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap px-3 py-2">Blogs</Link>
           </div>
         </nav>
 
