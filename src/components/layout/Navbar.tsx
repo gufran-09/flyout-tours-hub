@@ -24,7 +24,12 @@ import {
   Moon,
   Zap,
   Utensils,
-  Car
+  Car,
+  FileText,
+  Users,
+  Gamepad2,
+  Ticket,
+  Package
 } from "lucide-react";
 import { MegaMenu } from "./MegaMenu";
 import { Button } from "@/components/ui/button";
@@ -131,10 +136,7 @@ export function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-border/10",
-          isScrolled
-            ? "bg-white/80 backdrop-blur-xl shadow-xl border-white/20"
-            : "bg-white/5 backdrop-blur-sm border-transparent"
+          "fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b border-white/20 bg-white/80 backdrop-blur-md shadow-sm"
         )}
       >
         <nav className="section-container py-2 flex flex-col gap-2">
@@ -256,34 +258,42 @@ export function Navbar() {
           </div>
 
           {/* Row 2: Navigation Links (Desktop Only) */}
-          <div className="hidden lg:flex items-center justify-center border-t border-border/10 pt-2 gap-2">
+          <div className="hidden lg:flex items-center justify-start lg:pl-56 border-t border-border/10 pt-2 gap-2 ml-16">
 
             <MegaMenu
               triggerLabel="Categories"
               type="grid"
               columns={4}
               items={[
-                { title: "Theme Parks", href: "/dubai/theme-parks", icon: Palmtree },
-                { title: "Water Parks", href: "/dubai/water-parks", icon: Ship },
-                { title: "Desert Safari", href: "/dubai/desert-safari", icon: Compass },
-                { title: "City Tours", href: "/dubai/city-tours", icon: Building2 },
-                { title: "Cruises", href: "/dubai/dinner-cruise", icon: Ship },
-                { title: "Adventure", href: "/dubai/water-sports", icon: Compass },
-                { title: "Family", href: "/dubai/family", icon: User },
-                { title: "Romantic", href: "/dubai/romantic", icon: Heart },
-                { title: "Shopping", href: "/dubai/shopping", icon: ShoppingCart },
+                { title: "Attraction", href: "/dubai/attractions", icon: Star, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/1.webp" },
+                { title: "Parks", href: "/dubai/parks", icon: Palmtree, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/2.webp" },
+                { title: "Yacht", href: "/dubai/yacht", icon: Ship, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/3.webp" },
+                { title: "Holiday Packages", href: "/dubai/packages", icon: Package, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/4.webp" },
+                { title: "Water Adventures", href: "/dubai/water-adventures", icon: Ship, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/5.webp" },
+                { title: "Hotel", href: "/dubai/hotels", icon: Building2, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/6.webp" },
+                { title: "Car Rental", href: "/dubai/car-rental", icon: Car, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/7.webp" },
+                { title: "Dinner Cruise", href: "/dubai/dinner-cruise", icon: Utensils, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/8.webp" },
+                { title: "Sky Adventures", href: "/dubai/sky-adventures", icon: Plane, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/9.webp" },
+                { title: "Visa & Services", href: "/dubai/visa", icon: FileText, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/10.webp" },
+                { title: "City Tours", href: "/dubai/city-tours", icon: Building2, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/11.webp" },
+                { title: "Adventures", href: "/dubai/adventures", icon: Zap, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/12.webp" },
+                { title: "Airport transfers", href: "/dubai/transfers", icon: Car, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/13.webp" },
+                { title: "Safari", href: "/dubai/safari", icon: Compass, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/14.webp" },
+                { title: "Restaurants", href: "/dubai/restaurants", icon: Utensils, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/15.webp" },
+                { title: "Live concerts & Shows", href: "/dubai/shows", icon: Ticket, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/16.webp" },
               ]}
             />
 
             <MegaMenu
               triggerLabel="Select Emirate"
               type="list"
+              showDivider={false}
               items={[
-                { title: "Dubai", href: "/dubai", badge: "Popular", icon: Building2 },
-                { title: "Abu Dhabi", href: "/abu-dhabi", icon: MapPin },
-                { title: "Sharjah", href: "/sharjah", icon: MapPin },
-                { title: "Ras Al Khaimah", href: "/ras-al-khaimah", icon: MapPin },
-                { title: "Ajman", href: "/ajman", icon: MapPin },
+                { title: "Dubai", href: "/dubai", badge: "Popular", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/1.jpg" },
+                { title: "Abu Dhabi", href: "/abu-dhabi", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/2.jpg" },
+                { title: "Sharjah", href: "/sharjah", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/3.jpg" },
+                { title: "Ras Al Khaimah", href: "/ras-al-khaimah", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/4.jpg" },
+                { title: "Ajman", href: "/ajman", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
               ]}
             />
 
@@ -291,12 +301,12 @@ export function Navbar() {
               triggerLabel="Experiences"
               type="list"
               items={[
-                { title: "Signature Experiences", href: "/experiences/signature", icon: Star },
-                { title: "Sunset & Nightlife", href: "/experiences/sunset", icon: Moon },
-                { title: "Desert & Adventure", href: "/dubai/desert-safari", icon: Compass },
-                { title: "Luxury & Yacht", href: "/dubai/yacht", icon: Ship },
-                { title: "Thrill & Theme Parks", href: "/dubai/theme-parks", icon: Zap },
-                { title: "Dining & Cruises", href: "/dubai/dinner-cruise", icon: Utensils },
+                { title: "Signature Experiences", href: "/experiences/signature", icon: Star, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                { title: "Sunset & Nightlife", href: "/experiences/sunset", icon: Moon, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                { title: "Desert & Adventure", href: "/dubai/desert-safari", icon: Compass, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                { title: "Luxury & Yacht", href: "/dubai/yacht", icon: Ship, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                { title: "Thrill & Theme Parks", href: "/dubai/theme-parks", icon: Zap, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                { title: "Dining & Cruises", href: "/dubai/dinner-cruise", icon: Utensils, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
               ]}
             />
 
@@ -304,11 +314,11 @@ export function Navbar() {
               triggerLabel="Luxury"
               type="list"
               items={[
-                { title: "Yacht Experiences", href: "/dubai/yacht", icon: Ship, badge: "Exclusive" },
-                { title: "Private Tours", href: "/dubai/private-tours", icon: User },
-                { title: "Helicopter Rides", href: "/dubai/helicopter", icon: Plane },
-                { title: "VIP Theme Parks", href: "/dubai/vip-theme-parks", icon: Star },
-                { title: "Supercar Drives", href: "/dubai/supercars", icon: Car },
+                { title: "Yacht Experiences", href: "/dubai/yacht", icon: Ship, badge: "Exclusive", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                { title: "Private Tours", href: "/dubai/private-tours", icon: User, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                { title: "Helicopter Rides", href: "/dubai/helicopter", icon: Plane, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                { title: "VIP Theme Parks", href: "/dubai/vip-theme-parks", icon: Star, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                { title: "Supercar Drives", href: "/dubai/supercars", icon: Car, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
               ]}
             />
 

@@ -5,10 +5,8 @@ import {
     NavigationMenu,
     NavigationMenuContent,
     NavigationMenuItem,
-    NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-    navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { LucideIcon } from "lucide-react";
 
@@ -24,11 +22,32 @@ export interface MenuItem {
 interface MegaMenuProps {
     triggerLabel: string;
     items: MenuItem[];
-    type?: "grid" | "list" | "curated"; // grid = icons+text, list = simple list, curated = rich cards
-    columns?: 2 | 3 | 4;
+    leftTitle?: string;
+    rightTitle?: string;
+    type?: "list" | "grid";
+    columns?: number;
+    showDivider?: boolean;
 }
 
-export function MegaMenu({ triggerLabel, items, type = "grid", columns = 3 }: MegaMenuProps) {
+export function MegaMenu({
+    triggerLabel,
+    items,
+    leftTitle = "Discover",
+    rightTitle = "Explore",
+    type = "list",
+    columns = 4,
+    showDivider = true,
+}: MegaMenuProps) {
+    const isGrid = type === "grid";
+    const mid = Math.ceil(items.length / 2);
+    const left = items.slice(0, mid);
+    const right = items.slice(mid);
+
+    // Width calculation
+    const widthClass = isGrid
+        ? "w-[1100px]"
+        : "w-[760px]";
+
     return (
         <NavigationMenu delayDuration={0}>
             <NavigationMenuList>
@@ -36,69 +55,129 @@ export function MegaMenu({ triggerLabel, items, type = "grid", columns = 3 }: Me
                     <NavigationMenuTrigger className="bg-transparent text-sm font-medium text-foreground/80 hover:text-primary data-[state=open]:bg-transparent data-[state=open]:text-primary h-auto py-2 px-3">
                         {triggerLabel}
                     </NavigationMenuTrigger>
+
                     <NavigationMenuContent>
                         <div
                             className={cn(
-                                "p-4 md:w-[400px] lg:w-[600px] bg-white/95 backdrop-blur-xl", // Premium surface
-                                type === "grid" && `grid gap-3 grid-cols-2 lg:grid-cols-${columns}`,
-                                type === "list" && "flex flex-col gap-1 w-[250px]",
-                                type === "curated" && "grid grid-cols-2 gap-4 w-[500px]"
+                                "relative px-6 pb-6 pt-0 rounded-3xl bg-white shadow-xl border border-gray-100",
+                                widthClass
                             )}
                         >
-                            {items.map((item) => (
-                                <Link
-                                    key={item.title}
-                                    to={item.href}
-                                    className={cn(
-                                        "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-slate-100/50 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground group",
-                                        type === "grid" && "h-full flex flex-col items-center justify-center text-center border border-transparent hover:border-slate-200/50 hover:shadow-sm hover:-translate-y-0.5 transition-all duration-300",
-                                        type === "curated" && "relative overflow-hidden h-32 flex flex-col justify-end p-4 border border-slate-100 hover:shadow-md"
-                                    )}
-                                >
-                                    {/* Curated Background (fake implementation until real images) */}
-                                    {type === "curated" && (
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none z-0" />
-                                    )}
+                            {/* Glass glow */}
+                            {/* Subtly removed Glass glow for cleaner white look */}
+                            {/* <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-br from-white/10 via-transparent to-transparent" /> */}
 
-                                    {/* Icon/Image Wrapper */}
-                                    {item.icon && type !== "curated" && (
-                                        <div className={cn(
-                                            "mb-2 p-2 rounded-full bg-slate-50 group-hover:bg-white group-hover:scale-110 transition-all duration-300 shadow-sm",
-                                            type === "list" && "mb-0 mr-3 inline-block p-1"
-                                        )}>
-                                            <item.icon className={cn(
-                                                "h-6 w-6 text-primary/80 group-hover:text-primary",
-                                                type === "list" && "h-4 w-4"
-                                            )} />
-                                        </div>
-                                    )}
+                            {/* Divider - Only show in list mode if requested */}
+                            {/* Divider - Disabled globally as per request */}
+                            {/* {!isGrid && showDivider && (
+                                <div className="absolute top-6 bottom-6 left-1/2 w-px bg-gray-200" />
+                            )} */}
 
-                                    {/* Text Content */}
-                                    <div className={cn("relative z-10", type === "list" && "flex items-center")}>
-                                        <div className={cn(
-                                            "text-sm font-medium leading-none group-hover:text-primary transition-colors",
-                                            type === "curated" && "text-white text-lg font-bold"
-                                        )}>
-                                            {type === "list" && item.icon && <span className="inline-block mr-2"><item.icon className="h-4 w-4" /></span>}
-                                            {item.title}
-                                            {item.badge && (
-                                                <span className="ml-2 px-1.5 py-0.5 text-[10px] rounded-full bg-yellow-400/20 text-yellow-600 border border-yellow-400/30">
-                                                    {item.badge}
-                                                </span>
-                                            )}
-                                        </div>
-                                        {item.description && (
-                                            <p className="line-clamp-2 text-xs leading-snug text-muted-foreground mt-1 group-hover:text-foreground/80">
-                                                {item.description}
-                                            </p>
-                                        )}
+                            {isGrid ? (
+                                <div className="grid gap-4 p-2" style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))` }}>
+                                    {items.map(item => <MenuRow key={item.title} item={item} isGrid={true} />)}
+                                </div>
+                            ) : (
+                                <div className="relative grid grid-cols-2 gap-x-12">
+                                    {/* LEFT COLUMN */}
+                                    <div className="space-y-3">
+                                        <p className="text-xs uppercase tracking-widest text-white/50 mb-3">
+                                            {leftTitle}
+                                        </p>
+
+                                        {left.map((item) => (
+                                            <MenuRow key={item.title} item={item} />
+                                        ))}
                                     </div>
-                                </Link>
-                            ))}
+
+                                    {/* RIGHT COLUMN */}
+                                    <div className="space-y-3">
+                                        <p className="text-xs uppercase tracking-widest text-white/50 mb-3">
+                                            {rightTitle}
+                                        </p>
+
+                                        {right.map((item) => (
+                                            <MenuRow key={item.title} item={item} />
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </NavigationMenuContent>
                 </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
+    );
+}
+
+/* ----------------------------- */
+/* 🔹 Single Row Component */
+/* ----------------------------- */
+
+function MenuRow({ item, isGrid }: { item: MenuItem, isGrid?: boolean }) {
+    if (isGrid) {
+        return (
+            <Link to={item.href} className="group flex items-center gap-4 p-2 rounded-xl hover:bg-gray-100 transition-colors duration-300">
+                {/* Image */}
+                <div className="h-12 w-12 shrink-0 overflow-hidden rounded-lg bg-gray-100 border border-gray-100 shadow-sm">
+                    {item.image ? (
+                        <img src={item.image} alt={item.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                    ) : (
+                        // Fallback icon
+                        <div className="flex h-full w-full items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                            {item.icon && <item.icon className="h-5 w-5" />}
+                        </div>
+                    )}
+                </div>
+                {/* Title */}
+                <span className="font-semibold text-gray-900 group-hover:text-primary transition-colors text-sm">{item.title}</span>
+            </Link>
+        )
+    }
+
+    return (
+        <Link
+            to={item.href}
+            className="
+        group flex items-start gap-4 rounded-xl px-4 py-3
+        transition-all duration-300
+        hover:bg-gray-100
+      "
+        >
+            {(item.image || item.icon) && (
+                <div
+                    className={cn(
+                        "flex h-10 w-10 shrink-0 items-center justify-center rounded-lg overflow-hidden transition-transform group-hover:scale-110",
+                        !item.image && "bg-primary/5 text-primary"
+                    )}
+                >
+                    {item.image ? (
+                        <img src={item.image} alt={item.title} className="h-full w-full object-cover" />
+                    ) : (
+                        item.icon && <item.icon className="h-5 w-5" />
+                    )}
+                </div>
+            )}
+
+            <div className="flex-1">
+                <div className="flex items-center gap-2">
+                    <p className="text-sm font-semibold text-gray-900 group-hover:text-primary transition-colors">
+                        {item.title}
+                    </p>
+
+                    {item.badge && (
+                        <span className="text-[10px] px-2 py-0.5 rounded-full bg-yellow-400/20 text-yellow-600 border border-yellow-400/30">
+                            {item.badge}
+                        </span>
+                    )}
+                </div>
+
+                {item.description && (
+                    <p className="text-xs text-gray-500 leading-snug mt-0.5">
+                        {item.description}
+                    </p>
+                )}
+            </div>
+        </Link>
     );
 }
