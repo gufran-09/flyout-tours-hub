@@ -249,7 +249,7 @@ export function Navbar() {
           </div>
 
           {/* Row 2: Navigation Links (Desktop Only) */}
-          <div className="hidden lg:flex items-center justify-center border-t border-border/10 pt-2 gap-6">
+          <div className="hidden lg:flex items-center justify-center border-t border-border/10 pt-2 gap-6 ">
             <Link to="/dubai" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Dubai</Link>
             <Link to="/abu-dhabi" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Abu Dhabi</Link>
             <Link to="/ras-al-khaimah" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Ras Al Khaimah</Link>
