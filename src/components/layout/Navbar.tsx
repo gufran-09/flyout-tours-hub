@@ -28,6 +28,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/contexts/AuthContext";
 import { useCart } from "@/contexts/CartContext";
@@ -75,6 +76,7 @@ export function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
   const { user, signOut, loading } = useAuth();
+  const { totalItems } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -110,6 +112,12 @@ export function Navbar() {
     }
   };
 
+  // Helper to get initials
+  const getInitials = (email: string | undefined) => {
+    if (!email) return "G";
+    return email.substring(0, 2).toUpperCase();
+  };
+
   return (
     <>
       <motion.header
@@ -122,180 +130,133 @@ export function Navbar() {
             : "bg-background/95 backdrop-blur-md"
         )}
       >
-        <nav className="section-container py-2">
-          {/* Row 1: Logo, Search, Actions */}
-          <div className="flex items-center justify-between gap-4 mb-2">
-            {/* Logo */}
-            <Link to="/" onClick={handleLogoClick} className="flex-shrink-0 flex items-center gap-2 -ml-2">
-              <img src="/logo.png" alt="Flyout Tours" className="h-12 w-auto object-contain" />
-            </Link>
+        <nav className="section-container py-2 flex flex-col gap-2">
+          {/* Row 1: Left (Logo+Search) and Right (Brand+Actions) */}
+          <div className="flex items-center justify-between gap-4">
 
-            {/* Desktop Search - Always Visible */}
-            <div className="hidden lg:block flex-1 max-w-xl px-4">
-              <div className="relative">
-                <SearchAutocomplete
-                  className="w-full"
-                  onClose={() => { }} // No-op since it's always visible in this view
-                />
+            {/* Left Group: Logo + Search */}
+            <div className="flex items-center gap-4 lg:gap-8">
+              {/* Logo */}
+              <Link to="/" onClick={handleLogoClick} className="flex-shrink-0 flex items-center -ml-2">
+                <img src="/logo.png" alt="Flyout Tours" className="h-16 lg:h-16 w-auto object-contain" />
+              </Link>
+
+              {/* Search (Desktop) */}
+              <div className="hidden lg:block w-[280px] xl:w-[340px]">
+                <div className="relative">
+                  <SearchAutocomplete
+                    className="w-full"
+                    onClose={() => { }}
+                  />
+                </div>
               </div>
             </div>
 
-            {/* Right Side Actions */}
-            <div className="flex items-center gap-2 md:gap-4">
-              {/* Flyout Credit */}
-              <Link to="/credit" className="hidden lg:flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
-                <Coins className="h-5 w-5 text-yellow-500" />
-                <span className="hidden xl:inline font-bold">FLYOUT POINTS</span>
-              </Link>
+            {/* Right Group: Brand Links + Actions */}
+            <div className="flex items-center gap-4 lg:gap-8">
+              {/* Brand Links (Desktop) */}
+              <div className="hidden lg:flex items-center gap-4">
+                <Link to="/sell" className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">
+                  <Store className="h-4 w-4" />
+                  <span className="font-bold">PARTNER WITH FLYOUT</span>
+                </Link>
+                <Link to="/credit" className="flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">
+                  <Coins className="h-4 w-4 text-yellow-500" />
+                  <span className="font-bold">FLYOUT POINTS</span>
+                </Link>
+              </div>
 
-              {/* Sell on Flyout Tour */}
-              <Link to="/sell" className="hidden lg:flex items-center gap-2 text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
-                <Store className="h-5 w-5" />
-                <span className="hidden xl:inline font-bold">PARTNER WITH FLYOUT</span>
-              </Link>
+              {/* Right Side User Actions (Bell, Cart, Profile, Mobile Menu) */}
+              <div className="flex items-center gap-2 md:gap-4 shrink-0">
+                {/* Notifications */}
+                <Button variant="ghost" size="icon" className="hidden lg:flex text-foreground/80 hover:bg-primary hover:text-primary-foreground transition-colors">
+                  <Bell className="h-5 w-5" />
+                </Button>
 
-              {/* Notifications */}
-              <Button variant="ghost" size="icon" className="hidden lg:flex text-foreground/80 hover:text-primary">
-                <Bell className="h-5 w-5" />
-              </Button>
-
-              {/* Cart */}
-              <CartLink />
-
-              {/* User Menu */}
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="icon" className="hidden md:flex">
-                    <User className="h-5 w-5" />
+                {/* Cart */}
+                <Link to="/cart">
+                  <Button variant="ghost" size="icon" className="relative hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <ShoppingCart className="h-5 w-5" />
+                    {totalItems > 0 && (
+                      <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-primary text-[10px] font-medium text-primary-foreground flex items-center justify-center border-2 border-background">
+                        {totalItems > 99 ? "99+" : totalItems}
+                      </span>
+                    )}
                   </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-48 bg-popover border border-border shadow-xl">
-                  {user ? (
-                    <>
-                      <DropdownMenuItem asChild>
-                        <Link to="/dashboard" className="cursor-pointer flex items-center gap-2">
-                          <LayoutDashboard className="h-4 w-4" />
-                          Dashboard
-                        </Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuSeparator />
-                      <DropdownMenuItem onClick={handleSignOut} className="cursor-pointer flex items-center gap-2 text-destructive">
-                        <LogOut className="h-4 w-4" />
-                        Sign Out
-                      </DropdownMenuItem>
-                    </>
-                  ) : (
-                    <>
-                      <DropdownMenuItem asChild>
-                        <Link to="/sign-in" className="cursor-pointer">Sign In</Link>
-                      </DropdownMenuItem>
-                      <DropdownMenuItem asChild>
-                        <Link to="/sign-up" className="cursor-pointer">Sign Up</Link>
-                      </DropdownMenuItem>
-                    </>
-                  )}
-                </DropdownMenuContent>
-              </DropdownMenu>
+                </Link>
 
-              {/* Mobile Menu Toggle */}
-              <Button
-                variant="ghost"
-                size="icon"
-                className="lg:hidden ml-2"
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              >
-                {isMobileMenuOpen ? (
-                  <X className="h-6 w-6" />
-                ) : (
-                  <Menu className="h-6 w-6" />
-                )}
-              </Button>
+                {/* User Menu */}
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <button className="hidden md:flex items-center">
+                      <img
+                        src="/profile.png"
+                        alt="Profile"
+                        className="w-24 h-18 object-contain opacity-80 hover:opacity-100 transition cursor-pointer"
+                      />
+                    </button>
+                  </DropdownMenuTrigger>
+
+                  <DropdownMenuContent align="end" className="w-48 bg-popover border border-border shadow-xl">
+                    {user ? (
+                      <>
+                        <DropdownMenuItem asChild>
+                          <Link to="/dashboard" className="cursor-pointer flex items-center gap-2">
+                            <LayoutDashboard className="h-4 w-4" />
+                            Dashboard
+                          </Link>
+                        </DropdownMenuItem>
+
+                        <DropdownMenuSeparator />
+
+                        <DropdownMenuItem
+                          onClick={handleSignOut}
+                          className="cursor-pointer flex items-center gap-2 text-destructive"
+                        >
+                          <LogOut className="h-4 w-4" />
+                          Sign Out
+                        </DropdownMenuItem>
+                      </>
+                    ) : (
+                      <>
+                        <DropdownMenuItem asChild>
+                          <Link to="/sign-in" className="cursor-pointer">Sign In</Link>
+                        </DropdownMenuItem>
+                        <DropdownMenuItem asChild>
+                          <Link to="/sign-up" className="cursor-pointer">Sign Up</Link>
+                        </DropdownMenuItem>
+                      </>
+                    )}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+
+
+                {/* Mobile Menu Toggle */}
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="lg:hidden ml-2"
+                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                >
+                  {isMobileMenuOpen ? (
+                    <X className="h-6 w-6" />
+                  ) : (
+                    <Menu className="h-6 w-6" />
+                  )}
+                </Button>
+              </div>
             </div>
           </div>
 
           {/* Row 2: Navigation Links (Desktop Only) */}
-          <div className="hidden lg:flex items-center justify-center gap-6 border-t border-border/10 pt-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                to={link.href}
-                className={cn(
-                  "px-3 py-2 text-sm font-medium rounded-lg transition-colors",
-                  location.pathname === link.href
-                    ? "text-primary"
-                    : "text-foreground/80 hover:text-primary"
-                )}
-              >
-                {link.name}
-              </Link>
-            ))}
-
-            {/* Destinations Dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary transition-colors focus:outline-none">
-                  Destinations
-                  <ChevronDown className="h-4 w-4" />
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-48 bg-popover border border-border shadow-xl">
-                {destinationsCategories.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild>
-                    <Link
-                      to={item.href}
-                      className="flex items-center gap-2 cursor-pointer"
-                    >
-                      <item.icon className="h-4 w-4 text-primary" />
-                      {item.name}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            {/* Dubai Dropdown */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary transition-colors focus:outline-none">
-                  Dubai
-                  <ChevronDown className="h-4 w-4" />
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="start" className="w-48 bg-popover border border-border shadow-xl">
-                {dubaiCategories.map((item) => (
-                  <DropdownMenuItem key={item.name} asChild>
-                    <Link
-                      to={item.href}
-                      className="flex items-center gap-2 cursor-pointer"
-                    >
-                      <item.icon className="h-4 w-4 text-primary" />
-                      {item.name}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
-
-            <Link
-              to="/abu-dhabi"
-              className="px-3 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary transition-colors"
-            >
-              Abu Dhabi
-            </Link>
-
-            <Link
-              to="/staycations"
-              className="px-3 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary transition-colors"
-            >
-              Staycations
-            </Link>
-
-            <Link
-              to="/blogs"
-              className="px-3 py-2 text-sm font-medium rounded-lg text-foreground/80 hover:text-primary transition-colors"
-            >
-              Blogs
-            </Link>
+          <div className="hidden lg:flex items-center justify-center border-t border-border/10 pt-2 gap-6">
+            <Link to="/dubai" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Dubai</Link>
+            <Link to="/abu-dhabi" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Abu Dhabi</Link>
+            <Link to="/ras-al-khaimah" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Ras Al Khaimah</Link>
+            <Link to="/sharjah" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Sharjah</Link>
+            <Link to="/ajman" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Ajman</Link>
+            <Link to="/staycations" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Staycations</Link>
+            <Link to="/blogs" className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors whitespace-nowrap">Blogs</Link>
           </div>
         </nav>
 
