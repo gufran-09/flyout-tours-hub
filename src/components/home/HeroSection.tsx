@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   return (
-    <section className="relative pb-8 lg:pb-12 pt-4">
+    <section className="relative pb-8 lg:pb-12 -mt-4 lg:-mt-8">
       <div className="section-container">
         <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[16/9] lg:aspect-[21/9]">
           <video
