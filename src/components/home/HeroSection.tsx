@@ -7,7 +7,7 @@ export function HeroSection() {
         <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[16/9] lg:aspect-[21/9]">
           <video
             className="absolute inset-0 w-full h-full object-cover"
-            src="https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Hero-Video/Hero-Section%20(2).mp4"
+            src="https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Hero-Video/Video.mp4"
             autoPlay
             loop
             muted

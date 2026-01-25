@@ -3,7 +3,10 @@ import { HeroSection } from "@/components/home/HeroSection";
 import { SectionTitle } from "@/components/home/SectionTitle";
 import { ExperienceSection } from "@/components/home/ExperienceSection";
 import { ComboDealsSection } from "@/components/home/ComboDealsSection";
+
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import UaeShowcaseSection from "@/components/home/UaeShowcaseSection";
+
 import {
   dubaiThemeParks,
   dubaiWaterParks,
@@ -19,7 +22,9 @@ const Index = () => {
   return (
     <Layout>
       <HeroSection />
+
       <SectionTitle />
+      <UaeShowcaseSection />
 
       <ExperienceSection
         title="Dubai Theme Parks"
