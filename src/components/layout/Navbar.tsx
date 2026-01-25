@@ -403,7 +403,7 @@ export function Navbar() {
       </motion.header>
 
       {/* Spacer for fixed navbar */}
-      <div className="h-[150px] lg:h-[170px]" />
+      <div className="h-[190px] lg:h-[210px]" />
     </>
   );
 }
