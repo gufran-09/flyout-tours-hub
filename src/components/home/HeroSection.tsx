@@ -19,11 +19,11 @@ export function HeroSection() {
 
           {/* Content Overlay */}
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 sm:p-12">
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight tracking-tight drop-shadow-2xl">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold font-display text-white mb-6 leading-tight tracking-tight drop-shadow-2xl">
               Discover Dubai's Magic
             </h1>
             <p className="text-lg sm:text-xl text-white/95 mb-8 max-w-xl drop-shadow-lg font-medium">
-              Experience the city of wonders with exclusive tours and adventures
+              Curated luxury experiences, crafted for unforgettable journeys.
             </p>
             <Button
               size="lg"
