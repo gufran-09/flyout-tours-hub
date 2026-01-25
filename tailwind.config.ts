@@ -82,6 +82,8 @@ export default {
           DEFAULT: "hsl(var(--sky))",
           foreground: "hsl(var(--sky-foreground))",
         },
+        "flyout-dark": "#0A1F44", // Deep Navy Blue for Navbar
+        "flyout-gold": "#B88E2F", // Gold for borders/buttons
       },
       borderRadius: {
         lg: "var(--radius)",

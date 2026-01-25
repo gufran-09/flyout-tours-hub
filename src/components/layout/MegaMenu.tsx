@@ -52,7 +52,7 @@ export function MegaMenu({
         <NavigationMenu delayDuration={0}>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <NavigationMenuTrigger className="bg-transparent text-sm font-medium text-foreground/80 hover:text-primary data-[state=open]:bg-transparent data-[state=open]:text-primary h-auto py-2 px-3">
+                    <NavigationMenuTrigger className="bg-transparent text-sm font-medium text-white/90 hover:text-[#B88E2F] data-[state=open]:bg-transparent data-[state=open]:text-[#B88E2F] h-auto py-2 px-3 focus:bg-transparent focus:text-[#B88E2F]">
                         {triggerLabel}
                     </NavigationMenuTrigger>
 
