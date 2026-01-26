@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  ShoppingCart,
   User,
   Menu,
   X,
@@ -14,7 +13,7 @@ import {
   Compass,
   LogOut,
   LayoutDashboard,
-  Bell,
+  BellRing,
   Store,
   Coins,
   Moon,
@@ -105,11 +104,13 @@ export function Navbar() {
       <motion.header
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="fixed top-0 left-0 right-0 z-50 flex flex-col shadow-lg font-sans"
+        className="fixed top-0 left-0 right-0 z-50 flex flex-col shadow-[0_10px_40px_rgba(0,0,0,0.25)] font-sans tracking-wide"
       >
         {/* === TOP BAR === */}
-        <div className="bg-[#FDFBF7] relative z-20 border-b border-[#B88E2F]/40 shadow-sm">
+        <div className="bg-white/80 backdrop-blur-xl shadow-[0_8px_30px_rgba(10,31,68,0.10)]">
+
           <div className="section-container py-4">
+
             <div className="flex items-center justify-between gap-4">
 
               {/* Left: Logo & Tagline */}
@@ -158,13 +159,14 @@ export function Navbar() {
 
                 {/* Icons */}
                 <div className="flex items-center gap-3 pl-4 border-l border-gray-200">
-                  <Button variant="ghost" size="icon" className="hover:bg-gray-100 rounded-full w-10 h-10">
-                    <Bell className="h-5 w-5 text-[#1A2B47]" />
+                  <Button variant="ghost" size="icon" className="rounded-full w-11 h-11 hover:bg-[#0A1F44]/5 hover:shadow-[0_6px_18px_rgba(10,31,68,0.15)] transition-all duration-300">
+                    <BellRing className="h-5 w-5 text-[#1A2B47]" />
                   </Button>
 
                   <Link to="/cart">
-                    <Button variant="ghost" size="icon" className="relative hover:bg-gray-100 rounded-full w-10 h-10">
-                      <ShoppingCart className="h-5 w-5 text-[#1A2B47]" />
+                    <Button variant="ghost" size="icon" className="rounded-full w-11 h-11 hover:bg-[#0A1F44]/5 hover:shadow-[0_6px_18px_rgba(10,31,68,0.15)] transition-all duration-300">
+
+                      <Package className="h-5 w-5 text-[#1A2B47]" />
                       {totalItems > 0 && (
                         <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-[#B88E2F] text-[10px] font-bold text-white flex items-center justify-center shadow-sm">
                           {totalItems > 99 ? "99+" : totalItems}
@@ -177,16 +179,38 @@ export function Navbar() {
                   <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                       <button className="flex items-center outline-none">
-                        <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#1A2B47]/10 hover:border-[#B88E2F] transition-all duration-300">
-                          <img
-                            src="/profile.png"
-                            alt="Profile"
-                            className="w-full h-full object-cover"
-                          />
+                        <div className="relative group">
+
+                          {/* OUTER BORDER RING */}
+                          <div className="absolute -inset-[3px] rounded-full 
+                  bg-gradient-to-tr from-[#B88E2F] via-[#f5d27a] to-[#1A2B47]
+                  opacity-90"></div>
+
+                          {/* SOFT GLOW */}
+                          <div className="absolute -inset-[1px] rounded-full 
+                  bg-gradient-to-tr from-[#B88E2F]/50 to-[#1A2B47]/40 
+                  blur-sm opacity-50 group-hover:opacity-80 transition-all duration-500"></div>
+
+                          {/* AVATAR CONTAINER */}
+                          <div className="relative w-12 h-12 rounded-full overflow-hidden 
+                  bg-white/70 backdrop-blur-xl
+                  border border-white/40
+                  shadow-[0_10px_28px_rgba(10,31,68,0.30)]
+                  group-hover:scale-105 transition-all duration-300">
+
+                            <img
+                              src="/new.png"
+                              alt="Profile"
+                              className="w-full h-full object-cover scale-[1.6]"
+                            />
+                          </div>
+
                         </div>
+
+
                       </button>
                     </DropdownMenuTrigger>
-                    <DropdownMenuContent align="end" className="w-56 mt-2 bg-white border border-[#B88E2F]/20 shadow-xl rounded-xl">
+                    <DropdownMenuContent align="end" className="w-56 mt-2 bg-white border border-white/10 shadow-xl rounded-xl">
                       {user ? (
                         <>
                           <div className="px-3 py-2 border-b border-gray-100">
@@ -236,7 +260,7 @@ export function Navbar() {
         </div>
 
         {/* === BOTTOM BAR === */}
-        <div className="relative bg-[#0A1F44] z-10 hidden lg:block shadow-[0_4px_20px_rgba(0,0,0,0.2)]">
+        <div className="relative bg-[#0A1F44] shadow-[0_12px_45px_rgba(0,0,0,0.35)] hidden lg:block">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-5"></div>
           <div className="section-container">
             <div className="flex items-center justify-center gap-8 py-3 text-white relative">

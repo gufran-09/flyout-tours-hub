@@ -10,9 +10,9 @@ export function SectionTitle() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display mb-4">
             Explore UAE's{" "}
-            <span className="text-primary">Top Destinations</span>
+            <span className="text-[#0A1F44]">Top Destinations</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Start your journey today — discover untold stories, breathtaking places,
