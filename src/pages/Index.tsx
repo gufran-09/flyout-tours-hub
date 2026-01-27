@@ -7,6 +7,8 @@ import { ComboDealsSection } from "@/components/home/ComboDealsSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import UaeShowcaseSection from "@/components/home/UaeShowcaseSection";
 import CategoriesCarousel from "@/components/home/CategoriesCarousel";
+import LuxuryExperiencesSection from "@/components/home/LuxuryExperiencesSection";
+import RomanticLifestyleSection from "@/components/home/RomanticLifestyleSection";
 
 import {
   dubaiThemeParks,
@@ -27,6 +29,8 @@ const Index = () => {
       <SectionTitle />
       <UaeShowcaseSection />
       <CategoriesCarousel />
+      <LuxuryExperiencesSection />
+      <RomanticLifestyleSection />
 
       <ExperienceSection
         title="Dubai Theme Parks"

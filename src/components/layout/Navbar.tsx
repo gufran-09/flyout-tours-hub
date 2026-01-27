@@ -116,7 +116,7 @@ export function Navbar() {
               {/* Left: Logo & Tagline */}
               <Link to="/" onClick={handleLogoClick} className="flex-shrink-0 flex items-center -ml-2 group">
                 <div className="flex flex-col">
-                  <img src="/logo.png" alt="Flyout Tours" className="h-[4.5rem] w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+                  <img src="/logo.png" alt="Flyout Tours" className="h-[4.5rem] w-auto object-contain" />
                 </div>
               </Link>
 
