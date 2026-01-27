@@ -9,6 +9,7 @@ import UaeShowcaseSection from "@/components/home/UaeShowcaseSection";
 import CategoriesCarousel from "@/components/home/CategoriesCarousel";
 import LuxuryExperiencesSection from "@/components/home/LuxuryExperiencesSection";
 import RomanticLifestyleSection from "@/components/home/RomanticLifestyleSection";
+import CuratedCollectionsSection from "@/components/home/CuratedCollectionsSection";
 
 import {
   dubaiThemeParks,
@@ -31,6 +32,7 @@ const Index = () => {
       <CategoriesCarousel />
       <LuxuryExperiencesSection />
       <RomanticLifestyleSection />
+      <CuratedCollectionsSection />
 
       <ExperienceSection
         title="Dubai Theme Parks"
