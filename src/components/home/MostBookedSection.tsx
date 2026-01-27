@@ -18,7 +18,7 @@ const mostBookedItems = [
         id: 1,
         title: "Desert Safari with BBQ Dinner",
         location: "Dubai Desert Conservation Reserve",
-        image: "https://images.unsplash.com/photo-1571305419999-52e85ab8de32?q=80&w=800", // Desert Landscape
+        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Desert Landscape
         price: "AED 150",
         rating: 4.9,
         reviews: "12.5k",
@@ -31,7 +31,7 @@ const mostBookedItems = [
         id: 2,
         title: "Atlantis Aquaventure Waterpark",
         location: "Palm Jumeirah",
-        image: "https://images.unsplash.com/photo-1582234031634-1188dc2558c7?q=80&w=800", // Waterpark/Pool
+        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Waterpark/Pool
         price: "AED 345",
         rating: 4.8,
         reviews: "8.2k",
@@ -44,7 +44,7 @@ const mostBookedItems = [
         id: 3,
         title: "Marina Dinner Cruise",
         location: "Dubai Marina",
-        image: "https://images.unsplash.com/photo-1549216480-16ac564d6215?q=80&w=800", // Marina Boat - Reused but popular
+        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Marina Boat - Reused but popular
         price: "AED 200",
         rating: 4.7,
         reviews: "5.4k",
@@ -57,7 +57,7 @@ const mostBookedItems = [
         id: 4,
         title: "Burj Khalifa Observation Deck",
         location: "Downtown Dubai",
-        image: "https://images.unsplash.com/photo-1546747124-b58611c05d76?q=80&w=800", // Burj
+        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Burj
         price: "AED 179",
         rating: 4.9,
         reviews: "25k+",
@@ -70,7 +70,7 @@ const mostBookedItems = [
         id: 5,
         title: "Jet Ski Tour",
         location: "Jumeirah Beach",
-        image: "https://images.unsplash.com/photo-1594735284061-6893e2b26282?q=80&w=800", // Jet Ski
+        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Jet Ski
         price: "AED 350",
         rating: 4.8,
         reviews: "3.1k",
@@ -83,7 +83,7 @@ const mostBookedItems = [
         id: 6,
         title: "Ferrari World Abu Dhabi",
         location: "Yas Island, Abu Dhabi",
-        image: "https://images.unsplash.com/photo-1597022201389-c45479421dcf?q=80&w=800", // Theme Park/Coaster
+        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Theme Park/Coaster
         price: "AED 345",
         rating: 4.9,
         reviews: "9.8k",

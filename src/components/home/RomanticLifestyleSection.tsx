@@ -11,7 +11,7 @@ const romanticExperiences = [
         id: 1,
         title: "Marina Sunset Dinner Cruise",
         subtitle: "Romantic Dining on the Water",
-        image: "https://images.unsplash.com/photo-1549216480-16ac564d6215?q=80&w=800", // Sunset Boat
+        image: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=800", // Sunset Boat
         price: "AED 350",
         tag: "Romantic",
         link: "/dinner-cruise/marina-sunset"

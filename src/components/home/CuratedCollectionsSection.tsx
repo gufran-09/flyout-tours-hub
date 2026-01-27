@@ -12,7 +12,7 @@ const curatedCollections = [
         title: "Luxury Escapes",
         icon: Plane,
         description: "Yacht, helicopter, 5-star dining, private tours",
-        image: "https://images.unsplash.com/photo-1578357078586-4917d4b21213?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800",
         color: "from-amber-600 to-yellow-500",
         link: "/luxury"
     },
@@ -21,7 +21,7 @@ const curatedCollections = [
         title: "Family Favorites",
         icon: Users,
         description: "Theme parks, water parks, zoo, cruises",
-        image: "https://images.unsplash.com/photo-1549219491-e403487c06eb?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800",
         color: "from-blue-600 to-cyan-500",
         link: "/dubai/theme-parks"
     },
@@ -30,7 +30,7 @@ const curatedCollections = [
         title: "Desert & Nature",
         icon: Sun,
         description: "Safari, balloon, camping, photography tours",
-        image: "https://images.unsplash.com/photo-1547234935-80c7142ee55c?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800",
         color: "from-orange-600 to-amber-500",
         link: "/safari"
     },
@@ -39,7 +39,7 @@ const curatedCollections = [
         title: "Nightlife & Entertainment",
         icon: Music,
         description: "Dinner cruises, live shows, rooftop lounges, concerts",
-        image: "https://images.unsplash.com/photo-1533174072545-e8d4aa97edf9?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800",
         color: "from-violet-600 to-purple-500",
         link: "/concerts"
     },

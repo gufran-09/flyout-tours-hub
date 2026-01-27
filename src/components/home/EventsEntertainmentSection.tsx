@@ -12,7 +12,7 @@ const events = [
         title: "Coldplay: Music of the Spheres",
         date: "JAN 11",
         location: "Zayed Sports City Stadium, Abu Dhabi",
-        image: "https://images.unsplash.com/photo-1459749411177-04be386e89e4?q=80&w=1200", // Concert Crowd
+        image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800", // Concert Crowd
         category: "Concert",
         price: "From AED 395",
         tag: "Sold Out Soon",
@@ -23,7 +23,7 @@ const events = [
         title: "Global Village Season 28",
         date: "NOW OPEN",
         location: "Global Village, Dubai",
-        image: "https://images.unsplash.com/photo-1561577555-5c26788db3d8?q=80&w=800", // Festival/Lights
+        image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800", // Festival/Lights
         category: "Festival",
         price: "AED 30",
         tag: "Family Favorite",
@@ -34,7 +34,7 @@ const events = [
         title: "La Perle by Dragone",
         date: "DAILY SHOWS",
         location: "Al Habtoor City, Dubai",
-        image: "https://images.unsplash.com/photo-1514525253440-b393452e8d26?q=80&w=800", // Artistic Show
+        image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800", // Artistic Show
         category: "Live Show",
         price: "From AED 259",
         tag: "Must See",
@@ -45,7 +45,7 @@ const events = [
         title: "Dubai Shopping Festival",
         date: "DEC 08 - JAN 14",
         location: "Citywide, Dubai",
-        image: "https://images.unsplash.com/photo-1519671482502-9759101d4561?q=80&w=800", // Shopping/City
+        image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800", // Shopping/City
         category: "Festival",
         price: "Free Entry",
         tag: "Seasonal",
