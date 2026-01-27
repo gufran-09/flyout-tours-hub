@@ -77,7 +77,7 @@ const comboDeals = [
 
 export function ComboDealsSection() {
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-primary/5 overflow-hidden">
+    <section className="py-20 bg-white overflow-hidden">
       <div className="section-container relative">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-12 px-4 md:px-0">
@@ -87,14 +87,14 @@ export function ComboDealsSection() {
             viewport={{ once: true }}
             className="max-w-2xl"
           >
-            <span className="inline-flex items-center gap-2 text-primary font-bold tracking-wider text-sm uppercase mb-3">
+            <span className="inline-flex items-center gap-2 text-flyout-gold font-bold tracking-wider text-sm uppercase mb-3">
               <Percent className="h-4 w-4" />
               Limited Time Offers
             </span>
-            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight text-neutral-900">
               Trending Experiences
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-neutral-600 text-lg">
               Unlock exclusive savings on our most popular hand-picked tour packages.
             </p>
           </motion.div>

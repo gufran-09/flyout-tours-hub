@@ -56,7 +56,7 @@ const essentials = [
 const ServiceCard = ({ item }: { item: typeof essentials[0] }) => (
     <Link
         to={item.link}
-        className="group relative flex items-center p-4 bg-neutral-900/50 border border-white/5 rounded-xl hover:bg-neutral-800 hover:border-flyout-gold/30 transition-all duration-300 overflow-hidden"
+        className="group relative flex items-center p-4 bg-white border border-neutral-200 rounded-xl hover:bg-neutral-50 hover:border-flyout-gold/30 transition-all duration-300 overflow-hidden shadow-sm hover:shadow-md"
     >
         {/* Hover Gradient Background */}
         <div className="absolute inset-0 bg-gradient-to-r from-flyout-gold/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -64,22 +64,22 @@ const ServiceCard = ({ item }: { item: typeof essentials[0] }) => (
         {/* Content Container */}
         <div className="relative z-10 flex items-center gap-4 w-full">
             {/* Icon Box */}
-            <div className={cn("w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center transition-colors group-hover:bg-white/10", item.color)}>
+            <div className={cn("w-12 h-12 rounded-lg bg-neutral-100 flex items-center justify-center transition-colors group-hover:bg-white", item.color)}>
                 <item.icon className="w-6 h-6" />
             </div>
 
             {/* Text Info */}
             <div className="flex-grow">
-                <h3 className="font-semibold text-white group-hover:text-flyout-gold transition-colors">
+                <h3 className="font-semibold text-neutral-900 group-hover:text-flyout-gold transition-colors">
                     {item.title}
                 </h3>
-                <p className="text-sm text-white/50 group-hover:text-white/70 transition-colors line-clamp-1">
+                <p className="text-sm text-neutral-500 group-hover:text-neutral-700 transition-colors line-clamp-1">
                     {item.description}
                 </p>
             </div>
 
             {/* Arrow */}
-            <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/30 group-hover:text-flyout-gold group-hover:border-flyout-gold/30 transition-all">
+            <div className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center text-neutral-400 group-hover:text-flyout-gold group-hover:border-flyout-gold/30 transition-all">
                 <ArrowRight className="w-4 h-4" />
             </div>
         </div>
@@ -88,7 +88,7 @@ const ServiceCard = ({ item }: { item: typeof essentials[0] }) => (
 
 export const TravelEssentialsSection = () => {
     return (
-        <section className="py-20 bg-[#050505] relative border-t border-white/5">
+        <section className="py-20 bg-white relative border-t border-neutral-100">
             <div className="container mx-auto px-4 md:px-6">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
@@ -101,10 +101,10 @@ export const TravelEssentialsSection = () => {
                         <h2 className="text-flyout-gold font-medium text-sm md:text-base tracking-[0.2em] uppercase mb-4">
                             Seamless Journey
                         </h2>
-                        <h3 className="text-3xl md:text-4xl font-serif text-white mb-6">
+                        <h3 className="text-3xl md:text-4xl font-serif text-neutral-900 mb-6">
                             Everything You Need for a Perfect Trip
                         </h3>
-                        <p className="text-white/60 text-lg font-light">
+                        <p className="text-neutral-600 text-lg font-light">
                             We don’t just sell activities. We handle the whole journey with our premium travel services.
                         </p>
                     </motion.div>
@@ -133,7 +133,7 @@ export const TravelEssentialsSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4, delay: 0.6 }}
                         viewport={{ once: true }}
-                        className="group relative flex flex-col justify-center items-center p-6 bg-flyout-gold/10 border border-flyout-gold/20 rounded-xl hover:bg-flyout-gold/20 transition-all cursor-pointer text-center"
+                        className="group relative flex flex-col justify-center items-center p-6 bg-flyout-gold/5 border border-flyout-gold/20 rounded-xl hover:bg-flyout-gold/10 transition-all cursor-pointer text-center"
                     >
                         <h3 className="font-semibold text-flyout-gold mb-1">View All Services</h3>
                         <p className="text-sm text-flyout-gold/70">Explore our full range of travel solutions</p>

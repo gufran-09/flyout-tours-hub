@@ -50,11 +50,11 @@ const CategoriesCarousel = () => {
     const [isPaused, setIsPaused] = useState(false);
 
     return (
-        <section className="w-full py-20 bg-[#050505] overflow-hidden relative">
+        <section className="w-full py-20 bg-white overflow-hidden relative">
             {/* Decorative Gradients */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-[#050505] to-[#050505] opacity-40 pointer-events-none" />
-            <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-[#050505] to-transparent z-10 z-[20]" />
-            <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-[#050505] to-transparent z-10 z-[20]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-blue-50 via-white to-white opacity-40 pointer-events-none" />
+            <div className="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-white to-transparent z-10 z-[20]" />
+            <div className="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-white to-transparent z-10 z-[20]" />
 
             <div className="container mx-auto px-6 mb-12 relative z-20 text-center md:text-left">
                 <motion.h2
@@ -62,7 +62,7 @@ const CategoriesCarousel = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="text-3xl md:text-5xl font-serif text-white mb-3 tracking-wide"
+                    className="text-3xl md:text-5xl font-serif text-neutral-900 mb-3 tracking-wide"
                 >
                     Curated Categories
                 </motion.h2>
@@ -71,7 +71,7 @@ const CategoriesCarousel = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                     viewport={{ once: true }}
-                    className="text-white/60 font-light text-sm md:text-base tracking-[0.2em] uppercase"
+                    className="text-neutral-500 font-light text-sm md:text-base tracking-[0.2em] uppercase"
                 >
                     Discover your perfect experience
                 </motion.p>

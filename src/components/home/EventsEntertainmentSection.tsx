@@ -57,7 +57,7 @@ const EventCard = ({ item, featured = false }: { item: typeof events[0], feature
     <Link
         to={item.link}
         className={cn(
-            "group relative block overflow-hidden rounded-2xl bg-neutral-800 border-neutral-700/50 hover:border-flyout-gold/50 transition-all duration-300",
+            "group relative block overflow-hidden rounded-2xl bg-neutral-100 border border-neutral-200 hover:border-flyout-gold/50 transition-all duration-300 shadow-sm hover:shadow-md",
             featured ? "col-span-1 md:col-span-2 row-span-2 min-h-[400px]" : "col-span-1 min-h-[200px]"
         )}
     >
@@ -77,13 +77,13 @@ const EventCard = ({ item, featured = false }: { item: typeof events[0], feature
             <div className="flex justify-between items-start">
                 <span className={cn(
                     "px-3 py-1 backdrop-blur-md rounded-full text-xs font-bold uppercase tracking-wider border",
-                    featured ? "bg-flyout-gold/90 text-black border-flyout-gold" : "bg-white/10 text-white border-white/20"
+                    featured ? "bg-flyout-gold/90 text-black border-flyout-gold" : "bg-black/30 text-white border-white/20"
                 )}>
                     {item.category}
                 </span>
 
                 {/* Date Badge */}
-                <div className="flex flex-col items-center bg-white/10 backdrop-blur-md border border-white/10 rounded-lg p-2 text-center min-w-[60px]">
+                <div className="flex flex-col items-center bg-black/30 backdrop-blur-md border border-white/10 rounded-lg p-2 text-center min-w-[60px]">
                     <span className="text-[10px] text-white/70 uppercase font-medium leading-none mb-1">
                         {item.date.includes(" ") ? item.date.split(" ")[0] : "EVENT"}
                     </span>
@@ -125,9 +125,9 @@ const EventCard = ({ item, featured = false }: { item: typeof events[0], feature
 
 export const EventsEntertainmentSection = () => {
     return (
-        <section className="py-24 bg-neutral-950 relative overflow-hidden">
+        <section className="py-24 bg-white relative overflow-hidden">
             {/* Dynamic Background */}
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-900/20 via-neutral-950 to-neutral-950 pointer-events-none" />
+            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-indigo-50/50 via-white to-white pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 {/* Header */}
@@ -141,7 +141,7 @@ export const EventsEntertainmentSection = () => {
                         <h2 className="flex items-center gap-2 text-flyout-gold font-medium text-sm md:text-base tracking-[0.2em] uppercase mb-2">
                             <Sparkles className="w-4 h-4" /> Live in UAE
                         </h2>
-                        <h3 className="text-3xl md:text-5xl font-serif text-white tracking-tight leading-tight">
+                        <h3 className="text-3xl md:text-5xl font-serif text-neutral-900 tracking-tight leading-tight">
                             Events & Entertainment
                         </h3>
                     </motion.div>
@@ -153,7 +153,7 @@ export const EventsEntertainmentSection = () => {
                         viewport={{ once: true }}
                         className="hidden md:block mt-4 md:mt-0"
                     >
-                        <Link to="/events" className="group flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm">
+                        <Link to="/events" className="group flex items-center gap-2 text-neutral-500 hover:text-neutral-900 transition-colors text-sm">
                             View Full Calendar <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                         </Link>
                     </motion.div>
@@ -190,7 +190,7 @@ export const EventsEntertainmentSection = () => {
                 </div>
 
                 <div className="mt-8 text-center md:hidden">
-                    <Link to="/events" className="inline-flex items-center gap-2 text-white/60 hover:text-white transition-colors text-sm">
+                    <Link to="/events" className="inline-flex items-center gap-2 text-neutral-500 hover:text-neutral-900 transition-colors text-sm">
                         View Full Calendar <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>

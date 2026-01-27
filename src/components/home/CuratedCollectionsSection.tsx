@@ -107,9 +107,9 @@ const CollectionCard = ({ item, featured = false }: { item: typeof curatedCollec
 
 export const CuratedCollectionsSection = () => {
     return (
-        <section className="relative py-20 bg-neutral-900 overflow-hidden">
+        <section className="relative py-20 bg-neutral-50 overflow-hidden">
             {/* Background Elements */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neutral-800/30 via-neutral-900 to-neutral-900 pointer-events-none" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-neutral-50 to-neutral-50 pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 {/* Section Header */}
@@ -121,10 +121,10 @@ export const CuratedCollectionsSection = () => {
                         viewport={{ once: true }}
                         className="max-w-2xl"
                     >
-                        <h2 className="text-flyout-gold/80 font-medium text-sm md:text-base tracking-[0.2em] uppercase mb-3">
+                        <h2 className="text-flyout-gold font-medium text-sm md:text-base tracking-[0.2em] uppercase mb-3">
                             Explore by Experience
                         </h2>
-                        <h3 className="text-3xl md:text-5xl font-serif text-white leading-tight">
+                        <h3 className="text-3xl md:text-5xl font-serif text-neutral-900 leading-tight">
                             Curated for Every Kind of Traveler
                         </h3>
                     </motion.div>
@@ -136,7 +136,7 @@ export const CuratedCollectionsSection = () => {
                         viewport={{ once: true }}
                         className="hidden md:block"
                     >
-                        <p className="text-white/50 text-right max-w-sm ml-auto text-sm">
+                        <p className="text-neutral-500 text-right max-w-sm ml-auto text-sm">
                             Browse our hand-picked collections designed to match your travel style and intent.
                         </p>
                     </motion.div>

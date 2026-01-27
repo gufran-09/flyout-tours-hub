@@ -42,7 +42,7 @@ export function ExperienceSection({
   className,
 }: ExperienceSectionProps) {
   return (
-    <section className={cn("py-16 overflow-hidden", className)}>
+    <section className={cn("py-16 overflow-hidden bg-white", className)}>
       <div className="section-container relative">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 px-4 md:px-0">
@@ -51,9 +51,9 @@ export function ExperienceSection({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-2xl sm:text-4xl font-bold mb-2 tracking-tight">{title}</h2>
+            <h2 className="text-2xl sm:text-4xl font-bold mb-2 tracking-tight text-neutral-900">{title}</h2>
             {subtitle && (
-              <p className="text-muted-foreground text-lg">{subtitle}</p>
+              <p className="text-neutral-500 text-lg">{subtitle}</p>
             )}
           </motion.div>
 
@@ -66,7 +66,7 @@ export function ExperienceSection({
             <Link to={viewMoreLink}>
               <Button
                 variant="ghost"
-                className="group text-primary hover:bg-primary/10 hover:text-primary text-base font-medium"
+                className="group text-flyout-gold hover:bg-flyout-gold/10 hover:text-flyout-gold text-base font-medium"
               >
                 View More
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -108,8 +108,8 @@ export function ExperienceSection({
               ))}
             </CarouselContent>
             <div className="hidden md:block">
-              <CarouselPrevious className="-left-6 h-10 w-10 border-none bg-white/80 backdrop-blur shadow-md hover:bg-white text-primary" />
-              <CarouselNext className="-right-6 h-10 w-10 border-none bg-white/80 backdrop-blur shadow-md hover:bg-white text-primary" />
+              <CarouselPrevious className="-left-6 h-10 w-10 border-none bg-white/80 backdrop-blur shadow-md hover:bg-white text-neutral-900" />
+              <CarouselNext className="-right-6 h-10 w-10 border-none bg-white/80 backdrop-blur shadow-md hover:bg-white text-neutral-900" />
             </div>
           </Carousel>
         </motion.div>
@@ -119,7 +119,7 @@ export function ExperienceSection({
           <Link to={viewMoreLink}>
             <Button
               variant="outline"
-              className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+              className="w-full border-neutral-200 text-neutral-900 hover:bg-neutral-50"
             >
               View More
               <ArrowRight className="ml-2 h-4 w-4" />

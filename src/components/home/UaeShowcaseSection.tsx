@@ -10,7 +10,7 @@ const items = [
 
 export default function UaeShowcaseSection() {
     return (
-        <section className="w-full px-4 md:px-[50px] py-14">
+        <section className="w-full px-4 md:px-[50px] py-14 bg-white">
             <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto min-h-[600px] md:h-[70vh]">
 
                 {items.map((item, i) => (

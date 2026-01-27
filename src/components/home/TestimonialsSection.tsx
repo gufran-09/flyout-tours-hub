@@ -43,7 +43,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="py-20 bg-secondary/30">
+    <section className="py-20 bg-neutral-50">
       <div className="section-container">
         {/* Section Header */}
         <motion.div
@@ -52,10 +52,10 @@ export function TestimonialsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-neutral-900">
             What Our Travelers Say
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-neutral-600 max-w-2xl mx-auto">
             Don't just take our word for it. Here's what tourists from around the world
             have to say about their UAE adventures with Flyout Tours.
           </p>
@@ -70,41 +70,41 @@ export function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-card rounded-2xl p-6 shadow-card card-hover"
+              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-neutral-100"
             >
               {/* Quote Icon */}
-              <Quote className="h-8 w-8 text-primary/20 mb-4" />
+              <Quote className="h-8 w-8 text-flyout-gold/20 mb-4" />
 
               {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star
                     key={i}
-                    className="h-4 w-4 fill-gold text-gold"
+                    className="h-4 w-4 fill-flyout-gold text-flyout-gold"
                   />
                 ))}
               </div>
 
               {/* Text */}
-              <p className="text-muted-foreground text-sm mb-6 line-clamp-4">
+              <p className="text-neutral-600 text-sm mb-6 line-clamp-4">
                 "{testimonial.text}"
               </p>
 
               {/* Tour Badge */}
-              <span className="badge-category mb-4 inline-block">
+              <span className="inline-block px-3 py-1 bg-neutral-100 text-neutral-600 rounded-full text-xs font-medium mb-4">
                 {testimonial.tour}
               </span>
 
               {/* Author */}
-              <div className="flex items-center gap-3 pt-4 border-t border-border">
+              <div className="flex items-center gap-3 pt-4 border-t border-neutral-100">
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.name}
                   className="w-10 h-10 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-medium text-sm">{testimonial.name}</p>
-                  <p className="text-muted-foreground text-xs">
+                  <p className="font-medium text-sm text-neutral-900">{testimonial.name}</p>
+                  <p className="text-neutral-500 text-xs">
                     {testimonial.location}
                   </p>
                 </div>
@@ -127,10 +127,10 @@ export function TestimonialsSection() {
             { value: "24/7", label: "Customer Support" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
-              <p className="text-3xl sm:text-4xl font-bold text-primary mb-2">
+              <p className="text-3xl sm:text-4xl font-bold text-flyout-gold mb-2">
                 {stat.value}
               </p>
-              <p className="text-muted-foreground">{stat.label}</p>
+              <p className="text-neutral-600">{stat.label}</p>
             </div>
           ))}
         </motion.div>

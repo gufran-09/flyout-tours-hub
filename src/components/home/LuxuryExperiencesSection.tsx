@@ -135,10 +135,10 @@ const ExperienceCard = ({ item }: { item: typeof luxuryExperiences[0] }) => (
 
 export const LuxuryExperiencesSection = () => {
     return (
-        <section className="relative py-24 bg-[#0A0A0A] overflow-hidden">
+        <section className="relative py-24 bg-white overflow-hidden">
             {/* Background Elements */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[300px] bg-purple-900/10 blur-[120px] rounded-full pointer-events-none" />
-            <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-flyout-gold/5 blur-[100px] rounded-full pointer-events-none" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[300px] bg-purple-100/40 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-amber-100/40 blur-[100px] rounded-full pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 {/* Section Header */}
@@ -152,10 +152,10 @@ export const LuxuryExperiencesSection = () => {
                         <h2 className="text-flyout-gold font-serif text-lg md:text-xl tracking-[0.2em] uppercase mb-3">
                             The Luxury Collection
                         </h2>
-                        <h3 className="text-4xl md:text-6xl font-serif text-white mb-6 leading-tight">
+                        <h3 className="text-4xl md:text-6xl font-serif text-neutral-900 mb-6 leading-tight">
                             Signature Experiences
                         </h3>
-                        <p className="text-white/60 text-lg font-light leading-relaxed">
+                        <p className="text-neutral-600 text-lg font-light leading-relaxed">
                             Indulge in emotional, high-ticket, aspirational journeys designed for the discerning traveler.
                             From private yachts to royal desert retreats.
                         </p>
@@ -180,10 +180,10 @@ export const LuxuryExperiencesSection = () => {
                 {/* View All Button */}
                 <div className="mt-16 text-center">
                     <Link to="/luxury">
-                        <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-transparent border border-white/20 px-8 font-medium text-neutral-200 transition-all duration-300 hover:bg-white/5 hover:text-white hover:border-white/40 focus:outline-none focus:ring-2 focus:ring-white/50 focus:ring-offset-2 focus:ring-offset-gray-900">
+                        <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-transparent border border-neutral-200 px-8 font-medium text-neutral-900 transition-all duration-300 hover:bg-neutral-50 hover:border-neutral-300 focus:outline-none focus:ring-2 focus:ring-neutral-200 focus:ring-offset-2 focus:ring-offset-white">
                             <span className="mr-2">Explore All Collections</span>
                             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-12 -translate-x-full transition-transform duration-1000 group-hover:animate-shimmer" />
+                            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-neutral-100/50 to-transparent skew-x-12 -translate-x-full transition-transform duration-1000 group-hover:animate-shimmer" />
                         </button>
                     </Link>
                 </div>

@@ -103,10 +103,10 @@ const RomanticCard = ({ item }: { item: typeof romanticExperiences[0] }) => (
 
 export const RomanticLifestyleSection = () => {
     return (
-        <section className="relative py-24 bg-[#0A0A0A] overflow-hidden">
+        <section className="relative py-24 bg-white overflow-hidden">
             {/* Background Elements - Warmer tones for this section */}
-            <div className="absolute top-0 right-0 w-[50%] h-[500px] bg-rose-900/10 blur-[150px] rounded-full pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-900/10 blur-[100px] rounded-full pointer-events-none" />
+            <div className="absolute top-0 right-0 w-[50%] h-[500px] bg-rose-100/50 blur-[150px] rounded-full pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-100/50 blur-[100px] rounded-full pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 {/* Section Header */}
@@ -117,13 +117,13 @@ export const RomanticLifestyleSection = () => {
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
                     >
-                        <h2 className="text-rose-400 font-serif text-lg md:text-xl tracking-[0.2em] uppercase mb-3">
+                        <h2 className="text-rose-500 font-serif text-lg md:text-xl tracking-[0.2em] uppercase mb-3">
                             Lifestyle & Romance
                         </h2>
-                        <h3 className="text-4xl md:text-6xl font-serif text-white mb-6 leading-tight">
+                        <h3 className="text-4xl md:text-6xl font-serif text-neutral-900 mb-6 leading-tight">
                             Celebrate Life’s Moments
                         </h3>
-                        <p className="text-white/60 text-lg font-light leading-relaxed">
+                        <p className="text-neutral-600 text-lg font-light leading-relaxed">
                             Create unforgettable memories with our handpicked selection of romantic getaways and premium lifestyle experiences.
                         </p>
                     </motion.div>
@@ -205,10 +205,10 @@ export const RomanticLifestyleSection = () => {
                 {/* View All Button */}
                 <div className="mt-16 text-center">
                     <Link to="/lifestyle">
-                        <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-transparent border border-rose-500/30 px-8 font-medium text-rose-100 transition-all duration-300 hover:bg-rose-500/10 hover:text-white hover:border-rose-500/60 focus:outline-none focus:ring-2 focus:ring-rose-500/50">
+                        <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md bg-transparent border border-rose-200 px-8 font-medium text-rose-700 transition-all duration-300 hover:bg-rose-50 hover:text-rose-900 hover:border-rose-300 focus:outline-none focus:ring-2 focus:ring-rose-200">
                             <span className="mr-2">Explore Romantic Collection</span>
                             <Heart className="w-4 h-4 transition-transform group-hover:scale-110" />
-                            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-rose-500/10 to-transparent skew-x-12 -translate-x-full transition-transform duration-1000 group-hover:animate-shimmer" />
+                            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-transparent via-rose-100/50 to-transparent skew-x-12 -translate-x-full transition-transform duration-1000 group-hover:animate-shimmer" />
                         </button>
                     </Link>
                 </div>

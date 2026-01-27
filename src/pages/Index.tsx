@@ -52,7 +52,6 @@ const Index = () => {
         subtitle="Beat the heat with splashing fun"
         tours={dubaiWaterParks}
         viewMoreLink="/dubai/water-parks"
-        className="bg-secondary/20"
       />
 
       <ExperienceSection
@@ -67,7 +66,6 @@ const Index = () => {
         subtitle="Adrenaline-pumping water adventures"
         tours={dubaiWaterSports}
         viewMoreLink="/dubai/water-sports"
-        className="bg-secondary/20"
       />
 
       <ComboDealsSection />
@@ -84,7 +82,6 @@ const Index = () => {
         subtitle="Luxury sailing experiences"
         tours={dubaiYacht}
         viewMoreLink="/dubai/yacht"
-        className="bg-secondary/20"
       />
 
       <ExperienceSection
@@ -99,7 +96,6 @@ const Index = () => {
         subtitle="Luxurious getaways and resort experiences"
         tours={staycations}
         viewMoreLink="/staycations"
-        className="bg-secondary/20"
       />
 
       <TestimonialsSection />
