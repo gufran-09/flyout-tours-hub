@@ -17,7 +17,7 @@ const events = [
         title: "Coldplay: Music of the Spheres",
         date: "JAN 11",
         location: "Zayed Sports City",
-        image: "https://images.unsplash.com/photo-1470229722913-7ea9959faed7?q=80&w=2000",
+        image: "https://images.unsplash.com/photo-1585131201641-2e3a295bf7dd?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Live Concert",
         price: "From AED 395",
         tag: "Selling Fast",
@@ -28,7 +28,7 @@ const events = [
         title: "Global Village Season 28",
         date: "NOW OPEN",
         location: "Global Village, Dubai",
-        image: "https://images.unsplash.com/photo-1582657233895-0f37a3ec7179?q=80&w=800",
+        image: "https://plus.unsplash.com/premium_photo-1766749948167-ae63aa5c5294?q=80&w=781&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Festival",
         price: "AED 30",
         tag: "Cultural",
@@ -39,7 +39,7 @@ const events = [
         title: "La Perle by Dragone",
         date: "DAILY",
         location: "Al Habtoor City",
-        image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1635449677939-8e4e77ecf36a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Live Show",
         price: "From AED 259",
         tag: "Theatrical",
@@ -50,7 +50,7 @@ const events = [
         title: "Dubai Opera Gala",
         date: "FEB 14",
         location: "Dubai Opera",
-        image: "https://images.unsplash.com/photo-1503095392213-2e6d338dbbf0?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1768463852120-9360d0e39912?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Classical",
         price: "From AED 550",
         tag: "Classy",
@@ -143,8 +143,8 @@ export const EventsEntertainmentSection = () => {
     const [api, setApi] = useState<CarouselApi>();
 
     return (
-        <section className="relative pt-0 pb-24 bg-white overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-neutral-50 to-neutral-50 pointer-events-none" />
+        <section className="relative pt-20 md:pt-28 pb-24 bg-white overflow-hidden">
+            <div className="absolute inset-0 bg-white pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <SectionHeader

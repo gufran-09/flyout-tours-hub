@@ -53,9 +53,9 @@ export function Footer() {
               {/* Socials Row */}
               <div className="flex gap-3">
                 {[
-                  { icon: Instagram, href: "https://instagram.com/flyout_tours" },
-                  { icon: Facebook, href: "https://facebook.com/flyouttours" },
-                  { icon: Linkedin, href: "https://linkedin.com" },
+                  { icon: Instagram, href: "https://www.instagram.com/flyout_tours/" },
+                  { icon: Facebook, href: "https://www.facebook.com/flyouttours" },
+                  { icon: Linkedin, href: "https://www.linkedin.com/company/flyout-tours-llc/posts/?feedView=all" },
                   { icon: Youtube, href: "https://youtube.com" }
                 ].map((social, idx) => (
                   <a key={idx} href={social.href} target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:bg-flyout-gold hover:text-black hover:border-flyout-gold transition-all duration-300">
@@ -80,26 +80,39 @@ export function Footer() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-12 relative z-10">
               <div>
                 <p className="text-xs uppercase tracking-widest text-slate-500 mb-2 font-medium">Headquarters</p>
-                <div className="flex items-start gap-3">
-                  <MapPin size={18} className="text-flyout-gold shrink-0 mt-0.5" />
-                  <span className="text-slate-300 text-sm">Sharjah Media City,<br />United Arab Emirates</span>
-                </div>
+                <a
+                  href="https://www.google.com/maps/place/FLYOUT+TOURS+LLC/@25.3461555,55.4210932,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5f590c2706c7e1:0x7eec8aa0c0001d83!8m2!3d25.3461555!4d55.4210932!16s%2Fg%2F11kc2lb57r?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 group/link"
+                >
+                  <MapPin size={18} className="text-flyout-gold shrink-0 mt-0.5 group-hover/link:text-white transition-colors" />
+                  <span className="text-slate-300 text-sm group-hover/link:text-white transition-colors">Sharjah Media City,<br />United Arab Emirates</span>
+                </a>
               </div>
 
               <div>
                 <p className="text-xs uppercase tracking-widest text-slate-500 mb-2 font-medium">Concierge Line</p>
-                <div className="flex items-center gap-3">
-                  <Phone size={18} className="text-flyout-gold shrink-0" />
-                  <span className="text-white text-lg font-display tracking-wide">+971 54 466 1317</span>
-                </div>
+                <a
+                  href="https://wa.me/971544661317"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 group/link"
+                >
+                  <Phone size={18} className="text-flyout-gold shrink-0 group-hover/link:text-white transition-colors" />
+                  <span className="text-white text-lg font-display tracking-wide group-hover/link:text-flyout-gold transition-colors">+971 54 466 1317</span>
+                </a>
               </div>
 
               <div>
                 <p className="text-xs uppercase tracking-widest text-slate-500 mb-2 font-medium">Email Us</p>
-                <div className="flex items-center gap-3">
-                  <Mail size={18} className="text-flyout-gold shrink-0" />
-                  <span className="text-slate-300 text-sm hover:text-white transition-colors cursor-pointer">info@flyouttours.com</span>
-                </div>
+                <a
+                  href="mailto:info@flyouttours.com"
+                  className="flex items-center gap-3 group/link"
+                >
+                  <Mail size={18} className="text-flyout-gold shrink-0 group-hover/link:text-white transition-colors" />
+                  <span className="text-slate-300 text-sm group-hover/link:text-white transition-colors cursor-pointer">info@flyouttours.com</span>
+                </a>
               </div>
 
               <div>

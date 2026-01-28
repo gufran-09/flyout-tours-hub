@@ -25,7 +25,7 @@ const romanticExperiences = [
         id: 2,
         title: "Rooftop Fine-Dining",
         subtitle: "Sky-High Gourmet Experience",
-        image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1695606453510-dc0cf8377836?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: "AED 800",
         tag: "Lifestyle",
         link: "/restaurants/rooftop-dining"
@@ -34,7 +34,7 @@ const romanticExperiences = [
         id: 3,
         title: "Proposal on a Private Yacht",
         subtitle: "Unforgettable Moments at Sea",
-        image: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1764148775844-52fd5216e77b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: "AED 3,500",
         tag: "Exclusive",
         link: "/yacht/proposal-package"
@@ -43,7 +43,7 @@ const romanticExperiences = [
         id: 4,
         title: "Hot Air Balloon",
         subtitle: "+ Champagne Breakfast",
-        image: "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=800",
+        image: "https://images.unsplash.com/photo-1507608443039-bfde4fbcd142?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: "AED 1,100",
         tag: "Bucket List",
         link: "/sky-adventures/hot-air-balloon"
