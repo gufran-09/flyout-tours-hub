@@ -83,8 +83,8 @@ export default {
           foreground: "hsl(var(--sky-foreground))",
         },
         "flyout-dark": "#0A1F44", // Deep Navy Blue for Navbar
-        "flyout-gold": "#B88E2F", // Gold for borders/buttons
-        "flyout-blue": "#2DA6F6", // New Pricing Color
+        "flyout-gold": "#C5A059", // Muted Champagne Gold (Luxury)
+        "flyout-blue": "#2DA6F6", // Pricing Color
         "flyout-rose": "#F43F5E", // Title Hover Color
       },
       borderRadius: {
@@ -98,6 +98,8 @@ export default {
       boxShadow: {
         'card': 'var(--shadow-card)',
         'card-hover': 'var(--shadow-card-hover)',
+        'luxury': '0 4px 24px -2px rgba(0, 0, 0, 0.05)',
+        'luxury-hover': '0 12px 32px -4px rgba(0, 0, 0, 0.1)',
       },
       keyframes: {
         "accordion-down": {

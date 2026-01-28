@@ -44,7 +44,7 @@ const curatedCollections = [
         id: 4,
         title: "Nightlife & Entertainment",
         icon: Music,
-        description: "Dinner cruises, live shows, rooftop lounges, concerts",
+        description: "Dinner cruises, live shows, concerts",
         image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800",
         color: "from-violet-600 to-purple-500",
         link: "/concerts"
@@ -65,62 +65,62 @@ const CollectionCard = ({ item }: { item: typeof curatedCollections[0] }) => (
     <Link
         to={item.link}
         className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
-    shadow-lg border border-neutral-100 hover:shadow-xl hover:border-flyout-gold/40 
-    transition-all duration-300 hover:-translate-y-1"
+    shadow-luxury border border-neutral-100/60 hover:shadow-luxury-hover hover:border-flyout-gold/30 
+    transition-all duration-500 ease-out hover:-translate-y-1"
     >
         {/* Image */}
         <div className="relative aspect-[4/5] overflow-hidden">
             <motion.img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
 
             {/* Icon Badge */}
-            <div className="absolute top-3 left-3">
-                <span className="w-8 h-8 rounded-full bg-white/95 backdrop-blur-sm shadow flex items-center justify-center text-flyout-gold">
+            <div className="absolute top-4 left-4">
+                <span className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-md shadow-sm flex items-center justify-center text-flyout-gold ring-1 ring-white/50">
                     <item.icon className="w-4 h-4" />
                 </span>
             </div>
 
             {/* Tag Badge */}
-            <div className="absolute bottom-3 left-3">
-                <span className="px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full 
-        text-[10px] font-medium text-white flex items-center gap-1 uppercase tracking-wider">
+            <div className="absolute bottom-4 left-4">
+                <span className="px-3 py-1 bg-white/80 backdrop-blur-md rounded-full 
+        text-[10px] font-light tracking-[0.2em] text-neutral-800 uppercase border border-white/40">
                     Collection
                 </span>
             </div>
         </div>
 
         {/* Content */}
-        <div className="flex flex-col flex-grow p-5">
-            <div className="flex items-center gap-2 mb-2 text-flyout-gold">
-                <Star className="w-4 h-4 fill-current" />
-                <span className="text-sm font-medium text-neutral-800">
+        <div className="flex flex-col flex-grow p-6">
+            <div className="flex items-center gap-2 mb-3 text-flyout-gold/90">
+                <Star className="w-3.5 h-3.5 fill-current" />
+                <span className="text-xs font-medium tracking-wide text-neutral-500 uppercase">
                     Curated For You
                 </span>
             </div>
 
-            <h3 className="font-serif text-xl text-neutral-900 mb-2 leading-snug group-hover:text-flyout-gold transition-colors">
+            <h3 className="font-serif text-2xl text-neutral-900 mb-2 leading-tight group-hover:text-flyout-gold transition-colors duration-300">
                 {item.title}
             </h3>
 
-            <p className="text-sm text-neutral-500 mb-4 line-clamp-2">
+            <p className="text-sm text-neutral-500 mb-6 line-clamp-2 font-light leading-relaxed">
                 {item.description}
             </p>
 
             {/* Footer */}
-            <div className="mt-auto flex items-center justify-between pt-4 border-t border-neutral-100">
+            <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
                 <div className="flex flex-col">
-                    <span className="text-xs text-neutral-400">View</span>
-                    <span className="text-sm font-bold text-primary">Collection</span>
+                    <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">View</span>
+                    <span className="text-sm font-medium text-flyout-gold">Collection</span>
                 </div>
 
                 <div
-                    className="w-9 h-9 rounded-full bg-neutral-100 flex items-center justify-center 
-          text-primary group-hover:bg-flyout-gold group-hover:text-white transition-all duration-300"
+                    className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center 
+          text-neutral-400 group-hover:border-flyout-gold group-hover:text-flyout-gold transition-all duration-500"
                 >
-                    <ArrowUpRight className="w-4 h-4" />
+                    <ArrowUpRight className="w-3.5 h-3.5" />
                 </div>
             </div>
         </div>

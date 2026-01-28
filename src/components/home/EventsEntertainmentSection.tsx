@@ -74,29 +74,29 @@ const EventCard = ({ item }: { item: typeof events[0] }) => (
     <Link
         to={item.link}
         className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
-    shadow-lg border border-neutral-100 hover:shadow-xl hover:border-flyout-gold/40 
-    transition-all duration-300 hover:-translate-y-1"
+    shadow-luxury border border-neutral-100/60 hover:shadow-luxury-hover hover:border-flyout-gold/30 
+    transition-all duration-500 ease-out hover:-translate-y-1"
     >
         {/* Image */}
         <div className="relative aspect-[4/5] overflow-hidden">
             <motion.img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
 
             {/* Category Badge */}
-            <div className="absolute top-3 left-3">
-                <span className="px-3 py-1 bg-white/95 backdrop-blur-sm shadow rounded-full 
-        text-[11px] font-semibold uppercase tracking-wider text-flyout-gold border border-flyout-gold/30">
+            <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 bg-white/90 backdrop-blur-md shadow-sm rounded-full 
+        text-[10px] font-medium uppercase tracking-widest text-flyout-gold ring-1 ring-white/50">
                     {item.category}
                 </span>
             </div>
 
             {/* Date Badge */}
-            <div className="absolute bottom-3 left-3">
-                <span className="px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full 
-        text-[10px] font-medium text-white flex items-center gap-1">
+            <div className="absolute bottom-4 left-4">
+                <span className="px-3 py-1 bg-white/80 backdrop-blur-md rounded-full 
+        text-[10px] font-light text-neutral-900 tracking-[0.2em] flex items-center gap-1.5 border border-white/40">
                     <Calendar className="w-3 h-3 text-flyout-gold" />
                     {item.date}
                 </span>
@@ -104,34 +104,35 @@ const EventCard = ({ item }: { item: typeof events[0] }) => (
         </div>
 
         {/* Content */}
-        <div className="flex flex-col flex-grow p-5">
-            <div className="flex items-center gap-2 mb-2 text-flyout-gold">
-                <Sparkles className="w-4 h-4 fill-current" />
-                <span className="text-sm font-medium text-neutral-800">
+        <div className="flex flex-col flex-grow p-6">
+            <div className="flex items-center gap-2 mb-3 text-flyout-gold/90">
+                <Sparkles className="w-3.5 h-3.5 fill-current" />
+                <span className="text-xs font-medium tracking-wide text-neutral-500 uppercase">
                     Live in City
                 </span>
             </div>
 
-            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-flyout-gold transition-colors line-clamp-1">
+            <h3 className="font-serif text-2xl text-neutral-900 mb-2 leading-tight group-hover:text-flyout-gold transition-colors duration-300 line-clamp-2">
                 {item.title}
             </h3>
-            <p className="text-sm text-neutral-500 mb-4 line-clamp-1 flex items-center gap-1">
-                <MapPin className="w-3.5 h-3.5" />
-                {item.location}
-            </p>
+
+            <div className="flex items-center gap-1.5 text-sm text-neutral-500 mb-5 font-light">
+                <MapPin className="w-3.5 h-3.5 text-flyout-gold/70" />
+                <span className="line-clamp-1">{item.location}</span>
+            </div>
 
             {/* Footer */}
-            <div className="mt-auto flex items-center justify-between pt-4 border-t border-neutral-100">
+            <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
                 <div className="flex flex-col">
-                    <span className="text-xs text-neutral-400">Tickets from</span>
-                    <span className="text-lg font-bold text-flyout-blue">{item.price}</span>
+                    <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">Tickets from</span>
+                    <span className="text-lg font-medium font-serif text-flyout-blue">{item.price}</span>
                 </div>
 
                 <div
-                    className="w-9 h-9 rounded-full bg-neutral-100 flex items-center justify-center 
-          text-primary group-hover:bg-flyout-gold group-hover:text-white transition-all duration-300"
+                    className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center 
+          text-neutral-400 group-hover:border-flyout-gold group-hover:text-flyout-gold transition-all duration-500"
                 >
-                    <ArrowUpRight className="w-4 h-4" />
+                    <ArrowUpRight className="w-3.5 h-3.5" />
                 </div>
             </div>
         </div>

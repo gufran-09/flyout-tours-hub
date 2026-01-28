@@ -57,72 +57,60 @@ const RomanticCard = ({ item }: { item: typeof romanticExperiences[0] }) => (
     <Link
         to={item.link}
         className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
-    shadow-lg border border-neutral-100 hover:shadow-xl hover:border-rose-300/50 
-    transition-all duration-300 hover:-translate-y-1"
+    shadow-luxury border border-neutral-100/60 hover:shadow-luxury-hover hover:border-flyout-gold/30 
+    transition-all duration-500 ease-out hover:-translate-y-1"
     >
         {/* Image */}
         <div className="relative aspect-[4/5] overflow-hidden">
             <motion.img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
             />
 
             {/* Tag */}
-            <div className="absolute top-3 left-3">
-                <span className="px-3 py-1 bg-white/95 backdrop-blur-sm shadow-sm rounded-full 
-        text-[11px] font-semibold uppercase tracking-wider text-rose-500 border border-rose-200">
+            <div className="absolute top-4 left-4">
+                <span className="px-3 py-1 bg-white/90 backdrop-blur-md shadow-sm rounded-full 
+        text-[10px] font-medium uppercase tracking-widest text-rose-500 ring-1 ring-rose-200/60">
                     {item.tag}
                 </span>
             </div>
 
             {/* Mood badge */}
-            <div className="absolute bottom-3 left-3">
-                <span className="px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full 
-        text-[10px] font-medium text-white tracking-wide flex items-center gap-1">
-                    <Heart className="w-3 h-3 text-rose-300 fill-rose-300" />
-                    Curated Moments
+            <div className="absolute bottom-4 left-4">
+                <span className="px-3 py-1 bg-white/80 backdrop-blur-md rounded-full 
+        text-[10px] font-light text-neutral-900 tracking-[0.2em] flex items-center gap-1.5 border border-white/40">
+                    <Heart className="w-3 h-3 text-rose-500 fill-rose-500/20" />
+                    ROMANTIC
                 </span>
             </div>
         </div>
 
         {/* Content */}
-        <div className="flex flex-col flex-grow p-5">
-            <div className="flex items-center gap-2 mb-2 text-rose-500">
-                <Star className="w-4 h-4 fill-current" />
-                <span className="text-sm font-medium text-neutral-800">
-                    Romance Collection
+        <div className="flex flex-col flex-grow p-6">
+            <div className="flex items-center gap-2 mb-3 text-rose-500/90">
+                <Heart className="w-3.5 h-3.5 fill-current" />
+                <span className="text-xs font-medium tracking-wide text-neutral-500 uppercase">
+                    Couple's Choice
                 </span>
             </div>
 
-            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-flyout-gold transition-colors">
+            <h3 className="font-serif text-2xl text-neutral-900 mb-1 leading-tight group-hover:text-flyout-gold transition-colors duration-300">
                 {item.title}
             </h3>
 
-            <p className="text-sm text-neutral-500 mb-3">
-                {item.subtitle}
-            </p>
-
-            <div className="flex items-center gap-3 text-xs text-neutral-500 mb-4">
-                <span className="px-2 py-1 rounded-md bg-neutral-100">Couples</span>
-                <span className="px-2 py-1 rounded-md bg-neutral-100">Premium</span>
-            </div>
+            <p className="text-sm text-neutral-500 mb-5 font-light">{item.subtitle}</p>
 
             {/* Footer */}
-            <div className="mt-auto flex items-center justify-between pt-4 border-t border-neutral-100">
+            <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
                 <div className="flex flex-col">
-                    <span className="text-xs text-neutral-400">From</span>
-                    <span className="text-lg font-bold text-flyout-blue">
-                        {item.price}
-                    </span>
-                    <span className="text-[11px] text-neutral-400">
-                        per experience
-                    </span>
+                    <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">Experience from</span>
+                    <span className="text-lg font-medium font-serif text-flyout-blue">{item.price}</span>
                 </div>
 
-                <div className="w-9 h-9 rounded-full bg-neutral-100 flex items-center justify-center 
-        text-rose-600 group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
-                    <ArrowUpRight className="w-4 h-4" />
+                <div className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center 
+        text-neutral-400 group-hover:border-flyout-gold group-hover:text-flyout-gold transition-all duration-500">
+                    <ArrowUpRight className="w-3.5 h-3.5" />
                 </div>
             </div>
         </div>

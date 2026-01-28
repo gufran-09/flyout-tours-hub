@@ -129,7 +129,9 @@ export function Footer() {
                 placeholder="Enter your email address"
                 className="bg-transparent border-none outline-none text-white px-6 text-sm w-full placeholder:text-slate-600 font-light"
               />
-              <button className="bg-flyout-gold text-black px-8 py-3 rounded-full text-sm font-bold tracking-wide hover:bg-white transition-colors flex items-center gap-2 shadow-lg shadow-flyout-gold/20 hover:shadow-flyout-gold/40">
+              <button className="bg-flyout-gold text-black px-8 py-3 rounded-full text-sm font-bold tracking-wide 
+hover:bg-white transition-colors flex items-center gap-2 
+shadow-lg shadow-flyout-gold/20 hover:shadow-flyout-gold/40 whitespace-nowrap">
                 Join List
               </button>
             </div>
