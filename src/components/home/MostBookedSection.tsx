@@ -135,7 +135,7 @@ const MostBookedCard = ({ item }: { item: typeof mostBookedItems[0] }) => (
                 <span className="text-xs text-neutral-500">({item.reviews})</span>
             </div>
 
-            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-flyout-blue transition-colors line-clamp-1">
+            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-flyout-gold transition-colors line-clamp-1">
                 {item.title}
             </h3>
 

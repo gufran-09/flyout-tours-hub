@@ -95,7 +95,7 @@ const RomanticCard = ({ item }: { item: typeof romanticExperiences[0] }) => (
                 </span>
             </div>
 
-            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-flyout-blue transition-colors">
+            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-flyout-gold transition-colors">
                 {item.title}
             </h3>
 

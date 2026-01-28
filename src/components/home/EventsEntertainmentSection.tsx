@@ -112,7 +112,7 @@ const EventCard = ({ item }: { item: typeof events[0] }) => (
                 </span>
             </div>
 
-            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-flyout-blue transition-colors line-clamp-1">
+            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-flyout-gold transition-colors line-clamp-1">
                 {item.title}
             </h3>
             <p className="text-sm text-neutral-500 mb-4 line-clamp-1 flex items-center gap-1">
