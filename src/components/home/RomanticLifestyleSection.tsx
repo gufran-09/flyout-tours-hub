@@ -103,7 +103,7 @@ const RomanticCard = ({ item }: { item: typeof romanticExperiences[0] }) => (
 
 export const RomanticLifestyleSection = () => {
     return (
-        <section className="relative py-24 bg-white overflow-hidden">
+        <section className="relative pt-0 pb-24 bg-white overflow-hidden">
             {/* Background Elements - Warmer tones for this section */}
             <div className="absolute top-0 right-0 w-[50%] h-[500px] bg-rose-100/50 blur-[150px] rounded-full pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-100/50 blur-[100px] rounded-full pointer-events-none" />

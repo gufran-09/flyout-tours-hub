@@ -32,7 +32,7 @@ export default function PrivacyPolicy() {
               <ul className="list-disc pl-6 space-y-2 text-foreground/80">
                 <li>Register for an account</li>
                 <li>Make a booking or purchase</li>
-                <li>Subscribe to our newsletter</li>
+
                 <li>Contact our customer support</li>
                 <li>Participate in surveys or promotions</li>
               </ul>

@@ -34,7 +34,7 @@ import TermsConditions from "./pages/TermsConditions";
 import RefundPolicy from "./pages/RefundPolicy";
 import CancellationPolicy from "./pages/CancellationPolicy";
 import Blogs from "./pages/Blogs";
-import AdminNewsletter from "./pages/AdminNewsletter";
+
 import SearchResults from "./pages/SearchResults";
 import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
@@ -92,8 +92,7 @@ const App = () => {
                       {/* Search */}
                       <Route path="/search" element={<SearchResults />} />
 
-                      {/* Admin Pages */}
-                      <Route path="/admin/newsletter" element={<AdminNewsletter />} />
+
 
                       {/* Dubai Category Pages */}
                       <Route path="/dubai/theme-parks" element={<ThemeParks />} />

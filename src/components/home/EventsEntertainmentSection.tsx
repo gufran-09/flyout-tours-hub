@@ -51,7 +51,7 @@ const events = [
 
 export const EventsEntertainmentSection = () => {
     return (
-        <section className="py-24 bg-[#FAFAF8] relative overflow-hidden">
+        <section className="pt-0 pb-24 bg-[#FAFAF8] relative overflow-hidden">
             {/* Ambient Background Accents */}
             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-flyout-gold/5 rounded-full blur-[120px] pointer-events-none opacity-60" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#051025]/5 rounded-full blur-[100px] pointer-events-none opacity-40" />

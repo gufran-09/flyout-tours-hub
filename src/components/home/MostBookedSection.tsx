@@ -18,7 +18,7 @@ const mostBookedItems = [
         id: 1,
         title: "Desert Safari with BBQ Dinner",
         location: "Dubai Desert Conservation Reserve",
-        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Desert Landscape
+        image: "https://images.unsplash.com/photo-1695878868496-fcbd6ef47f57?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Desert Landscape
         price: "AED 150",
         rating: 4.9,
         reviews: "12.5k",
@@ -31,7 +31,7 @@ const mostBookedItems = [
         id: 2,
         title: "Atlantis Aquaventure Waterpark",
         location: "Palm Jumeirah",
-        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Waterpark/Pool
+        image: "https://images.unsplash.com/photo-1604375318488-4bf6119edb15?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Waterpark/Pool
         price: "AED 345",
         rating: 4.8,
         reviews: "8.2k",
@@ -44,7 +44,7 @@ const mostBookedItems = [
         id: 3,
         title: "Marina Dinner Cruise",
         location: "Dubai Marina",
-        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Marina Boat - Reused but popular
+        image: "https://images.unsplash.com/photo-1768367475215-22e0d8ebdadb?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Marina Boat - Reused but popular
         price: "AED 200",
         rating: 4.7,
         reviews: "5.4k",
@@ -57,7 +57,7 @@ const mostBookedItems = [
         id: 4,
         title: "Burj Khalifa Observation Deck",
         location: "Downtown Dubai",
-        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Burj
+        image: "https://images.unsplash.com/photo-1590082487384-fc2290e36718?q=80&w=657&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Burj
         price: "AED 179",
         rating: 4.9,
         reviews: "25k+",
@@ -70,7 +70,7 @@ const mostBookedItems = [
         id: 5,
         title: "Jet Ski Tour",
         location: "Jumeirah Beach",
-        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Jet Ski
+        image: "https://images.unsplash.com/photo-1688219040240-df6398321243?q=80&w=1149&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Jet Ski
         price: "AED 350",
         rating: 4.8,
         reviews: "3.1k",
@@ -83,7 +83,7 @@ const mostBookedItems = [
         id: 6,
         title: "Ferrari World Abu Dhabi",
         location: "Yas Island, Abu Dhabi",
-        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800", // Theme Park/Coaster
+        image: "https://images.unsplash.com/photo-1723815264488-a906461c770f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Theme Park/Coaster
         price: "AED 345",
         rating: 4.9,
         reviews: "9.8k",

@@ -250,14 +250,7 @@ export default function Dashboard() {
               </p>
             </div>
             <div className="flex gap-2 mt-4 md:mt-0">
-              {isAdmin && (
-                <Button variant="outline" asChild>
-                  <Link to="/admin/newsletter">
-                    <Mail className="h-4 w-4 mr-2" />
-                    Newsletter Admin
-                  </Link>
-                </Button>
-              )}
+
               <Button
                 variant="outline"
                 onClick={handleSignOut}

@@ -107,7 +107,7 @@ const CollectionCard = ({ item, featured = false }: { item: typeof curatedCollec
 
 export const CuratedCollectionsSection = () => {
     return (
-        <section className="relative py-20 bg-neutral-50 overflow-hidden">
+        <section className="relative pt-0 pb-20 bg-neutral-50 overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-neutral-50 to-neutral-50 pointer-events-none" />
 
