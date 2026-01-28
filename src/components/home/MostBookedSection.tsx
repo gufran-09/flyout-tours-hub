@@ -1,9 +1,7 @@
-
 import React from "react";
 import { motion } from "framer-motion";
-import { Star, Flame, Users, Clock, ArrowRight } from "lucide-react";
+import { ArrowUpRight, Star, Flame, Users, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import { cn } from "@/lib/utils";
 import {
     Carousel,
     CarouselContent,
@@ -18,7 +16,7 @@ const mostBookedItems = [
         id: 1,
         title: "Desert Safari with BBQ Dinner",
         location: "Dubai Desert Conservation Reserve",
-        image: "https://images.unsplash.com/photo-1695878868496-fcbd6ef47f57?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Desert Landscape
+        image: "https://images.unsplash.com/photo-1695878868496-fcbd6ef47f57?q=80&w=687&auto=format&fit=crop",
         price: "AED 150",
         rating: 4.9,
         reviews: "12.5k",
@@ -31,7 +29,7 @@ const mostBookedItems = [
         id: 2,
         title: "Atlantis Aquaventure Waterpark",
         location: "Palm Jumeirah",
-        image: "https://images.unsplash.com/photo-1604375318488-4bf6119edb15?q=80&w=1176&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Waterpark/Pool
+        image: "https://images.unsplash.com/photo-1604375318488-4bf6119edb15?q=80&w=1176&auto=format&fit=crop",
         price: "AED 345",
         rating: 4.8,
         reviews: "8.2k",
@@ -44,7 +42,7 @@ const mostBookedItems = [
         id: 3,
         title: "Marina Dinner Cruise",
         location: "Dubai Marina",
-        image: "https://images.unsplash.com/photo-1768367475215-22e0d8ebdadb?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Marina Boat - Reused but popular
+        image: "https://images.unsplash.com/photo-1768367475215-22e0d8ebdadb?q=80&w=1632&auto=format&fit=crop",
         price: "AED 200",
         rating: 4.7,
         reviews: "5.4k",
@@ -57,7 +55,7 @@ const mostBookedItems = [
         id: 4,
         title: "Burj Khalifa Observation Deck",
         location: "Downtown Dubai",
-        image: "https://images.unsplash.com/photo-1590082487384-fc2290e36718?q=80&w=657&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Burj
+        image: "https://images.unsplash.com/photo-1590082487384-fc2290e36718?q=80&w=657&auto=format&fit=crop",
         price: "AED 179",
         rating: 4.9,
         reviews: "25k+",
@@ -70,7 +68,7 @@ const mostBookedItems = [
         id: 5,
         title: "Jet Ski Tour",
         location: "Jumeirah Beach",
-        image: "https://images.unsplash.com/photo-1688219040240-df6398321243?q=80&w=1149&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Jet Ski
+        image: "https://images.unsplash.com/photo-1688219040240-df6398321243?q=80&w=1149&auto=format&fit=crop",
         price: "AED 350",
         rating: 4.8,
         reviews: "3.1k",
@@ -83,7 +81,7 @@ const mostBookedItems = [
         id: 6,
         title: "Ferrari World Abu Dhabi",
         location: "Yas Island, Abu Dhabi",
-        image: "https://images.unsplash.com/photo-1723815264488-a906461c770f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Theme Park/Coaster
+        image: "https://images.unsplash.com/photo-1723815264488-a906461c770f?q=80&w=687&auto=format&fit=crop",
         price: "AED 345",
         rating: 4.9,
         reviews: "9.8k",
@@ -94,25 +92,35 @@ const mostBookedItems = [
     }
 ];
 
+// Standardized Card Component (Matching LuxuryExperiencesSection)
 const MostBookedCard = ({ item }: { item: typeof mostBookedItems[0] }) => (
-    <Link to={item.link} className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden shadow-lg border border-neutral-100 hover:shadow-xl hover:border-flyout-gold/50 transition-all duration-300 hover:-translate-y-1">
-        {/* Image Container */}
-        <div className="relative aspect-[4/3] overflow-hidden">
+    <Link
+        to={item.link}
+        className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
+    shadow-lg border border-neutral-100 hover:shadow-xl hover:border-flyout-gold/40 
+    transition-all duration-300 hover:-translate-y-1"
+    >
+        {/* Image */}
+        <div className="relative aspect-[4/5] overflow-hidden">
             <motion.img
                 src={item.image}
                 alt={item.title}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
+
             {/* Tag Badge */}
-            <div className="absolute top-3 left-3 flex gap-2">
-                <span className="px-2.5 py-1 bg-white/95 backdrop-blur-sm shadow-sm rounded-md text-xs font-bold text-gray-900 flex items-center gap-1 uppercase tracking-wider">
+            <div className="absolute top-3 left-3">
+                <span className="px-3 py-1 bg-white/95 backdrop-blur-sm shadow rounded-full 
+        text-[11px] font-semibold uppercase tracking-wider text-flyout-gold border border-flyout-gold/30 flex items-center gap-1">
                     {item.tag === "Best Seller" && <Flame className="w-3 h-3 text-orange-500 fill-orange-500" />}
                     {item.tag}
                 </span>
             </div>
-            {/* Booked Badge */}
+
+            {/* Booked Count Badge */}
             <div className="absolute bottom-3 left-3">
-                <span className="px-2 py-1 bg-black/60 backdrop-blur-md rounded-full text-[10px] font-medium text-white flex items-center gap-1">
+                <span className="px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full 
+        text-[10px] font-medium text-white flex items-center gap-1">
                     <Users className="w-3 h-3 text-flyout-gold" />
                     {item.booked} booked
                 </span>
@@ -121,36 +129,39 @@ const MostBookedCard = ({ item }: { item: typeof mostBookedItems[0] }) => (
 
         {/* Content */}
         <div className="flex flex-col flex-grow p-5">
-            <div className="flex justify-between items-start mb-2">
-                <div className="flex items-center gap-1 text-amber-500">
-                    <Star className="w-3.5 h-3.5 fill-current" />
-                    <span className="text-sm font-bold text-neutral-900">{item.rating}</span>
-                    <span className="text-xs text-neutral-500">({item.reviews})</span>
-                </div>
+            <div className="flex items-center gap-2 mb-2 text-flyout-gold">
+                <Star className="w-4 h-4 fill-current" />
+                <span className="text-sm font-bold text-neutral-900">{item.rating}</span>
+                <span className="text-xs text-neutral-500">({item.reviews})</span>
             </div>
 
-            <h3 className="font-semibold text-lg text-neutral-900 mb-1 line-clamp-1 group-hover:text-primary transition-colors">
+            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-primary transition-colors line-clamp-1">
                 {item.title}
             </h3>
 
-            <p className="text-sm text-neutral-500 mb-4 line-clamp-1">
-                {item.location}
-            </p>
+            <p className="text-sm text-neutral-500 mb-4 line-clamp-1">{item.location}</p>
 
-            <div className="flex items-center gap-3 text-xs text-neutral-500 mb-4">
+            <div className="flex items-center gap-2 text-xs text-neutral-500 mb-4">
                 <div className="flex items-center gap-1">
                     <Clock className="w-3.5 h-3.5" />
                     {item.duration}
                 </div>
+                <span>•</span>
+                <span>Best Price Guarantee</span>
             </div>
 
+            {/* Footer */}
             <div className="mt-auto flex items-center justify-between pt-4 border-t border-neutral-100">
                 <div className="flex flex-col">
                     <span className="text-xs text-neutral-400">From</span>
                     <span className="text-lg font-bold text-primary">{item.price}</span>
                 </div>
-                <div className="w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center text-primary group-hover:bg-flyout-gold group-hover:text-white transition-all duration-300">
-                    <ArrowRight className="w-4 h-4" />
+
+                <div
+                    className="w-9 h-9 rounded-full bg-neutral-100 flex items-center justify-center 
+          text-primary group-hover:bg-flyout-gold group-hover:text-white transition-all duration-300"
+                >
+                    <ArrowUpRight className="w-4 h-4" />
                 </div>
             </div>
         </div>
@@ -162,7 +173,6 @@ export const MostBookedSection = () => {
         <section className="py-24 bg-white relative overflow-hidden">
             {/* Decorative Background */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neutral-50 via-white to-white pointer-events-none" />
-            <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/5 to-transparent pointer-events-none opacity-50" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12">

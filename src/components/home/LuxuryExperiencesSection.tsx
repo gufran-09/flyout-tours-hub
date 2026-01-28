@@ -144,7 +144,7 @@ const LuxuryCard = ({ item }: { item: typeof luxuryExperiences[0] }) => (
 
 export const LuxuryExperiencesSection = () => {
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="relative pt-0 pb-24 bg-white overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-neutral-50 via-white to-white pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
