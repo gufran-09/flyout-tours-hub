@@ -161,7 +161,7 @@ shadow-lg shadow-flyout-gold/20 hover:shadow-flyout-gold/40 whitespace-nowrap">
               links: [
                 { name: "About Us", href: "/about" },
                 { name: "Contact Concierge", href: "/contact" },
-                { name: "Partner with Flyout", href: "/partners" },
+                { name: "Partner with Flyout", href: "/partner" },
                 { name: "Travel Journal", href: "/blog" }
               ]
             },

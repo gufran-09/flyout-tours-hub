@@ -15,7 +15,7 @@ export const dubaiWaterParks: Tour[] = [
 ];
 
 export const dubaiAttractions: Tour[] = [
-  { id: "at-1", name: "Burj Khalifa At The Top", location: "Dubai", category: "Attractions", price: 199, originalPrice: 250, rating: 4.9, reviewCount: 8900, duration: "2 Hours", image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80", badge: "Iconic" },
+  { id: "at-1", name: "Chillout Ice Lounge", location: "Dubai", category: "Attractions", price: 199, originalPrice: 250, rating: 4.9, reviewCount: 8900, duration: "2 Hours", image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80", badge: "Iconic" },
   { id: "at-2", name: "Dubai Frame", location: "Dubai", category: "Attractions", price: 75, rating: 4.6, reviewCount: 3400, duration: "1.5 Hours", image: "https://images.unsplash.com/photo-1597659840241-37e2b9c2f55f?w=600&q=80" },
   { id: "at-3", name: "Museum of the Future", location: "Dubai", category: "Attractions", price: 149, rating: 4.8, reviewCount: 2100, duration: "2-3 Hours", image: "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=600&q=80", badge: "New" },
   { id: "at-4", name: "Dubai Miracle Garden", location: "Dubai", category: "Attractions", price: 99, originalPrice: 120, rating: 4.5, reviewCount: 4500, duration: "3 Hours", image: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=600&q=80" },
@@ -85,4 +85,11 @@ export const allDubaiExperiences: Tour[] = [
   ...dubaiDinnerCruise,
   ...dubaiYacht,
   ...dubaiLimousine,
+];
+
+export const ajmanExperiences: Tour[] = [
+  { id: "aj-1", name: "Ajman Museum", location: "Ajman", category: "Museum", price: 15, rating: 4.6, reviewCount: 450, duration: "1-2 Hours", image: "https://images.unsplash.com/photo-1596899223071-7c3a27777090?w=600&q=80", badge: "Cultural" },
+  { id: "aj-2", name: "Al Zorah Nature Reserve", location: "Ajman", category: "Nature", price: 50, rating: 4.8, reviewCount: 320, duration: "2 Hours", image: "https://images.unsplash.com/photo-1589308107877-a87f7bdc5264?w=600&q=80", badge: "Nature" },
+  { id: "aj-3", name: "Ajman Corniche", location: "Ajman", category: "Attractions", price: 0, rating: 4.7, reviewCount: 1200, duration: "Evening", image: "https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=600&q=80" },
+  { id: "aj-4", name: "Ajman Dhow Yard", location: "Ajman", category: "Cultural", price: 0, rating: 4.5, reviewCount: 280, duration: "1 Hour", image: "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?w=600&q=80" },
 ];

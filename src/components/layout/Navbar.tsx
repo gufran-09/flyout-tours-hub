@@ -135,7 +135,7 @@ export function Navbar() {
                     whileHover={{ x: 3 }}
                     transition={{ type: "spring", stiffness: 320, damping: 16 }}
                   >
-                    <Link to="/sell" className="flex items-center gap-2 group">
+                    <Link to="/partner" className="flex items-center gap-2 group">
                       <Store className="h-4 w-4 text-[#1A2B47] group-hover:text-[#B88E2F] transition-colors" />
                       <span className="text-[12.5px] font-bold text-[#0A1F44] group-hover:text-[#B88E2F] tracking-wide transition-colors uppercase py-2">
                         Partner With Flyout

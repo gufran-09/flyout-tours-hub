@@ -24,6 +24,7 @@ import AbuDhabi from "./pages/AbuDhabi";
 import Dubai from "./pages/Dubai";
 import Sharjah from "./pages/Sharjah";
 import RasAlKhaimah from "./pages/RasAlKhaimah";
+import Ajman from "./pages/Ajman";
 import Staycations from "./pages/Staycations";
 import Deals from "./pages/Deals";
 import Cart from "./pages/Cart";
@@ -40,6 +41,7 @@ import NotFound from "./pages/NotFound";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import FAQ from "./pages/FAQ";
+import Partner from "./pages/Partner";
 
 import ScrollToTop from "./components/ScrollToTop";
 import FloatingActionButtons from "./components/FloatingActionButtons";
@@ -108,11 +110,13 @@ const App = () => {
                       <Route path="/abu-dhabi" element={<AbuDhabi />} />
                       <Route path="/sharjah" element={<Sharjah />} />
                       <Route path="/ras-al-khaimah" element={<RasAlKhaimah />} />
+                      <Route path="/ajman" element={<Ajman />} />
                       <Route path="/staycations" element={<Staycations />} />
 
                       {/* Information Pages */}
                       <Route path="/about" element={<AboutUs />} />
                       <Route path="/contact" element={<ContactUs />} />
+                      <Route path="/partner" element={<Partner />} />
                       <Route path="/faq" element={<FAQ />} />
 
                       {/* Catch all */}
