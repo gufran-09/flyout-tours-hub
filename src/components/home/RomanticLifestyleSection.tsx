@@ -57,7 +57,7 @@ const RomanticCard = ({ item }: { item: typeof romanticExperiences[0] }) => (
     <Link
         to={item.link}
         className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
-    shadow-luxury border border-neutral-100/60 hover:shadow-luxury-hover hover:border-flyout-gold/30 
+    shadow-luxury border border-flyout-gold/20 hover:shadow-luxury-hover hover:border-flyout-gold/30 
     transition-all duration-500 ease-out hover:-translate-y-1"
     >
         {/* Image */}

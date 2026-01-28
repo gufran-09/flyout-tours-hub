@@ -64,7 +64,7 @@ const CollectionCard = ({ item }: { item: typeof curatedCollections[0] }) => (
     <Link
         to={item.link}
         className="group relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden 
-    shadow-md border border-neutral-200 hover:shadow-xl hover:border-black/5
+    shadow-md border border-flyout-gold/20 hover:shadow-xl hover:border-black/5
     transition-all duration-500 ease-out hover:-translate-y-1.5"
     >
         {/* Full Bleed Image */}
