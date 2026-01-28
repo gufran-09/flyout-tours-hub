@@ -112,10 +112,9 @@ const EventCard = ({ item }: { item: typeof events[0] }) => (
                 </span>
             </div>
 
-            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-primary transition-colors line-clamp-1">
+            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-flyout-blue transition-colors line-clamp-1">
                 {item.title}
             </h3>
-
             <p className="text-sm text-neutral-500 mb-4 line-clamp-1 flex items-center gap-1">
                 <MapPin className="w-3.5 h-3.5" />
                 {item.location}
@@ -125,7 +124,7 @@ const EventCard = ({ item }: { item: typeof events[0] }) => (
             <div className="mt-auto flex items-center justify-between pt-4 border-t border-neutral-100">
                 <div className="flex flex-col">
                     <span className="text-xs text-neutral-400">Tickets from</span>
-                    <span className="text-lg font-bold text-primary">{item.price}</span>
+                    <span className="text-lg font-bold text-flyout-blue">{item.price}</span>
                 </div>
 
                 <div

@@ -101,7 +101,7 @@ const CollectionCard = ({ item }: { item: typeof curatedCollections[0] }) => (
                 </span>
             </div>
 
-            <h3 className="font-serif text-xl text-neutral-900 mb-2 leading-snug group-hover:text-primary transition-colors">
+            <h3 className="font-serif text-xl text-neutral-900 mb-2 leading-snug group-hover:text-flyout-blue transition-colors">
                 {item.title}
             </h3>
 

@@ -84,6 +84,8 @@ export default {
         },
         "flyout-dark": "#0A1F44", // Deep Navy Blue for Navbar
         "flyout-gold": "#B88E2F", // Gold for borders/buttons
+        "flyout-blue": "#2DA6F6", // New Pricing Color
+        "flyout-rose": "#F43F5E", // Title Hover Color
       },
       borderRadius: {
         lg: "var(--radius)",

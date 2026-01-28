@@ -14,7 +14,7 @@ import {
 const romanticExperiences = [
     {
         id: 1,
-        title: "Marina Dinner Cruise",
+        title: "Marina  Dinner Cruise",
         subtitle: "Romantic Dining on the Water",
         image: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=800",
         price: "AED 350",
@@ -95,7 +95,7 @@ const RomanticCard = ({ item }: { item: typeof romanticExperiences[0] }) => (
                 </span>
             </div>
 
-            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-rose-600 transition-colors">
+            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-flyout-blue transition-colors">
                 {item.title}
             </h3>
 
@@ -112,7 +112,7 @@ const RomanticCard = ({ item }: { item: typeof romanticExperiences[0] }) => (
             <div className="mt-auto flex items-center justify-between pt-4 border-t border-neutral-100">
                 <div className="flex flex-col">
                     <span className="text-xs text-neutral-400">From</span>
-                    <span className="text-lg font-bold text-rose-600">
+                    <span className="text-lg font-bold text-flyout-blue">
                         {item.price}
                     </span>
                     <span className="text-[11px] text-neutral-400">
