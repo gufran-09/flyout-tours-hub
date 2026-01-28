@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Calendar, MapPin, ArrowRight, Sparkles } from "lucide-react";
+import { ArrowUpRight, Calendar, MapPin, Sparkles, Star } from "lucide-react";
 import { Link } from "react-router-dom";
-import { cn } from "@/lib/utils";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    type CarouselApi,
+} from "@/components/ui/carousel";
 
 // Data for Events
 const events = [
@@ -11,7 +17,7 @@ const events = [
         title: "Coldplay: Music of the Spheres",
         date: "JAN 11",
         location: "Zayed Sports City",
-        image: "https://images.unsplash.com/photo-1470229722913-7ea9959faed7?q=80&w=2000", // Cinematic Concert
+        image: "https://images.unsplash.com/photo-1470229722913-7ea9959faed7?q=80&w=2000",
         category: "Live Concert",
         price: "From AED 395",
         tag: "Selling Fast",
@@ -22,9 +28,10 @@ const events = [
         title: "Global Village Season 28",
         date: "NOW OPEN",
         location: "Global Village, Dubai",
-        image: "https://images.unsplash.com/photo-1582657233895-0f37a3ec7179?q=80&w=800", // Cultural/Light
+        image: "https://images.unsplash.com/photo-1582657233895-0f37a3ec7179?q=80&w=800",
         category: "Festival",
         price: "AED 30",
+        tag: "Cultural",
         link: "/attractions/global-village"
     },
     {
@@ -32,9 +39,10 @@ const events = [
         title: "La Perle by Dragone",
         date: "DAILY",
         location: "Al Habtoor City",
-        image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800", // Theatrical
+        image: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800",
         category: "Live Show",
         price: "From AED 259",
+        tag: "Theatrical",
         link: "/shows/la-perle"
     },
     {
@@ -42,161 +50,135 @@ const events = [
         title: "Dubai Opera Gala",
         date: "FEB 14",
         location: "Dubai Opera",
-        image: "https://images.unsplash.com/photo-1503095392213-2e6d338dbbf0?q=80&w=800", // Opera/Classy
+        image: "https://images.unsplash.com/photo-1503095392213-2e6d338dbbf0?q=80&w=800",
         category: "Classical",
         price: "From AED 550",
+        tag: "Classy",
         link: "/events/dubai-opera"
+    },
+    {
+        id: 5,
+        title: "Formula 1 Grand Prix",
+        date: "NOV 26",
+        location: "Yas Marina Circuit",
+        image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=800",
+        category: "Sports",
+        price: "From AED 1,200",
+        tag: "Major Event",
+        link: "/events/f1-abudhabi"
     }
 ];
 
+// Standardized Card - Matching Luxury Section
+const EventCard = ({ item }: { item: typeof events[0] }) => (
+    <Link
+        to={item.link}
+        className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
+    shadow-lg border border-neutral-100 hover:shadow-xl hover:border-flyout-gold/40 
+    transition-all duration-300 hover:-translate-y-1"
+    >
+        {/* Image */}
+        <div className="relative aspect-[4/5] overflow-hidden">
+            <motion.img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+
+            {/* Category Badge */}
+            <div className="absolute top-3 left-3">
+                <span className="px-3 py-1 bg-white/95 backdrop-blur-sm shadow rounded-full 
+        text-[11px] font-semibold uppercase tracking-wider text-flyout-gold border border-flyout-gold/30">
+                    {item.category}
+                </span>
+            </div>
+
+            {/* Date Badge */}
+            <div className="absolute bottom-3 left-3">
+                <span className="px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full 
+        text-[10px] font-medium text-white flex items-center gap-1">
+                    <Calendar className="w-3 h-3 text-flyout-gold" />
+                    {item.date}
+                </span>
+            </div>
+        </div>
+
+        {/* Content */}
+        <div className="flex flex-col flex-grow p-5">
+            <div className="flex items-center gap-2 mb-2 text-flyout-gold">
+                <Sparkles className="w-4 h-4 fill-current" />
+                <span className="text-sm font-medium text-neutral-800">
+                    Live in City
+                </span>
+            </div>
+
+            <h3 className="font-serif text-xl text-neutral-900 mb-1 leading-snug group-hover:text-primary transition-colors line-clamp-1">
+                {item.title}
+            </h3>
+
+            <p className="text-sm text-neutral-500 mb-4 line-clamp-1 flex items-center gap-1">
+                <MapPin className="w-3.5 h-3.5" />
+                {item.location}
+            </p>
+
+            {/* Footer */}
+            <div className="mt-auto flex items-center justify-between pt-4 border-t border-neutral-100">
+                <div className="flex flex-col">
+                    <span className="text-xs text-neutral-400">Tickets from</span>
+                    <span className="text-lg font-bold text-primary">{item.price}</span>
+                </div>
+
+                <div
+                    className="w-9 h-9 rounded-full bg-neutral-100 flex items-center justify-center 
+          text-primary group-hover:bg-flyout-gold group-hover:text-white transition-all duration-300"
+                >
+                    <ArrowUpRight className="w-4 h-4" />
+                </div>
+            </div>
+        </div>
+    </Link>
+);
+
 export const EventsEntertainmentSection = () => {
+    const [api, setApi] = useState<CarouselApi>();
+
     return (
-        <section className="pt-0 pb-24 bg-[#FAFAF8] relative overflow-hidden">
-            {/* Ambient Background Accents */}
-            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-flyout-gold/5 rounded-full blur-[120px] pointer-events-none opacity-60" />
-            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#051025]/5 rounded-full blur-[100px] pointer-events-none opacity-40" />
+        <section className="relative pt-0 pb-24 bg-white overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-neutral-50 to-neutral-50 pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+                <SectionHeader
+                    title="Events & Entertainment"
+                    label="Live in UAE"
+                    description="Experience the pulse of the Emirates with world-class concerts, festivals, and theatrical masterpieces."
+                    onPrev={() => api?.scrollPrev()}
+                    onNext={() => api?.scrollNext()}
+                    viewMoreLink="/events"
+                />
 
-                    {/* LEFT COLUMN: Header + Featured Event (Span 7) */}
-                    <div className="lg:col-span-7 flex flex-col gap-8">
-                        {/* Section Header */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
-                            viewport={{ once: true }}
-                        >
-                            <h2 className="flex items-center gap-2 text-flyout-gold font-medium text-sm tracking-[0.2em] uppercase mb-4">
-                                <Sparkles className="w-4 h-4" /> Live in UAE
-                            </h2>
-                            <h3 className="text-4xl md:text-5xl font-display font-medium text-slate-900 leading-tight mb-4">
-                                Events & Entertainment
-                            </h3>
-                            <p className="text-slate-600 font-light max-w-lg text-lg leading-relaxed">
-                                Experience the pulse of the Emirates with world-class concerts, festivals, and theatrical masterpieces.
-                            </p>
-                        </motion.div>
-
-                        {/* Featured Event Card */}
-                        <Link to={events[0].link} className="flex-1 group relative block overflow-hidden rounded-3xl shadow-xl shadow-black/5 hover:shadow-2xl hover:shadow-black/10 transition-all duration-500">
-                            {/* Image */}
-                            <div className="absolute inset-0 overflow-hidden">
-                                <motion.img
-                                    initial={{ scale: 1 }}
-                                    whileHover={{ scale: 1.05 }}
-                                    transition={{ duration: 1.2, ease: "easeOut" }}
-                                    src={events[0].image}
-                                    alt={events[0].title}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-
-                            {/* Overlay Gradient - Lighter/Cleaner */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#051025]/90 via-[#051025]/20 to-transparent" />
-
-                            {/* Content Panel */}
-                            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-10">
-                                <div className="flex items-center gap-3 mb-4">
-                                    <span className="px-3 py-1 bg-flyout-gold text-[#051025] text-xs font-bold uppercase rounded-full tracking-wide">
-                                        {events[0].category}
-                                    </span>
-                                    {events[0].tag && (
-                                        <span className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-medium uppercase rounded-full border border-white/20">
-                                            {events[0].tag}
-                                        </span>
-                                    )}
-                                </div>
-
-                                <h4 className="text-3xl md:text-4xl font-display text-white mb-3 leading-tight drop-shadow-md">
-                                    {events[0].title}
-                                </h4>
-
-                                <div className="flex flex-wrap items-center gap-y-2 gap-x-6 text-slate-200 text-sm mb-6">
-                                    <span className="flex items-center gap-2 font-medium text-white">
-                                        <Calendar className="w-4 h-4 text-flyout-gold" /> {events[0].date}
-                                    </span>
-                                    <span className="flex items-center gap-2">
-                                        <MapPin className="w-4 h-4 text-flyout-gold" /> {events[0].location}
-                                    </span>
-                                </div>
-
-                                <div className="flex items-center justify-between pt-5 border-t border-white/10">
-                                    <div className="flex flex-col">
-                                        <span className="text-xs text-slate-300 uppercase tracking-wider mb-1">Starting from</span>
-                                        <span className="text-xl font-bold text-flyout-gold">{events[0].price}</span>
-                                    </div>
-                                    <span className="w-10 h-10 rounded-full bg-white text-[#051025] flex items-center justify-center group-hover:bg-flyout-gold transition-colors shadow-lg">
-                                        <ArrowRight className="w-5 h-5 -rotate-45 group-hover:rotate-0 transition-transform duration-300" />
-                                    </span>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-
-                    {/* RIGHT COLUMN: Stacked Cards (Span 5) */}
-                    <div className="lg:col-span-5 flex flex-col justify-between h-full gap-6">
-                        {/* List Container */}
-                        <div className="flex flex-col gap-4">
-                            {events.slice(1).map((event) => (
-                                <Link
-                                    key={event.id}
-                                    to={event.link}
-                                    className="group relative flex overflow-hidden rounded-2xl bg-white hover:bg-white shadow-sm hover:shadow-lg transition-all duration-300 min-h-[130px] border border-slate-100"
+                <Carousel
+                    setApi={setApi}
+                    opts={{
+                        align: "start",
+                        loop: true,
+                    }}
+                    className="w-full"
+                >
+                    <CarouselContent className="-ml-4">
+                        {events.map((event, index) => (
+                            <CarouselItem key={event.id} className="pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: index * 0.05 }}
+                                    viewport={{ once: true }}
                                 >
-                                    {/* Image (Left Side) */}
-                                    <div className="w-[120px] sm:w-[140px] relative overflow-hidden shrink-0">
-                                        <img
-                                            src={event.image}
-                                            alt={event.title}
-                                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                        />
-                                    </div>
-
-                                    {/* Content (Right Side) */}
-                                    <div className="flex-1 p-5 flex flex-col justify-center">
-                                        <div className="flex justify-between items-start mb-2">
-                                            <span className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider group-hover:text-flyout-gold transition-colors">
-                                                {event.category}
-                                            </span>
-                                            <span className="text-[10px] sm:text-xs text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full font-medium">
-                                                {event.date}
-                                            </span>
-                                        </div>
-
-                                        <h5 className="text-lg font-display font-semibold text-slate-900 mb-1 group-hover:text-blue-900 transition-colors line-clamp-2 leading-snug">
-                                            {event.title}
-                                        </h5>
-
-                                        <div className="flex items-center justify-between mt-3">
-                                            <p className="text-xs text-slate-500 flex items-center gap-1 line-clamp-1">
-                                                <MapPin className="w-3 h-3 text-slate-400" /> {event.location}
-                                            </p>
-                                            <span className="text-sm font-bold text-slate-900">{event.price}</span>
-                                        </div>
-                                    </div>
-                                </Link>
-                            ))}
-                        </div>
-
-                        {/* View All Actions */}
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{ delay: 0.3 }}
-                            className="flex items-center justify-between mt-auto pt-6 border-t border-slate-200"
-                        >
-                            <p className="text-slate-500 text-sm hidden sm:block">
-                                Don't miss out on upcoming experiences
-                            </p>
-                            <Link to="/events" className="group flex items-center gap-2 text-slate-900 font-medium hover:text-flyout-gold transition-colors">
-                                View Full Calendar <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                            </Link>
-                        </motion.div>
-                    </div>
-
-                </div>
+                                    <EventCard item={event} />
+                                </motion.div>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                </Carousel>
             </div>
         </section>
     );

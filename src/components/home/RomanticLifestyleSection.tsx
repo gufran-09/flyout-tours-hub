@@ -14,7 +14,7 @@ import {
 const romanticExperiences = [
     {
         id: 1,
-        title: "Marina Sunset Dinner Cruise",
+        title: "Marina Dinner Cruise",
         subtitle: "Romantic Dining on the Water",
         image: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=800",
         price: "AED 350",

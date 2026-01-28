@@ -1,9 +1,15 @@
-
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Plane, Users, Sun, Music, Coffee } from "lucide-react";
+import { ArrowUpRight, Plane, Users, Sun, Music, Coffee, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    type CarouselApi,
+} from "@/components/ui/carousel";
 
 // Data for Curated Collections
 const curatedCollections = [
@@ -20,7 +26,7 @@ const curatedCollections = [
         id: 2,
         title: "Family Favorites",
         icon: Users,
-        description: "Theme parks, water parks, zoo, cruises",
+        description: "Theme parks, water parks, zoo, cruises and more ",
         image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800",
         color: "from-blue-600 to-cyan-500",
         link: "/dubai/theme-parks"
@@ -54,51 +60,67 @@ const curatedCollections = [
     }
 ];
 
-const CollectionCard = ({ item, featured = false }: { item: typeof curatedCollections[0], featured?: boolean }) => (
+// Standardized Card - Matching Luxury Section
+const CollectionCard = ({ item }: { item: typeof curatedCollections[0] }) => (
     <Link
         to={item.link}
-        className={cn(
-            "group relative block overflow-hidden rounded-2xl cursor-pointer shadow-lg hover:shadow-2xl transition-all duration-500",
-            featured ? "col-span-1 md:col-span-2 lg:col-span-2 row-span-2 h-[400px] md:h-[500px]" : "h-[240px] md:h-full min-h-[240px]"
-        )}
+        className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
+    shadow-lg border border-neutral-100 hover:shadow-xl hover:border-flyout-gold/40 
+    transition-all duration-300 hover:-translate-y-1"
     >
-        {/* Background Image */}
-        <div className="absolute inset-0">
+        {/* Image */}
+        <div className="relative aspect-[4/5] overflow-hidden">
             <motion.img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500" />
 
-            {/* Color Overlay on Hover */}
-            <div className={cn("absolute inset-0 bg-gradient-to-t opacity-0 group-hover:opacity-40 transition-opacity duration-500 mixed-blend-overlay", item.color)} />
+            {/* Icon Badge */}
+            <div className="absolute top-3 left-3">
+                <span className="w-8 h-8 rounded-full bg-white/95 backdrop-blur-sm shadow flex items-center justify-center text-flyout-gold">
+                    <item.icon className="w-4 h-4" />
+                </span>
+            </div>
+
+            {/* Tag Badge */}
+            <div className="absolute bottom-3 left-3">
+                <span className="px-2.5 py-1 bg-black/70 backdrop-blur-md rounded-full 
+        text-[10px] font-medium text-white flex items-center gap-1 uppercase tracking-wider">
+                    Collection
+                </span>
+            </div>
         </div>
 
         {/* Content */}
-        <div className="absolute inset-0 p-6 flex flex-col justify-end">
-            <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <div className="flex items-center gap-2 mb-2">
-                    <div className={cn("p-2 rounded-full bg-white/20 backdrop-blur-md text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300",
-                        featured ? "opacity-100" : "")}>
-                        <item.icon className="w-5 h-5" />
-                    </div>
+        <div className="flex flex-col flex-grow p-5">
+            <div className="flex items-center gap-2 mb-2 text-flyout-gold">
+                <Star className="w-4 h-4 fill-current" />
+                <span className="text-sm font-medium text-neutral-800">
+                    Curated For You
+                </span>
+            </div>
+
+            <h3 className="font-serif text-xl text-neutral-900 mb-2 leading-snug group-hover:text-primary transition-colors">
+                {item.title}
+            </h3>
+
+            <p className="text-sm text-neutral-500 mb-4 line-clamp-2">
+                {item.description}
+            </p>
+
+            {/* Footer */}
+            <div className="mt-auto flex items-center justify-between pt-4 border-t border-neutral-100">
+                <div className="flex flex-col">
+                    <span className="text-xs text-neutral-400">View</span>
+                    <span className="text-sm font-bold text-primary">Collection</span>
                 </div>
 
-                <h3 className={cn("font-serif text-white font-bold leading-tight drop-shadow-lg group-hover:text-white/90 transition-colors",
-                    featured ? "text-3xl md:text-4xl mb-3" : "text-xl md:text-2xl mb-1")}>
-                    {item.title}
-                </h3>
-
-                <p className={cn("text-white/80 font-light tracking-wide transition-all duration-300",
-                    featured ? "text-lg mb-6 line-clamp-3 opacity-90" : "text-sm h-0 opacity-0 group-hover:h-auto group-hover:opacity-100 mb-2")}>
-                    {item.description}
-                </p>
-
-                <div className={cn("flex items-center gap-2 text-white/90 text-sm font-medium uppercase tracking-wider",
-                    featured ? "opacity-100" : "opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-75")}>
-                    <span>Explore Collection</span>
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                <div
+                    className="w-9 h-9 rounded-full bg-neutral-100 flex items-center justify-center 
+          text-primary group-hover:bg-flyout-gold group-hover:text-white transition-all duration-300"
+                >
+                    <ArrowUpRight className="w-4 h-4" />
                 </div>
             </div>
         </div>
@@ -106,99 +128,46 @@ const CollectionCard = ({ item, featured = false }: { item: typeof curatedCollec
 );
 
 export const CuratedCollectionsSection = () => {
+    const [api, setApi] = useState<CarouselApi>();
+
     return (
-        <section className="relative pt-0 pb-20 bg-neutral-50 overflow-hidden">
+        <section className="relative pt-0 pb-24 bg-white overflow-hidden">
             {/* Background Elements */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-neutral-50 to-neutral-50 pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
-                {/* Section Header */}
-                <div className="flex flex-col md:flex-row justify-between items-end mb-10 md:mb-14">
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
-                        className="max-w-2xl"
-                    >
-                        <h2 className="text-flyout-gold font-medium text-sm md:text-base tracking-[0.2em] uppercase mb-3">
-                            Explore by Experience
-                        </h2>
-                        <h3 className="text-3xl md:text-5xl font-serif text-neutral-900 leading-tight">
-                            Curated for Every Kind of Traveler
-                        </h3>
-                    </motion.div>
+                <SectionHeader
+                    title="Curated for Every Traveler"
+                    label="Explore by Experience"
+                    description="Browse our hand-picked collections designed to match your travel style and intent."
+                    onPrev={() => api?.scrollPrev()}
+                    onNext={() => api?.scrollNext()}
+                    viewMoreLink="/collections"
+                />
 
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                        viewport={{ once: true }}
-                        className="hidden md:block"
-                    >
-                        <p className="text-neutral-500 text-right max-w-sm ml-auto text-sm">
-                            Browse our hand-picked collections designed to match your travel style and intent.
-                        </p>
-                    </motion.div>
-                </div>
-
-                {/* Benton Grid Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:auto-rows-[250px]">
-                    {/* Featured Item - Luxury Escapes (Spans 2 cols, 2 rows) */}
-                    <motion.div
-                        className="md:col-span-2 md:row-span-2"
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ duration: 0.5 }}
-                        viewport={{ once: true }}
-                    >
-                        <CollectionCard item={curatedCollections[0]} featured={true} />
-                    </motion.div>
-
-                    {/* Family Favorites */}
-                    <motion.div
-                        className="md:col-span-1 md:row-span-1"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.1 }}
-                        viewport={{ once: true }}
-                    >
-                        <CollectionCard item={curatedCollections[1]} />
-                    </motion.div>
-
-                    {/* Desert & Nature */}
-                    <motion.div
-                        className="md:col-span-1 md:row-span-1"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                        viewport={{ once: true }}
-                    >
-                        <CollectionCard item={curatedCollections[2]} />
-                    </motion.div>
-
-                    {/* Nightlife - Spans 1 col, 1 row (Next to bottom of featured) */}
-                    <motion.div
-                        className="md:col-span-1 md:row-span-1"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.3 }}
-                        viewport={{ once: true }}
-                    >
-                        <CollectionCard item={curatedCollections[3]} />
-                    </motion.div>
-
-                    {/* Relax & Indulge */}
-                    <motion.div
-                        className="md:col-span-1 md:row-span-1"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.4 }}
-                        viewport={{ once: true }}
-                    >
-                        <CollectionCard item={curatedCollections[4]} />
-                    </motion.div>
-                </div>
+                <Carousel
+                    setApi={setApi}
+                    opts={{
+                        align: "start",
+                        loop: true,
+                    }}
+                    className="w-full"
+                >
+                    <CarouselContent className="-ml-4">
+                        {curatedCollections.map((item, index) => (
+                            <CarouselItem key={item.id} className="pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: index * 0.05 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <CollectionCard item={item} />
+                                </motion.div>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                </Carousel>
             </div>
         </section>
     );
