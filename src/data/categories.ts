@@ -22,7 +22,7 @@ export const categories: Category[] = [
     },
     {
         title: "Airport Transfers",
-        image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Categories/Airport.webp",
+        image: "https://images.unsplash.com/photo-1585585828599-461a0419b788?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/transfers"
     },
     {

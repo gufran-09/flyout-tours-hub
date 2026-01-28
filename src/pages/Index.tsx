@@ -33,10 +33,10 @@ const Index = () => {
       <SectionTitle />
       <UaeShowcaseSection />
       <CategoriesCarousel />
+      <MostBookedSection />
       <LuxuryExperiencesSection />
       <RomanticLifestyleSection />
       <CuratedCollectionsSection />
-      <MostBookedSection />
       <EventsEntertainmentSection />
       <TravelEssentialsSection />
 
