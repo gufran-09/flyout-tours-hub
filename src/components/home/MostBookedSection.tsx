@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Star, Flame, Users, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
+    type CarouselApi,
 } from "@/components/ui/carousel";
 
 // Data for Most Booked Experiences
@@ -169,39 +169,22 @@ const MostBookedCard = ({ item }: { item: typeof mostBookedItems[0] }) => (
 );
 
 export const MostBookedSection = () => {
+    const [api, setApi] = useState<CarouselApi>();
+
     return (
         <section className="py-24 bg-white relative overflow-hidden">
             {/* Decorative Background */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neutral-50 via-white to-white pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-12">
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5 }}
-                        viewport={{ once: true }}
-                    >
-                        <h2 className="text-flyout-gold font-medium text-sm md:text-base tracking-[0.2em] uppercase mb-2">
-                            Social Proof
-                        </h2>
-                        <h3 className="text-3xl md:text-5xl font-serif text-neutral-900 tracking-tight leading-tight">
-                            Most Booked on Flyout
-                        </h3>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.5, delay: 0.1 }}
-                        viewport={{ once: true }}
-                        className="hidden md:flex items-center gap-2 mt-4 md:mt-0"
-                    >
-                        <span className="text-sm text-neutral-500">
-                            Join 500,000+ happy travelers
-                        </span>
-                    </motion.div>
-                </div>
+                <SectionHeader
+                    title="Most Booked on Flyout"
+                    label="Social Proof"
+                    description="Join 500,000+ happy travelers and explore our most popular experiences."
+                    onPrev={() => api?.scrollPrev()}
+                    onNext={() => api?.scrollNext()}
+                    viewMoreLink="/popular"
+                />
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -210,6 +193,7 @@ export const MostBookedSection = () => {
                     viewport={{ once: true }}
                 >
                     <Carousel
+                        setApi={setApi}
                         opts={{
                             align: "start",
                             loop: false,
@@ -223,10 +207,6 @@ export const MostBookedSection = () => {
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <div className="flex justify-end gap-2 mt-8 mr-1">
-                            <CarouselPrevious className="static translate-y-0 h-10 w-10 border-neutral-200 bg-white hover:bg-neutral-50 text-neutral-900 disabled:opacity-30" />
-                            <CarouselNext className="static translate-y-0 h-10 w-10 border-neutral-200 bg-white hover:bg-neutral-50 text-neutral-900 disabled:opacity-30" />
-                        </div>
                     </Carousel>
                 </motion.div>
             </div>

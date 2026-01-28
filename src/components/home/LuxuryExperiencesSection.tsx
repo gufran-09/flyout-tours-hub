@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Star, Crown, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    type CarouselApi,
+} from "@/components/ui/carousel";
 
 // ---------------- DATA ----------------
 
@@ -143,68 +150,46 @@ const LuxuryCard = ({ item }: { item: typeof luxuryExperiences[0] }) => (
 // ---------------- SECTION ----------------
 
 export const LuxuryExperiencesSection = () => {
+    const [api, setApi] = useState<CarouselApi>();
+
     return (
         <section className="relative pt-0 pb-24 bg-white overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-neutral-50 via-white to-white pointer-events-none" />
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
-                {/* Header */}
-                <div className="mb-16 max-w-3xl">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                        viewport={{ once: true }}
-                        className="text-flyout-gold font-medium text-sm tracking-[0.25em] uppercase mb-3 text-left"
+                <div className="container mx-auto px-4 md:px-6 relative z-10">
+                    <SectionHeader
+                        title="Signature Experiences"
+                        label="The Luxury Collection"
+                        description="Indulge in aspirational journeys crafted for discerning travelers. From private yachts to royal desert retreats."
+                        onPrev={() => api?.scrollPrev()}
+                        onNext={() => api?.scrollNext()}
+                        viewMoreLink="/luxury"
+                    />
+
+                    <Carousel
+                        setApi={setApi}
+                        opts={{
+                            align: "start",
+                            loop: true,
+                        }}
+                        className="w-full"
                     >
-                        The Luxury Collection
-                    </motion.h2>
-
-                    <motion.h3
-                        initial={{ opacity: 0, y: 15 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
-                        className="text-4xl md:text-6xl font-serif text-neutral-900 mb-6 text-left"
-                    >
-                        Signature Experiences
-                    </motion.h3>
-
-                    <motion.p
-                        initial={{ opacity: 0, y: 15 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6, delay: 0.1 }}
-                        viewport={{ once: true }}
-                        className="text-neutral-600 text-lg font-light leading-relaxed text-left"
-                    >
-                        Indulge in aspirational journeys crafted for discerning travelers.
-                        From private yachts to royal desert retreats.
-                    </motion.p>
-                </div>
-
-                {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {luxuryExperiences.map((experience, index) => (
-                        <motion.div
-                            key={experience.id}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.05 }}
-                            viewport={{ once: true }}
-                        >
-                            <LuxuryCard item={experience} />
-                        </motion.div>
-                    ))}
-                </div>
-
-                {/* CTA */}
-                <div className="mt-16 text-center">
-                    <Link to="/luxury">
-                        <button className="group inline-flex h-12 items-center justify-center rounded-md border border-neutral-200 px-8 font-medium text-neutral-900 transition hover:bg-neutral-50 hover:border-neutral-300">
-                            <span className="mr-2">Explore All Luxury Experiences</span>
-                            <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" />
-                        </button>
-                    </Link>
+                        <CarouselContent className="-ml-4">
+                            {luxuryExperiences.map((experience, index) => (
+                                <CarouselItem key={experience.id} className="pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.5, delay: index * 0.05 }}
+                                        viewport={{ once: true }}
+                                    >
+                                        <LuxuryCard item={experience} />
+                                    </motion.div>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
+                    </Carousel>
                 </div>
             </div>
         </section>

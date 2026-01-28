@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Star, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    type CarouselApi,
+} from "@/components/ui/carousel";
 
 // Data
 const romanticExperiences = [
@@ -123,54 +130,44 @@ const RomanticCard = ({ item }: { item: typeof romanticExperiences[0] }) => (
 );
 
 export const RomanticLifestyleSection = () => {
+    const [api, setApi] = useState<CarouselApi>();
+
     return (
         <section className="relative pt-0 pb-24 bg-white overflow-hidden">
             <div className="container mx-auto px-4 md:px-6 relative z-10">
 
-                {/* Header aligned with Luxury */}
-                <div className="mb-12 max-w-3xl">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.6 }}
-                        viewport={{ once: true }}
-                    >
-                        <h2 className="text-rose-500 font-medium text-sm tracking-[0.25em] uppercase mb-3">
-                            Lifestyle & Romance
-                        </h2>
-                        <h3 className="text-3xl md:text-5xl font-serif text-neutral-900 mb-4">
-                            Celebrate Life’s Moments
-                        </h3>
-                        <p className="text-neutral-600 text-lg leading-relaxed">
-                            Hand-picked experiences designed for romance, proposals, celebrations and unforgettable memories.
-                        </p>
-                    </motion.div>
-                </div>
+                <SectionHeader
+                    title="Celebrate Life’s Moments"
+                    label="Lifestyle & Romance"
+                    description="Hand-picked experiences designed for romance, proposals, celebrations and unforgettable memories."
+                    onPrev={() => api?.scrollPrev()}
+                    onNext={() => api?.scrollNext()}
+                    viewMoreLink="/lifestyle"
+                />
 
-                {/* Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {romanticExperiences.map((item, index) => (
-                        <motion.div
-                            key={item.id}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.4, delay: index * 0.05 }}
-                            viewport={{ once: true }}
-                        >
-                            <RomanticCard item={item} />
-                        </motion.div>
-                    ))}
-                </div>
-
-                {/* CTA */}
-                <div className="mt-14 text-center">
-                    <Link to="/lifestyle">
-                        <button className="inline-flex items-center gap-2 px-8 h-12 rounded-md border border-rose-200 text-rose-600 font-medium hover:bg-rose-50 transition">
-                            Explore Romance Collection
-                            <ArrowUpRight className="w-4 h-4" />
-                        </button>
-                    </Link>
-                </div>
+                <Carousel
+                    setApi={setApi}
+                    opts={{
+                        align: "start",
+                        loop: true,
+                    }}
+                    className="w-full"
+                >
+                    <CarouselContent className="-ml-4">
+                        {romanticExperiences.map((item, index) => (
+                            <CarouselItem key={item.id} className="pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.4, delay: index * 0.05 }}
+                                    viewport={{ once: true }}
+                                >
+                                    <RomanticCard item={item} />
+                                </motion.div>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                </Carousel>
 
             </div>
         </section>
