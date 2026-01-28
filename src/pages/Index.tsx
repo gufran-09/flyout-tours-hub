@@ -13,6 +13,7 @@ import CuratedCollectionsSection from "@/components/home/CuratedCollectionsSecti
 import MostBookedSection from "@/components/home/MostBookedSection";
 import EventsEntertainmentSection from "@/components/home/EventsEntertainmentSection";
 import TravelEssentialsSection from "@/components/home/TravelEssentialsSection";
+import { BrandStorySection } from "@/components/home/BrandStorySection";
 
 import {
   dubaiThemeParks,
@@ -39,7 +40,9 @@ const Index = () => {
       <CuratedCollectionsSection />
       <EventsEntertainmentSection />
       <TravelEssentialsSection />
-
+      <TestimonialsSection />
+      <BrandStorySection />
+      {/* 
       <ExperienceSection
         title="Dubai Theme Parks"
         subtitle="Thrilling adventures for the whole family"
@@ -96,9 +99,8 @@ const Index = () => {
         subtitle="Luxurious getaways and resort experiences"
         tours={staycations}
         viewMoreLink="/staycations"
-      />
+      /> */}
 
-      <TestimonialsSection />
     </Layout>
   );
 };
