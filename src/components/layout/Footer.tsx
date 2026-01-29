@@ -44,7 +44,7 @@ export function Footer() {
               </p>
             </div>
 
-            <div className="flex items-center gap-6 pt-4">
+            <div className="flex items-center gap-2 mb-2">
               <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-flyout-gold/10 to-transparent border-l-2 border-flyout-gold rounded-r-lg">
                 <Shield size={18} className="text-flyout-gold" />
                 <span className="text-xs font-semibold tracking-wider text-flyout-gold uppercase">Licensed UAE Travel Partner</span>
@@ -178,11 +178,11 @@ shadow-lg shadow-flyout-gold/20 hover:shadow-flyout-gold/40 whitespace-nowrap">
             {
               title: "Support",
               links: [
-                { name: "FAQs", href: "/faqs" },
-                { name: "Cancellation Policy", href: "/cancellation-policy" },
-                { name: "Refund Policy", href: "/refund-policy" },
+                { name: "Privacy Policy", href: "/privacy" },
                 { name: "Terms & Conditions", href: "/terms" },
-                { name: "Privacy Policy", href: "/privacy" }
+                { name: "Cancellations & Refunds", href: "/refund" },
+                { name: "FAQs", href: "/faqs" },
+                { name: "Blogs", href: "/blogs" },
               ]
             },
             {
@@ -246,16 +246,17 @@ shadow-lg shadow-flyout-gold/20 hover:shadow-flyout-gold/40 whitespace-nowrap">
               © {currentYear} FLYOUT TOURS LLC. ALL RIGHTS RESERVED.
             </p>
 
-            <div className="flex gap-3 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-              <FaCcVisa className="h-5 w-auto text-white" />
-              <FaCcMastercard className="h-5 w-auto text-white" />
-              <FaApplePay className="h-5 w-auto text-white" />
-              <FaGooglePay className="h-5 w-auto text-white" />
+            <div className="flex gap-4 items-center opacity-80 hover:opacity-100 transition-opacity duration-300 h-6 w-auto drop-shadow-[0_0_6px_rgba(255,255,255,0.15)]">
+              <FaCcVisa className="h-6 w-auto" />
+              <FaCcMastercard className="h-6 w-auto" />
+              <FaApplePay className="h-6 w-auto" />
+              <FaGooglePay className="h-6 w-auto" />
             </div>
 
+
             <div className="flex gap-6">
-              <Link to="/terms" className="text-[11px] text-slate-600 hover:text-flyout-gold transition-colors uppercase tracking-wider font-medium">Terms</Link>
               <Link to="/privacy" className="text-[11px] text-slate-600 hover:text-flyout-gold transition-colors uppercase tracking-wider font-medium">Privacy</Link>
+              <Link to="/terms" className="text-[11px] text-slate-600 hover:text-flyout-gold transition-colors uppercase tracking-wider font-medium">Terms</Link>
               <Link to="/cookies" className="text-[11px] text-slate-600 hover:text-flyout-gold transition-colors uppercase tracking-wider font-medium">Cookies</Link>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
-import { ProductCard } from "@/components/ui/ProductCard";
+import { PremiumCard } from "@/components/ui/PremiumCard";
 import { motion } from "framer-motion";
 import { Search, MapPin, Tag, Compass, Star, Filter, X, Loader2 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -285,20 +285,18 @@ export default function SearchResults() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <ProductCard
+                  <PremiumCard
                     id={result.id}
                     title={result.title}
                     image={result.image}
                     price={result.price || "Check Price"}
                     originalPrice={result.originalPrice}
                     rating={result.rating || 4.5}
-                    reviews="100+"
                     location={result.city}
                     category={result.category}
-                    tag={result.badge}
+                    badge={result.badge}
                     link={result.redirectUrl}
-                    duration="See details"
-                    booked="Popular"
+                    subtitle="See details"
                     className="h-full"
                   />
                 </motion.div>

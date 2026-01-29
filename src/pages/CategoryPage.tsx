@@ -30,12 +30,15 @@ import {
   dubaiDinnerCruise,
   dubaiYacht,
   abuDhabiExperiences,
+  sharjahExperiences,
+  ajmanExperiences,
+  rasAlKhaimahExperiences,
   staycations,
 } from "@/data/tours";
 import { Tour } from "@/components/home/ExperienceSection";
 import { useCart } from "@/contexts/CartContext";
 import { toast } from "sonner";
-import { AdvancedTourCard } from "@/components/ui/AdvancedTourCard";
+import { PremiumCard } from "@/components/ui/PremiumCard";
 
 // Limousine data (not in tours.ts yet)
 const dubaiLimousine: Tour[] = [
@@ -105,6 +108,24 @@ export default function CategoryPage() {
   let pageData;
   if (city === "abu-dhabi") {
     pageData = abuDhabiData;
+  } else if (city === "sharjah") {
+    pageData = {
+      title: "Sharjah Experiences",
+      subtitle: "Discover the cultural capital of the UAE",
+      tours: sharjahExperiences // You need to import this!
+    };
+  } else if (city === "ajman") {
+    pageData = {
+      title: "Ajman Experiences",
+      subtitle: "Explore the scenic beauty and heritage of Ajman",
+      tours: ajmanExperiences // You need to import this!
+    };
+  } else if (city === "ras-al-khaimah") {
+    pageData = {
+      title: "Ras Al Khaimah Experiences",
+      subtitle: "Adventure and nature in RAK",
+      tours: rasAlKhaimahExperiences // You need to import this!
+    };
   } else if (category === "staycations" || (!city && !category)) {
     pageData = staycationsData;
   } else if (city === "dubai" && category) {
@@ -363,17 +384,18 @@ export default function CategoryPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: index * 0.05 }}
                   >
-                    <AdvancedTourCard
+                    <PremiumCard
                       id={tour.id}
                       title={tour.name}
                       image={tour.image}
                       price={tour.price}
                       originalPrice={tour.originalPrice}
                       rating={tour.rating}
-                      reviews={tour.reviewCount}
-                      duration={tour.duration}
+                      category={tour.category}
+                      subtitle={tour.duration} // Using duration as subtitle 
                       badge={tour.badge}
                       location={tour.location}
+                      link={`/tour/${tour.id}`}
                     />
                   </motion.div>
                 ))}

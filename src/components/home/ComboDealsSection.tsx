@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Percent, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { AdvancedTourCard } from "@/components/ui/AdvancedTourCard";
+import { ProductCard } from "@/components/ui/ProductCard";
 import {
   Carousel,
   CarouselContent,
@@ -134,7 +134,7 @@ export function ComboDealsSection() {
             <CarouselContent className="-ml-4 py-6">
               {comboDeals.map((deal) => (
                 <CarouselItem key={deal.id} className="pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                  <AdvancedTourCard
+                  <ProductCard
                     id={deal.id}
                     title={deal.title}
                     image={deal.image}
@@ -143,8 +143,9 @@ export function ComboDealsSection() {
                     rating={deal.rating}
                     reviews={deal.reviews}
                     duration={deal.duration}
-                    badge={deal.badge}
+                    tag={deal.badge}
                     location="Dubai"
+                    link={`/tour/${deal.id}`}
                   />
                 </CarouselItem>
               ))}

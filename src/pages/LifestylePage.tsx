@@ -52,8 +52,8 @@ const romanticExperiences = [
 
 ];
 
-// Standardized using ProductCard
-import { ProductCard } from "@/components/ui/ProductCard";
+// Standardized using PremiumCard
+import { PremiumCard } from "@/components/ui/PremiumCard";
 
 const LifestylePage = () => {
     return (
@@ -73,18 +73,18 @@ const LifestylePage = () => {
                     {/* Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                         {romanticExperiences.map((item) => (
-                            <ProductCard
+                            <PremiumCard
                                 key={item.id}
                                 id={item.id}
                                 title={item.title}
                                 image={item.image}
                                 price={item.price}
                                 originalPrice={item.originalPrice}
-                                rating={5.0}
-                                reviews="Couple's Choice"
-                                tag={item.tag}
+                                rating={5.0} // Hardcoded in original
+                                badge={item.tag}
                                 link={item.link}
-                                location={item.subtitle} // Using subtitle as "location" slot for now, or just description
+                                location="Dubai, UAE" // Defaulting since subtitle is used as subtitle now
+                                subtitle={item.subtitle}
                             />
                         ))}
                     </div>

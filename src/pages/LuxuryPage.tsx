@@ -1,11 +1,10 @@
 import React from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ArrowUpRight, Star, Crown, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { PriceDisplay } from "@/components/ui/PriceDisplay";
 import { CurrencySymbol } from "@/components/ui/CurrencySymbol";
+import { PremiumCard } from "@/components/ui/PremiumCard";
 
 // Data
 const luxuryExperiences = [
@@ -71,81 +70,6 @@ const luxuryExperiences = [
     },
 ];
 
-const LuxuryCard = ({ item }: { item: typeof luxuryExperiences[0] }) => (
-    <Link
-        to={item.link}
-        className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
-    shadow-luxury border border-flyout-gold/20 hover:shadow-luxury-hover hover:border-flyout-gold/30 
-    transition-all duration-500 ease-out hover:-translate-y-1"
-    >
-        {/* Image */}
-        <div className="relative aspect-[4/5] overflow-hidden">
-            <motion.img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-
-            {/* Tag */}
-            <div className="absolute top-4 left-4">
-                <span className="px-3 py-1 bg-white/90 backdrop-blur-md shadow-sm rounded-full 
-        text-[10px] font-medium uppercase tracking-widest text-flyout-gold ring-1 ring-white/50">
-                    {item.tag}
-                </span>
-            </div>
-
-            {/* Luxury badge */}
-            <div className="absolute bottom-4 left-4">
-                <span className="px-3 py-1 bg-white/80 backdrop-blur-md rounded-full 
-        text-[10px] font-light text-neutral-900 tracking-[0.2em] flex items-center gap-1.5 border border-white/40">
-                    <Crown className="w-3 h-3 text-flyout-gold" />
-                    PREMIUM
-                </span>
-            </div>
-        </div>
-
-        {/* Content */}
-        <div className="flex flex-col flex-grow p-6">
-            <div className="flex items-center gap-2 mb-3 text-flyout-gold/90">
-                <Star className="w-3.5 h-3.5 fill-current" />
-                <span className="text-xs font-medium tracking-wide text-neutral-500 uppercase">
-                    Luxury Collection
-                </span>
-            </div>
-
-            <h3 className="font-serif text-2xl text-neutral-900 mb-1 leading-tight group-hover:text-flyout-gold transition-colors duration-300">
-                {item.title}
-            </h3>
-
-            <p className="text-sm text-neutral-500 mb-5 font-light">{item.subtitle}</p>
-
-            <div className="flex items-center gap-3 text-xs text-neutral-400 mb-5 font-light tracking-wide">
-                <div className="flex items-center gap-1.5">
-                    <ShieldCheck className="w-3.5 h-3.5 text-flyout-gold/70" />
-                    Private access
-                </div>
-                <span className="w-1 h-1 rounded-full bg-neutral-300" />
-                <span>Curated host</span>
-            </div>
-
-            {/* Footer */}
-            <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
-                <div className="flex flex-col">
-                    <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">From</span>
-                    <PriceDisplay price={item.price} originalPrice={item.originalPrice} />
-                </div>
-
-                <div
-                    className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center 
-          text-neutral-400 group-hover:border-flyout-gold group-hover:text-flyout-gold transition-all duration-500"
-                >
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                </div>
-            </div>
-        </div>
-    </Link>
-);
-
 const LuxuryPage = () => {
     return (
         <div className="min-h-screen bg-neutral-50 flex flex-col">
@@ -164,7 +88,20 @@ const LuxuryPage = () => {
                     {/* Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                         {luxuryExperiences.map((item) => (
-                            <LuxuryCard key={item.id} item={item} />
+                            <PremiumCard
+                                key={item.id}
+                                id={item.id}
+                                title={item.title}
+                                image={item.image}
+                                location="Dubai, UAE"
+                                price={typeof item.price === 'string' ? parseInt(item.price.replace(/[^0-9]/g, '')) : item.price}
+                                originalPrice={item.originalPrice}
+                                badge={item.tag}
+                                category="VIP Access"
+                                rating={5.0}
+                                subtitle={item.subtitle}
+                                link={item.link}
+                            />
                         ))}
                     </div>
                 </div>

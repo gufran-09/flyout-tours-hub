@@ -28,7 +28,7 @@ import { cn } from "@/lib/utils";
 import { toast } from "sonner";
 import { CurrencySymbol } from "@/components/ui/CurrencySymbol";
 import { PriceDisplay } from "@/components/ui/PriceDisplay";
-import { ProductCard } from "@/components/ui/ProductCard";
+import { PremiumCard } from "@/components/ui/PremiumCard";
 
 interface CategoryLayoutProps {
     title: string;
@@ -286,20 +286,18 @@ export function CategoryLayout({ title, subtitle, tours, backgroundImage, featur
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 0.4, delay: index * 0.05 }}
                                     >
-                                        <ProductCard
+                                        <PremiumCard
                                             id={tour.id}
                                             title={tour.name}
                                             image={tour.image}
                                             price={tour.price}
                                             originalPrice={tour.originalPrice}
                                             rating={tour.rating}
-                                            reviews={tour.reviewCount}
-                                            duration={tour.duration}
+                                            subtitle={tour.duration} // Using duration as subtitle similar to CategoryPage
                                             location={tour.location}
                                             link={`/tour/${tour.id}`}
-                                            tag={tour.badge}
+                                            badge={tour.badge}
                                             category={tour.category}
-                                            booked={`${Math.floor(Math.random() * 50) + 10}k+`} // Mock booked count if not present
                                         />
                                     </motion.div>
                                 ))}

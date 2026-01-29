@@ -124,6 +124,7 @@ const App = () => {
                       <Route path="/contact" element={<ContactUs />} />
                       <Route path="/partner" element={<Partner />} />
                       <Route path="/faq" element={<FAQ />} />
+                      <Route path="/faqs" element={<FAQ />} />
 
                       {/* Catch all */}
                       <Route path="*" element={<NotFound />} />

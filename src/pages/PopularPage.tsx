@@ -95,8 +95,8 @@ const mostBookedItems = [
     }
 ];
 
-// Standardized using ProductCard
-import { ProductCard } from "@/components/ui/ProductCard";
+// Standardized using PremiumCard
+import { PremiumCard } from "@/components/ui/PremiumCard";
 
 const PopularPage = () => {
     return (
@@ -116,18 +116,18 @@ const PopularPage = () => {
                     {/* Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                         {mostBookedItems.map((item) => (
-                            <ProductCard
+                            <PremiumCard
                                 key={item.id}
                                 id={item.id}
                                 title={item.title}
                                 image={item.image}
-                                price={item.price}
+                                location={item.location}
+                                price={item.price.replace("AED ", "").replace(",", "")}
                                 originalPrice={item.originalPrice}
                                 rating={item.rating}
-                                reviews={item.reviews}
-                                booked={item.booked}
-                                tag={item.tag}
-                                duration={item.duration}
+                                badge={item.tag}
+                                category="Trending"
+                                subtitle={item.duration}
                                 link={item.link}
                             />
                         ))}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { AdvancedTourCard } from "@/components/ui/AdvancedTourCard";
+import { ProductCard } from "@/components/ui/ProductCard";
 import {
   Carousel,
   CarouselContent,
@@ -24,6 +24,7 @@ export interface Tour {
   duration: string;
   image: string;
   badge?: string;
+  subtitle?: string;
 }
 
 interface ExperienceSectionProps {
@@ -92,7 +93,7 @@ export function ExperienceSection({
             <CarouselContent className="-ml-4 py-6">
               {tours.map((tour) => (
                 <CarouselItem key={tour.id} className="pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                  <AdvancedTourCard
+                  <ProductCard
                     id={tour.id}
                     title={tour.name}
                     image={tour.image}
@@ -101,8 +102,9 @@ export function ExperienceSection({
                     rating={tour.rating}
                     reviews={tour.reviewCount}
                     duration={tour.duration}
-                    badge={tour.badge}
+                    tag={tour.badge}
                     location={tour.location}
+                    link={`/tour/${tour.id}`}
                   />
                 </CarouselItem>
               ))}
