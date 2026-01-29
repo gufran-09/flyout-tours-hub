@@ -60,13 +60,13 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="flex items-center gap-6"
+                className="flex items-center gap-4 md:gap-6"
             >
                 {/* View More Link */}
                 {viewMoreLink && (
                     <Link
                         to={viewMoreLink}
-                        className="hidden md:flex items-center gap-2 group text-sm font-medium text-neutral-900 hover:text-flyout-gold transition-colors uppercase tracking-wider"
+                        className="flex items-center gap-2 group text-sm font-medium text-neutral-900 hover:text-flyout-gold transition-colors uppercase tracking-wider"
                     >
                         {viewMoreLabel}
                         <div className="w-8 h-8 rounded-full bg-neutral-100 flex items-center justify-center group-hover:bg-flyout-gold group-hover:text-white transition-all duration-300">
@@ -77,7 +77,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
 
                 {/* Separator */}
                 {(onPrev || onNext) && viewMoreLink && (
-                    <div className="hidden md:block w-px h-8 bg-neutral-200" />
+                    <div className="block w-px h-8 bg-neutral-200" />
                 )}
 
                 {/* Arrow Controls */}
