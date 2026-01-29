@@ -64,7 +64,7 @@ const mostBookedItems = [
         price: "AED 179",
         rating: 4.9,
         reviews: "25k+",
-        booked: "100k+",
+        booked: "60k+",
         tag: "Iconic",
         duration: "1.5 Hours",
         link: "/dubai/attractions/burj-khalifa",
@@ -100,81 +100,8 @@ const mostBookedItems = [
     }
 ];
 
-// Standardized Card Component (Matching LuxuryExperiencesSection)
-const MostBookedCard = ({ item }: { item: typeof mostBookedItems[0] }) => (
-    <Link
-        to={item.link}
-        className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
-    shadow-luxury border border-flyout-gold/20 hover:shadow-luxury-hover hover:border-flyout-gold/30 
-    transition-all duration-500 ease-out hover:-translate-y-1"
-    >
-        {/* Image */}
-        <div className="relative aspect-[4/5] overflow-hidden">
-            <motion.img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-
-            {/* Tag Badge */}
-            <div className="absolute top-4 left-4">
-                <span className="px-3 py-1 bg-white/90 backdrop-blur-md shadow-sm rounded-full 
-        text-[10px] font-medium uppercase tracking-widest text-flyout-gold ring-1 ring-white/50 flex items-center gap-1.5">
-                    {item.tag === "Best Seller" && <Flame className="w-3 h-3 text-orange-500/80" />}
-                    {item.tag}
-                </span>
-            </div>
-
-            {/* Booked Count Badge */}
-            <div className="absolute bottom-4 left-4">
-                <span className="px-3 py-1 bg-white/80 backdrop-blur-md rounded-full 
-        text-[10px] font-light text-neutral-900 tracking-[0.2em] flex items-center gap-1.5 border border-white/40">
-                    <Users className="w-3 h-3 text-flyout-gold" />
-                    {item.booked} BOOKED
-                </span>
-            </div>
-        </div>
-
-        {/* Content */}
-        <div className="flex flex-col flex-grow p-6">
-            <div className="flex items-center gap-2 mb-3 text-flyout-gold/90">
-                <Star className="w-3.5 h-3.5 fill-current" />
-                <span className="text-sm font-bold text-neutral-900">{item.rating}</span>
-                <span className="text-xs text-neutral-400 font-light">({item.reviews})</span>
-            </div>
-
-            <h3 className="font-serif text-2xl text-neutral-900 mb-2 leading-tight group-hover:text-flyout-gold transition-colors duration-300 line-clamp-2">
-                {item.title}
-            </h3>
-
-            <p className="text-sm text-neutral-500 mb-5 line-clamp-1 font-light">{item.location}</p>
-
-            <div className="flex items-center gap-3 text-xs text-neutral-400 mb-5 font-light tracking-wide">
-                <div className="flex items-center gap-1.5">
-                    <Clock className="w-3.5 h-3.5 text-flyout-gold/70" />
-                    {item.duration}
-                </div>
-                <span className="w-1 h-1 rounded-full bg-neutral-300" />
-                <span>Best Price Guarantee</span>
-            </div>
-
-            {/* Footer */}
-            <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
-                <div className="flex flex-col">
-                    <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">From</span>
-                    <PriceDisplay price={item.price} originalPrice={item.originalPrice} />
-                </div>
-
-                <div
-                    className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center 
-          text-neutral-400 group-hover:border-flyout-gold group-hover:text-flyout-gold transition-all duration-500"
-                >
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                </div>
-            </div>
-        </div>
-    </Link>
-);
+// MostBookedCard functionality replaced by shared component ProductCard
+import { ProductCard } from "@/components/ui/ProductCard";
 
 export const MostBookedSection = () => {
     const [api, setApi] = useState<CarouselApi>();
@@ -211,7 +138,20 @@ export const MostBookedSection = () => {
                         <CarouselContent className="-ml-4 py-4">
                             {mostBookedItems.map((item) => (
                                 <CarouselItem key={item.id} className="pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                                    <MostBookedCard item={item} />
+                                    <ProductCard
+                                        id={item.id}
+                                        title={item.title}
+                                        location={item.location}
+                                        image={item.image}
+                                        price={item.price}
+                                        rating={item.rating}
+                                        reviews={item.reviews}
+                                        booked={item.booked}
+                                        tag={item.tag}
+                                        duration={item.duration}
+                                        link={item.link}
+                                        originalPrice={item.originalPrice}
+                                    />
                                 </CarouselItem>
                             ))}
                         </CarouselContent>

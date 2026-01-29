@@ -95,80 +95,8 @@ const mostBookedItems = [
     }
 ];
 
-const MostBookedCard = ({ item }: { item: typeof mostBookedItems[0] }) => (
-    <Link
-        to={item.link}
-        className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
-    shadow-luxury border border-flyout-gold/20 hover:shadow-luxury-hover hover:border-flyout-gold/30 
-    transition-all duration-500 ease-out hover:-translate-y-1"
-    >
-        {/* Image */}
-        <div className="relative aspect-[4/5] overflow-hidden">
-            <motion.img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-
-            {/* Tag Badge */}
-            <div className="absolute top-4 left-4">
-                <span className="px-3 py-1 bg-white/90 backdrop-blur-md shadow-sm rounded-full 
-        text-[10px] font-medium uppercase tracking-widest text-flyout-gold ring-1 ring-white/50 flex items-center gap-1.5">
-                    {item.tag === "Best Seller" && <Flame className="w-3 h-3 text-orange-500/80" />}
-                    {item.tag}
-                </span>
-            </div>
-
-            {/* Booked Count Badge */}
-            <div className="absolute bottom-4 left-4">
-                <span className="px-3 py-1 bg-white/80 backdrop-blur-md rounded-full 
-        text-[10px] font-light text-neutral-900 tracking-[0.2em] flex items-center gap-1.5 border border-white/40">
-                    <Users className="w-3 h-3 text-flyout-gold" />
-                    {item.booked} BOOKED
-                </span>
-            </div>
-        </div>
-
-        {/* Content */}
-        <div className="flex flex-col flex-grow p-6">
-            <div className="flex items-center gap-2 mb-3 text-flyout-gold/90">
-                <Star className="w-3.5 h-3.5 fill-current" />
-                <span className="text-sm font-bold text-neutral-900">{item.rating}</span>
-                <span className="text-xs text-neutral-400 font-light">({item.reviews})</span>
-            </div>
-
-            <h3 className="font-serif text-2xl text-neutral-900 mb-2 leading-tight group-hover:text-flyout-gold transition-colors duration-300 line-clamp-2">
-                {item.title}
-            </h3>
-
-            <p className="text-sm text-neutral-500 mb-5 line-clamp-1 font-light">{item.location}</p>
-
-            <div className="flex items-center gap-3 text-xs text-neutral-400 mb-5 font-light tracking-wide">
-                <div className="flex items-center gap-1.5">
-                    <Clock className="w-3.5 h-3.5 text-flyout-gold/70" />
-                    {item.duration}
-                </div>
-                <span className="w-1 h-1 rounded-full bg-neutral-300" />
-                <span>Best Price Guarantee</span>
-            </div>
-
-            {/* Footer */}
-            <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
-                <div className="flex flex-col">
-                    <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">From</span>
-                    <PriceDisplay price={item.price} originalPrice={item.originalPrice} />
-                </div>
-
-                <div
-                    className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center 
-          text-neutral-400 group-hover:border-flyout-gold group-hover:text-flyout-gold transition-all duration-500"
-                >
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                </div>
-            </div>
-        </div>
-    </Link>
-);
+// Standardized using ProductCard
+import { ProductCard } from "@/components/ui/ProductCard";
 
 const PopularPage = () => {
     return (
@@ -179,16 +107,29 @@ const PopularPage = () => {
                 <div className="container mx-auto px-4 md:px-6">
                     {/* Header */}
                     <div className="mb-12">
-                        <h1 className="text-4xl md:text-5xl font-serif text-neutral-900 mb-4">Most Booked Experiences</h1>
+                        <h1 className="text-4xl md:text-5xl font-serif text-neutral-900 mb-4">Most Popular</h1>
                         <p className="text-neutral-500 text-lg font-light max-w-2xl">
-                            Discover the most popular and highly-rated experiences chosen by travelers.
+                            Discover our most loved experiences, rated highly by thousands of travelers.
                         </p>
                     </div>
 
                     {/* Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                         {mostBookedItems.map((item) => (
-                            <MostBookedCard key={item.id} item={item} />
+                            <ProductCard
+                                key={item.id}
+                                id={item.id}
+                                title={item.title}
+                                image={item.image}
+                                price={item.price}
+                                originalPrice={item.originalPrice}
+                                rating={item.rating}
+                                reviews={item.reviews}
+                                booked={item.booked}
+                                tag={item.tag}
+                                duration={item.duration}
+                                link={item.link}
+                            />
                         ))}
                     </div>
                 </div>

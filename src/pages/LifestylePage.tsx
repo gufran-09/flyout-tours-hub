@@ -52,69 +52,8 @@ const romanticExperiences = [
 
 ];
 
-const RomanticCard = ({ item }: { item: typeof romanticExperiences[0] }) => (
-    <Link
-        to={item.link}
-        className="group relative flex flex-col h-full bg-white rounded-xl overflow-hidden 
-    shadow-luxury border border-flyout-gold/20 hover:shadow-luxury-hover hover:border-flyout-gold/30 
-    transition-all duration-500 ease-out hover:-translate-y-1"
-    >
-        {/* Image */}
-        <div className="relative aspect-[4/5] overflow-hidden">
-            <motion.img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-            />
-
-            {/* Tag */}
-            <div className="absolute top-4 left-4">
-                <span className="px-3 py-1 bg-white/90 backdrop-blur-md shadow-sm rounded-full 
-        text-[10px] font-medium uppercase tracking-widest text-rose-500 ring-1 ring-rose-200/60">
-                    {item.tag}
-                </span>
-            </div>
-
-            {/* Mood badge */}
-            <div className="absolute bottom-4 left-4">
-                <span className="px-3 py-1 bg-white/80 backdrop-blur-md rounded-full 
-        text-[10px] font-light text-neutral-900 tracking-[0.2em] flex items-center gap-1.5 border border-white/40">
-                    <Heart className="w-3 h-3 text-rose-500 fill-rose-500/20" />
-                    ROMANTIC
-                </span>
-            </div>
-        </div>
-
-        {/* Content */}
-        <div className="flex flex-col flex-grow p-6">
-            <div className="flex items-center gap-2 mb-3 text-rose-500/90">
-                <Heart className="w-3.5 h-3.5 fill-current" />
-                <span className="text-xs font-medium tracking-wide text-neutral-500 uppercase">
-                    Couple's Choice
-                </span>
-            </div>
-
-            <h3 className="font-serif text-2xl text-neutral-900 mb-1 leading-tight group-hover:text-flyout-gold transition-colors duration-300">
-                {item.title}
-            </h3>
-
-            <p className="text-sm text-neutral-500 mb-5 font-light">{item.subtitle}</p>
-
-            {/* Footer */}
-            <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
-                <div className="flex flex-col">
-                    <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">Experience from</span>
-                    <PriceDisplay price={item.price} originalPrice={item.originalPrice} />
-                </div>
-
-                <div className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center 
-        text-neutral-400 group-hover:border-flyout-gold group-hover:text-flyout-gold transition-all duration-500">
-                    <ArrowUpRight className="w-3.5 h-3.5" />
-                </div>
-            </div>
-        </div>
-    </Link>
-);
+// Standardized using ProductCard
+import { ProductCard } from "@/components/ui/ProductCard";
 
 const LifestylePage = () => {
     return (
@@ -134,7 +73,19 @@ const LifestylePage = () => {
                     {/* Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                         {romanticExperiences.map((item) => (
-                            <RomanticCard key={item.id} item={item} />
+                            <ProductCard
+                                key={item.id}
+                                id={item.id}
+                                title={item.title}
+                                image={item.image}
+                                price={item.price}
+                                originalPrice={item.originalPrice}
+                                rating={5.0}
+                                reviews="Couple's Choice"
+                                tag={item.tag}
+                                link={item.link}
+                                location={item.subtitle} // Using subtitle as "location" slot for now, or just description
+                            />
                         ))}
                     </div>
                 </div>
@@ -144,5 +95,4 @@ const LifestylePage = () => {
         </div>
     );
 };
-
 export default LifestylePage;

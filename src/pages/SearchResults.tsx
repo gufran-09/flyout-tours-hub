@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
+import { ProductCard } from "@/components/ui/ProductCard";
 import { motion } from "framer-motion";
 import { Search, MapPin, Tag, Compass, Star, Filter, X, Loader2 } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
@@ -284,76 +285,24 @@ export default function SearchResults() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <Card
-                    className="overflow-hidden cursor-pointer hover:shadow-lg transition-all group"
-                    onClick={() => handleResultClick(result)}
-                  >
-                    <div className="relative h-48 overflow-hidden">
-                      <img
-                        src={result.image}
-                        alt={result.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
-
-                      {/* Type Badge */}
-                      <Badge
-                        className={cn(
-                          "absolute top-3 left-3",
-                          result.type === "tour" && "bg-primary",
-                          result.type === "destination" && "bg-blue-500",
-                          result.type === "category" && "bg-green-500"
-                        )}
-                      >
-                        {getTypeIcon(result.type)}
-                        <span className="ml-1">{getTypeLabel(result.type)}</span>
-                      </Badge>
-
-                      {/* Special Badge */}
-                      {result.badge && (
-                        <Badge className="absolute top-3 right-3 bg-amber-500">
-                          {result.badge}
-                        </Badge>
-                      )}
-
-                      {/* Price */}
-                      {result.price && (
-                        <div className="absolute bottom-3 right-3 bg-background/90 backdrop-blur rounded-lg px-3 py-1">
-                          <PriceDisplay price={result.price} originalPrice={result.originalPrice} />
-                        </div>
-                      )}
-                    </div>
-
-                    <CardContent className="p-4">
-                      <h3 className="font-semibold text-lg line-clamp-1 group-hover:text-primary transition-colors">
-                        {result.title}
-                      </h3>
-
-                      <div className="flex items-center gap-2 mt-2 text-sm text-muted-foreground">
-                        <MapPin className="h-4 w-4" />
-                        <span>{result.city}</span>
-                        <span>•</span>
-                        <span className="px-2 py-0.5 bg-muted rounded text-xs">
-                          {result.category}
-                        </span>
-                      </div>
-
-                      {result.description && (
-                        <p className="text-sm text-muted-foreground mt-2 line-clamp-2">
-                          {result.description}
-                        </p>
-                      )}
-
-                      {result.rating && (
-                        <div className="flex items-center gap-1 mt-3">
-                          <Star className="h-4 w-4 fill-amber-400 text-amber-400" />
-                          <span className="font-medium">{result.rating}</span>
-                        </div>
-                      )}
-                    </CardContent>
-                  </Card>
+                  <ProductCard
+                    id={result.id}
+                    title={result.title}
+                    image={result.image}
+                    price={result.price || "Check Price"}
+                    originalPrice={result.originalPrice}
+                    rating={result.rating || 4.5}
+                    reviews="100+"
+                    location={result.city}
+                    category={result.category}
+                    tag={result.badge}
+                    link={result.redirectUrl}
+                    duration="See details"
+                    booked="Popular"
+                    className="h-full"
+                  />
                 </motion.div>
-              ))
-              }
+              ))}
             </div>
           ) : initialQuery ? (
             <div className="text-center py-16">
@@ -375,9 +324,10 @@ export default function SearchResults() {
                 Enter keywords to find tours, destinations, and activities
               </p>
             </div>
-          )}
-        </div>
-      </div>
-    </Layout>
+          )
+          }
+        </div >
+      </div >
+    </Layout >
   );
 }
