@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { PriceDisplay } from "@/components/ui/PriceDisplay";
 import { ArrowUpRight, Calendar, MapPin, Sparkles, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -21,8 +22,9 @@ const events = [
         image: "https://images.unsplash.com/photo-1585131201641-2e3a295bf7dd?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Live Concert",
         price: "From AED 395",
-        tag: "Selling Fast",
-        link: "/events/coldplay-abu-dhabi"
+        tag: "Concert",
+        link: "/events/coldplay",
+        originalPrice: 650
     },
     {
         id: 2,
@@ -33,7 +35,8 @@ const events = [
         category: "Festival",
         price: "AED 30",
         tag: "Cultural",
-        link: "/attractions/global-village"
+        link: "/attractions/global-village",
+        originalPrice: 500
     },
     {
         id: 3,
@@ -43,8 +46,9 @@ const events = [
         image: "https://images.unsplash.com/photo-1635449677939-8e4e77ecf36a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Live Show",
         price: "From AED 259",
-        tag: "Theatrical",
-        link: "/shows/la-perle"
+        tag: "Trending",
+        link: "/events/la-perle",
+        originalPrice: 350
     },
     {
         id: 4,
@@ -54,8 +58,9 @@ const events = [
         image: "https://images.unsplash.com/photo-1768463852120-9360d0e39912?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         category: "Classical",
         price: "From AED 550",
-        tag: "Classy",
-        link: "/events/dubai-opera"
+        tag: "Family",
+        link: "/events/dubai-opera",
+        originalPrice: 25
     },
     {
         id: 5,
@@ -126,11 +131,7 @@ const EventCard = ({ item }: { item: typeof events[0] }) => (
             <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
                 <div className="flex flex-col">
                     <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">Tickets from</span>
-                    <span className="text-lg font-medium font-serif text-neutral-900 flex items-center gap-1">
-                        {item.price.includes("From") ? <span className="text-sm font-sans text-neutral-500 mr-1">From</span> : null}
-                        <CurrencySymbol className="w-4 h-4" />
-                        {item.price.replace("From", "").replace("AED", "").trim()}
-                    </span>
+                    <PriceDisplay price={item.price.replace("From", "").trim()} originalPrice={item.originalPrice} />
                 </div>
 
                 <div

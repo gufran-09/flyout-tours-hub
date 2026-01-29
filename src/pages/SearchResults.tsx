@@ -17,6 +17,7 @@ import {
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 import { CurrencySymbol } from "@/components/ui/CurrencySymbol";
+import { PriceDisplay } from "@/components/ui/PriceDisplay";
 
 interface SearchResult {
   id: string;
@@ -317,14 +318,7 @@ export default function SearchResults() {
                       {/* Price */}
                       {result.price && (
                         <div className="absolute bottom-3 right-3 bg-background/90 backdrop-blur rounded-lg px-3 py-1">
-                          <span className="font-bold text-neutral-900 flex items-center gap-1">
-                            <CurrencySymbol className="w-4 h-4" /> {result.price}
-                          </span>
-                          {result.originalPrice && (
-                            <span className="text-xs text-muted-foreground line-through ml-1 flex items-center gap-1">
-                              <CurrencySymbol className="w-3 h-3 opacity-70" /> {result.originalPrice}
-                            </span>
-                          )}
+                          <PriceDisplay price={result.price} originalPrice={result.originalPrice} />
                         </div>
                       )}
                     </div>

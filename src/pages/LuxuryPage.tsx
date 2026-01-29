@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowUpRight, Star, Crown, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { PriceDisplay } from "@/components/ui/PriceDisplay";
 import { CurrencySymbol } from "@/components/ui/CurrencySymbol";
 
 // Data
@@ -16,6 +17,7 @@ const luxuryExperiences = [
         price: "AED 1,500",
         tag: "Signature",
         link: "/safari/royal-desert-safari",
+        originalPrice: 1800
     },
     {
         id: 2,
@@ -25,6 +27,7 @@ const luxuryExperiences = [
         price: "AED 2,800",
         tag: "Exclusive",
         link: "/dubai/burj-khalifa-vip",
+        originalPrice: 3200
     },
     {
         id: 3,
@@ -34,6 +37,7 @@ const luxuryExperiences = [
         price: "AED 350",
         tag: "Trending",
         link: "/yacht/sunset-party",
+        originalPrice: 450
     },
     {
         id: 4,
@@ -43,6 +47,7 @@ const luxuryExperiences = [
         price: "AED 1,200",
         tag: "Best Seller",
         link: "/sky-adventures/helicopter",
+        originalPrice: 1500
     },
     {
         id: 5,
@@ -52,6 +57,7 @@ const luxuryExperiences = [
         price: "AED 950",
         tag: "Thrilling",
         link: "/parks/ferrari-world-vip",
+        originalPrice: 1100
     },
     {
         id: 6,
@@ -61,6 +67,7 @@ const luxuryExperiences = [
         price: "AED 600",
         tag: "Luxury",
         link: "/transfers/limousine",
+        originalPrice: 750
     },
 ];
 
@@ -125,9 +132,7 @@ const LuxuryCard = ({ item }: { item: typeof luxuryExperiences[0] }) => (
             <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
                 <div className="flex flex-col">
                     <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">From</span>
-                    <span className="text-lg font-medium font-serif text-neutral-900 flex items-center gap-1">
-                        <CurrencySymbol className="w-4 h-4" /> {item.price.replace("AED", "").trim()}
-                    </span>
+                    <PriceDisplay price={item.price} originalPrice={item.originalPrice} />
                 </div>
 
                 <div

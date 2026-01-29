@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import { PriceDisplay } from "@/components/ui/PriceDisplay";
 import { ArrowUpRight, Star, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -19,7 +20,8 @@ const romanticExperiences = [
         image: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?q=80&w=800",
         price: "AED 350",
         tag: "Romantic",
-        link: "/dinner-cruise/marina-sunset"
+        link: "/dinner-cruise/marina-sunset",
+        originalPrice: 420
     },
     {
         id: 2,
@@ -28,7 +30,8 @@ const romanticExperiences = [
         image: "https://images.unsplash.com/photo-1695606453510-dc0cf8377836?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: "AED 800",
         tag: "Lifestyle",
-        link: "/restaurants/rooftop-dining"
+        link: "/restaurants/rooftop-dining",
+        originalPrice: 950
     },
     {
         id: 3,
@@ -37,7 +40,8 @@ const romanticExperiences = [
         image: "https://images.unsplash.com/photo-1764148775844-52fd5216e77b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: "AED 3,500",
         tag: "Exclusive",
-        link: "/yacht/proposal-package"
+        link: "/yacht/proposal-package",
+        originalPrice: 4200
     },
     {
         id: 4,
@@ -46,7 +50,8 @@ const romanticExperiences = [
         image: "https://images.unsplash.com/photo-1507608443039-bfde4fbcd142?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         price: "AED 1,100",
         tag: "Bucket List",
-        link: "/sky-adventures/hot-air-balloon"
+        link: "/sky-adventures/hot-air-balloon",
+        originalPrice: 1350
     },
 
 ];
@@ -105,7 +110,7 @@ const RomanticCard = ({ item }: { item: typeof romanticExperiences[0] }) => (
             <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
                 <div className="flex flex-col">
                     <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">Experience from</span>
-                    <span className="text-lg font-medium font-serif text-flyout-blue">{item.price}</span>
+                    <PriceDisplay price={item.price} originalPrice={item.originalPrice} />
                 </div>
 
                 <div className="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center 

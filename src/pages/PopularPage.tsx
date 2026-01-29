@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ArrowUpRight, Star, Flame, Users, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { PriceDisplay } from "@/components/ui/PriceDisplay";
 import { CurrencySymbol } from "@/components/ui/CurrencySymbol";
 
 // Data
@@ -19,7 +20,8 @@ const mostBookedItems = [
         booked: "50k+",
         tag: "Best Seller",
         duration: "6 Hours",
-        link: "/safari/evening-safari"
+        link: "/safari/evening-safari",
+        originalPrice: 200
     },
     {
         id: 2,
@@ -32,7 +34,8 @@ const mostBookedItems = [
         booked: "35k+",
         tag: "Trending",
         duration: "Full Day",
-        link: "/dubai/water-parks/atlantis"
+        link: "/dubai/water-parks/atlantis",
+        originalPrice: 420
     },
     {
         id: 3,
@@ -45,7 +48,8 @@ const mostBookedItems = [
         booked: "20k+",
         tag: "Must Try",
         duration: "2 Hours",
-        link: "/dubai/dinner-cruise/marina"
+        link: "/dubai/dinner-cruise/marina",
+        originalPrice: 250
     },
     {
         id: 4,
@@ -58,7 +62,8 @@ const mostBookedItems = [
         booked: "100k+",
         tag: "Iconic",
         duration: "1.5 Hours",
-        link: "/dubai/attractions/burj-khalifa"
+        link: "/dubai/attractions/burj-khalifa",
+        originalPrice: 220
     },
     {
         id: 5,
@@ -71,7 +76,8 @@ const mostBookedItems = [
         booked: "10k+",
         tag: "Thrilling",
         duration: "1 Hour",
-        link: "/dubai/water-sports/jet-ski"
+        link: "/dubai/water-sports/jet-ski",
+        originalPrice: 450
     },
     {
         id: 6,
@@ -84,7 +90,8 @@ const mostBookedItems = [
         booked: "45k+",
         tag: "Popular",
         duration: "Full Day",
-        link: "/abu-dhabi/ferrari-world"
+        link: "/abu-dhabi/ferrari-world",
+        originalPrice: 395
     }
 ];
 
@@ -149,9 +156,7 @@ const MostBookedCard = ({ item }: { item: typeof mostBookedItems[0] }) => (
             <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
                 <div className="flex flex-col">
                     <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">From</span>
-                    <span className="text-lg font-medium font-serif text-neutral-900 flex items-center gap-1">
-                        <CurrencySymbol className="w-4 h-4" /> {item.price.replace("AED", "").trim()}
-                    </span>
+                    <PriceDisplay price={item.price} originalPrice={item.originalPrice} />
                 </div>
 
                 <div
