@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { useCart } from "@/contexts/CartContext";
 import { useWishlist } from "@/contexts/WishlistContext";
 import { toast } from "sonner";
+import { CurrencySymbol } from "./CurrencySymbol";
 
 export interface TourCardProps {
     id: string;
@@ -153,12 +154,12 @@ export function AdvancedTourCard({
                             <div>
                                 <span className="text-xs text-white/60">Starting from</span>
                                 <div className="flex items-center gap-2">
-                                    <span className="text-xl font-bold text-white">
-                                        AED {price}
+                                    <span className="text-xl font-bold text-white flex items-center gap-1">
+                                        <CurrencySymbol className="w-4 h-4 invert brightness-0" /> {price}
                                     </span>
                                     {originalPrice && (
-                                        <span className="text-sm text-white/50 line-through">
-                                            AED {originalPrice}
+                                        <span className="text-sm text-white/50 line-through flex items-center gap-1">
+                                            <CurrencySymbol className="w-3 h-3 invert brightness-0 opacity-50" /> {originalPrice}
                                         </span>
                                     )}
                                 </div>

@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/select";
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
+import { CurrencySymbol } from "@/components/ui/CurrencySymbol";
 
 interface SearchResult {
   id: string;
@@ -38,7 +39,7 @@ export default function SearchResults() {
   const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
   const initialQuery = searchParams.get("q") || "";
-  
+
   const [query, setQuery] = useState(initialQuery);
   const [results, setResults] = useState<SearchResult[]>([]);
   const [filteredResults, setFilteredResults] = useState<SearchResult[]>([]);
@@ -67,9 +68,9 @@ export default function SearchResults() {
             },
           }
         );
-        
+
         if (!response.ok) throw new Error("Search failed");
-        
+
         const data = await response.json();
         setResults(data.results || []);
       } catch (error) {
@@ -166,7 +167,7 @@ export default function SearchResults() {
             <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               Search Results
             </h1>
-            
+
             <form onSubmit={handleSearch} className="relative max-w-2xl">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
               <Input
@@ -176,8 +177,8 @@ export default function SearchResults() {
                 placeholder="Search tours, destinations, activities..."
                 className="pl-12 pr-28 h-14 text-lg"
               />
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 className="absolute right-2 top-1/2 -translate-y-1/2 h-10"
               >
                 Search
@@ -208,7 +209,7 @@ export default function SearchResults() {
                   <Filter className="h-4 w-4" />
                   Filters:
                 </div>
-                
+
                 <Select value={typeFilter} onValueChange={setTypeFilter}>
                   <SelectTrigger className="w-32">
                     <SelectValue placeholder="Type" />
@@ -282,7 +283,7 @@ export default function SearchResults() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <Card 
+                  <Card
                     className="overflow-hidden cursor-pointer hover:shadow-lg transition-all group"
                     onClick={() => handleResultClick(result)}
                   >
@@ -292,9 +293,9 @@ export default function SearchResults() {
                         alt={result.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      
+
                       {/* Type Badge */}
-                      <Badge 
+                      <Badge
                         className={cn(
                           "absolute top-3 left-3",
                           result.type === "tour" && "bg-primary",
@@ -316,12 +317,12 @@ export default function SearchResults() {
                       {/* Price */}
                       {result.price && (
                         <div className="absolute bottom-3 right-3 bg-background/90 backdrop-blur rounded-lg px-3 py-1">
-                          <span className="font-bold text-primary">
-                            AED {result.price}
+                          <span className="font-bold text-neutral-900 flex items-center gap-1">
+                            <CurrencySymbol className="w-4 h-4" /> {result.price}
                           </span>
                           {result.originalPrice && (
-                            <span className="text-xs text-muted-foreground line-through ml-1">
-                              AED {result.originalPrice}
+                            <span className="text-xs text-muted-foreground line-through ml-1 flex items-center gap-1">
+                              <CurrencySymbol className="w-3 h-3 opacity-70" /> {result.originalPrice}
                             </span>
                           )}
                         </div>
@@ -332,7 +333,7 @@ export default function SearchResults() {
                       <h3 className="font-semibold text-lg line-clamp-1 group-hover:text-primary transition-colors">
                         {result.title}
                       </h3>
-                      
+
                       <div className="flex items-center gap-2 mt-2 text-sm text-muted-foreground">
                         <MapPin className="h-4 w-4" />
                         <span>{result.city}</span>
@@ -365,7 +366,7 @@ export default function SearchResults() {
               <Search className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
               <h2 className="text-xl font-semibold mb-2">No results found</h2>
               <p className="text-muted-foreground max-w-md mx-auto">
-                We couldn't find any tours, destinations, or categories matching "{initialQuery}". 
+                We couldn't find any tours, destinations, or categories matching "{initialQuery}".
                 Try different keywords or browse our categories.
               </p>
               <Button className="mt-6" onClick={() => navigate("/")}>

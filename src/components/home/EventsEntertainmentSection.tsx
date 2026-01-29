@@ -9,6 +9,7 @@ import {
     CarouselItem,
     type CarouselApi,
 } from "@/components/ui/carousel";
+import { CurrencySymbol } from "@/components/ui/CurrencySymbol";
 
 // Data for Events
 const events = [
@@ -125,7 +126,11 @@ const EventCard = ({ item }: { item: typeof events[0] }) => (
             <div className="mt-auto flex items-center justify-between pt-5 border-t border-neutral-100/60">
                 <div className="flex flex-col">
                     <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">Tickets from</span>
-                    <span className="text-lg font-medium font-serif text-flyout-blue">{item.price}</span>
+                    <span className="text-lg font-medium font-serif text-neutral-900 flex items-center gap-1">
+                        {item.price.includes("From") ? <span className="text-sm font-sans text-neutral-500 mr-1">From</span> : null}
+                        <CurrencySymbol className="w-4 h-4" />
+                        {item.price.replace("From", "").replace("AED", "").trim()}
+                    </span>
                 </div>
 
                 <div

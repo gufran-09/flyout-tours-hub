@@ -26,6 +26,7 @@ import { useCart } from "@/contexts/CartContext";
 import { useWishlist } from "@/contexts/WishlistContext";
 import { cn } from "@/lib/utils";
 import { toast } from "sonner";
+import { CurrencySymbol } from "@/components/ui/CurrencySymbol";
 
 interface CategoryLayoutProps {
     title: string;
@@ -148,12 +149,12 @@ function TourCard({ tour, index }: { tour: Tour; index: number }) {
                         <div>
                             <span className="text-sm text-muted-foreground">From</span>
                             <div className="flex items-center gap-2">
-                                <span className="text-xl font-bold text-primary">
-                                    AED {tour.price}
+                                <span className="text-xl font-bold text-neutral-900 flex items-center gap-1">
+                                    <CurrencySymbol className="w-4 h-4" /> {tour.price}
                                 </span>
                                 {tour.originalPrice && (
-                                    <span className="text-sm text-muted-foreground line-through">
-                                        AED {tour.originalPrice}
+                                    <span className="text-sm text-muted-foreground line-through flex items-center gap-1">
+                                        <CurrencySymbol className="w-3 h-3 opacity-70" /> {tour.originalPrice}
                                     </span>
                                 )}
                             </div>

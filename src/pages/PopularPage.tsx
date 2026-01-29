@@ -1,17 +1,12 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React from "react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { ArrowUpRight, Star, Flame, Users, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import { SectionHeader } from "@/components/ui/SectionHeader";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    type CarouselApi,
-} from "@/components/ui/carousel";
+import { motion } from "framer-motion";
 import { CurrencySymbol } from "@/components/ui/CurrencySymbol";
 
-// Data for Most Booked Experiences
+// Data
 const mostBookedItems = [
     {
         id: 1,
@@ -93,7 +88,6 @@ const mostBookedItems = [
     }
 ];
 
-// Standardized Card Component (Matching LuxuryExperiencesSection)
 const MostBookedCard = ({ item }: { item: typeof mostBookedItems[0] }) => (
     <Link
         to={item.link}
@@ -156,8 +150,7 @@ const MostBookedCard = ({ item }: { item: typeof mostBookedItems[0] }) => (
                 <div className="flex flex-col">
                     <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">From</span>
                     <span className="text-lg font-medium font-serif text-neutral-900 flex items-center gap-1">
-                        <CurrencySymbol className="w-4 h-4" />
-                        {item.price.replace("AED", "").trim()}
+                        <CurrencySymbol className="w-4 h-4" /> {item.price.replace("AED", "").trim()}
                     </span>
                 </div>
 
@@ -172,50 +165,33 @@ const MostBookedCard = ({ item }: { item: typeof mostBookedItems[0] }) => (
     </Link>
 );
 
-export const MostBookedSection = () => {
-    const [api, setApi] = useState<CarouselApi>();
-
+const PopularPage = () => {
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
-            {/* Decorative Background */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-neutral-50 via-white to-white pointer-events-none" />
+        <div className="min-h-screen bg-neutral-50 flex flex-col">
+            <Navbar />
 
-            <div className="container mx-auto px-4 md:px-6 relative z-10">
-                <SectionHeader
-                    title="Most Booked on Flyout"
-                    label="Social Proof"
-                    description="Join 500,000+ happy travelers and explore our most popular experiences."
-                    onPrev={() => api?.scrollPrev()}
-                    onNext={() => api?.scrollNext()}
-                    viewMoreLink="/popular"
-                />
+            <main className="flex-grow pt-32 pb-24">
+                <div className="container mx-auto px-4 md:px-6">
+                    {/* Header */}
+                    <div className="mb-12">
+                        <h1 className="text-4xl md:text-5xl font-serif text-neutral-900 mb-4">Most Booked Experiences</h1>
+                        <p className="text-neutral-500 text-lg font-light max-w-2xl">
+                            Discover the most popular and highly-rated experiences chosen by travelers.
+                        </p>
+                    </div>
 
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6 }}
-                    viewport={{ once: true }}
-                >
-                    <Carousel
-                        setApi={setApi}
-                        opts={{
-                            align: "start",
-                            loop: false,
-                        }}
-                        className="w-full"
-                    >
-                        <CarouselContent className="-ml-4 py-4">
-                            {mostBookedItems.map((item) => (
-                                <CarouselItem key={item.id} className="pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                                    <MostBookedCard item={item} />
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                    </Carousel>
-                </motion.div>
-            </div>
-        </section>
+                    {/* Grid */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        {mostBookedItems.map((item) => (
+                            <MostBookedCard key={item.id} item={item} />
+                        ))}
+                    </div>
+                </div>
+            </main>
+
+            <Footer />
+        </div>
     );
 };
 
-export default MostBookedSection;
+export default PopularPage;

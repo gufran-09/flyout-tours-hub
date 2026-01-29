@@ -1,18 +1,12 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React from "react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { ArrowUpRight, Star, Crown, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
-import { SectionHeader } from "@/components/ui/SectionHeader";
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    type CarouselApi,
-} from "@/components/ui/carousel";
+import { motion } from "framer-motion";
 import { CurrencySymbol } from "@/components/ui/CurrencySymbol";
 
-// ---------------- DATA ----------------
-
+// Data
 const luxuryExperiences = [
     {
         id: 1,
@@ -69,8 +63,6 @@ const luxuryExperiences = [
         link: "/transfers/limousine",
     },
 ];
-
-// ---------------- CARD ----------------
 
 const LuxuryCard = ({ item }: { item: typeof luxuryExperiences[0] }) => (
     <Link
@@ -134,8 +126,7 @@ const LuxuryCard = ({ item }: { item: typeof luxuryExperiences[0] }) => (
                 <div className="flex flex-col">
                     <span className="text-[10px] uppercase tracking-widest text-neutral-400 mb-0.5">From</span>
                     <span className="text-lg font-medium font-serif text-neutral-900 flex items-center gap-1">
-                        <CurrencySymbol className="w-4 h-4" />
-                        {item.price.replace("AED", "").trim()}
+                        <CurrencySymbol className="w-4 h-4" /> {item.price.replace("AED", "").trim()}
                     </span>
                 </div>
 
@@ -150,53 +141,33 @@ const LuxuryCard = ({ item }: { item: typeof luxuryExperiences[0] }) => (
     </Link>
 );
 
-// ---------------- SECTION ----------------
-
-export const LuxuryExperiencesSection = () => {
-    const [api, setApi] = useState<CarouselApi>();
-
+const LuxuryPage = () => {
     return (
-        <section className="relative pt-0 pb-24 bg-white overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-neutral-50 via-white to-white pointer-events-none" />
+        <div className="min-h-screen bg-neutral-50 flex flex-col">
+            <Navbar />
 
-            <div className="container mx-auto px-4 md:px-6 relative z-10">
-                <div className="container mx-auto px-4 md:px-6 relative z-10">
-                    <SectionHeader
-                        title="Signature Experiences"
-                        label="The Luxury Collection"
-                        description="Indulge in aspirational journeys crafted for discerning travelers. From private yachts to royal desert retreats."
-                        onPrev={() => api?.scrollPrev()}
-                        onNext={() => api?.scrollNext()}
-                        viewMoreLink="/luxury"
-                    />
+            <main className="flex-grow pt-32 pb-24">
+                <div className="container mx-auto px-4 md:px-6">
+                    {/* Header */}
+                    <div className="mb-12">
+                        <h1 className="text-4xl md:text-5xl font-serif text-neutral-900 mb-4">Luxury Collection</h1>
+                        <p className="text-neutral-500 text-lg font-light max-w-2xl">
+                            Indulge in aspirational journeys crafted for discerning travelers. From private yachts to royal desert retreats.
+                        </p>
+                    </div>
 
-                    <Carousel
-                        setApi={setApi}
-                        opts={{
-                            align: "start",
-                            loop: true,
-                        }}
-                        className="w-full"
-                    >
-                        <CarouselContent className="-ml-4">
-                            {luxuryExperiences.map((experience, index) => (
-                                <CarouselItem key={experience.id} className="pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                                    <motion.div
-                                        initial={{ opacity: 0, y: 20 }}
-                                        whileInView={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.5, delay: index * 0.05 }}
-                                        viewport={{ once: true }}
-                                    >
-                                        <LuxuryCard item={experience} />
-                                    </motion.div>
-                                </CarouselItem>
-                            ))}
-                        </CarouselContent>
-                    </Carousel>
+                    {/* Grid */}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                        {luxuryExperiences.map((item) => (
+                            <LuxuryCard key={item.id} item={item} />
+                        ))}
+                    </div>
                 </div>
-            </div>
-        </section>
+            </main>
+
+            <Footer />
+        </div>
     );
 };
 
-export default LuxuryExperiencesSection;
+export default LuxuryPage;

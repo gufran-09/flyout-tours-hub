@@ -60,7 +60,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="flex items-center gap-4 md:gap-6"
+                className="flex items-center gap-6"
             >
                 {/* View More Link */}
                 {viewMoreLink && (

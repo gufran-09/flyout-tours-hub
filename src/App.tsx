@@ -42,6 +42,9 @@ import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import FAQ from "./pages/FAQ";
 import Partner from "./pages/Partner";
+import PopularPage from "./pages/PopularPage";
+import LuxuryPage from "./pages/LuxuryPage";
+import LifestylePage from "./pages/LifestylePage";
 
 import ScrollToTop from "./components/ScrollToTop";
 import FloatingActionButtons from "./components/FloatingActionButtons";
@@ -72,6 +75,9 @@ const App = () => {
                   <div className="relative z-10">
                     <Routes>
                       <Route path="/" element={<Index />} />
+                      <Route path="/popular" element={<PopularPage />} />
+                      <Route path="/luxury" element={<LuxuryPage />} />
+                      <Route path="/lifestyle" element={<LifestylePage />} />
                       <Route path="/deals" element={<Deals />} />
                       <Route path="/sign-in" element={<SignIn />} />
                       <Route path="/sign-up" element={<SignUp />} />
