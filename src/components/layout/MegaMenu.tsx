@@ -32,8 +32,7 @@ interface MegaMenuProps {
 export function MegaMenu({
     triggerLabel,
     items,
-    leftTitle = "Discover",
-    rightTitle = "Explore",
+
     type = "list",
     columns = 4,
     showDivider = true,
@@ -56,7 +55,7 @@ export function MegaMenu({
                     <NavigationMenuContent>
                         <div
                             className={cn(
-                                "relative px-6 pb-6 pt-0 rounded-3xl bg-white shadow-xl border border-gray-100",
+                                "relative px-6 pb-6 pt-6 rounded-3xl bg-white shadow-xl border border-gray-100",
                                 widthClass
                             )}
                         >
@@ -72,18 +71,14 @@ export function MegaMenu({
                             ) : (
                                 <div className="relative grid grid-cols-2 gap-x-12">
                                     <div className="space-y-3">
-                                        <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
-                                            {leftTitle}
-                                        </p>
+
                                         {left.map((item) => (
                                             <MenuRow key={item.title} item={item} />
                                         ))}
                                     </div>
 
                                     <div className="space-y-3">
-                                        <p className="text-xs uppercase tracking-widest text-gray-400 mb-3">
-                                            {rightTitle}
-                                        </p>
+
                                         {right.map((item) => (
                                             <MenuRow key={item.title} item={item} />
                                         ))}

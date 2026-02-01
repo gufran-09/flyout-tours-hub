@@ -46,6 +46,7 @@ const dubaiCategories = [
   { name: "Water Parks", href: "/dubai/water-parks", icon: Ship },
   { name: "Attractions", href: "/dubai/attractions", icon: Building2 },
   { name: "Water Sports", href: "/dubai/water-sports", icon: Compass },
+  { name: "Water Adventures", href: "/dubai/water-adventures", icon: Ship },
   { name: "Dinner Cruise", href: "/dubai/dinner-cruise", icon: Ship },
   { name: "Yacht", href: "/dubai/yacht", icon: Ship },
   { name: "Limousine", href: "/dubai/limousine", icon: Compass },
@@ -332,7 +333,7 @@ export function Navbar() {
               </Link>
 
               <Link to="/blogs" className="text-sm font-medium text-white/90 hover:text-[#B88E2F] transition-colors relative group py-2">
-                Blogs
+                Journal
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#B88E2F] transition-all duration-300 group-hover:w-full"></span>
               </Link>
 
