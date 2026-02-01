@@ -78,7 +78,7 @@ export const rasAlKhaimahExperiences: Tour[] = [
 ];
 
 export const dubaiWaterAdventures: Tour[] = [
-  { id: "jet-ski-jumeirah", name: "Jumeirah Luxury Jet Ski", location: "Jumeirah, Dubai", category: "Water Adventures", price: 230, originalPrice: 250, rating: 4.8, reviewCount: 150, duration: "1 Hour", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Tours/JetSki/1.jpg", badge: "Best Seller" },
+  { id: "jet-ski-jumeirah", name: "Jumeirah Luxury Jet Ski", location: "Jumeirah, Dubai", category: "Water Adventures", price: 230, originalPrice: 250, rating: 4.8, reviewCount: 150, duration: "1 Hour", image: "https://res.cloudinary.com/dhtpnparf/image/upload/v1769929045/jetski_page-0002_aan30q.jpg", badge: "Best Seller" },
   { id: "wa-1", name: "Deep Dive Dubai", location: "Nad Al Sheba", category: "Water Adventures", price: 1500, rating: 4.9, reviewCount: 500, duration: "2 Hours", image: "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=600&q=80", badge: "World Record" },
   { id: "wa-2", name: "Jet Car Experience", location: "Dubai Harbor", category: "Water Adventures", price: 800, rating: 4.8, reviewCount: 300, duration: "1 Hour", image: "https://images.unsplash.com/photo-1564353406439-8cccacc69bea?w=600&q=80", badge: "Trending" },
   { id: "wa-3", name: "Shark Diving at Aquarium", location: "Dubai Mall", category: "Water Adventures", price: 750, rating: 4.7, reviewCount: 1200, duration: "1.5 Hours", image: "https://images.unsplash.com/photo-1583212235753-325f3273fca7?w=600&q=80" },

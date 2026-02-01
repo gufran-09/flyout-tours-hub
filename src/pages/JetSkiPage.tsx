@@ -45,8 +45,8 @@ export default function JetSkiPage() {
 
     // Pricing Logic
     const prices = {
-        "30": { current: 150, original: 180, label: "30 Minutes" },
-        "60": { current: 230, original: 250, label: "1 Hour" }
+        "30": { current: 280, original: 300, label: "30 Minutes" },
+        "60": { current: 450, original: 500, label: "1 Hour" }
     };
 
     const currentPrice = prices[duration as keyof typeof prices];
