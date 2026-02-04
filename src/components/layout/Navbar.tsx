@@ -426,8 +426,8 @@ export function Navbar() {
         </AnimatePresence>
       </motion.header>
 
-      {/* Spacer for fixed navbar */}
-      <div className="h-[190px] lg:h-[210px]" />
+      {/* Spacer for fixed navbar and slight offset for cleaner transition */}
+      <div className="h-[145px] lg:h-[172px]" />
     </>
   );
 }

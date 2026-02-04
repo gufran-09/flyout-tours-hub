@@ -73,7 +73,7 @@ export default function JetSkiPage() {
     return (
         <Layout>
             {/* Top Navigation Bar */}
-            <div className="border-b border-gray-100 bg-white sticky top-16 z-30">
+            <div className="border-b border-gray-100 bg-white sticky top-[145px] lg:top-[172px] z-30">
                 <div className="section-container py-3 flex items-center justify-between">
                     <nav className="flex items-center text-sm text-muted-foreground whitespace-nowrap overflow-hidden text-ellipsis">
                         <Link to="/" className="hover:text-primary transition-colors">Home</Link>
@@ -88,7 +88,7 @@ export default function JetSkiPage() {
             </div>
 
             {/* Full Width Slider */}
-            <div className="w-full relative bg-gray-100">
+            <div className="w-full relative bg-white">
                 <Carousel opts={{ align: "start", loop: true }} className="w-full">
                     <CarouselContent className="-ml-0">
                         {images.map((img, index) => (
@@ -226,7 +226,7 @@ export default function JetSkiPage() {
                                         <span className="bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded-full">
                                             {discount}% OFF
                                         </span>
-                                        <span className="text-gray-400">/ Person</span>
+                                        <span className="text-gray-400">/ 2 Pack</span>
                                     </div>
                                 </div>
                                 <Button variant="outline" size="icon" className="rounded-full" onClick={() => setIsSaved(!isSaved)}>
