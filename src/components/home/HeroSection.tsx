@@ -28,7 +28,7 @@ export function HeroSection() {
 
           <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 sm:p-12 z-20">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Discover Dubai's Magic
+              Discover UAE's Magic
             </h1>
             <p className="text-lg sm:text-xl text-white/95 mb-8 max-w-xl">
               Curated luxury experiences, crafted for unforgettable journeys.
