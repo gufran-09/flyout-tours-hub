@@ -1,0 +1,7 @@
+Starting debug script...
+Supabase URL: https://bfzhzxyjjkcctxnmzafb.supabase.co
+Supabase Key length: 46
+Client created. Fetching products...
+Success! Data length: 1
+First product: {"id":"f2e1f51f-cb34-4c3f-baef-6fb3b32dfb46","title":"Parasailing"}
+Done.
