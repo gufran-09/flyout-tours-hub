@@ -271,7 +271,7 @@ export function Navbar() {
                 columns={4}
                 items={[
                   { title: "Attraction", href: "/dubai/attractions", icon: Star, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/1.webp" },
-                  { title: "Parks", href: "/dubai/parks", icon: Palmtree, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/2.webp" },
+                  { title: "Parks", href: "/dubai/theme-parks", icon: Palmtree, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/2.webp" },
                   { title: "Yacht", href: "/dubai/yacht", icon: Ship, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/3.webp" },
                   { title: "Holiday Packages", href: "/dubai/packages", icon: Package, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/4.webp" },
                   { title: "Water Adventures", href: "/dubai/water-adventures", icon: Ship, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/5.webp" },
@@ -283,7 +283,7 @@ export function Navbar() {
                   { title: "City Tours", href: "/dubai/city-tours", icon: Building2, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/11.webp" },
                   { title: "Adventures", href: "/dubai/adventures", icon: Zap, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/12.webp" },
                   { title: "Airport transfers", href: "/dubai/transfers", icon: Car, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/13.webp" },
-                  { title: "Safari", href: "/dubai/safari", icon: Compass, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/14.webp" },
+                  { title: "Safari", href: "/dubai/desert-safari", icon: Compass, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/14.webp" },
                   { title: "Restaurants", href: "/dubai/restaurants", icon: Utensils, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/15.webp" },
                   { title: "Live concerts & Shows", href: "/dubai/shows", icon: Ticket, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/16.webp" },
                 ]}
@@ -320,9 +320,9 @@ export function Navbar() {
                 type="list"
                 items={[
                   { title: "Yacht Experiences", href: "/dubai/yacht", icon: Ship, badge: "Exclusive", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
-                  { title: "Private Tours", href: "/dubai/private-tours", icon: User, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
-                  { title: "Helicopter Rides", href: "/dubai/helicopter", icon: Plane, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
-                  { title: "VIP Theme Parks", href: "/dubai/vip-theme-parks", icon: Star, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                  { title: "Private Tours", href: "/dubai/city-tours", icon: User, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                  { title: "Helicopter Rides", href: "/dubai/sky-adventures", icon: Plane, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
+                  { title: "VIP Theme Parks", href: "/dubai/theme-parks", icon: Star, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
                   { title: "Supercar Drives", href: "/dubai/supercars", icon: Car, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Emirates/5.avif" },
                 ]}
               />

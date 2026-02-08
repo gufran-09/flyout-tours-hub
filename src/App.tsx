@@ -48,6 +48,20 @@ import PopularPage from "./pages/PopularPage";
 import LuxuryPage from "./pages/LuxuryPage";
 import LifestylePage from "./pages/LifestylePage";
 
+// New Category Pages
+import DesertSafari from "./pages/DesertSafari";
+import CityTours from "./pages/CityTours";
+import SkyAdventures from "./pages/SkyAdventures";
+import VisaServices from "./pages/VisaServices";
+import Transfers from "./pages/Transfers";
+import Supercars from "./pages/Supercars";
+import HolidayPackages from "./pages/HolidayPackages";
+import Hotel from "./pages/Hotel";
+import CarRental from "./pages/CarRental";
+import Adventures from "./pages/Adventures";
+import Restaurants from "./pages/Restaurants";
+import Shows from "./pages/Shows";
+
 import ScrollToTop from "./components/ScrollToTop";
 import FloatingActionButtons from "./components/FloatingActionButtons";
 
@@ -114,6 +128,21 @@ const App = () => {
                       <Route path="/dubai/dinner-cruise" element={<DinnerCruise />} />
                       <Route path="/dubai/yacht" element={<Yacht />} />
                       <Route path="/dubai/limousine" element={<Limousine />} />
+
+                      {/* New Categories */}
+                      <Route path="/dubai/desert-safari" element={<DesertSafari />} />
+                      <Route path="/dubai/city-tours" element={<CityTours />} />
+                      <Route path="/dubai/sky-adventures" element={<SkyAdventures />} />
+                      <Route path="/dubai/visa" element={<VisaServices />} />
+                      <Route path="/dubai/transfers" element={<Transfers />} />
+                      <Route path="/dubai/supercars" element={<Supercars />} />
+                      <Route path="/dubai/packages" element={<HolidayPackages />} />
+                      <Route path="/dubai/hotels" element={<Hotel />} />
+                      <Route path="/dubai/car-rental" element={<CarRental />} />
+                      <Route path="/dubai/adventures" element={<Adventures />} />
+                      <Route path="/dubai/restaurants" element={<Restaurants />} />
+                      <Route path="/dubai/shows" element={<Shows />} />
+
 
                       {/* Other Pages */}
                       <Route path="/dubai" element={<Dubai />} />
