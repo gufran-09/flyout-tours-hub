@@ -295,7 +295,7 @@ export function CategoryLayout({ title, subtitle, tours, backgroundImage, featur
                                             rating={tour.rating}
                                             subtitle={tour.duration} // Using duration as subtitle similar to CategoryPage
                                             location={tour.location}
-                                            link={`/tour/${tour.id}`}
+                                            link={tour.link || `/tour/${tour.id}`}
                                             badge={tour.badge}
                                             category={tour.category}
                                         />

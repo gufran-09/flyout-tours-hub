@@ -18,7 +18,7 @@ import WaterParks from "./pages/WaterParks";
 import Attractions from "./pages/Attractions";
 import WaterSports from "./pages/WaterSports";
 import WaterAdventures from "./pages/WaterAdventures";
-import JetSkiPage from "./pages/JetSkiPage";
+
 import DinnerCruise from "./pages/DinnerCruise";
 import Yacht from "./pages/Yacht";
 import Limousine from "./pages/Limousine";
@@ -60,6 +60,7 @@ import Hotel from "./pages/Hotel";
 import CarRental from "./pages/CarRental";
 import Adventures from "./pages/Adventures";
 import Restaurants from "./pages/Restaurants";
+import ProductDetails from "./pages/ProductDetails";
 import Shows from "./pages/Shows";
 
 import ScrollToTop from "./components/ScrollToTop";
@@ -124,7 +125,7 @@ const App = () => {
                       <Route path="/dubai/attractions" element={<Attractions />} />
                       <Route path="/dubai/water-sports" element={<WaterSports />} />
                       <Route path="/dubai/water-adventures" element={<WaterAdventures />} />
-                      <Route path="/tour/jet-ski-jumeirah" element={<JetSkiPage />} />
+
                       <Route path="/dubai/dinner-cruise" element={<DinnerCruise />} />
                       <Route path="/dubai/yacht" element={<Yacht />} />
                       <Route path="/dubai/limousine" element={<Limousine />} />
@@ -142,6 +143,9 @@ const App = () => {
                       <Route path="/dubai/adventures" element={<Adventures />} />
                       <Route path="/dubai/restaurants" element={<Restaurants />} />
                       <Route path="/dubai/shows" element={<Shows />} />
+
+                      {/* Unified Product Detail Page */}
+                      <Route path="/experiences/:destination/:category/:slug" element={<ProductDetails />} />
 
 
                       {/* Other Pages */}

@@ -42,65 +42,6 @@ const Index = () => {
       <TravelEssentialsSection />
       <TestimonialsSection />
       <BrandStorySection />
-      {/* 
-      <ExperienceSection
-        title="Dubai Theme Parks"
-        subtitle="Thrilling adventures for the whole family"
-        tours={dubaiThemeParks}
-        viewMoreLink="/dubai/theme-parks"
-      />
-
-      <ExperienceSection
-        title="Dubai Water Parks"
-        subtitle="Beat the heat with splashing fun"
-        tours={dubaiWaterParks}
-        viewMoreLink="/dubai/water-parks"
-      />
-
-      <ExperienceSection
-        title="Dubai Attractions"
-        subtitle="Iconic landmarks and must-see destinations"
-        tours={dubaiAttractions}
-        viewMoreLink="/dubai/attractions"
-      />
-
-      <ExperienceSection
-        title="Dubai Water Sports"
-        subtitle="Adrenaline-pumping water adventures"
-        tours={dubaiWaterSports}
-        viewMoreLink="/dubai/water-sports"
-      />
-
-      <ComboDealsSection />
-
-      <ExperienceSection
-        title="Dubai Dinner Cruise"
-        subtitle="Romantic dining on the waters"
-        tours={dubaiDinnerCruise}
-        viewMoreLink="/dubai/dinner-cruise"
-      />
-
-      <ExperienceSection
-        title="Dubai Yacht Tours"
-        subtitle="Luxury sailing experiences"
-        tours={dubaiYacht}
-        viewMoreLink="/dubai/yacht"
-      />
-
-      <ExperienceSection
-        title="Abu Dhabi Experiences"
-        subtitle="Explore the capital's finest"
-        tours={abuDhabiExperiences}
-        viewMoreLink="/abu-dhabi"
-      />
-
-      <ExperienceSection
-        title="Staycations"
-        subtitle="Luxurious getaways and resort experiences"
-        tours={staycations}
-        viewMoreLink="/staycations"
-      /> */}
-
     </Layout>
   );
 };

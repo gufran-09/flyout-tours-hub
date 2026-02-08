@@ -3,11 +3,11 @@
 import { Link } from "react-router-dom";
 
 const items = [
-    { title: "Dubai", image: "/dubai.jpeg", span: "col-span-1 md:col-span-2 md:row-span-1", link: "/dubai" },
-    { title: "Abu Dhabi", image: "/rak.webp", span: "col-span-1 md:col-span-2 md:row-span-1", link: "/abu-dhabi" },
-    { title: "Sharjah", image: "/sharjah.jpeg", span: "col-span-1 md:col-span-1 md:row-span-1", link: "/sharjah" },
-    { title: "Ras Al Khaimah", image: "/abudhabi.webp", span: "col-span-1 md:col-span-2 md:row-span-1", link: "/ras-al-khaimah" },
-    { title: "Ajman", image: "/ajman.webp", span: "col-span-1 md:col-span-1 md:row-span-1", link: "/ajman" },
+    { title: "Dubai", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/destinations/dubai.webp", span: "col-span-1 md:col-span-2 md:row-span-1", link: "/dubai" },
+    { title: "Abu Dhabi", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/destinations/abu-dhabi.webp", span: "col-span-1 md:col-span-2 md:row-span-1", link: "/abu-dhabi" },
+    { title: "Sharjah", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/destinations/sharjah.webp", span: "col-span-1 md:col-span-1 md:row-span-1", link: "/sharjah" },
+    { title: "Ras Al Khaimah", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/destinations/ras-al-khaimah.webp", span: "col-span-1 md:col-span-2 md:row-span-1", link: "/ras-al-khaimah" },
+    { title: "Ajman", image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/destinations/ajman.webp", span: "col-span-1 md:col-span-1 md:row-span-1", link: "/ajman" },
 ];
 
 export default function UaeShowcaseSection() {

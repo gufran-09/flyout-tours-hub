@@ -33,6 +33,11 @@ export const PremiumCard = ({
     className,
     link = "#",
 }: PremiumCardProps) => {
+    const numericPrice = typeof price === 'string' ? parseFloat(price.replace(/[^0-9.]/g, '')) : Number(price);
+    const numericOriginalPrice = originalPrice ? (typeof originalPrice === 'string' ? parseFloat(originalPrice.replace(/[^0-9.]/g, '')) : Number(originalPrice)) : 0;
+    const hasDiscount = originalPrice && numericOriginalPrice > numericPrice;
+    const discountPercentage = hasDiscount ? Math.round(((numericOriginalPrice - numericPrice) / numericOriginalPrice) * 100) : 0;
+
     const formattedPrice = typeof price === "number" ? price.toLocaleString() : price;
     const formattedOriginalPrice =
         typeof originalPrice === "number" ? originalPrice.toLocaleString() : originalPrice;
@@ -54,13 +59,16 @@ export const PremiumCard = ({
                     <div className="absolute inset-0 bg-gradient-to-t from-neutral-900/60 via-transparent to-transparent opacity-80" />
 
                     {/* Badge */}
-                    {badge && (
-                        <div className="absolute top-4 left-4">
+                    {/* Badge Container */}
+                    <div className="absolute top-4 left-4 flex flex-col gap-2 items-start z-10">
+                        {badge && (
                             <span className="px-3 py-1 bg-white/95 backdrop-blur-md shadow-sm rounded-full text-[10px] font-bold uppercase tracking-widest text-[#0A1F44] border border-white/20">
                                 {badge}
                             </span>
-                        </div>
-                    )}
+                        )}
+
+
+                    </div>
 
                     {/* Category */}
                     {category && (

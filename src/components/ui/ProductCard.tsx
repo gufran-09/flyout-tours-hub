@@ -42,6 +42,12 @@ export const ProductCard = ({
     subtitle,
     className
 }: ProductCardProps) => {
+
+    const numericPrice = typeof price === 'string' ? parseFloat(price.replace(/[^0-9.]/g, '')) : Number(price);
+    const numericOriginalPrice = originalPrice ? (typeof originalPrice === 'string' ? parseFloat(originalPrice.replace(/[^0-9.]/g, '')) : Number(originalPrice)) : 0;
+    const hasDiscount = originalPrice && numericOriginalPrice > numericPrice;
+    const discountPercentage = hasDiscount ? Math.round(((numericOriginalPrice - numericPrice) / numericOriginalPrice) * 100) : 0;
+
     return (
         <Link
             to={link}
@@ -58,16 +64,18 @@ export const ProductCard = ({
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
 
-                {/* Tag Badge */}
-                {tag && (
-                    <div className="absolute top-4 left-4">
+                {/* Top Left Badges */}
+                <div className="absolute top-4 left-4 flex flex-col gap-2 items-start z-10">
+                    {tag && (
                         <span className="px-3 py-1 bg-white/90 backdrop-blur-md shadow-sm rounded-full 
               text-[10px] font-medium uppercase tracking-widest text-flyout-gold ring-1 ring-white/50 flex items-center gap-1.5">
                             {tag === "Best Seller" && <Flame className="w-3 h-3 text-orange-500/80" />}
                             {tag}
                         </span>
-                    </div>
-                )}
+                    )}
+
+
+                </div>
 
                 {/* Category Badge */}
                 {category && (

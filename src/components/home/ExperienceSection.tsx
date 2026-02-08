@@ -25,6 +25,7 @@ export interface Tour {
   image: string;
   badge?: string;
   subtitle?: string;
+  link?: string;
 }
 
 interface ExperienceSectionProps {
@@ -104,7 +105,7 @@ export function ExperienceSection({
                     duration={tour.duration}
                     tag={tour.badge}
                     location={tour.location}
-                    link={`/tour/${tour.id}`}
+                    link={tour.link || `/tour/${tour.id}`}
                   />
                 </CarouselItem>
               ))}
