@@ -43,11 +43,11 @@ export const PremiumCard = ({
         typeof originalPrice === "number" ? originalPrice.toLocaleString() : originalPrice;
 
     return (
-        <Link to={link} className={cn("block group relative h-full", className)}>
+        <Link to={link} className={cn("block group relative h-full ", className)}>
             <motion.div
                 whileHover={{ y: -6 }}
                 transition={{ type: "spring", stiffness: 280, damping: 22 }}
-                className="relative h-[500px] w-full overflow-hidden rounded-[22px] bg-white shadow-luxury hover:shadow-luxury-hover border border-neutral-100/80 flex flex-col"
+                className="relative h-full min-h-[500px] w-full overflow-hidden rounded-[22px] bg-white shadow-luxury hover:shadow-luxury-hover border border-neutral-100/80 flex flex-col"
             >
                 {/* ---------------- IMAGE ---------------- */}
                 <div className="relative h-[260px] w-full shrink-0 overflow-hidden">
@@ -127,22 +127,30 @@ export const PremiumCard = ({
                     <div className="min-h-0 overflow-hidden" />
 
                     {/* Footer */}
-                    <div className="flex items-end justify-between pt-2 border-t border-neutral-100">
+                    <div className="flex items-end justify-between pt-2 pb-2 border-t border-neutral-100">
+
                         <div>
                             <span className="text-[10px] font-bold uppercase tracking-widest text-neutral-400">
                                 Starting from
                             </span>
-                            <div className="flex items-center gap-2 mt-1">
+                            <div className="flex flex-col mt-1">
                                 <p className="text-xl font-bold text-[#0A1F44] font-display flex items-center">
                                     <img src="/currency-symbol.png" alt="AED" className="h-4 mr-1" />
                                     {formattedPrice}
                                 </p>
 
                                 {formattedOriginalPrice && (
-                                    <span className="text-xs text-neutral-400 line-through flex items-center">
-                                        <img src="/currency-symbol.png" alt="AED" className="h-2.5 mr-0.5 opacity-60 grayscale" />
-                                        {formattedOriginalPrice}
-                                    </span>
+                                    <div className="flex items-center gap-2">
+                                        <span className="text-xs text-neutral-400 line-through flex items-center">
+                                            <img src="/currency-symbol.png" alt="AED" className="h-2.5 mr-0.5 opacity-60 grayscale" />
+                                            {formattedOriginalPrice}
+                                        </span>
+                                        {hasDiscount && (
+                                            <span className="text-xs font-bold text-emerald-600">
+                                                {discountPercentage}% OFF
+                                            </span>
+                                        )}
+                                    </div>
                                 )}
                             </div>
                         </div>

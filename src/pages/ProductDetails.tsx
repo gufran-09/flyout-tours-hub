@@ -4,7 +4,6 @@ import { PRODUCTS, Product, DurationOption } from "@/data/catalog";
 import { Layout } from "@/components/layout/Layout";
 import {
     Star,
-    MapPin,
     Clock,
     Check,
     ShieldCheck,
@@ -310,29 +309,8 @@ export default function ProductDetails() {
                         </div>
                     </div>
 
-                    {/* Map Section */}
-                    {product.location && (
-                        <div className="mt-16 pt-8 border-t border-gray-100">
-                            <h2 className="text-2xl font-bold text-gray-900 mb-6">Location</h2>
-                            <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-100 h-[400px] w-full bg-gray-100 relative">
-                                <iframe
-                                    width="100%"
-                                    height="100%"
-                                    style={{ border: 0 }}
-                                    loading="lazy"
-                                    allowFullScreen
-                                    src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodeURIComponent(product.location)}`}
-                                ></iframe>
-                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                    <div className="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-lg shadow-sm border text-sm text-gray-500">
-                                        Map view for {product.location}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                </div>
-            </div>
+
+                </div>            </div>
         </Layout>
     );
 }
