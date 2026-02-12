@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from "react";
 import { motion, useAnimation, useMotionValue } from "framer-motion";
-import { categories, Category } from "@/data/categories";
+import { getCategories, Category } from "@/lib/categories";
 import { cn } from "@/lib/utils";
 
 
@@ -15,8 +15,8 @@ const CategoryCard = ({ category }: { category: Category }) => {
             {/* Image Background */}
             <div className="absolute inset-0 w-full h-full">
                 <motion.img
-                    src={category.image}
-                    alt={category.title}
+                    src={category.image_url}
+                    alt={category.name}
                     className="w-full h-full object-cover"
                     whileHover={{ scale: 1.15 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
@@ -24,7 +24,8 @@ const CategoryCard = ({ category }: { category: Category }) => {
             </div>
 
             {/* Dark Gradient Overlay - Always visible but stronger at bottom */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
+            {/* Subtle Gradient at Bottom Only - For text readability */}
+            <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent opacity-90 transition-opacity duration-300" />
 
             {/* Hover Glow Effect */}
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 border-2 border-primary/30 rounded-2xl shadow-[0_0_30px_rgba(255,191,25,0.2)]" />
@@ -34,7 +35,7 @@ const CategoryCard = ({ category }: { category: Category }) => {
                 {/* Glassmorphic Text Container */}
                 <div className="relative overflow-hidden px-6 py-4 rounded-xl bg-white/5 backdrop-blur-md border border-white/10 group-hover:bg-white/10 transition-colors duration-300 w-full">
                     <h3 className="text-white text-lg font-bold uppercase tracking-wider font-serif drop-shadow-md">
-                        {category.title}
+                        {category.name}
                     </h3>
                     <motion.div
                         className="h-[2px] bg-primary mt-2 mx-auto w-0 group-hover:w-1/2 transition-all duration-300"
@@ -48,6 +49,20 @@ const CategoryCard = ({ category }: { category: Category }) => {
 // Re-writing the main component to use a cleaner Marquee approach for "pause on hover"
 const CategoriesCarousel = () => {
     const [isPaused, setIsPaused] = useState(false);
+    const [categories, setCategories] = useState<Category[]>([]);
+
+    useEffect(() => {
+        const fetchCategories = async () => {
+            const fetchedCategories = await getCategories();
+            setCategories(fetchedCategories);
+        };
+        fetchCategories();
+    }, []);
+
+    // If no categories yet, don't render or render loading
+    if (categories.length === 0) {
+        return null;
+    }
 
     return (
         <section className="w-full py-20 bg-white overflow-hidden relative">

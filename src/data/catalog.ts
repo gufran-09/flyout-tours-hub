@@ -40,6 +40,8 @@ export type Product = {
     confirmationHours: number;
     mobileTicket: boolean;
     refundable: boolean; // false if conditions apply
+    maxPeople?: number;
+    Supplier_Code: string;
 };
 
 export const PRODUCTS: Product[] = [
@@ -48,6 +50,7 @@ export const PRODUCTS: Product[] = [
     --------------------------------------------------- */
     {
         id: "jet-ski-jumeirah",
+        Supplier_Code: "LUXYHT",
         slug: "jumeirah-luxury-jet-ski",
         title: "Jumeirah Luxury Jet Ski",
         subtitle: "Experience the thrill of the sea with premium jet skis",
@@ -107,11 +110,13 @@ export const PRODUCTS: Product[] = [
         confirmationHours: 24,
         mobileTicket: true,
         refundable: false,
+        maxPeople: 2,
     },
     {
         id: "banana-boat-dubai",
+        Supplier_Code: "LUXYHT",
         slug: "banana-boat-ride-dubai",
-        title: "Banana Boat Ride Dubai",
+        title: "Banana Boat Ride",
         subtitle: "Fun-filled group water ride with thrilling speed",
 
         category: "water-sports",
@@ -156,12 +161,14 @@ export const PRODUCTS: Product[] = [
         confirmationHours: 24,
         mobileTicket: true,
         refundable: false,
+        maxPeople: 6,
     },
 
     {
         id: "flyboard-dubai",
+        Supplier_Code: "LUXYHT",
         slug: "flyboard-experience-dubai",
-        title: "Flyboard Experience Dubai",
+        title: "Flyboard Experience",
         subtitle: "Fly above the sea using high-powered water jets",
 
         category: "water-sports",
@@ -210,8 +217,9 @@ export const PRODUCTS: Product[] = [
 
     {
         id: "jet-car-dubai",
+        Supplier_Code: "LUXYHT",
         slug: "jet-car-experience-dubai",
-        title: "Jet Car Experience Dubai",
+        title: "Jet Car Experience ",
         subtitle: "Luxury supercar-style water adventure",
 
         category: "water-sports",
@@ -263,8 +271,9 @@ export const PRODUCTS: Product[] = [
     },
     {
         id: "speed-boat-dubai",
+        Supplier_Code: "LUXYHT",
         slug: "speed-boat-tour-dubai",
-        title: "Speed Boat Tour Dubai",
+        title: "Speed Boat Tour ",
         subtitle: "High-speed sightseeing on the Arabian Sea",
 
         category: "water-sports",
@@ -319,11 +328,13 @@ export const PRODUCTS: Product[] = [
         confirmationHours: 24,
         mobileTicket: true,
         refundable: false,
+        maxPeople: 5,
     },
     {
         id: "wakeboard-dubai",
+        Supplier_Code: "LUXYHT",
         slug: "wakeboard-experience-dubai",
-        title: "Wakeboard Experience Dubai",
+        title: "Wakeboard Experience",
         subtitle: "Surf, ski, and ride the waves with professional guidance",
 
         category: "water-sports",
@@ -375,8 +386,9 @@ export const PRODUCTS: Product[] = [
     --------------------------------------------------- */
     {
         id: "donut-boat-dubai",
+        Supplier_Code: "LUXYHT",
         slug: "donut-boat-ride-dubai",
-        title: "Donut Boat Ride Dubai",
+        title: "Donut Boat Ride ",
         subtitle: "Fun-filled water activity for friends and family",
 
         category: "water-sports",
@@ -421,6 +433,7 @@ export const PRODUCTS: Product[] = [
         confirmationHours: 24,
         mobileTicket: true,
         refundable: true,
+        maxPeople: 4,
     },
 
     /* ---------------------------------------------------
@@ -428,8 +441,9 @@ export const PRODUCTS: Product[] = [
     --------------------------------------------------- */
     {
         id: "parasailing-dubai",
+        Supplier_Code: "LUXYHT",
         slug: "parasailing-adventure-dubai",
-        title: "Parasailing Adventure Dubai",
+        title: "Parasailing Adventure",
         subtitle: "Soar high above the JBR beach and enjoy panoramic views",
 
         category: "water-sports",
@@ -475,4 +489,303 @@ export const PRODUCTS: Product[] = [
         mobileTicket: true,
         refundable: true,
     },
+    {
+        id: "parasailing-nemo-dubai",
+        Supplier_Code: "NEMO",
+        slug: "parasailing-dubai-nemo",
+        title: "Parasailing Adventure",
+        subtitle: "Soar 40–50 meters above the Arabian Gulf",
+
+        category: "water-sports",
+        destination: "dubai",
+        location: "Umm Suqeim 2, Jumeirah Road",
+
+        rating: 4.8,
+        reviewCount: 0,
+
+        durationOptions: [
+            { label: "15 Minutes Flight", minutes: 15, price: 0 },
+        ],
+
+        images: [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing11.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing22.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing5.webp",
+        ],
+
+        badges: ["Sky Adventure"],
+
+        overview:
+            "Enjoy breathtaking aerial views of Dubai while parasailing high above the Arabian Gulf. Supervised by fully trained captain and instructor for maximum safety.",
+
+        highlights: [
+            "Fly 40–50 meters above water",
+            "150m rope length",
+            "Professional captain & instructor",
+            "Locker & changing room facilities",
+        ],
+
+        whatToBring: [
+            "Original Emirates ID or Passport",
+            "Comfortable clothes",
+            "Sunscreen",
+        ],
+
+        facilities: [
+            "Lockers",
+            "Changing Rooms",
+            "Instructor",
+            "Life Jackets",
+        ],
+
+        cancellationPolicy:
+            "Cancel 24 hours before activity for full refund. Late cancellations and no-shows are non-refundable.",
+
+        confirmationHours: 24,
+        mobileTicket: true,
+        refundable: true,
+    },
+    {
+        id: "jet-ski-30-nemo",
+        Supplier_Code: "NEMST",
+        slug: "30-min-jet-ski-burj-al-arab-nemo",
+        title: "Jet Ski Tour - Burj Al Arab",
+        subtitle: "Guided tour to Dubai’s iconic 7-star hotel",
+
+        category: "water-sports",
+        destination: "dubai",
+        location: "Umm Suqeim 2, Jumeirah Road",
+
+        rating: 4.9,
+        reviewCount: 0,
+
+        durationOptions: [
+            { label: "30 Minutes", minutes: 30, price: 280, originalPrice: 300, discountPercent: 7 },
+            { label: "60 Minutes", minutes: 60, price: 450, originalPrice: 500, discountPercent: 10 },
+        ],
+
+        images: [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/jet-ski2/jet-ski1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/jet-ski2/jet-ski2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/jet-ski2/jet-ski3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/jet-ski2/jet-ski4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/jet-ski2/jet-ski5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/jet-ski2/jet-ski6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/jet-ski2/jet-ski7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/jet-ski2/jet-ski8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/jet-ski2/jet-ski9.webp",
+        ],
+
+        badges: ["Guided Tour"],
+
+        overview:
+            "Ride your jet ski from the marina to the iconic Burj Al Arab with a professional instructor guiding the group. Includes photo opportunities at the landmark.",
+
+        highlights: [
+            "Burj Al Arab photo stop",
+            "Guided group tour",
+            "Up to 2 riders per jet ski",
+            "Complimentary photos & videos",
+        ],
+
+        whatToBring: [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel",
+        ],
+
+        facilities: [
+            "Changing Rooms",
+            "Lockers",
+            "Life Jackets",
+            "Instructor",
+        ],
+
+        cancellationPolicy:
+            "Cancel 24 hours before activity for full refund. Late cancellations and no-shows are non-refundable.",
+
+        confirmationHours: 24,
+        mobileTicket: true,
+        refundable: true,
+        maxPeople: 2,
+    },
+    {
+        id: "tubing-nemo-dubai",
+        Supplier_Code: "NEMST",
+        slug: "tubing-dubai-nemo",
+        title: "Tubing Experience ",
+        subtitle: "High-speed inflatable sofa ride on the sea",
+
+        category: "water-sports",
+        destination: "dubai",
+        location: "Umm Suqeim 2, Jumeirah Road",
+
+        rating: 4.7,
+        reviewCount: 0,
+
+        durationOptions: [
+            { label: "30 Minutes", minutes: 30, price: 550, originalPrice: 600, discountPercent: 8 },
+        ],
+
+        images: [],
+
+        badges: ["Group Fun"],
+
+        overview:
+            "Ride a sofa-shaped inflatable tube pulled by a high-speed boat while enjoying the scenic Dubai coastline in an exciting way.",
+
+        highlights: [
+            "Up to 4 people per tube",
+            "Private session only",
+            "High-speed thrill ride",
+            "Instructor supervised",
+        ],
+
+        whatToBring: [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel",
+        ],
+
+        facilities: [
+            "Changing Rooms",
+            "Lockers",
+            "Instructor",
+            "Life Jackets",
+        ],
+
+        cancellationPolicy:
+            "Cancel 24 hours before activity for full refund.",
+
+        confirmationHours: 24,
+        mobileTicket: true,
+        refundable: true,
+        maxPeople: 4,
+    },
+    {
+        id: "wakeboard-nemo-dubai",
+        Supplier_Code: "NEMST",
+        slug: "wakeboard-dubai-nemo",
+        title: "Wakeboard Experience ",
+        subtitle: "Extreme water sport near Burj Al Arab",
+
+        category: "water-sports",
+        destination: "dubai",
+        location: "Umm Suqeim 2, Jumeirah Road",
+
+        rating: 4.7,
+        reviewCount: 0,
+
+        durationOptions: [
+            { label: "30 Minutes", minutes: 30, price: 500, originalPrice: 550, discountPercent: 9 },
+        ],
+
+        images: [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/wakeboard2/wakeboard1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/wakeboard2/wakeboard2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/wakeboard2/wakeboard3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/wakeboard2/wakeboard4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/wakeboard2/wakeboard5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/wakeboard2/wakeboard6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/wakeboard2/wakeboard7.webp",
+        ],
+
+        badges: ["Extreme Sport"],
+
+        overview:
+            "Ride behind a speedboat at 50 km/h and experience the thrill of wakeboarding near Burj Al Arab. Suitable for beginners and experienced riders.",
+
+        highlights: [
+            "50 KM/H towing speed",
+            "Beginner-friendly",
+            "Instructor supervised",
+            "Photo opportunities",
+        ],
+
+        whatToBring: [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel",
+        ],
+
+        facilities: [
+            "Changing Rooms",
+            "Lockers",
+            "Instructor",
+            "Life Jackets",
+        ],
+
+        cancellationPolicy:
+            "Cancel 24 hours before activity for full refund.",
+
+        confirmationHours: 24,
+        mobileTicket: true,
+        refundable: true,
+    },
+    {
+        id: "flyboard-nemo-dubai",
+        Supplier_Code: "NEMST",
+        slug: "flyboard-dubai-nemo",
+        title: "Flyboard ",
+        subtitle: "Adrenaline-packed hover experience over water",
+
+        category: "water-sports",
+        destination: "dubai",
+        location: "Umm Suqeim 2, Jumeirah Road",
+
+        rating: 4.8,
+        reviewCount: 0,
+
+        durationOptions: [
+            { label: "30 Minutes", minutes: 30, price: 320, originalPrice: 350, discountPercent: 8 },
+        ],
+
+        images: [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/flyboard2/FlyBoard2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/flyboard2/FlyBoard3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/flyboard2/FlyBoard5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/flyboard2/FlyBoard6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/flyboard2/FlyBoard7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/flyboard2/FlyBoard8.webp",
+        ],
+
+        badges: ["Adrenaline"],
+
+        overview:
+            "Experience flyboarding 50 meters from the beach with professional instruction. Hover, dive, and enjoy a thrilling water-powered adventure.",
+
+        highlights: [
+            "Beginner-friendly",
+            "Minimum weight 45kg",
+            "Instructor supervised",
+            "Photo opportunities",
+        ],
+
+        whatToBring: [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel",
+        ],
+
+        facilities: [
+            "Changing Rooms",
+            "Lockers",
+            "Instructor",
+            "Life Jackets",
+        ],
+
+        cancellationPolicy:
+            "Cancel 24 hours before activity for full refund.",
+
+        confirmationHours: 24,
+        mobileTicket: true,
+        refundable: true,
+    },
+
 ];
+
+

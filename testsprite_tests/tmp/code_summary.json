@@ -1,0 +1,79 @@
+{
+    "tech_stack": [
+        "TypeScript",
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Supabase",
+        "React Query",
+        "React Router DOM"
+    ],
+    "features": [
+        {
+            "name": "Authentication",
+            "description": "User sign in, sign up, and authentication callback handling using Supabase Auth.",
+            "files": [
+                "src/pages/SignIn.tsx",
+                "src/pages/SignUp.tsx",
+                "src/pages/Auth.tsx",
+                "src/pages/AuthCallback.tsx",
+                "src/contexts/AuthContext.tsx"
+            ]
+        },
+        {
+            "name": "Cart Management",
+            "description": "Functionality to add items to cart, view cart, and manage cart items.",
+            "files": [
+                "src/contexts/CartContext.tsx",
+                "src/pages/Cart.tsx",
+                "src/components/CartSheet.tsx"
+            ]
+        },
+        {
+            "name": "Product Browsing",
+            "description": "Browsing products by category and viewing detailed product information.",
+            "files": [
+                "src/pages/CategoryPage.tsx",
+                "src/pages/ProductDetails.tsx",
+                "src/data/catalog.ts",
+                "src/data/categories.ts"
+            ]
+        },
+        {
+            "name": "Checkout Flow",
+            "description": "Handling payment success and cancellation states.",
+            "files": [
+                "src/pages/PaymentSuccess.tsx",
+                "src/pages/PaymentCanceled.tsx"
+            ]
+        },
+        {
+            "name": "User Dashboard",
+            "description": "Dashboard for authenticated users to view their profile and bookings.",
+            "files": [
+                "src/pages/Dashboard.tsx"
+            ]
+        },
+        {
+            "name": "Search",
+            "description": "Search functionality to find products.",
+            "files": [
+                "src/pages/SearchResults.tsx",
+                "src/components/SearchBar.tsx"
+            ]
+        },
+        {
+            "name": "Static Pages",
+            "description": "Informational pages like About Us, Contact Us, and policies.",
+            "files": [
+                "src/pages/AboutUs.tsx",
+                "src/pages/ContactUs.tsx",
+                "src/pages/PrivacyPolicy.tsx",
+                "src/pages/TermsConditions.tsx",
+                "src/pages/RefundPolicy.tsx",
+                "src/pages/CancellationPolicy.tsx"
+            ]
+        }
+    ]
+}

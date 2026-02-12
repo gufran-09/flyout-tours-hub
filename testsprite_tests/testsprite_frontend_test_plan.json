@@ -1,0 +1,414 @@
+[
+  {
+    "id": "TC001",
+    "title": "User Registration with Valid Email and Password",
+    "description": "Verify that a new user can successfully register with a valid email address and password.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the sign-up page"
+      },
+      {
+        "type": "action",
+        "description": "Enter a valid email address and strong password"
+      },
+      {
+        "type": "action",
+        "description": "Click the 'Sign Up' button"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm that registration is successful and user is redirected to dashboard"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "User Login with Correct Credentials",
+    "description": "Validate that a registered user can log in with correct email and password.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the sign-in page"
+      },
+      {
+        "type": "action",
+        "description": "Input registered email and correct password"
+      },
+      {
+        "type": "action",
+        "description": "Click the 'Login' button"
+      },
+      {
+        "type": "assertion",
+        "description": "User is authenticated and redirected to the user dashboard"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Login Failure with Incorrect Password",
+    "description": "Verify that login is denied when entering an incorrect password.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the sign-in page"
+      },
+      {
+        "type": "action",
+        "description": "Input registered email with incorrect password"
+      },
+      {
+        "type": "action",
+        "description": "Click the 'Login' button"
+      },
+      {
+        "type": "assertion",
+        "description": "Login is rejected with an error message displayed"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Access Dashboard Without Authentication",
+    "description": "Ensure users cannot access the dashboard or protected routes without authentication.",
+    "category": "security",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate directly to the dashboard URL without logging in"
+      },
+      {
+        "type": "assertion",
+        "description": "User is redirected to the sign-in page"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Browse Tours by Category",
+    "description": "Verify that users can browse tours grouped by categories and that the correct products display under each category.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the category browsing page"
+      },
+      {
+        "type": "action",
+        "description": "Select a tour category"
+      },
+      {
+        "type": "assertion",
+        "description": "Display is updated showing tours belonging only to the selected category with correct details"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "View Detailed Product Page with Dynamic Pricing and Images",
+    "description": "Ensure product detail pages correctly display dynamic pricing, image galleries, tours description, and location maps.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to a product listing from category or search"
+      },
+      {
+        "type": "action",
+        "description": "Click on a product to open the detailed product page"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify product description, pricing options, image gallery, and embedded location map are clearly visible and accurate"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Search Products by Name and Keywords",
+    "description": "Check that the global search bar returns relevant products based on entered names or keywords.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Enter a valid tour name or keyword into the global search bar"
+      },
+      {
+        "type": "action",
+        "description": "Submit the search query"
+      },
+      {
+        "type": "assertion",
+        "description": "Search results page shows a list of products matching the search criteria"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Add Item to Cart and Verify Cart Updates",
+    "description": "Verify adding an item to cart reflects correctly in the cart view and item count.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "From the product detail page, click 'Add to Cart'"
+      },
+      {
+        "type": "assertion",
+        "description": "Item appears in the cart with correct quantity and pricing"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Update Item Quantity in Cart",
+    "description": "Check that user can update the quantity of an item in the cart and pricing updates accordingly.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to the cart page"
+      },
+      {
+        "type": "action",
+        "description": "Increase or decrease the quantity of a chosen cart item"
+      },
+      {
+        "type": "assertion",
+        "description": "Cart updates the quantity and recalculates total price correctly"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Remove Item from Cart",
+    "description": "Confirm that removing an item from the cart updates the cart and total price correctly.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the cart page or cart sheet"
+      },
+      {
+        "type": "action",
+        "description": "Remove an item from the cart"
+      },
+      {
+        "type": "assertion",
+        "description": "Item is removed and cart totals are updated accurately"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Wishlist Functionality Add and Remove",
+    "description": "Verify users can add items to the wishlist and remove them, ensuring persistence during session.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "From a product page, click the 'Add to Wishlist' button"
+      },
+      {
+        "type": "assertion",
+        "description": "Product is added to the wishlist"
+      },
+      {
+        "type": "action",
+        "description": "Remove the product from the wishlist"
+      },
+      {
+        "type": "assertion",
+        "description": "Product is removed from the wishlist"
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Successful Checkout Process Handling",
+    "description": "Validate that after completing checkout, payment success page is shown and order is recorded in booking history.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Proceed to checkout with items in cart"
+      },
+      {
+        "type": "action",
+        "description": "Complete the mocked payment successfully"
+      },
+      {
+        "type": "assertion",
+        "description": "Payment success page is shown and booking appears in user dashboard order history"
+      }
+    ]
+  },
+  {
+    "id": "TC013",
+    "title": "Checkout Payment Cancellation Handling",
+    "description": "Ensure that payment cancellation leads to appropriate notification and user can continue browsing.",
+    "category": "error handling",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Proceed to checkout and cancel the payment"
+      },
+      {
+        "type": "assertion",
+        "description": "Payment cancellation page is displayed and cart remains unchanged"
+      },
+      {
+        "type": "action",
+        "description": "Navigate away and verify cart still contains items"
+      }
+    ]
+  },
+  {
+    "id": "TC014",
+    "title": "User Dashboard Displays Booking History",
+    "description": "Check that the authenticated user's dashboard accurately lists all past bookings with correct details.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Log in as an authenticated user with past bookings"
+      },
+      {
+        "type": "action",
+        "description": "Navigate to user dashboard"
+      },
+      {
+        "type": "assertion",
+        "description": "Booking history is shown accurately with correct bookings and details"
+      }
+    ]
+  },
+  {
+    "id": "TC015",
+    "title": "Profile Management Updates Persist",
+    "description": "Verify that updates made to user profile details are saved and reflected correctly in the dashboard.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Log in and navigate to profile management section"
+      },
+      {
+        "type": "action",
+        "description": "Change profile details such as name, contact info"
+      },
+      {
+        "type": "action",
+        "description": "Save changes"
+      },
+      {
+        "type": "assertion",
+        "description": "Changes persist and are displayed correctly after page refresh"
+      }
+    ]
+  },
+  {
+    "id": "TC016",
+    "title": "Static Content Pages Accessibility and Accuracy",
+    "description": "Confirm that all static informational pages (About Us, Contact Us, Privacy Policy, Terms & Conditions, Refund, Cancellation) are accessible and render accurate content.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to each static content page via menu or URL"
+      },
+      {
+        "type": "assertion",
+        "description": "Page loads without errors and company & policy information is up-to-date and displayed clearly"
+      }
+    ]
+  },
+  {
+    "id": "TC017",
+    "title": "Responsive UI Layout on Multiple Device Sizes",
+    "description": "Validate UI adapts correctly on mobile, tablet, and desktop with no visual or functional regressions.",
+    "category": "ui",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Access the application on various device viewports or simulators (mobile, tablet, desktop)"
+      },
+      {
+        "type": "assertion",
+        "description": "All UI components render correctly with proper layout, font sizes, and no overlaps or truncations"
+      }
+    ]
+  },
+  {
+    "id": "TC018",
+    "title": "Performance Metrics: Fast Load and Smooth Interactions",
+    "description": "Assess critical performance metrics such as Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS) meet acceptable thresholds in popular browsers.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load key pages such as home, product detail, and dashboard using Chrome DevTools or Lighthouse"
+      },
+      {
+        "type": "assertion",
+        "description": "LCP is below 2.5 seconds and CLS is minimal to none, ensuring smooth user experience"
+      }
+    ]
+  },
+  {
+    "id": "TC019",
+    "title": "Consistent Data State Across Client and Server",
+    "description": "Verify that data fetched and updated by React Query and Context API remains consistent and synchronized between server and UI on various operations.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Perform data mutations such as adding/removing cart items or updating profile"
+      },
+      {
+        "type": "assertion",
+        "description": "UI reflects changes instantly and data remains consistent on page reload or navigation"
+      }
+    ]
+  },
+  {
+    "id": "TC020",
+    "title": "Error Message Display on Network Failure",
+    "description": "Check that appropriate user-friendly error messages display when server or network errors occur during authentication, browsing, or checkout.",
+    "category": "error handling",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Simulate network failure or server error during login, product browsing, or payment"
+      },
+      {
+        "type": "assertion",
+        "description": "Relevant error message is shown guiding the user clearly"
+      }
+    ]
+  }
+]

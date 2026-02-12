@@ -115,42 +115,47 @@ export default function Dashboard() {
     if (!user) return;
 
     try {
-      // Fetch profile
-      const { data: profileData } = await supabase
-        .from("profiles")
-        .select("*")
-        .eq("user_id", user.id)
-        .single();
+      setLoading(true);
 
-      if (profileData) {
-        setProfile(profileData);
+      const [profileResult, bookingsResult, wishlistResult] = await Promise.all([
+        supabase
+          .from("profiles")
+          .select("*")
+          .eq("user_id", user.id)
+          .single(),
+        supabase
+          .from("bookings")
+          .select("*")
+          .eq("user_id", user.id)
+          .order("created_at", { ascending: false }),
+        supabase
+          .from("wishlist")
+          .select("*")
+          .eq("user_id", user.id)
+          .order("created_at", { ascending: false })
+      ]);
+
+      if (profileResult.data) {
+        setProfile(profileResult.data);
         setFormData({
-          full_name: profileData.full_name || "",
-          phone: profileData.phone || "",
+          full_name: profileResult.data.full_name || "",
+          phone: profileResult.data.phone || "",
         });
       }
 
-      // Fetch bookings
-      const { data: bookingsData } = await supabase
-        .from("bookings")
-        .select("*")
-        .eq("user_id", user.id)
-        .order("created_at", { ascending: false });
-
-      if (bookingsData) {
-        setBookings(bookingsData);
+      if (bookingsResult.data) {
+        setBookings(bookingsResult.data);
       }
 
-      // Fetch wishlist
-      const { data: wishlistData } = await supabase
-        .from("wishlist")
-        .select("*")
-        .eq("user_id", user.id)
-        .order("created_at", { ascending: false });
-
-      if (wishlistData) {
-        setWishlist(wishlistData);
+      if (wishlistResult.data) {
+        setWishlist(wishlistResult.data);
       }
+
+      // Log errors if any, but don't break the whole page
+      if (profileResult.error) console.error("Profile fetch error:", profileResult.error);
+      if (bookingsResult.error) console.error("Bookings fetch error:", bookingsResult.error);
+      if (wishlistResult.error) console.error("Wishlist fetch error:", wishlistResult.error);
+
     } catch (error) {
       console.error("Error fetching user data:", error);
     } finally {

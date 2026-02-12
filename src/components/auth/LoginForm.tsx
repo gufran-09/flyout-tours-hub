@@ -162,6 +162,7 @@ export function LoginForm() {
                         placeholder="you@example.com"
                         className="pl-10"
                         {...form.register("email")}
+                        data-testid="email"
                     />
                 </div>
                 {form.formState.errors.email && (
@@ -179,6 +180,7 @@ export function LoginForm() {
                         placeholder="••••••••"
                         className="pl-10 pr-10"
                         {...form.register("password")}
+                        data-testid="password"
                     />
                     <button
                         type="button"

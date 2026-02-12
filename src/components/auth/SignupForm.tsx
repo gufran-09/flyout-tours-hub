@@ -136,6 +136,7 @@ export function SignupForm() {
                         placeholder="John Doe"
                         className="pl-10"
                         {...form.register("fullName")}
+                        data-testid="fullName"
                     />
                 </div>
                 {form.formState.errors.fullName && (
@@ -153,6 +154,7 @@ export function SignupForm() {
                         placeholder="you@example.com"
                         className="pl-10"
                         {...form.register("email")}
+                        data-testid="email"
                     />
                 </div>
                 {form.formState.errors.email && (
@@ -170,6 +172,7 @@ export function SignupForm() {
                         placeholder="••••••••"
                         className="pl-10 pr-10"
                         {...form.register("password")}
+                        data-testid="password"
                     />
                     <button
                         type="button"
@@ -194,6 +197,7 @@ export function SignupForm() {
                         placeholder="••••••••"
                         className="pl-10"
                         {...form.register("confirmPassword")}
+                        data-testid="confirmPassword"
                     />
                 </div>
                 {form.formState.errors.confirmPassword && (

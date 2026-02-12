@@ -61,6 +61,7 @@ import CarRental from "./pages/CarRental";
 import Adventures from "./pages/Adventures";
 import Restaurants from "./pages/Restaurants";
 import ProductDetails from "./pages/ProductDetails";
+import CategoryPage from "./pages/CategoryPage";
 import Shows from "./pages/Shows";
 
 import ScrollToTop from "./components/ScrollToTop";
@@ -143,6 +144,7 @@ const App = () => {
                       <Route path="/dubai/adventures" element={<Adventures />} />
                       <Route path="/dubai/restaurants" element={<Restaurants />} />
                       <Route path="/dubai/shows" element={<Shows />} />
+                      <Route path="/categories" element={<CategoryPage />} />
 
                       {/* Unified Product Detail Page */}
                       <Route path="/experiences/:destination/:category/:slug" element={<ProductDetails />} />

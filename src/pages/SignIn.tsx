@@ -1,16 +1,22 @@
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { LoginForm } from "@/components/auth/LoginForm";
 import { SocialAuth } from "@/components/auth/SocialAuth";
+import { useAuth } from "@/contexts/AuthContext";
+import { useEffect } from "react";
 
 export default function SignIn() {
+    const { user } = useAuth();
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (user) {
+            navigate("/");
+        }
+    }, [user, navigate]);
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-accent/5 flex items-center justify-center p-4">
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="w-full max-w-md"
-            >
+            <div className="w-full max-w-md animate-in fade-in slide-in-from-bottom-4 duration-500">
                 {/* Logo */}
                 <div className="text-center mb-8">
                     <Link to="/" className="inline-block">
@@ -42,7 +48,7 @@ export default function SignIn() {
                         </Link>
                     </p>
                 </div>
-            </motion.div>
+            </div>
         </div>
     );
 }

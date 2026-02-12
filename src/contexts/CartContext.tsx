@@ -1,7 +1,8 @@
-import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import { createContext, useContext, useState, useEffect, ReactNode, useMemo } from "react";
 import { Tour } from "@/components/home/ExperienceSection";
 
 export interface CartItem {
+  id: string;
   tour: Tour;
   quantity: number;
   guests: number;
@@ -11,9 +12,9 @@ export interface CartItem {
 interface CartContextType {
   items: CartItem[];
   addToCart: (tour: Tour, guests?: number, selectedDate?: string) => void;
-  removeFromCart: (tourId: string) => void;
-  updateQuantity: (tourId: string, quantity: number) => void;
-  updateGuests: (tourId: string, guests: number) => void;
+  removeFromCart: (itemId: string) => void;
+  updateQuantity: (itemId: string, quantity: number) => void;
+  updateGuests: (itemId: string, guests: number) => void;
   clearCart: () => void;
   totalItems: number;
   totalPrice: number;
@@ -27,7 +28,12 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<CartItem[]>(() => {
     if (typeof window !== "undefined") {
       const saved = localStorage.getItem(CART_STORAGE_KEY);
-      return saved ? JSON.parse(saved) : [];
+      const parsed = saved ? JSON.parse(saved) : [];
+      // Migrate old cart items that might not have an ID
+      return parsed.map((item: any) => ({
+        ...item,
+        id: item.id || `${item.tour.id}-${item.tour.duration}-${item.selectedDate || 'no-date'}`
+      }));
     }
     return [];
   });
@@ -37,39 +43,41 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, [items]);
 
   const addToCart = (tour: Tour, guests: number = 1, selectedDate?: string) => {
+    const newItemId = `${tour.id}-${tour.duration}-${selectedDate || 'no-date'}`;
+
     setItems((prev) => {
-      const existing = prev.find((item) => item.tour.id === tour.id);
+      const existing = prev.find((item) => item.id === newItemId);
       if (existing) {
         return prev.map((item) =>
-          item.tour.id === tour.id
+          item.id === newItemId
             ? { ...item, quantity: item.quantity + 1, guests: guests || item.guests }
             : item
         );
       }
-      return [...prev, { tour, quantity: 1, guests, selectedDate }];
+      return [...prev, { id: newItemId, tour, quantity: 1, guests, selectedDate }];
     });
   };
 
-  const removeFromCart = (tourId: string) => {
-    setItems((prev) => prev.filter((item) => item.tour.id !== tourId));
+  const removeFromCart = (itemId: string) => {
+    setItems((prev) => prev.filter((item) => item.id !== itemId));
   };
 
-  const updateQuantity = (tourId: string, quantity: number) => {
+  const updateQuantity = (itemId: string, quantity: number) => {
     if (quantity <= 0) {
-      removeFromCart(tourId);
+      removeFromCart(itemId);
       return;
     }
     setItems((prev) =>
       prev.map((item) =>
-        item.tour.id === tourId ? { ...item, quantity } : item
+        item.id === itemId ? { ...item, quantity } : item
       )
     );
   };
 
-  const updateGuests = (tourId: string, guests: number) => {
+  const updateGuests = (itemId: string, guests: number) => {
     setItems((prev) =>
       prev.map((item) =>
-        item.tour.id === tourId ? { ...item, guests: Math.max(1, guests) } : item
+        item.id === itemId ? { ...item, guests: Math.max(1, guests) } : item
       )
     );
   };
@@ -78,25 +86,25 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setItems([]);
   };
 
-  const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
-  const totalPrice = items.reduce(
+  const totalItems = useMemo(() => items.reduce((sum, item) => sum + item.quantity, 0), [items]);
+  const totalPrice = useMemo(() => items.reduce(
     (sum, item) => sum + item.tour.price * item.quantity * item.guests,
     0
-  );
+  ), [items]);
+
+  const value = useMemo(() => ({
+    items,
+    addToCart,
+    removeFromCart,
+    updateQuantity,
+    updateGuests,
+    clearCart,
+    totalItems,
+    totalPrice,
+  }), [items, totalItems, totalPrice]);
 
   return (
-    <CartContext.Provider
-      value={{
-        items,
-        addToCart,
-        removeFromCart,
-        updateQuantity,
-        updateGuests,
-        clearCart,
-        totalItems,
-        totalPrice,
-      }}
-    >
+    <CartContext.Provider value={value}>
       {children}
     </CartContext.Provider>
   );

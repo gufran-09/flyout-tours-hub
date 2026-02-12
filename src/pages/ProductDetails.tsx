@@ -1,6 +1,7 @@
 
 import { useParams, Link } from "react-router-dom";
 import { PRODUCTS, Product, DurationOption } from "@/data/catalog";
+import { Tour } from "@/components/home/ExperienceSection";
 import { Layout } from "@/components/layout/Layout";
 import {
     Star,
@@ -10,7 +11,9 @@ import {
     Smartphone,
     Calendar as CalendarIcon,
     ChevronRight,
-    ChevronDown
+    ChevronDown,
+    Minus,
+    Plus
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
@@ -31,12 +34,17 @@ import { format } from "date-fns";
 import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
+import { useCart } from "@/contexts/CartContext";
+import { useToast } from "@/components/ui/use-toast";
 
 export default function ProductDetails() {
     const { slug } = useParams();
     const [product, setProduct] = useState<Product | null>(null);
     const [selectedDate, setSelectedDate] = useState<Date | undefined>(new Date());
     const [selectedDuration, setSelectedDuration] = useState<DurationOption | null>(null);
+    const [guestCount, setGuestCount] = useState(1);
+    const { addToCart } = useCart();
+    const { toast } = useToast();
 
     useEffect(() => {
         const foundProduct = PRODUCTS.find((p) => p.slug === slug);
@@ -63,8 +71,8 @@ export default function ProductDetails() {
         );
     }
 
-    const currentPrice = selectedDuration ? selectedDuration.price : 0;
-    const currentOriginalPrice = selectedDuration?.originalPrice;
+    const currentPrice = selectedDuration ? selectedDuration.price * guestCount : 0;
+    const currentOriginalPrice = selectedDuration?.originalPrice ? selectedDuration.originalPrice * guestCount : undefined;
     const currentDiscount = selectedDuration?.discountPercent;
 
     const discountDisplay = currentDiscount ? (
@@ -72,6 +80,48 @@ export default function ProductDetails() {
             {currentDiscount}% OFF
         </span>
     ) : null;
+
+    const handleAddToCart = () => {
+        if (!selectedDate) {
+            toast({
+                title: "Please select a date",
+                description: "You must choose a date for your booking.",
+                variant: "destructive",
+            });
+            return;
+        }
+
+        if (!selectedDuration) {
+            toast({
+                title: "Please select a duration",
+                description: "You must choose a duration option.",
+                variant: "destructive",
+            });
+            return;
+        }
+
+        const tourData: Tour = {
+            id: product.id,
+            name: product.title,
+            location: product.location,
+            category: product.category,
+            price: selectedDuration.price,
+            originalPrice: selectedDuration.originalPrice,
+            rating: product.rating,
+            reviewCount: product.reviewCount,
+            duration: selectedDuration.label,
+            image: product.images[0],
+            badge: product.badges?.[0],
+            subtitle: product.subtitle
+        };
+
+        addToCart(tourData, guestCount, selectedDate.toISOString());
+
+        toast({
+            title: "Added to cart",
+            description: `${product.title} has been added to your cart.`,
+        });
+    };
 
     return (
         <Layout>
@@ -92,25 +142,25 @@ export default function ProductDetails() {
                 </div>
 
                 {/* Image Slider - Full Width Strip */}
-                <div className="w-full relative group">
-                    <Carousel className="w-full">
-                        <CarouselContent>
+                <div className="w-full relative">
+                    <Carousel className="relative w-full group">
+                        <CarouselContent className="pointer-events-none">
                             {product.images.map((img, index) => (
-                                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4 h-[300px] md:h-[400px]">
+                                <CarouselItem key={index} className="pointer-events-auto md:basis-1/2 lg:basis-1/3 xl:basis-1/4 h-[300px] md:h-[400px]">
                                     <div className="relative h-full w-full overflow-hidden">
-                                        <img
-                                            src={img}
-                                            alt={`${product.title} - ${index + 1}`}
-                                            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 cursor-pointer"
-                                        />
+                                        <img src={img} alt={`${product.title} - ${index + 1}`} className="w-full h-full object-cover" />
                                     </div>
                                 </CarouselItem>
                             ))}
                         </CarouselContent>
-                        <CarouselPrevious className="left-4 bg-white/80 hover:bg-white border-0 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        <CarouselNext className="right-4 bg-white/80 hover:bg-white border-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+
+                        <CarouselPrevious className="pointer-events-auto absolute left-4 top-1/2 -translate-y-1/2 z-50 bg-white/90 hover:bg-white text-neutral-900 hover:text-neutral-900 border-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <CarouselNext className="pointer-events-auto absolute right-4 top-1/2 -translate-y-1/2 z-50 bg-white/90 hover:bg-white text-neutral-900 hover:text-neutral-900 border-0 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </Carousel>
                 </div>
+
+
+
 
 
                 <div className="container mx-auto px-4 py-8">
@@ -129,6 +179,8 @@ export default function ProductDetails() {
                                         <span>{product.rating}</span>
                                     </div>
                                     <span className="text-gray-500 text-sm hover:underline cursor-pointer">{product.reviewCount} Reviews</span>
+                                    <span className="text-gray-300">|</span>
+                                    <span className="text-gray-500 text-sm">Supplier: {product.Supplier_Code}</span>
                                 </div>
 
                                 {/* Feature Pills */}
@@ -244,6 +296,41 @@ export default function ProductDetails() {
                                     </div>
                                 </div>
 
+                                {/* Guest Counter */}
+                                <div className="space-y-3">
+                                    <label className="text-sm font-semibold text-gray-900 block">
+                                        {product.maxPeople ? "Quantity" : "Guests / Tickets"}
+                                    </label>
+                                    <div className="flex items-center justify-between border border-gray-200 rounded-lg p-3">
+                                        <div className="flex flex-col">
+                                            <span className="text-gray-600 font-medium">
+                                                {product.maxPeople ? "Number of Packs" : "Number of People"}
+                                            </span>
+                                            {product.maxPeople && (
+                                                <span className="text-xs text-muted-foreground">
+                                                    Max {product.maxPeople} people per pack
+                                                </span>
+                                            )}
+                                        </div>
+                                        <div className="flex items-center gap-3">
+                                            <button
+                                                onClick={() => setGuestCount(Math.max(1, guestCount - 1))}
+                                                className="w-8 h-8 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-100 transition-colors"
+                                                disabled={guestCount <= 1}
+                                            >
+                                                <Minus className="w-4 h-4 text-gray-600" />
+                                            </button>
+                                            <span className="w-8 text-center font-semibold text-gray-900">{guestCount}</span>
+                                            <button
+                                                onClick={() => setGuestCount(guestCount + 1)}
+                                                className="w-8 h-8 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-100 transition-colors"
+                                            >
+                                                <Plus className="w-4 h-4 text-gray-600" />
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 {/* Date Selection */}
                                 <div className="space-y-3">
                                     <label className="text-sm font-semibold text-gray-900 block">Select Date</label>
@@ -296,8 +383,11 @@ export default function ProductDetails() {
                                 )}
 
                                 <div className="pt-2">
-                                    <Button className="w-full h-14 text-lg font-bold bg-[#E91E63] hover:bg-[#D81B60] text-white shadow-lg shadow-[#E91E63]/20 rounded-xl transition-all hover:scale-[1.02] active:scale-[0.98]">
-                                        Get Ticket
+                                    <Button
+                                        onClick={handleAddToCart}
+                                        className="w-full h-14 text-lg font-bold bg-[#E91E63] hover:bg-[#D81B60] text-white shadow-lg shadow-[#E91E63]/20 rounded-xl transition-all hover:scale-[1.02] active:scale-[0.98]"
+                                    >
+                                        Add to Cart
                                     </Button>
                                     <div className="flex items-center justify-center gap-2 mt-4 text-xs text-gray-400">
                                         <ShieldCheck className="w-3 h-3" />

@@ -59,13 +59,24 @@ const destinationsCategories = [
   { name: "Ras Al Khaimah", href: "/ras-al-khaimah", icon: MapPin },
 ];
 
+import { getCategories, Category } from "@/lib/categories";
+
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [categories, setCategories] = useState<Category[]>([]);
   const location = useLocation();
   const navigate = useNavigate();
   const { user, signOut } = useAuth();
   const { totalItems } = useCart();
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      const fetchedCategories = await getCategories();
+      setCategories(fetchedCategories);
+    };
+    fetchCategories();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -269,24 +280,12 @@ export function Navbar() {
                 triggerLabel="Categories"
                 type="grid"
                 columns={4}
-                items={[
-                  { title: "Attraction", href: "/dubai/attractions", icon: Star, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/1.webp" },
-                  { title: "Parks", href: "/dubai/theme-parks", icon: Palmtree, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/2.webp" },
-                  { title: "Yacht", href: "/dubai/yacht", icon: Ship, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/3.webp" },
-                  { title: "Holiday Packages", href: "/dubai/packages", icon: Package, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/4.webp" },
-                  { title: "Water Adventures", href: "/dubai/water-adventures", icon: Ship, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/5.webp" },
-                  { title: "Hotel", href: "/dubai/hotels", icon: Building2, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/6.webp" },
-                  { title: "Car Rental", href: "/dubai/car-rental", icon: Car, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/7.webp" },
-                  { title: "Dinner Cruise", href: "/dubai/dinner-cruise", icon: Utensils, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/8.webp" },
-                  { title: "Sky Adventures", href: "/dubai/sky-adventures", icon: Plane, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/9.webp" },
-                  { title: "Visa & Services", href: "/dubai/visa", icon: FileText, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/10.webp" },
-                  { title: "City Tours", href: "/dubai/city-tours", icon: Building2, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/11.webp" },
-                  { title: "Adventures", href: "/dubai/adventures", icon: Zap, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/12.webp" },
-                  { title: "Airport transfers", href: "/dubai/transfers", icon: Car, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/13.webp" },
-                  { title: "Safari", href: "/dubai/desert-safari", icon: Compass, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/14.webp" },
-                  { title: "Restaurants", href: "/dubai/restaurants", icon: Utensils, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/15.webp" },
-                  { title: "Live concerts & Shows", href: "/dubai/shows", icon: Ticket, image: "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/Category/16.webp" },
-                ]}
+                items={categories.map(cat => ({
+                  title: cat.name,
+                  href: cat.link || '#',
+                  icon: cat.icon || Star,
+                  image: cat.image_url
+                }))}
               />
 
               <MegaMenu

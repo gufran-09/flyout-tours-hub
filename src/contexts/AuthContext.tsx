@@ -1,7 +1,6 @@
-import { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import { createContext, useContext, useEffect, useState, ReactNode, useMemo } from "react";
 import { User, Session } from "@supabase/supabase-js";
 import { supabase } from "@/integrations/supabase/client";
-import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 
 interface AuthContextType {
@@ -125,7 +124,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   return (
     <AuthContext.Provider
-      value={{
+      value={useMemo(() => ({
         user,
         session,
         loading,
@@ -138,7 +137,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         resendEmailOTP,
         signOut,
         resetPassword,
-      }}
+      }), [user, session, loading])}
     >
       {children}
     </AuthContext.Provider>

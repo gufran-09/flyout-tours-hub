@@ -92,7 +92,7 @@ export default function Cart() {
           <div className="lg:col-span-2 space-y-4">
             {items.map((item, index) => (
               <motion.div
-                key={item.tour.id}
+                key={item.id}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -116,7 +116,7 @@ export default function Cart() {
                     <Button
                       variant="ghost"
                       size="icon"
-                      onClick={() => removeFromCart(item.tour.id)}
+                      onClick={() => removeFromCart(item.id)}
                       className="text-destructive hover:text-destructive hover:bg-destructive/10"
                     >
                       <Trash2 className="h-4 w-4" />
@@ -133,7 +133,7 @@ export default function Cart() {
                           variant="ghost"
                           size="icon"
                           className="h-8 w-8"
-                          onClick={() => updateGuests(item.tour.id, item.guests - 1)}
+                          onClick={() => updateGuests(item.id, item.guests - 1)}
                           disabled={item.guests <= 1}
                         >
                           <Minus className="h-3 w-3" />
@@ -145,7 +145,7 @@ export default function Cart() {
                           variant="ghost"
                           size="icon"
                           className="h-8 w-8"
-                          onClick={() => updateGuests(item.tour.id, item.guests + 1)}
+                          onClick={() => updateGuests(item.id, item.guests + 1)}
                         >
                           <Plus className="h-3 w-3" />
                         </Button>
@@ -160,7 +160,7 @@ export default function Cart() {
                           variant="ghost"
                           size="icon"
                           className="h-8 w-8"
-                          onClick={() => updateQuantity(item.tour.id, item.quantity - 1)}
+                          onClick={() => updateQuantity(item.id, item.quantity - 1)}
                         >
                           <Minus className="h-3 w-3" />
                         </Button>
@@ -171,7 +171,7 @@ export default function Cart() {
                           variant="ghost"
                           size="icon"
                           className="h-8 w-8"
-                          onClick={() => updateQuantity(item.tour.id, item.quantity + 1)}
+                          onClick={() => updateQuantity(item.id, item.quantity + 1)}
                         >
                           <Plus className="h-3 w-3" />
                         </Button>
@@ -204,7 +204,7 @@ export default function Cart() {
 
               <div className="space-y-3 border-b border-border pb-4 mb-4">
                 {items.map((item) => (
-                  <div key={item.tour.id} className="flex justify-between text-sm">
+                  <div key={item.id} className="flex justify-between text-sm">
                     <span className="text-muted-foreground line-clamp-1 flex-1 mr-2">
                       {item.tour.name} (×{item.quantity}, {item.guests} guest{item.guests > 1 ? 's' : ''})
                     </span>

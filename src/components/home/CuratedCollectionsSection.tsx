@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, Plane, Users, Sun, Music, Coffee, Star } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -10,59 +10,11 @@ import {
     CarouselItem,
     type CarouselApi,
 } from "@/components/ui/carousel";
+import { getCategories, Category } from "@/lib/categories";
 
-// Data for Curated Collections
-const curatedCollections = [
-    {
-        id: 1,
-        title: "Luxury Escapes",
-        icon: Plane,
-        description: "Yacht, helicopter, 5-star dining, private tours",
-        image: "https://plus.unsplash.com/premium_photo-1675745329954-9639d3b74bbf?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        color: "from-amber-600 to-yellow-500",
-        link: "/luxury"
-    },
-    {
-        id: 2,
-        title: "Family Favorites",
-        icon: Users,
-        description: "Theme parks, water parks, zoo, cruises and more ",
-        image: "https://images.unsplash.com/photo-1584415965060-a5279d4d24c5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        color: "from-blue-600 to-cyan-500",
-        link: "/dubai/theme-parks"
-    },
-    {
-        id: 3,
-        title: "Desert & Nature",
-        icon: Sun,
-        description: "Safari, balloon, camping, photography tours",
-        image: "https://images.unsplash.com/photo-1637493393334-d5cb18846898?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        color: "from-orange-600 to-amber-500",
-        link: "/safari"
-    },
-    {
-        id: 4,
-        title: "Nightlife & Entertainment",
-        icon: Music,
-        description: "Dinner cruises, live shows, concerts",
-        image: "https://images.unsplash.com/photo-1751922001436-8b21a099f5b5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        color: "from-violet-600 to-purple-500",
-        link: "/concerts"
-    },
-    {
-        id: 5,
-        title: "Relax & Indulge",
-        icon: Coffee,
-        description: "Hotels, spa experiences, beach clubs, resorts",
-        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800",
-        color: "from-emerald-600 to-teal-500",
-        link: "/staycations"
-    }
-];
-
-const CollectionCard = ({ item }: { item: typeof curatedCollections[0] }) => (
+const CollectionCard = ({ item }: { item: Category }) => (
     <Link
-        to={item.link}
+        to={item.link || '#'}
         className="group relative flex flex-col h-full bg-white rounded-[28px] overflow-hidden 
     shadow-md border border-flyout-gold/20 hover:shadow-xl hover:border-black/5
     transition-all duration-500 ease-out hover:-translate-y-1.5"
@@ -70,12 +22,12 @@ const CollectionCard = ({ item }: { item: typeof curatedCollections[0] }) => (
         {/* Full Bleed Image */}
         <div className="relative aspect-[4/5] overflow-hidden rounded-t-[28px]">
             <motion.img
-                src={item.image}
-                alt={item.title}
+                src={item.image_url}
+                alt={item.name}
                 className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105"
             />
             {/* Soft Gradient Overlay for depth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
         </div>
 
         {/* Content Section */}
@@ -96,7 +48,7 @@ const CollectionCard = ({ item }: { item: typeof curatedCollections[0] }) => (
 
             {/* Title */}
             <h3 className="font-serif text-[26px] text-neutral-900 mb-2 leading-tight font-medium group-hover:text-flyout-gold transition-colors duration-300">
-                {item.title}
+                {item.name}
             </h3>
 
             {/* Description */}
@@ -124,6 +76,15 @@ const CollectionCard = ({ item }: { item: typeof curatedCollections[0] }) => (
 
 export const CuratedCollectionsSection = () => {
     const [api, setApi] = useState<CarouselApi>();
+    const [categories, setCategories] = useState<Category[]>([]);
+
+    useEffect(() => {
+        const fetchCategories = async () => {
+            const fetchedCategories = await getCategories();
+            setCategories(fetchedCategories);
+        };
+        fetchCategories();
+    }, []);
 
     return (
         <section className="relative pt-0 pb-0 bg-white overflow-hidden">
@@ -149,7 +110,7 @@ export const CuratedCollectionsSection = () => {
                     className="w-full"
                 >
                     <CarouselContent className="-ml-4">
-                        {curatedCollections.map((item, index) => (
+                        {categories.map((item, index) => (
                             <CarouselItem key={item.id} className="pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
                                 <motion.div
                                     initial={{ opacity: 0, y: 20 }}

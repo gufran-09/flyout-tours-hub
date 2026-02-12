@@ -1,0 +1,22 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:8080",
+  "executionArgs": {
+    "projectName": "flyout-tours-hub-main",
+    "projectPath": "c:\\Users\\gufra\\Downloads\\flyout-tours-hub-main\\flyout-tours-hub-main",
+    "testIds": [
+      "TC001",
+      "TC002",
+      "TC005",
+      "TC006"
+    ],
+    "additionalInstruction": "Run these tests. Assume dev server is running.",
+    "envs": {
+      "API_KEY": "sk-user-sTC7tqOwpeG7f0zobSQ6CzKN1-sCtmcwv_YoecNrK60JNV6yyGk6K1ZKQOOM5Hn5uTQdwvM8GGOePdXyeeHfvXHhlqRjAKdJQ2b1Jz4urUOjGJtCcGofxg28p7mGD7897EE"
+    }
+  },
+  "serverPort": 63874,
+  "proxy": "http://52eef443-5724-4b91-b1d4-deece1d2323e:sGTGCdTWwL9ciXZuf4EbunovMTVXK9xF@tun.testsprite.com:8080"
+}

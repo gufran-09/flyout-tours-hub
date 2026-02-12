@@ -30,11 +30,11 @@ interface SearchAutocompleteProps {
   fullScreen?: boolean;
 }
 
-export function SearchAutocomplete({ 
-  className, 
-  onClose, 
+export function SearchAutocomplete({
+  className,
+  onClose,
   autoFocus = false,
-  fullScreen = false 
+  fullScreen = false
 }: SearchAutocompleteProps) {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
@@ -45,7 +45,6 @@ export function SearchAutocomplete({
   const dropdownRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
 
-  // Debounced search function
   const searchTours = useCallback(async (searchQuery: string) => {
     if (!searchQuery.trim()) {
       setResults([]);
@@ -55,12 +54,6 @@ export function SearchAutocomplete({
 
     setIsLoading(true);
     try {
-      const { data, error } = await supabase.functions.invoke("search", {
-        body: null,
-        method: "GET",
-      });
-      
-      // Use fetch directly for GET with query params
       const response = await fetch(
         `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/search?q=${encodeURIComponent(searchQuery)}&limit=8`,
         {
@@ -70,9 +63,9 @@ export function SearchAutocomplete({
           },
         }
       );
-      
+
       if (!response.ok) throw new Error("Search failed");
-      
+
       const searchData = await response.json();
       setResults(searchData.results || []);
       setShowDropdown(true);
@@ -140,7 +133,7 @@ export function SearchAutocomplete({
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (
-        dropdownRef.current && 
+        dropdownRef.current &&
         !dropdownRef.current.contains(e.target as Node) &&
         !inputRef.current?.contains(e.target as Node)
       ) {
@@ -271,7 +264,7 @@ export function SearchAutocomplete({
                 )}
               </button>
             ))}
-            
+
             {/* View All Results */}
             <button
               onClick={handleSearch}

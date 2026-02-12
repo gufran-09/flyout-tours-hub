@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import { motion } from "framer-motion";
 import { MapPin, Star, Clock, ArrowRight, SlidersHorizontal, X, ShoppingCart } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -195,17 +194,14 @@ export default function CategoryPage() {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent" />
         <div className="section-container relative h-full flex flex-col justify-end pb-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
+          <div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">
               {pageData.title}
             </h1>
             <p className="text-muted-foreground max-w-2xl">
               {pageData.subtitle}
             </p>
-          </motion.div>
+          </div>
         </div>
       </div>
 
@@ -378,11 +374,8 @@ export default function CategoryPage() {
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredTours.map((tour, index) => (
-                  <motion.div
+                  <div
                     key={tour.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: index * 0.05 }}
                   >
                     <PremiumCard
                       id={tour.id}
@@ -397,7 +390,7 @@ export default function CategoryPage() {
                       location={tour.location}
                       link={`/tour/${tour.id}`}
                     />
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             )}
