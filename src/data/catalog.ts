@@ -631,7 +631,7 @@ export const PRODUCTS: Product[] = [
             { label: "30 Minutes", minutes: 30, price: 550, originalPrice: 600, discountPercent: 8 },
         ],
 
-        images: [],
+        images: ["https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Tubing/Tubing.webp"],
 
         badges: ["Group Fun"],
 
