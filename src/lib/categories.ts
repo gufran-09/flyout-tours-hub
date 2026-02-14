@@ -114,6 +114,8 @@ const SLUG_MAPPING: Record<string, string> = {
     'holiday-packages': 'packages',
 };
 
+import { toast } from "sonner";
+
 export async function getCategories(): Promise<Category[]> {
     const { data, error } = await supabase
         .from('categories')
@@ -122,6 +124,7 @@ export async function getCategories(): Promise<Category[]> {
 
     if (error) {
         console.error('Error fetching categories:', error);
+        toast.error("Failed to load categories. Please check connection or API keys.");
         return [];
     }
 
