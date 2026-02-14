@@ -491,7 +491,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         id: "parasailing-nemo-dubai",
-        Supplier_Code: "NEMO",
+        Supplier_Code: "NEMST",
         slug: "parasailing-dubai-nemo",
         title: "Parasailing Adventure",
         subtitle: "Soar 40–50 meters above the Arabian Gulf",
@@ -504,7 +504,68 @@ export const PRODUCTS: Product[] = [
         reviewCount: 0,
 
         durationOptions: [
-            { label: "15 Minutes Flight", minutes: 15, price: 0 },
+            { label: "15 Minutes", minutes: 15, price: 380, originalPrice: 400, discountPercent: 5 },
+        ],
+
+        images: [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing11.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing22.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/parasailing2/parasailing5.webp",
+        ],
+
+        badges: ["Sky Adventure"],
+
+        overview:
+            "Enjoy breathtaking aerial views of Dubai while parasailing high above the Arabian Gulf. Supervised by fully trained captain and instructor for maximum safety.",
+
+        highlights: [
+            "Fly 40–50 meters above water",
+            "150m rope length",
+            "Professional captain & instructor",
+            "Locker & changing room facilities",
+        ],
+
+        whatToBring: [
+            "Original Emirates ID or Passport",
+            "Comfortable clothes",
+            "Sunscreen",
+        ],
+
+        facilities: [
+            "Lockers",
+            "Changing Rooms",
+            "Instructor",
+            "Life Jackets",
+        ],
+
+        cancellationPolicy:
+            "Cancel 24 hours before activity for full refund. Late cancellations and no-shows are non-refundable.",
+
+        confirmationHours: 24,
+        mobileTicket: true,
+        refundable: true,
+        maxPeople: 2,
+    },
+    {
+        id: "parasailing-nemo-dubai",
+        Supplier_Code: "NEMST",
+        slug: "parasailing-dubai-nemo",
+        title: "Parasailing Adventure",
+        subtitle: "Soar 40–50 meters above the Arabian Gulf",
+
+        category: "water-sports",
+        destination: "dubai",
+        location: "Umm Suqeim 2, Jumeirah Road",
+
+        rating: 4.8,
+        reviewCount: 150,
+
+        durationOptions: [
+            { label: "15 Minutes", minutes: 15, price: 650, originalPrice: 700, discountPercent: 5 },
         ],
 
         images: [
