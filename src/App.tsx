@@ -63,6 +63,7 @@ import Restaurants from "./pages/Restaurants";
 import ProductDetails from "./pages/ProductDetails";
 import CategoryPage from "./pages/CategoryPage";
 import Shows from "./pages/Shows";
+import ClaudeDashboard from "./pages/ClaudeDashboard";
 
 import ScrollToTop from "./components/ScrollToTop";
 import FloatingActionButtons from "./components/FloatingActionButtons";
@@ -102,6 +103,7 @@ const App = () => {
                       <Route path="/auth" element={<Auth />} />
                       <Route path="/auth/callback" element={<AuthCallback />} />
                       <Route path="/dashboard" element={<Dashboard />} />
+                      <Route path="/claude" element={<ClaudeDashboard />} />
                       <Route path="/cart" element={<Cart />} />
                       <Route path="/payment-success" element={<PaymentSuccess />} />
                       <Route path="/payment-canceled" element={<PaymentCanceled />} />

@@ -134,7 +134,9 @@ export default function ProductDetails() {
                             <ChevronRight className="w-3 h-3 mx-2 text-gray-400" />
                             <Link to={`/${product.destination}`} className="hover:text-primary capitalize transition-colors">{product.destination}</Link>
                             <ChevronRight className="w-3 h-3 mx-2 text-gray-400" />
-                            <Link to={`/experiences/${product.destination}/${product.category}`} className="hover:text-primary capitalize transition-colors">{product.category.replace(/-/g, ' ')}</Link>
+                            <Link to={`/${product.destination}/${(product.category.toLowerCase() === 'water-sports' || product.category.toLowerCase() === 'water sports') ? 'water-adventures' : product.category.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-primary capitalize transition-colors">
+                                {((product.category.toLowerCase() === 'water-sports' || product.category.toLowerCase() === 'water sports') ? 'water-adventures' : product.category).replace(/-/g, ' ')}
+                            </Link>
                             <ChevronRight className="w-3 h-3 mx-2 text-gray-400" />
                             <span className="text-gray-900 font-medium truncate max-w-[200px]">{product.title}</span>
                         </div>

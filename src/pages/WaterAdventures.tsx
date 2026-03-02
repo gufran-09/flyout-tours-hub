@@ -10,7 +10,7 @@ export default function WaterAdventures() {
             id: p.id,
             name: p.title,
             location: p.location,
-            category: "Water Sports",
+            category: "Water Adventures",
             price: p.durationOptions[0]?.price || 0,
             originalPrice: p.durationOptions[0]?.originalPrice,
             rating: p.rating,

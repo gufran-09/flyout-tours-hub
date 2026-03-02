@@ -846,7 +846,1122 @@ export const PRODUCTS: Product[] = [
         mobileTicket: true,
         refundable: true,
     },
+    {
+        id: "seabob-dubai-dojoin",
+        Supplier_Code: "DOJOIN",
+        slug: "renting-seabob-dubai",
+        title: "Renting SeaBob In Dubai",
+        subtitle: "Rent and get it delivered to your location",
 
+        category: "water-sports",
+        destination: "dubai",
+        location: "Al Nahda Park, Dubai",
+
+        rating: 5.0,
+        reviewCount: 1,
+
+        durationOptions: [
+            { label: "1 Hour", minutes: 60, price: 500, originalPrice: 600, discountPercent: 17 },
+        ],
+
+        images: [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Renting%20SeaBob/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Renting%20SeaBob/2.jpeg",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Renting%20SeaBob/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Renting%20SeaBob/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Renting%20SeaBob/5.webp",
+        ],
+
+        badges: ["Luxury"],
+
+        overview:
+            "If you want to have the ultimate water sports, now DoJoin is renting SeaBob in Dubai for one hour. Wherever you want to experience a great sea activity and see the underwater world, just make a phone call, and the DoJoin team will deliver SeaBob to you. Along with our Seabob, you can have a safety life jacket. You should order your rental Seabob at least 12 hours before delivery, but in emergencies, we also accept last-minute orders.",
+
+        highlights: [
+            "A thrilling underwater and surface riding experience",
+            "Perfect for explorers, adventure lovers, and anyone curious about the sea.",
+            "Cruise on the surface or dive below with full control of your SeaBob unit, ideal for both beginners and experienced riders.",
+            "Enjoy a 1-hour rental with delivery directly to your location without any need to transportation",
+            "Your rental includes safety gear (life jackets) for a secure and comfortable ride.",
+        ],
+
+        whatToBring: [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel",
+        ],
+
+        facilities: [
+            "Life Jacket",
+            "Delivery Service",
+        ],
+
+        cancellationPolicy:
+            "Cancel 24 hours before activity for full refund.",
+
+        confirmationHours: 24,
+        mobileTicket: true,
+        refundable: true,
+    },
+    {
+        "id": "deep-dive-dubai-sunken-city-walk",
+        "Supplier_Code": "DOJOIN",
+        "slug": "deep-dive-dubai-sunken-city-walk-experience",
+        "title": "Deep Dive Dubai Sunken City Walk Experience",
+        "subtitle": "Underwater walking adventure in the world’s deepest pool",
+
+        "category": "water-sports",
+        "destination": "dubai",
+        "location": "Deep Dive Dubai, Nad Al Sheba",
+
+        "rating": 0,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Standard Experience",
+                "minutes": 30,
+                "price": 600,
+                "originalPrice": 600,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Sunken%20City%20Walk/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Sunken%20City%20Walk/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Sunken%20City%20Walk/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Sunken%20City%20Walk/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Sunken%20City%20Walk/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Sunken%20City%20Walk/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Sunken%20City%20Walk/7.webp",
+        ],
+
+        "badges": ["Luxury"],
+
+        "overview": "The Sunken City Walk at Deep Dive Dubai is a fun and easy way to experience the magic of being underwater — no swimming skills or certification required. In just 30 minutes, you'll gear up and step onto a balcony-style platform 4 meters below the surface, where expert guides will help you explore a unique underwater world. Whether you're taking in the views, posing with a vintage motorcycle, flipping a parking meter, or sitting at a coffee table, this immersive experience offers unforgettable moments beneath the surface.",
+
+        "highlights": [
+            "No swimming skills required",
+            "Guided underwater walk",
+            "Explore the sunken city",
+            "Unique underwater photo opportunities"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Comfortable swimwear",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Professional Instructor",
+            "Safety Equipment",
+            "Changing Rooms",
+            "Lockers"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "palm-jumeirah-splish-splash-inflatable-park",
+        "Supplier_Code": "DOJOIN",
+        "slug": "palm-jumeirah-splish-splash-inflatable-park",
+        "title": "Palm Jumeirah Splish Splash Inflatable Park",
+        "subtitle": "Fun-filled floating water park adventure for all ages",
+
+        "category": "water-sports",
+        "destination": "dubai",
+        "location": "Palm Jumeirah, Dubai",
+
+        "rating": 0,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Standard Entry",
+                "minutes": 60,
+                "price": 150,
+                "originalPrice": 150,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Splish%20Splash%20Inflatable%20Park/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Splish%20Splash%20Inflatable%20Park/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Splish%20Splash%20Inflatable%20Park/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Splish%20Splash%20Inflatable%20Park/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Splish%20Splash%20Inflatable%20Park/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Splish%20Splash%20Inflatable%20Park/6.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Seawake Water Sports Inflatable Park is more than just a water attraction; it's a paradise where memories are made. Laughter is shared, and the allure of the ocean's depths is brought to life. Come join us and experience the magic of this aquatic haven, where every moment is an opportunity to create cherished memories and embark on an aquatic adventure like no other. Dive in, let your cares float away, and make a splash at Seawake Water Sports Inflatable Park.",
+
+        "highlights": [
+            "Exciting inflatable water park",
+            "Family-friendly activity",
+            "Perfect for groups and kids",
+            "Safe and supervised environment"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Life Jackets",
+            "Safety Staff",
+            "Changing Rooms",
+            "Lockers"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "palm-jumeirah-flyfish-ride",
+        "Supplier_Code": "SEAWAKE",
+        "slug": "palm-jumeirah-flyfish-ride",
+        "title": "Palm Jumeirah Flyfish Ride",
+        "subtitle": "Seawake Water Sports",
+
+        "category": "water-sports",
+        "destination": "dubai",
+        "location": "Palm Jumeirah, Dubai",
+
+        "rating": 0,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Standard Ride",
+                "minutes": 15,
+                "price": 200,
+                "originalPrice": 200,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Flyfish%20Ride/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Flyfish%20Ride/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Flyfish%20Ride/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Flyfish%20Ride/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Flyfish%20Ride/5.webp",
+        ],
+
+        "badges": [
+            "Luxury"
+        ],
+
+        "overview": "Get ready for an exhilarating adventure like no other as you hop on board the thrilling Flyfish! It's not just a water sled; it's an aerial inflatable water sled that's towed by a powerful boat. As you hold on tight, you'll experience the rush of high speeds that the Flyfish can achieve, and here's the twist: these incredible speeds cause this wide watercraft to literally take flight!",
+
+        "highlights": [
+            "High-speed inflatable ride",
+            "Towed by powerful speedboat",
+            "Adrenaline-filled water activity",
+            "Perfect for thrill seekers"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Life Jackets",
+            "Professional Staff",
+            "Safety Briefing"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "fujairah-snorkeling-adventure",
+        "Supplier_Code": "SEAWAKE",
+        "slug": "fujairah-snorkeling-adventure",
+        "title": "Fujairah Snorkeling Adventure",
+        "subtitle": "Seawake Water Sports",
+
+        "category": "water-sports",
+        "destination": "fujairah",
+        "location": "Snoopy Island, Fujairah",
+
+        "rating": 0,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Standard Experience",
+                "minutes": 120,
+                "price": 350,
+                "originalPrice": 350,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Snorkeling%20Experience/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Snorkeling%20Experience/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Snorkeling%20Experience/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Snorkeling%20Experience/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Snorkeling%20Experience/5.webp",
+        ],
+
+        "badges": [
+            "Luxury"
+        ],
+
+        "overview": "Fujairah is one of the parts of the UAE that still needs to be correctly discovered by many tourists. The underwater world of Fujairah is so pristine that many tourists consider it one of the best areas for snorkeling. Now we at Dojoin have decided to provide conditions in cooperation with Sea Wake entertainment company so that you can experience snorkeling in the best way in the waters of Fujairah. Fujairah Snorkeling Adventure gives you the opportunity to swim and explore vibrant marine life in crystal-clear waters.",
+
+        "highlights": [
+            "Snorkel in pristine Fujairah waters",
+            "Explore vibrant marine life",
+            "Guided snorkeling experience",
+            "Suitable for beginners"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel",
+            "Sunscreen"
+        ],
+
+        "facilities": [
+            "Snorkeling Gear",
+            "Professional Guide",
+            "Life Jackets",
+            "Boat Support"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "cha-cha-boats-rental",
+        "Supplier_Code": "CHACHA",
+        "slug": "cha-cha-boats-rental",
+        "title": "Cha Cha Boats Rental",
+        "subtitle": "Luxury modern gozzo boat experience in Dubai waters",
+
+        "category": "water-adventures",
+        "destination": "dubai",
+        "location": "Dubai Creek, Dubai",
+
+        "rating": 0,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "1 Hour",
+                "minutes": 60,
+                "price": 400,
+                "originalPrice": 459,
+                "discountPercent": 13
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Cha%20Cha%20Boats%20Rental/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Cha%20Cha%20Boats%20Rental/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Cha%20Cha%20Boats%20Rental/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Cha%20Cha%20Boats%20Rental/4.webp",
+        ],
+
+        "badges": [
+            "Luxury"
+        ],
+
+        "overview": "Explore Dubai's waterways in style aboard our modern gozzos, seamlessly blending cityscapes with cultural heritage. Indulge in leisure on water or step ashore for immersive experiences, all while enjoying the freedom and opulence our gozzos offer. Book now for a Dubai odyssey like no other! Ready to make a splash? Embrace the thrill of water adventure with Cha Cha Boats — where the sea meets unforgettable experiences! Book your voyage now and dive into luxury on the water.",
+
+        "highlights": [
+            "Luxury modern gozzo boat",
+            "Scenic Dubai water cruise",
+            "Private and comfortable ride",
+            "Perfect for couples and groups"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Sunglasses",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Professional Captain",
+            "Comfortable Seating",
+            "Safety Equipment",
+            "Life Jackets"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "deep-dive-dubai-snorkeling-experience",
+        "Supplier_Code": "DOJOIN",
+        "slug": "deep-dive-dubai-snorkeling-experience",
+        "title": "Deep Dive Dubai Snorkeling Experience",
+        "subtitle": "Explore the world's deepest pool snorkeling adventure",
+
+        "category": "water-sports",
+        "destination": "dubai",
+        "location": "Deep Dive Dubai, Nad Al Sheba",
+
+        "rating": 5.0,
+        "reviewCount": 2,
+
+        "durationOptions": [
+            {
+                "label": "Standard Experience",
+                "minutes": 60,
+                "price": 400,
+                "originalPrice": 400,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Deep%20Dive%20Dubai%20Snorkeling%20Experience/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Deep%20Dive%20Dubai%20Snorkeling%20Experience/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Deep%20Dive%20Dubai%20Snorkeling%20Experience/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Deep%20Dive%20Dubai%20Snorkeling%20Experience/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Deep%20Dive%20Dubai%20Snorkeling%20Experience/5.webp",
+        ],
+
+        "badges": [
+            "Luxury"
+        ],
+
+        "overview": "An exciting new world of opportunities is accessible to thrill seekers at Deep Dive Dubai. Everyone can explore an underwater world full of adventure and wonder thanks to the world's deepest pool, which is 60 meters deep. Deep Dive Dubai's 1,500 square meter facility is situated in the Nad Al Sheba district of Dubai and offers the most cutting-edge equipment for filming, as well as an amazing 'sunken city' for divers to explore.",
+
+        "highlights": [
+            "Snorkel in the world's deepest pool",
+            "Explore the unique sunken city",
+            "State-of-the-art diving facility",
+            "Suitable for beginners"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Professional Instructor",
+            "Snorkeling Gear",
+            "Changing Rooms",
+            "Lockers"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "jumeirah-3-jet-car-rentals",
+        "Supplier_Code": "DOJOIN",
+        "slug": "jumeirah-3-jet-car-rentals",
+        "title": "Jumeirah 3 Jet Car Rentals",
+        "subtitle": "Luxury jet car driving experience on Dubai waters",
+
+        "category": "water-sports",
+        "destination": "dubai",
+        "location": "Jumeirah 3, Umm Suqeim Beach, Dubai",
+
+        "rating": 4.5,
+        "reviewCount": 2,
+
+        "durationOptions": [
+            {
+                "label": "20 Minutes",
+                "minutes": 20,
+                "price": 499,
+                "originalPrice": 499,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Jumeirah%203%20Jet%20Car%20Rentals/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Jumeirah%203%20Jet%20Car%20Rentals/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Jumeirah%203%20Jet%20Car%20Rentals/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Jumeirah%203%20Jet%20Car%20Rentals/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Jumeirah%203%20Jet%20Car%20Rentals/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "If you are looking for a memorable experience in Dubai, you may want to consider renting a jet car. With a jet car, you can explore the city in a way that is both thrilling and unique. Whether you want to drive alone or share the experience with friends or family, there are options available. One of the main advantages of renting a jet car in Dubai is that you can experience driving a luxury car on water for a truly unforgettable adventure.",
+
+        "highlights": [
+            "Drive a luxury jet car on water",
+            "Unique high-speed water experience",
+            "Perfect for thrill seekers",
+            "Great for friends and families"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Sunglasses"
+        ],
+
+        "facilities": [
+            "Life Jackets",
+            "Safety Briefing",
+            "Professional Staff"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "deep-dive-dubai-scuba-dive-experience",
+        "Supplier_Code": "DOJOIN",
+        "slug": "deep-dive-dubai-scuba-dive-experience",
+        "title": "Deep Dive Dubai Scuba Dive Experience",
+        "subtitle": "Diving inside the world's deepest pool",
+
+        "category": "water-sports",
+        "destination": "dubai",
+        "location": "Deep Dive Dubai, Nad Al Sheba",
+
+        "rating": 0,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Standard Experience",
+                "minutes": 60,
+                "price": 1800,
+                "originalPrice": 1800,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Scuba%20Dive%20Experience/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Scuba%20Dive%20Experience/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Scuba%20Dive%20Experience/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Scuba%20Dive%20Experience/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Scuba%20Dive%20Experience/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Scuba%20Dive%20Experience/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Scuba%20Dive%20Experience/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Scuba%20Dive%20Experience/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Scuba%20Dive%20Experience/9.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Deep Dive Dubai is the ultimate destination for adventure seekers ready to explore the world's deepest pool. Located within the NAS Sports Complex, this record-breaking facility invites you to dive into an incredible underwater experience. Whether you're a beginner or just curious, you'll be guided by professional instructors who will walk you through everything you need to know — no prior experience required.",
+
+        "highlights": [
+            "Dive in the world's deepest pool",
+            "Explore the unique sunken city",
+            "Professional instructor guidance",
+            "Suitable for beginners"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Professional Instructor",
+            "Scuba Equipment",
+            "Changing Rooms",
+            "Lockers"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "marina-love-boats",
+        "Supplier_Code": "DOJOIN",
+        "slug": "marina-love-boats",
+        "title": "Marina Love Boats",
+        "subtitle": "Exciting Dubai Marina speed boat sightseeing experience",
+
+        "category": "water-adventures",
+        "destination": "dubai",
+        "location": "Dubai Marina, Dubai",
+
+        "rating": 4.8,
+        "reviewCount": 8,
+
+        "durationOptions": [
+            {
+                "label": "Standard Experience",
+                "minutes": 60,
+                "price": 99,
+                "originalPrice": 150,
+                "discountPercent": 34
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Marina%20Love%20Boats/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Marina%20Love%20Boats/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Marina%20Love%20Boats/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Marina%20Love%20Boats/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Marina%20Love%20Boats/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "This amazing journey, which starts from Dubai Marina, will provide a chance to see Palm Jumeirah, Atlantis, and Burj Al Arab. These boats may not be the most luxurious offers in the market; however, they will provide you with the opportunity to see all the best parts of the city. This company offers you four distinct ways to visit different parts of the city.",
+
+        "highlights": [
+            "Speed boat sightseeing tour",
+            "Views of Palm Jumeirah and Atlantis",
+            "See Burj Al Arab from the water",
+            "Fun group boat experience"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Sunglasses",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Professional Captain",
+            "Life Jackets",
+            "Safety Briefing",
+            "Comfortable Seating"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "luxury-dibba-fujairah-yacht-escape",
+        "Supplier_Code": "DOJOIN",
+        "slug": "luxury-dibba-fujairah-yacht-escape",
+        "title": "Luxury Dibba Fujairah Yacht Escape",
+        "subtitle": "A premium 5-hour yacht experience filled with adventure, relaxation, and unforgettable coastal moments.",
+
+        "category": "water-adventures",
+        "destination": "fujairah",
+        "location": "Dibba, Fujairah",
+
+        "rating": 0,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "5 Hours",
+                "minutes": 300,
+                "price": 169,
+                "originalPrice": 169,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Luxury%20Dibba%20Fujeirah%20Yacht%20Escape/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Luxury%20Dibba%20Fujeirah%20Yacht%20Escape/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Luxury%20Dibba%20Fujeirah%20Yacht%20Escape/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Luxury%20Dibba%20Fujeirah%20Yacht%20Escape/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Luxury%20Dibba%20Fujeirah%20Yacht%20Escape/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Luxury%20Dibba%20Fujeirah%20Yacht%20Escape/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Luxury%20Dibba%20Fujeirah%20Yacht%20Escape/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Luxury%20Dibba%20Fujeirah%20Yacht%20Escape/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Luxury%20Dibba%20Fujeirah%20Yacht%20Escape/9.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Luxury%20Dibba%20Fujeirah%20Yacht%20Escape/10.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "All great moments begin by the sea and this luxury yacht experience in Dibba, Fujairah is crafted to create memories that last a lifetime. Sail across breathtaking waters surrounded by rugged mountain views while enjoying top-tier hospitality, delicious cuisine, and a complete range of exciting water activities. Whether you're celebrating a birthday, gathering with friends, enjoying a corporate outing, or simply taking a day off, this premium yacht escape promises relaxation and adventure in equal measure.",
+
+        "highlights": [
+            "Premium 5-hour yacht cruise",
+            "Scenic Dibba Fujairah coastline",
+            "Water activities and swimming",
+            "Ideal for groups and celebrations"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Sunscreen",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Professional Crew",
+            "Life Jackets",
+            "Comfortable Seating",
+            "Onboard Amenities"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "palm-jumeirah-stand-up-paddle",
+        "Supplier_Code": "HYDRO",
+        "slug": "palm-jumeirah-stand-up-paddle",
+        "title": "Palm Jumeirah Stand Up Paddle",
+        "subtitle": "Hydro Water Sports",
+
+        "category": "water-sports",
+        "destination": "dubai",
+        "location": "Palm Jumeirah, Dubai",
+
+        "rating": 0,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Standard Experience",
+                "minutes": 60,
+                "price": 99,
+                "originalPrice": 198,
+                "discountPercent": 50
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Palm%20Jumeirah%20Stand%20Up%20Paddle/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Palm%20Jumeirah%20Stand%20Up%20Paddle/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Palm%20Jumeirah%20Stand%20Up%20Paddle/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Palm%20Jumeirah%20Stand%20Up%20Paddle/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Palm%20Jumeirah%20Stand%20Up%20Paddle/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Picture yourself gliding effortlessly across the glassy surface of pristine waters, the world around you painted in the soft hues of a rising sun or the gentle glow of a setting one. As you stand tall on your paddleboard, you become one with the tranquil rhythm of the water, feeling the gentle sway beneath your feet and basking in the serenity that only stand-up paddleboarding can offer. Our boards are your magic carpets to explore hidden coves and winding waterways.",
+
+        "highlights": [
+            "Relaxing stand-up paddle experience",
+            "Scenic Palm Jumeirah waters",
+            "Suitable for beginners",
+            "Great solo or group activity"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Sunscreen",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Paddle Board",
+            "Life Jacket",
+            "Safety Briefing",
+            "Professional Staff"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "jbr-stand-up-paddle-board",
+        "Supplier_Code": "DOJOIN",
+        "slug": "jbr-stand-up-paddle-board",
+        "title": "JBR Stand Up Paddle Board",
+        "subtitle": "Stand-up paddleboarding experience at JBR Beach",
+
+        "category": "water-sports",
+        "destination": "dubai",
+        "location": "JBR Beach, Dubai",
+
+        "rating": 0,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "60 Minutes",
+                "minutes": 60,
+                "price": 100,
+                "originalPrice": 100,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/JBR%20Stand%20Up%20Paddle%20Board/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/JBR%20Stand%20Up%20Paddle%20Board/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/JBR%20Stand%20Up%20Paddle%20Board/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/JBR%20Stand%20Up%20Paddle%20Board/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/JBR%20Stand%20Up%20Paddle%20Board/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/JBR%20Stand%20Up%20Paddle%20Board/6.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Stand up paddle boarding (SUP) is the ultimate way to experience the beauty of the great outdoors while also getting an incredible full-body workout. Imagine gliding along the crystal-clear water with the wind in your hair, the sun on your skin, and the peaceful sound of water lapping against your board. Stand up paddle boarding is the perfect activity for anyone who loves adventure, relaxation, and the great outdoors.",
+
+        "highlights": [
+            "Full-body paddleboarding workout",
+            "Scenic JBR Beach experience",
+            "Suitable for beginners",
+            "Relaxing water activity"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Sunscreen",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Paddle Board",
+            "Life Jacket",
+            "Safety Briefing",
+            "Professional Staff"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-harbour-signature-boat-tour",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-harbour-signature-boat-tour",
+        "title": "Dubai Harbour Signature Boat Tour",
+        "subtitle": "Self-drive inflatable boat adventure in Dubai waters",
+
+        "category": "water-adventures",
+        "destination": "dubai",
+        "location": "Dubai Harbour, Dubai",
+
+        "rating": 0,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Standard Tour",
+                "minutes": 60,
+                "price": 695,
+                "originalPrice": 695,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Dubai%20Harbour%20Signature%20Boat%20Tour/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Dubai%20Harbour%20Signature%20Boat%20Tour/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Dubai%20Harbour%20Signature%20Boat%20Tour/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Dubai%20Harbour%20Signature%20Boat%20Tour/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Dubai%20Harbour%20Signature%20Boat%20Tour/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Dubai%20Harbour%20Signature%20Boat%20Tour/6.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Have you ever imagined riding an inflatable boat with your loved ones? Undoubtedly, driving a boat on the blue shores of the Arabian Gulf is one of the entertainments that not only you but many tourists who have traveled to Dubai have not had such a special experience yet. Dubai Harbour Signature Boat Tour is a one-time opportunity where you can ride on inflatable boats without any guide and enjoy a unique new entertainer in Dubai.",
+
+        "highlights": [
+            "Self-drive inflatable boat experience",
+            "Cruise along Dubai Harbour waters",
+            "Perfect for couples and families",
+            "Unique sightseeing adventure"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Sunglasses",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Safety Briefing",
+            "Life Jackets",
+            "Professional Support Staff"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "escape-to-musandam",
+        "Supplier_Code": "DOJOIN",
+        "slug": "escape-to-musandam",
+        "title": "Escape to Musandam",
+        "subtitle": "Scenic Musandam coastal cruise and adventure experience",
+
+        "category": "water-adventures",
+        "destination": "musandam",
+        "location": "Musandam, Oman",
+
+        "rating": 4.6,
+        "reviewCount": 105,
+
+        "durationOptions": [
+            {
+                "label": "Standard Experience",
+                "minutes": 600,
+                "price": 195,
+                "originalPrice": 195,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Escape%20to%20Musandam/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Escape%20to%20Musandam/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Escape%20to%20Musandam/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Escape%20to%20Musandam/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "All the parts around the Arabian Gulf are unique places to spend free time. But when we speak of Musandam, it is a piece of heaven where you can find all the interesting watery activities all at once. This heaven is placed inside the borders of Oman, and whoever wants to escape from crowded metropolises can choose it as an ideal place. Whether you want to experience the ski jet or see wild dolphins in the water, Musandam is what you are looking for.",
+
+        "highlights": [
+            "Scenic Musandam dhow cruise",
+            "Crystal-clear waters and mountains",
+            "Chance to spot dolphins",
+            "Perfect day escape from the city"
+        ],
+
+        "whatToBring": [
+            "Original Passport",
+            "Swimwear",
+            "Sunscreen",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Traditional Dhow Boat",
+            "Life Jackets",
+            "Professional Crew",
+            "Onboard Refreshments"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "palm-jumeirah-kayak-experience",
+        "Supplier_Code": "HYDRO",
+        "slug": "palm-jumeirah-kayak-experience",
+        "title": "Palm Jumeirah Kayak Experience",
+        "subtitle": "Hydro Water Sports",
+
+        "category": "water-sports",
+        "destination": "dubai",
+        "location": "Palm Jumeirah, Dubai",
+
+        "rating": 5.0,
+        "reviewCount": 2,
+
+        "durationOptions": [
+            {
+                "label": "Standard Experience",
+                "minutes": 60,
+                "price": 99,
+                "originalPrice": 198,
+                "discountPercent": 50
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Palm%20Jumeirah%20Kayak%20Experience/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Palm%20Jumeirah%20Kayak%20Experience/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Palm%20Jumeirah%20Kayak%20Experience/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Palm%20Jumeirah%20Kayak%20Experience/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Palm%20Jumeirah%20Kayak%20Experience/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Imagine the excitement of Olympic-style paddling, where a solo or duo of paddlers navigates the challenging river. Now, in Dubai, you can have a similar experience, but with a twist—it's not a competition; it's pure entertainment. Thanks to the inventive concept from Hydro Water Sports Corporation, you can paddle single or double kayaks on the Arabian Gulf and bask in the radiant sun. Picture yourself paddling around Palm Jumeirah with the stunning skyline as your backdrop.",
+
+        "highlights": [
+            "Single or double kayak options",
+            "Scenic Palm Jumeirah views",
+            "Beginner-friendly activity",
+            "Great outdoor water workout"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Sunscreen",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Kayak Equipment",
+            "Life Jacket",
+            "Safety Briefing",
+            "Professional Staff"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "jumeirah-3-bermuda-scuba-diving",
+        "Supplier_Code": "BERMUDA",
+        "slug": "jumeirah-3-bermuda-scuba-diving",
+        "title": "Jumeirah 3 Bermuda Scuba Diving",
+        "subtitle": "Try Scuba Diving in Dubai",
+
+        "category": "water-sports",
+        "destination": "dubai",
+        "location": "Jumeirah 3, Dubai",
+
+        "rating": 4.7,
+        "reviewCount": 6,
+
+        "durationOptions": [
+            {
+                "label": "Standard Experience",
+                "minutes": 60,
+                "price": 284,
+                "originalPrice": 356,
+                "discountPercent": 20
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Jumeirah%203%20Bermuda%20Scuba%20Diving/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Jumeirah%203%20Bermuda%20Scuba%20Diving/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Jumeirah%203%20Bermuda%20Scuba%20Diving/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Jumeirah%203%20Bermuda%20Scuba%20Diving/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Water-Sports/Jumeirah%203%20Bermuda%20Scuba%20Diving/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai is one of those places where visitors can enjoy all types of activities. While most inland entertainment is well-advertised, one specific place, Bermuda Diving Center, remains unknown, and it can allow you to see the city's underwater world. Bermuda Diving Center, established in 2017, is one of the rarest places to explore the deepest part of the Arabian Gulf and see its biodiversity. At Bermuda Diving Center, you may scuba dive and feed fish under professional supervision.",
+
+        "highlights": [
+            "Try scuba diving in Dubai waters",
+            "Professional instructor guidance",
+            "Explore Arabian Gulf marine life",
+            "Suitable for beginners"
+        ],
+
+        "whatToBring": [
+            "Original Emirates ID or Passport",
+            "Swimwear",
+            "Towel"
+        ],
+
+        "facilities": [
+            "Scuba Equipment",
+            "Professional Instructor",
+            "Safety Briefing",
+            "Changing Rooms"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
 ];
 
 

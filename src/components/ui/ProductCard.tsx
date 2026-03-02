@@ -82,7 +82,7 @@ export const ProductCard = ({
                     <div className="absolute top-4 right-4">
                         <span className="px-3 py-1 bg-white/90 backdrop-blur-sm shadow-sm rounded-full 
               text-[10px] font-medium uppercase tracking-widest text-neutral-600 ring-1 ring-white/50">
-                            {category}
+                            {(category.toLowerCase() === 'water-sports' || category.toLowerCase() === 'water sports' ? 'Water Adventures' : category).replace(/-/g, ' ')}
                         </span>
                     </div>
                 )}
