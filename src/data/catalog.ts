@@ -50,7 +50,7 @@ export const PRODUCTS: Product[] = [
     --------------------------------------------------- */
     {
         id: "jet-ski-jumeirah",
-        Supplier_Code: "LUXYHT",
+        Supplier_Code: "DOJOIN",
         slug: "jumeirah-luxury-jet-ski",
         title: "Jumeirah Luxury Jet Ski",
         subtitle: "Experience the thrill of the sea with premium jet skis",
@@ -114,7 +114,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         id: "banana-boat-dubai",
-        Supplier_Code: "LUXYHT",
+        Supplier_Code: "DOJOIN",
         slug: "banana-boat-ride-dubai",
         title: "Banana Boat Ride",
         subtitle: "Fun-filled group water ride with thrilling speed",
@@ -166,7 +166,7 @@ export const PRODUCTS: Product[] = [
 
     {
         id: "flyboard-dubai",
-        Supplier_Code: "LUXYHT",
+        Supplier_Code: "DOJOIN",
         slug: "flyboard-experience-dubai",
         title: "Flyboard Experience",
         subtitle: "Fly above the sea using high-powered water jets",
@@ -217,7 +217,7 @@ export const PRODUCTS: Product[] = [
 
     {
         id: "jet-car-dubai",
-        Supplier_Code: "LUXYHT",
+        Supplier_Code: "DOJOIN",
         slug: "jet-car-experience-dubai",
         title: "Jet Car Experience ",
         subtitle: "Luxury supercar-style water adventure",
@@ -271,7 +271,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         id: "speed-boat-dubai",
-        Supplier_Code: "LUXYHT",
+        Supplier_Code: "DOJOIN",
         slug: "speed-boat-tour-dubai",
         title: "Speed Boat Tour ",
         subtitle: "High-speed sightseeing on the Arabian Sea",
@@ -332,7 +332,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         id: "wakeboard-dubai",
-        Supplier_Code: "LUXYHT",
+        Supplier_Code: "DOJOIN",
         slug: "wakeboard-experience-dubai",
         title: "Wakeboard Experience",
         subtitle: "Surf, ski, and ride the waves with professional guidance",
@@ -386,7 +386,7 @@ export const PRODUCTS: Product[] = [
     --------------------------------------------------- */
     {
         id: "donut-boat-dubai",
-        Supplier_Code: "LUXYHT",
+        Supplier_Code: "DOJOIN",
         slug: "donut-boat-ride-dubai",
         title: "Donut Boat Ride ",
         subtitle: "Fun-filled water activity for friends and family",
@@ -441,7 +441,7 @@ export const PRODUCTS: Product[] = [
     --------------------------------------------------- */
     {
         id: "parasailing-dubai",
-        Supplier_Code: "LUXYHT",
+        Supplier_Code: "DOJOIN",
         slug: "parasailing-adventure-dubai",
         title: "Parasailing Adventure",
         subtitle: "Soar high above the JBR beach and enjoy panoramic views",
@@ -1036,7 +1036,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         "id": "palm-jumeirah-flyfish-ride",
-        "Supplier_Code": "SEAWAKE",
+        "Supplier_Code": "DOJOIN",
         "slug": "palm-jumeirah-flyfish-ride",
         "title": "Palm Jumeirah Flyfish Ride",
         "subtitle": "Seawake Water Sports",
@@ -1099,7 +1099,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         "id": "fujairah-snorkeling-adventure",
-        "Supplier_Code": "SEAWAKE",
+        "Supplier_Code": "DOJOIN",
         "slug": "fujairah-snorkeling-adventure",
         "title": "Fujairah Snorkeling Adventure",
         "subtitle": "Seawake Water Sports",
@@ -1164,7 +1164,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         "id": "cha-cha-boats-rental",
-        "Supplier_Code": "CHACHA",
+        "Supplier_Code": "DOJOIN",
         "slug": "cha-cha-boats-rental",
         "title": "Cha Cha Boats Rental",
         "subtitle": "Luxury modern gozzo boat experience in Dubai waters",
@@ -1564,7 +1564,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         "id": "palm-jumeirah-stand-up-paddle",
-        "Supplier_Code": "HYDRO",
+        "Supplier_Code": "DOJOIN",
         "slug": "palm-jumeirah-stand-up-paddle",
         "title": "Palm Jumeirah Stand Up Paddle",
         "subtitle": "Hydro Water Sports",
@@ -1831,7 +1831,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         "id": "palm-jumeirah-kayak-experience",
-        "Supplier_Code": "HYDRO",
+        "Supplier_Code": "DOJOIN",
         "slug": "palm-jumeirah-kayak-experience",
         "title": "Palm Jumeirah Kayak Experience",
         "subtitle": "Hydro Water Sports",
@@ -1898,7 +1898,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         "id": "jumeirah-3-bermuda-scuba-diving",
-        "Supplier_Code": "BERMUDA",
+        "Supplier_Code": "DOJOIN",
         "slug": "jumeirah-3-bermuda-scuba-diving",
         "title": "Jumeirah 3 Bermuda Scuba Diving",
         "subtitle": "Try Scuba Diving in Dubai",
@@ -1959,6 +1959,68 @@ export const PRODUCTS: Product[] = [
         "cancellationPolicy": "Non-refundable.",
 
         "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "global-village-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "global-village-dubai",
+        "title": "Global Village Dubai",
+        "subtitle": "Season 30",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Global Village, Dubai",
+
+        "rating": 4.7,
+        "reviewCount": 1567,
+
+        "durationOptions": [
+            {
+                "label": "General Admission",
+                "minutes": 240,
+                "price": 25,
+                "originalPrice": 30,
+                "discountPercent": 17
+            }
+        ],
+
+        "images": [
+            // Image URLs not visible in screenshot
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "For many centuries, India has been nicknamed the center of all cultures; now Dubai claims the name Global Village. If you want to know about different cultures in the world, Global Village of Dubai is the right place for you. In this unique destination, you have the chance to become familiar with more than 90 different cultures. At Global Village, you can taste the cuisine of different countries, buy their handicrafts, and enjoy live music and shows.",
+
+        "highlights": [
+            "Explore pavilions from 90+ cultures",
+            "International street food and cuisine",
+            "Live performances and entertainment",
+            "Family-friendly attraction"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Comfortable walking shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Food Courts",
+            "Shopping Pavilions",
+            "Live Entertainment",
+            "Parking"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+
+        "confirmationHours": 0,
         "mobileTicket": true,
         "refundable": false
     },
