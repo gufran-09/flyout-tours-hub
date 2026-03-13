@@ -14,13 +14,6 @@ export const dubaiWaterParks: Tour[] = [
     { id: "wp-4", name: "Splash N Party", location: "Dubai", category: "Water Parks", price: 149, rating: 4.4, reviewCount: 560, duration: "Half Day", image: "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=600&q=80", badge: "Kids" },
 ];
 
-export const dubaiAttractions: Tour[] = [
-    { id: "at-1", name: "Chillout Ice Lounge", location: "Dubai", category: "Attractions", price: 199, originalPrice: 250, rating: 4.9, reviewCount: 8900, duration: "2 Hours", image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80", badge: "Iconic" },
-    { id: "at-2", name: "Dubai Frame", location: "Dubai", category: "Attractions", price: 75, rating: 4.6, reviewCount: 3400, duration: "1.5 Hours", image: "https://images.unsplash.com/photo-1597659840241-37e2b9c2f55f?w=600&q=80" },
-    { id: "at-3", name: "Museum of the Future", location: "Dubai", category: "Attractions", price: 149, rating: 4.8, reviewCount: 2100, duration: "2-3 Hours", image: "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=600&q=80", badge: "New" },
-    { id: "at-4", name: "Dubai Miracle Garden", location: "Dubai", category: "Attractions", price: 99, originalPrice: 120, rating: 4.5, reviewCount: 4500, duration: "3 Hours", image: "https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?w=600&q=80" },
-];
-
 export const dubaiWaterSports: Tour[] = [
     { id: "ws-1", name: "Flyboarding Experience", location: "Dubai Marina", category: "Water Sports", price: 450, rating: 4.9, reviewCount: 890, duration: "30 mins", image: "https://images.unsplash.com/photo-1530866495561-507c9faab2ed?w=600&q=80", badge: "Thrilling" },
     { id: "ws-2", name: "Jet Ski Adventure", location: "JBR Beach", category: "Water Sports", price: 350, originalPrice: 400, rating: 4.7, reviewCount: 1200, duration: "1 Hour", image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80" },
@@ -166,7 +159,6 @@ export const dubaiShows: Tour[] = [
 export const allDubaiExperiences: Tour[] = [
     ...dubaiThemeParks,
     ...dubaiWaterParks,
-    ...dubaiAttractions,
     ...dubaiWaterSports,
     ...dubaiDinnerCruise,
     ...dubaiYacht,

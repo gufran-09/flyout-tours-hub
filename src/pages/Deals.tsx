@@ -2,7 +2,6 @@ import { CategoryLayout } from "@/components/layout/CategoryLayout";
 import {
     dubaiThemeParks,
     dubaiWaterParks,
-    dubaiAttractions,
     dubaiWaterSports,
     dubaiDinnerCruise,
     dubaiYacht,
@@ -16,7 +15,6 @@ export default function Deals() {
     const allDeals = [
         ...dubaiThemeParks,
         ...dubaiWaterParks,
-        ...dubaiAttractions,
         ...dubaiWaterSports,
         ...dubaiDinnerCruise,
         ...dubaiYacht,

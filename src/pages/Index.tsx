@@ -18,7 +18,6 @@ import { BrandStorySection } from "@/components/home/BrandStorySection";
 import {
   dubaiThemeParks,
   dubaiWaterParks,
-  dubaiAttractions,
   dubaiWaterSports,
   dubaiDinnerCruise,
   dubaiYacht,

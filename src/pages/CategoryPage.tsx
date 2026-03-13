@@ -24,7 +24,6 @@ import { Label } from "@/components/ui/label";
 import {
   dubaiThemeParks,
   dubaiWaterParks,
-  dubaiAttractions,
   dubaiWaterSports,
   dubaiDinnerCruise,
   dubaiYacht,
@@ -61,7 +60,7 @@ const categoryData: Record<string, { title: string; subtitle: string; tours: Tou
   "attractions": {
     title: "Dubai Attractions",
     subtitle: "Discover iconic landmarks and must-see destinations in Dubai",
-    tours: dubaiAttractions,
+    tours: [],
   },
   "water-sports": {
     title: "Dubai Water Sports",

@@ -27,7 +27,6 @@ import { toast } from "sonner";
 import {
   dubaiThemeParks,
   dubaiWaterParks,
-  dubaiAttractions,
   dubaiWaterSports,
   dubaiDinnerCruise,
   dubaiYacht,
@@ -38,7 +37,6 @@ import {
 const allTours = [
   ...dubaiThemeParks,
   ...dubaiWaterParks,
-  ...dubaiAttractions,
   ...dubaiWaterSports,
   ...dubaiDinnerCruise,
   ...dubaiYacht,

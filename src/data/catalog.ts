@@ -1963,46 +1963,54 @@ export const PRODUCTS: Product[] = [
         "refundable": false
     },
     {
-        "id": "global-village-dubai",
+        "id": "3d-blacklight-minigolf-dubai",
         "Supplier_Code": "DOJOIN",
-        "slug": "global-village-dubai",
-        "title": "Global Village Dubai",
-        "subtitle": "Season 30",
+        "slug": "3d-blacklight-minigolf-dubai",
+        "title": "3D Blacklight Minigolf Dubai",
+        "subtitle": "Immersive indoor glow-in-the-dark mini golf experience",
 
         "category": "attraction",
         "destination": "dubai",
-        "location": "Global Village, Dubai",
+        "location": "JBR, Dubai",
 
-        "rating": 4.7,
-        "reviewCount": 1567,
+        "rating": 5.0,
+        "reviewCount": 1,
 
         "durationOptions": [
             {
-                "label": "General Admission",
-                "minutes": 240,
-                "price": 25,
-                "originalPrice": 30,
-                "discountPercent": 17
+                "label": "Standard Entry",
+                "minutes": 60,
+                "price": 110,
+                "originalPrice": 110,
+                "discountPercent": 0
             }
         ],
 
         "images": [
-            // Image URLs not visible in screenshot
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20Blacklight%20Minigolf%20Dubai/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20Blacklight%20Minigolf%20Dubai/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20Blacklight%20Minigolf%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20Blacklight%20Minigolf%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20Blacklight%20Minigolf%20Dubai/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20Blacklight%20Minigolf%20Dubai/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20Blacklight%20Minigolf%20Dubai/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20Blacklight%20Minigolf%20Dubai/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20Blacklight%20Minigolf%20Dubai/9.webp",
         ],
 
         "badges": [
-            "Instant Confirmation",
+            "24-Hour Confirmation",
             "Mobile Tickets Accepted",
             "Non-refundable"
         ],
 
-        "overview": "For many centuries, India has been nicknamed the center of all cultures; now Dubai claims the name Global Village. If you want to know about different cultures in the world, Global Village of Dubai is the right place for you. In this unique destination, you have the chance to become familiar with more than 90 different cultures. At Global Village, you can taste the cuisine of different countries, buy their handicrafts, and enjoy live music and shows.",
+        "overview": "Embark on a thrilling adventure as you step into a one-of-a-kind blacklight indoor minigolf experience. The floors, walls, and ceilings of the entire course come alive with vibrant and breathtaking artwork created by talented 3D artists. This immersive environment transforms a traditional mini golf game into a visually stunning adventure. Perfect for families, friends, and groups, the glowing course offers a fun and unique activity in the heart of Dubai where entertainment meets creativity.",
 
         "highlights": [
-            "Explore pavilions from 90+ cultures",
-            "International street food and cuisine",
-            "Live performances and entertainment",
-            "Family-friendly attraction"
+            "Glow-in-the-dark mini golf experience",
+            "Immersive 3D hand-painted artwork throughout the course",
+            "Family-friendly indoor attraction",
+            "Perfect activity for friends, families, and groups"
         ],
 
         "whatToBring": [
@@ -2012,18 +2020,2539 @@ export const PRODUCTS: Product[] = [
         ],
 
         "facilities": [
-            "Food Courts",
-            "Shopping Pavilions",
-            "Live Entertainment",
-            "Parking"
+            "Indoor Mini Golf Course",
+            "Glow Equipment",
+            "Air Conditioned Venue"
         ],
 
         "cancellationPolicy": "Non-refundable.",
 
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "burj-khalifa-dubai-aquarium",
+        "Supplier_Code": "DOJOIN",
+        "slug": "burj-khalifa-dubai-aquarium",
+        "title": "Burj Khalifa + Dubai Aquarium",
+        "subtitle": "Combo Offers",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Downtown Dubai",
+
+        "rating": 4.8,
+        "reviewCount": 21,
+
+        "durationOptions": [
+            {
+                "label": "Combo Entry",
+                "minutes": 180,
+                "price": 378,
+                "originalPrice": 378,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa%20+%20Dubai%20Aquarium/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa%20+%20Dubai%20Aquarium/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa%20+%20Dubai%20Aquarium/3.jpeg",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa%20+%20Dubai%20Aquarium/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa%20+%20Dubai%20Aquarium/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy two of Dubai’s most iconic attractions in one unforgettable combo ticket. Visit the observation decks of Burj Khalifa and explore the Dubai Aquarium, home to thousands of marine creatures and a stunning underwater tunnel experience.",
+
+        "highlights": [
+            "Access Burj Khalifa observation decks",
+            "Explore Dubai Aquarium underwater tunnel",
+            "Panoramic views of Dubai skyline",
+            "Perfect combo attraction for visitors"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Comfortable walking shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Observation Deck",
+            "Aquarium Tunnel",
+            "Elevators",
+            "Visitor Services"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
         "confirmationHours": 0,
         "mobileTicket": true,
         "refundable": false
     },
-];
+    {
+        "id": "dubai-fountain-lake-ride",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-fountain-lake-ride",
+        "title": "Dubai Fountain Lake Ride",
+        "subtitle": "Traditional boat ride at Dubai Fountain",
 
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Burj Lake, Downtown Dubai",
+
+        "rating": 5.0,
+        "reviewCount": 6,
+
+        "durationOptions": [
+            {
+                "label": "Lake Ride",
+                "minutes": 30,
+                "price": 75,
+                "originalPrice": 75,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Lake%20Ride/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Lake%20Ride/2.jpeg",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Lake%20Ride/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Lake%20Ride/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Lake%20Ride/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Lake%20Ride/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Lake%20Ride/7.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "The Dubai Fountain is a spectacular display of water, music, and light that should not be missed. Enjoy a unique experience with a traditional abra boat ride on Burj Lake and watch the iconic fountain show from the water.",
+
+        "highlights": [
+            "Traditional abra boat ride",
+            "Up-close fountain show experience",
+            "Unique perspective of Burj Lake",
+            "Perfect evening activity"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Comfortable walking shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Boat Ride",
+            "Life Jackets",
+            "Professional Boat Operators"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-fountain-walk-bridge",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-fountain-walk-bridge",
+        "title": "Dubai Fountain Walk Bridge",
+        "subtitle": "Close-up view of the Dubai Fountain show",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Downtown Dubai",
+
+        "rating": 4.6,
+        "reviewCount": 57,
+
+        "durationOptions": [
+            {
+                "label": "Walk Bridge Access",
+                "minutes": 30,
+                "price": 25,
+                "originalPrice": 25,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Walk%20Bridge/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Walk%20Bridge/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Walk%20Bridge/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Walk%20Bridge/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Walk%20Bridge/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Fountain%20Walk%20Bridge/6.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai Fountain Walk Bridge is a pedestrian platform that offers a close-up view of the iconic Dubai Fountain show. Located in Downtown Dubai near Burj Khalifa and Dubai Mall, it provides visitors with an unforgettable experience of the world’s largest choreographed fountain performance.",
+
+        "highlights": [
+            "Closest view of Dubai Fountain",
+            "Great photo opportunity",
+            "Short immersive experience",
+            "Located near Burj Khalifa"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Comfortable walking shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Pedestrian Bridge",
+            "Viewing Platform",
+            "Security & Staff"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "lost-chambers-aquarium",
+        "Supplier_Code": "DOJOIN",
+        "slug": "lost-chambers-aquarium",
+        "title": "The Lost Chambers Aquarium",
+        "subtitle": "Explore the mythical ruins of Atlantis",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Atlantis The Palm, Dubai",
+
+        "rating": 4.7,
+        "reviewCount": 32,
+
+        "durationOptions": [
+            {
+                "label": "Standard Entry",
+                "minutes": 120,
+                "price": 99,
+                "originalPrice": 99,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Lost%20Chambers%20Aquarium/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Lost%20Chambers%20Aquarium/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Lost%20Chambers%20Aquarium/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Lost%20Chambers%20Aquarium/4.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy an amazing underwater adventure at The Lost Chambers Aquarium. Explore themed ruins inspired by Atlantis and discover thousands of marine animals in beautifully designed exhibits.",
+
+        "highlights": [
+            "Explore Atlantis-themed aquarium",
+            "View thousands of marine animals",
+            "Family-friendly attraction",
+            "Great educational experience"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera",
+            "Comfortable walking shoes"
+        ],
+
+        "facilities": [
+            "Aquarium Exhibits",
+            "Interactive Displays",
+            "Visitor Services"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "qasr-al-watan",
+        "Supplier_Code": "DOJOIN",
+        "slug": "qasr-al-watan",
+        "title": "Qasr Al Watan",
+        "subtitle": "Presidential Palace Cultural Experience",
+
+        "category": "attraction",
+        "destination": "abu-dhabi",
+        "location": "Abu Dhabi Presidential Palace",
+
+        "rating": 4.9,
+        "reviewCount": 19,
+
+        "durationOptions": [
+            {
+                "label": "General Admission",
+                "minutes": 120,
+                "price": 65,
+                "originalPrice": 65,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Qasr%20Al%20Watan/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Qasr%20Al%20Watan/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Qasr%20Al%20Watan/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Qasr%20Al%20Watan/4.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Qasr Al Watan is a working presidential palace in Abu Dhabi that invites visitors to explore the heritage, governance, and culture of the UAE through breathtaking architecture and exhibitions.",
+
+        "highlights": [
+            "Visit a working presidential palace",
+            "Explore UAE history and governance",
+            "Marvel at stunning Arabian architecture",
+            "Cultural and educational attraction"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera",
+            "Comfortable walking shoes"
+        ],
+
+        "facilities": [
+            "Visitor Center",
+            "Guided Tours",
+            "Cultural Exhibitions"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "madame-tussauds-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "madame-tussauds-dubai",
+        "title": "Madame Tussauds Dubai",
+        "subtitle": "Have photos with famous faces",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Bluewaters Island, Dubai",
+
+        "rating": 4.8,
+        "reviewCount": 8,
+
+        "durationOptions": [
+            {
+                "label": "Standard Entry",
+                "minutes": 90,
+                "price": 95,
+                "originalPrice": 95,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/9.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/10.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/11.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/12.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/13.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/14.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Madame%20Tussauds%20Dubai/2.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Madame Tussauds Dubai features lifelike wax figures of celebrities, athletes, world leaders, and cultural icons. Visitors can take photos and interact with these realistic exhibits.",
+
+        "highlights": [
+            "Meet lifelike celebrity wax figures",
+            "Interactive photo opportunities",
+            "Located on Bluewaters Island",
+            "Fun attraction for families and friends"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Wax Exhibits",
+            "Photo Zones",
+            "Air Conditioned Venue"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-aquarium-underwater-zoo",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-aquarium-underwater-zoo",
+        "title": "Dubai Aquarium & Underwater Zoo",
+        "subtitle": "Explore one of the world’s largest indoor aquariums",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Dubai Mall",
+
+        "rating": 4.5,
+        "reviewCount": 80,
+
+        "durationOptions": [
+            {
+                "label": "Standard Entry",
+                "minutes": 120,
+                "price": 169,
+                "originalPrice": 209,
+                "discountPercent": 19
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Aquarium%20&%20Underwater%20Zoo/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Aquarium%20&%20Underwater%20Zoo/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Aquarium%20&%20Underwater%20Zoo/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Aquarium%20&%20Underwater%20Zoo/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Aquarium%20&%20Underwater%20Zoo/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai Aquarium & Underwater Zoo is one of the largest indoor aquariums in the world. Located inside Dubai Mall, it houses thousands of marine animals including sharks, rays, and exotic species.",
+
+        "highlights": [
+            "Walk through underwater tunnel",
+            "See thousands of marine creatures",
+            "Educational exhibits for families",
+            "Located inside Dubai Mall"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera",
+            "Comfortable walking shoes"
+        ],
+
+        "facilities": [
+            "Aquarium Tunnel",
+            "Underwater Zoo",
+            "Educational Displays"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "louvre-abu-dhabi",
+        "Supplier_Code": "DOJOIN",
+        "slug": "louvre-abu-dhabi",
+        "title": "Louvre Abu Dhabi",
+        "subtitle": "World-class art museum on Saadiyat Island",
+
+        "category": "attraction",
+        "destination": "abu-dhabi",
+        "location": "Saadiyat Island, Abu Dhabi",
+
+        "rating": 4.8,
+        "reviewCount": 28,
+
+        "durationOptions": [
+            {
+                "label": "General Admission",
+                "minutes": 120,
+                "price": 70,
+                "originalPrice": 70,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Louvre%20Abu%20Dhabi/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Louvre%20Abu%20Dhabi/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Louvre%20Abu%20Dhabi/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Louvre%20Abu%20Dhabi/4.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Step inside the iconic Louvre Abu Dhabi, the first universal museum in the Arab world. Located in the Saadiyat Cultural District, it showcases masterpieces from ancient civilizations to contemporary works under its stunning architectural dome.",
+
+        "highlights": [
+            "Visit the famous Louvre Abu Dhabi museum",
+            "Explore global art and cultural exhibits",
+            "Unique architectural dome design",
+            "Located in Saadiyat Cultural District"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera",
+            "Comfortable walking shoes"
+        ],
+
+        "facilities": [
+            "Art Galleries",
+            "Visitor Center",
+            "Gift Shop",
+            "Restaurants & Cafes"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "national-aquarium-abu-dhabi",
+        "Supplier_Code": "DOJOIN",
+        "slug": "national-aquarium-abu-dhabi",
+        "title": "The National Aquarium Abu Dhabi",
+        "subtitle": "Largest aquarium in the Middle East",
+
+        "category": "attraction",
+        "destination": "abu-dhabi",
+        "location": "Al Qana, Abu Dhabi",
+
+        "rating": 4.5,
+        "reviewCount": 21,
+
+        "durationOptions": [
+            {
+                "label": "Standard Entry",
+                "minutes": 120,
+                "price": 90,
+                "originalPrice": 99,
+                "discountPercent": 9
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20National%20Aquarium%20Abu%20Dhabi/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20National%20Aquarium%20Abu%20Dhabi/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20National%20Aquarium%20Abu%20Dhabi/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20National%20Aquarium%20Abu%20Dhabi/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20National%20Aquarium%20Abu%20Dhabi/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Discover the underwater world at The National Aquarium Abu Dhabi, the largest aquarium in the Middle East. Located in Al Qana, the attraction features thousands of marine species across immersive themed zones.",
+
+        "highlights": [
+            "Largest aquarium in the Middle East",
+            "Thousands of marine animals",
+            "Immersive themed exhibits",
+            "Family-friendly attraction"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera",
+            "Comfortable walking shoes"
+        ],
+
+        "facilities": [
+            "Aquarium Exhibits",
+            "Educational Displays",
+            "Interactive Experiences"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "museum-of-illusions-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "museum-of-illusions-dubai",
+        "title": "Museum of Illusions",
+        "subtitle": "Enter the world of fascinating illusions",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Al Seef, Dubai",
+
+        "rating": 4.3,
+        "reviewCount": 64,
+
+        "durationOptions": [
+            {
+                "label": "Standard Entry",
+                "minutes": 90,
+                "price": 90,
+                "originalPrice": 90,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Illusions/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Illusions/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Illusions/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Illusions/4.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Museum of Illusions Dubai is an interactive attraction filled with mind-bending optical illusions and immersive installations. Visitors can capture incredible photos while exploring more than sixty exhibits.",
+
+        "highlights": [
+            "Interactive illusion exhibits",
+            "Perfect place for creative photos",
+            "Family-friendly attraction",
+            "Located in historic Al Seef"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Interactive Exhibits",
+            "Photo Zones",
+            "Air Conditioned Venue"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "qasr-al-hosn",
+        "Supplier_Code": "DOJOIN",
+        "slug": "qasr-al-hosn",
+        "title": "Qasr Al Hosn",
+        "subtitle": "Historic landmark of Abu Dhabi",
+
+        "category": "attraction",
+        "destination": "abu-dhabi",
+        "location": "Abu Dhabi",
+
+        "rating": 5.0,
+        "reviewCount": 2,
+
+        "durationOptions": [
+            {
+                "label": "General Admission",
+                "minutes": 90,
+                "price": 30,
+                "originalPrice": 30,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Qasr%20Al%20Hosn/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Qasr%20Al%20Hosn/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Qasr%20Al%20Hosn/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Qasr%20Al%20Hosn/4.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Qasr Al Hosn is the oldest historic building in Abu Dhabi and a symbol of the city’s heritage. The fort showcases the history and culture of the UAE through exhibitions, artifacts, and restored architecture.",
+
+        "highlights": [
+            "Visit Abu Dhabi’s oldest historic building",
+            "Explore Emirati heritage and culture",
+            "Museum exhibits and restored fort",
+            "Important cultural landmark"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera",
+            "Comfortable walking shoes"
+        ],
+
+        "facilities": [
+            "Museum Exhibits",
+            "Visitor Center",
+            "Cultural Displays"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "burj-al-arab-inside-tour",
+        "Supplier_Code": "DOJOIN",
+        "slug": "burj-al-arab-inside-tour",
+        "title": "Burj Al Arab",
+        "subtitle": "Inside Tour",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Jumeirah Beach, Dubai",
+
+        "rating": 4.6,
+        "reviewCount": 16,
+
+        "durationOptions": [
+            {
+                "label": "Inside Tour Experience",
+                "minutes": 90,
+                "price": 209,
+                "originalPrice": 249,
+                "discountPercent": 16
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Al%20Arab/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Al%20Arab/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Al%20Arab/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Al%20Arab/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Burj Al Arab is one of Dubai’s most iconic architectural landmarks and a symbol of luxury. With the Inside Burj Al Arab tour, visitors can explore the famous hotel’s lavish interiors and learn about its history and design.",
+
+        "highlights": [
+            "Visit the iconic Burj Al Arab hotel",
+            "Explore luxurious interiors",
+            "Guided inside tour experience",
+            "Learn about the history of the landmark"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera",
+            "Smart casual attire"
+        ],
+
+        "facilities": [
+            "Guided Tour",
+            "Visitor Lounge",
+            "Photo Opportunities"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "museum-of-the-future",
+        "Supplier_Code": "DOJOIN",
+        "slug": "museum-of-the-future",
+        "title": "Museum Of The Future",
+        "subtitle": "Explore the future of innovation",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Sheikh Zayed Road, Dubai",
+
+        "rating": 4.7,
+        "reviewCount": 173,
+
+        "durationOptions": [
+            {
+                "label": "General Admission",
+                "minutes": 120,
+                "price": 169,
+                "originalPrice": 169,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20Of%20The%20Future/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20Of%20The%20Future/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20Of%20The%20Future/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20Of%20The%20Future/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Museum of the Future is one of Dubai’s most futuristic attractions showcasing cutting-edge technology and innovations that shape the future. The museum features immersive exhibitions exploring science, technology, and space exploration.",
+
+        "highlights": [
+            "Visit Dubai’s most futuristic museum",
+            "Immersive technology exhibits",
+            "Iconic architectural landmark",
+            "Explore innovations shaping the future"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Interactive Exhibits",
+            "Visitor Center",
+            "Gift Shop"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dinner-in-the-sky",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dinner-in-the-sky",
+        "title": "Dinner in the Sky",
+        "subtitle": "A Flying Dinner Table",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Skydive Dubai, Dubai Marina",
+
+        "rating": 4.9,
+        "reviewCount": 8,
+
+        "durationOptions": [
+            {
+                "label": "Dining Experience",
+                "minutes": 90,
+                "price": 699,
+                "originalPrice": 699,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dinner%20in%20the%20Sky/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dinner%20in%20the%20Sky/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dinner%20in%20the%20Sky/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dinner%20in%20the%20Sky/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dinner in the Sky offers a unique dining experience where guests enjoy gourmet meals while suspended high above the ground. The dining platform is lifted by a crane, offering stunning views of Dubai.",
+
+        "highlights": [
+            "Unique dining experience in the sky",
+            "Panoramic views of Dubai skyline",
+            "Professional chef prepared meals",
+            "Safe and secure aerial dining platform"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Smart casual attire"
+        ],
+
+        "facilities": [
+            "Dining Platform",
+            "Professional Chef",
+            "Safety Equipment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "burj-khalifa-at-the-top",
+        "Supplier_Code": "DOJOIN",
+        "slug": "burj-khalifa-at-the-top",
+        "title": "Burj Khalifa, At The Top Silver (Level 125, 124)",
+        "subtitle": "Observation Deck Experience",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Downtown Dubai",
+
+        "rating": 4.6,
+        "reviewCount": 192,
+
+        "durationOptions": [
+            {
+                "label": "At The Top Experience",
+                "minutes": 90,
+                "price": 159,
+                "originalPrice": 159,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Silver%20(Level%20125,%20124)/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Silver%20(Level%20125,%20124)/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Silver%20(Level%20125,%20124)/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Silver%20(Level%20125,%20124)/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Silver%20(Level%20125,%20124)/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Silver%20(Level%20125,%20124)/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Silver%20(Level%20125,%20124)/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Silver%20(Level%20125,%20124)/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Silver%20(Level%20125,%20124)/9.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Burj Khalifa is the tallest building in the world standing at 828 meters. Visitors can enjoy breathtaking panoramic views of Dubai from the observation decks located on levels 124 and 125.",
+
+        "highlights": [
+            "Visit the world’s tallest building",
+            "Panoramic views of Dubai skyline",
+            "Access levels 124 and 125",
+            "High-speed elevator experience"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Observation Deck",
+            "High-Speed Elevators",
+            "Gift Shop"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "chillout-ice-lounge",
+        "Supplier_Code": "DOJOIN",
+        "slug": "chillout-ice-lounge",
+        "title": "Chillout Ice Lounge",
+        "subtitle": "Coolest Place in Dubai -6°C",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Times Square Center, Dubai",
+
+        "rating": 4.6,
+        "reviewCount": 41,
+
+        "durationOptions": [
+            {
+                "label": "Standard Entry",
+                "minutes": 60,
+                "price": 75,
+                "originalPrice": 75,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Chillout%20Ice%20Lounge/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Chillout%20Ice%20Lounge/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Chillout%20Ice%20Lounge/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Chillout%20Ice%20Lounge/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Chillout%20Ice%20Lounge/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Chillout Ice Lounge is a unique ice-themed attraction where visitors experience freezing temperatures and admire ice sculptures while enjoying hot beverages.",
+
+        "highlights": [
+            "Sub-zero ice lounge experience",
+            "Unique ice sculptures",
+            "Perfect indoor attraction",
+            "Hot drinks included"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Warm clothing"
+        ],
+
+        "facilities": [
+            "Ice Sculptures",
+            "Winter Jackets",
+            "Cafe Area"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "sky-views-observatory",
+        "Supplier_Code": "DOJOIN",
+        "slug": "sky-views-observatory",
+        "title": "Sky Views Observatory",
+        "subtitle": "Glass walkway observation experience",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Address Sky View, Downtown Dubai",
+
+        "rating": 4.6,
+        "reviewCount": 200,
+
+        "durationOptions": [
+            {
+                "label": "Observation Deck Entry",
+                "minutes": 60,
+                "price": 99,
+                "originalPrice": 99,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Sky%20Views%20Observatory/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Sky%20Views%20Observatory/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Sky%20Views%20Observatory/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Sky%20Views%20Observatory/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Sky%20Views%20Observatory/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Sky%20Views%20Observatory/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Sky%20Views%20Observatory/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Sky%20Views%20Observatory/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Sky%20Views%20Observatory/9.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Sky Views Observatory offers breathtaking views of Downtown Dubai from a glass observation deck located in the Address Sky View towers.",
+
+        "highlights": [
+            "Glass walkway observation deck",
+            "Panoramic views of Burj Khalifa",
+            "Thrilling transparent floor experience",
+            "Located in Downtown Dubai"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Observation Deck",
+            "Glass Walkway",
+            "Cafe"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "ain-dubai-observation-wheel",
+        "Supplier_Code": "DOJOIN",
+        "slug": "ain-dubai-worlds-tallest-observation-wheel",
+        "title": "Ain Dubai - World's Tallest Observation Wheel",
+        "subtitle": "Ascend 250 meters & witness panoramic views of Dubai",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Bluewaters Island, Dubai",
+
+        "rating": 4.7,
+        "reviewCount": 12,
+
+        "durationOptions": [
+            {
+                "label": "Observation Wheel Ticket",
+                "minutes": 38,
+                "price": 145,
+                "originalPrice": 145,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Ain%20Dubai%20-%20World's%20Tallest%20Observation%20Wheel/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Ain%20Dubai%20-%20World's%20Tallest%20Observation%20Wheel/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Ain%20Dubai%20-%20World's%20Tallest%20Observation%20Wheel/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Ain%20Dubai%20-%20World's%20Tallest%20Observation%20Wheel/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Ain%20Dubai%20-%20World's%20Tallest%20Observation%20Wheel/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Ain Dubai is the world's tallest observation wheel located on Bluewaters Island. Visitors can enjoy stunning panoramic views of Dubai’s skyline, coastline and landmarks from air-conditioned cabins.",
+
+        "highlights": [
+            "Ride the world's tallest observation wheel",
+            "360 degree panoramic views of Dubai",
+            "Air conditioned cabins",
+            "Located on Bluewaters Island"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Observation Cabins",
+            "Viewing Deck",
+            "Air Conditioning"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "the-view-at-the-palm",
+        "Supplier_Code": "DOJOIN",
+        "slug": "the-view-at-the-palm",
+        "title": "The View At The Palm",
+        "subtitle": "360° Observation Deck Experience",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Palm Tower, Palm Jumeirah, Dubai",
+
+        "rating": 4.8,
+        "reviewCount": 140,
+
+        "durationOptions": [
+            {
+                "label": "Observation Deck Ticket",
+                "minutes": 60,
+                "price": 110,
+                "originalPrice": 110,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20View%20At%20The%20Palm/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20View%20At%20The%20Palm/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20View%20At%20The%20Palm/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20View%20At%20The%20Palm/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20View%20At%20The%20Palm/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20View%20At%20The%20Palm/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20View%20At%20The%20Palm/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20View%20At%20The%20Palm/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20View%20At%20The%20Palm/9.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "The View at The Palm offers breathtaking 360 degree views of Palm Jumeirah from the Palm Tower observation deck. Visitors can see the iconic palm shaped island, Arabian Gulf and Dubai skyline.",
+
+        "highlights": [
+            "360 degree panoramic observation deck",
+            "Spectacular views of Palm Jumeirah",
+            "Located at Palm Tower",
+            "Perfect photography spot"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Valid ID"
+        ],
+
+        "facilities": [
+            "Observation Deck",
+            "Viewing Lounge",
+            "Gift Shop"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "la-perle-by-dragone",
+        "Supplier_Code": "DOJOIN",
+        "slug": "la-perle-by-dragone-show",
+        "title": "La Perle by Dragone Show",
+        "subtitle": "A spectacular show only at Al Habtoor City, Dubai",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Al Habtoor City, Dubai",
+
+        "rating": 5.0,
+        "reviewCount": 2,
+
+        "durationOptions": [
+            {
+                "label": "Show Ticket",
+                "minutes": 90,
+                "price": 269,
+                "originalPrice": 269,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/La%20Perle%20by%20Dragone%20Show/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/La%20Perle%20by%20Dragone%20Show/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/La%20Perle%20by%20Dragone%20Show/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/La%20Perle%20by%20Dragone%20Show/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "La Perle by Dragone is Dubai’s most spectacular live show combining acrobatics, aerial stunts and visual effects. The immersive performance takes place in a custom built theatre in Al Habtoor City.",
+
+        "highlights": [
+            "World class live entertainment show",
+            "Acrobatics and aerial performances",
+            "Immersive theatre experience",
+            "Located in Al Habtoor City"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Theatre Seating",
+            "Air Conditioned Venue",
+            "Snack Counters"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-ultimate-combo-ain-dubai-real-madrid-world",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-ultimate-combo-ain-dubai-real-madrid-world",
+        "title": "Dubai's Ultimate Combo: Ain Dubai and Real Madrid World",
+        "subtitle": "Enjoy the best of both worlds with two iconic Dubai attractions",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 20,
+
+        "durationOptions": [
+            {
+                "label": "Combo Ticket",
+                "minutes": 180,
+                "price": 299,
+                "originalPrice": 440,
+                "discountPercent": 32
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai's%20Ultimate%20Combo%20Ain%20Dubai%20and%20Real%20Madrid%20World/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai's%20Ultimate%20Combo%20Ain%20Dubai%20and%20Real%20Madrid%20World/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai's%20Ultimate%20Combo%20Ain%20Dubai%20and%20Real%20Madrid%20World/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai's%20Ultimate%20Combo%20Ain%20Dubai%20and%20Real%20Madrid%20World/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai's%20Ultimate%20Combo%20Ain%20Dubai%20and%20Real%20Madrid%20World/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai's%20Ultimate%20Combo%20Ain%20Dubai%20and%20Real%20Madrid%20World/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai's%20Ultimate%20Combo%20Ain%20Dubai%20and%20Real%20Madrid%20World/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai's%20Ultimate%20Combo%20Ain%20Dubai%20and%20Real%20Madrid%20World/8.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy two of Dubai’s top attractions with one ticket. This combo ticket includes access to Ain Dubai and Real Madrid World for an unforgettable day of entertainment, views and sports themed attractions.",
+
+        "highlights": [
+            "Visit Ain Dubai observation wheel",
+            "Explore Real Madrid World theme park",
+            "Great value combo ticket",
+            "Perfect family entertainment experience"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Observation Wheel",
+            "Theme Park Attractions",
+            "Food Courts"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "teamlab-phenomena-abu-dhabi",
+        "Supplier_Code": "DOJOIN",
+        "slug": "teamlab-phenomena-abu-dhabi",
+        "title": "teamLab Phenomena Abu Dhabi",
+        "subtitle": "Discover the UAE's Most Advanced Interactive Museum Where Technology Creates Personalized Artistic Journeys",
+
+        "category": "attraction",
+        "destination": "abu-dhabi",
+        "location": "Saadiyat Cultural District, Abu Dhabi",
+
+        "rating": 5.0,
+        "reviewCount": 6,
+
+        "durationOptions": [
+            {
+                "label": "General Admission",
+                "minutes": 120,
+                "price": 150,
+                "originalPrice": 150,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/TeamLab%20Phenomena%20Abu%20Dhabi/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/TeamLab%20Phenomena%20Abu%20Dhabi/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/TeamLab%20Phenomena%20Abu%20Dhabi/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/TeamLab%20Phenomena%20Abu%20Dhabi/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/TeamLab%20Phenomena%20Abu%20Dhabi/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/TeamLab%20Phenomena%20Abu%20Dhabi/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/TeamLab%20Phenomena%20Abu%20Dhabi/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/TeamLab%20Phenomena%20Abu%20Dhabi/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/TeamLab%20Phenomena%20Abu%20Dhabi/9.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/TeamLab%20Phenomena%20Abu%20Dhabi/10.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "teamLab Phenomena Abu Dhabi is an immersive digital art museum where technology, nature, and human perception merge into interactive artistic environments.",
+
+        "highlights": [
+            "Interactive digital art installations",
+            "Immersive multi-sensory experiences",
+            "Cutting-edge technology exhibitions",
+            "Located in Saadiyat Cultural District"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Comfortable clothing"
+        ],
+
+        "facilities": [
+            "Interactive Exhibits",
+            "Visitor Center",
+            "Gift Shop"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "house-of-hype-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "house-of-hype-dubai",
+        "title": "House of Hype Dubai",
+        "subtitle": "Dubai's Most Social Media-Worthy Destination",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Dubai Mall Chinatown, Dubai",
+
+        "rating": 5.0,
+        "reviewCount": 1,
+
+        "durationOptions": [
+            {
+                "label": "General Admission",
+                "minutes": 120,
+                "price": 119,
+                "originalPrice": 119,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/House%20of%20Hype%20Dubai/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/House%20of%20Hype%20Dubai/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/House%20of%20Hype%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/House%20of%20Hype%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/House%20of%20Hype%20Dubai/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "House of Hype is a vibrant entertainment venue designed for content creators, families and social media lovers featuring immersive installations and entertainment zones.",
+
+        "highlights": [
+            "Over 120 interactive experiences",
+            "Perfect social media photo spots",
+            "Gaming and entertainment zones",
+            "Located in Dubai Mall Chinatown"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Smartphone"
+        ],
+
+        "facilities": [
+            "Interactive Zones",
+            "Photo Studios",
+            "Retail Stores",
+            "Food & Beverage"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "aya-universe",
+        "Supplier_Code": "DOJOIN",
+        "slug": "aya-universe",
+        "title": "AYA Universe",
+        "subtitle": "Discover the world beyond imagination",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Wafi Mall, Dubai",
+
+        "rating": 4.6,
+        "reviewCount": 116,
+
+        "durationOptions": [
+            {
+                "label": "Standard Entry",
+                "minutes": 90,
+                "price": 99,
+                "originalPrice": 125,
+                "discountPercent": 21
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/AYA%20Universe/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/AYA%20Universe/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/AYA%20Universe/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/AYA%20Universe/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/AYA%20Universe/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "AYA Universe is an immersive entertainment park combining digital art, light shows and interactive technology to create a futuristic experience.",
+
+        "highlights": [
+            "Immersive digital worlds",
+            "Interactive light shows",
+            "12 unique themed zones",
+            "Located in Wafi Mall"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Comfortable clothing"
+        ],
+
+        "facilities": [
+            "Immersive Zones",
+            "Interactive Exhibits",
+            "Visitor Center"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-dolphinarium",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-dolphinarium-dubai-dolphin-show",
+        "title": "Dubai Dolphinarium (Dubai Dolphin Show)",
+        "subtitle": "World of Aquatic Wonder",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Creek Park, Dubai",
+
+        "rating": 4.7,
+        "reviewCount": 174,
+
+        "durationOptions": [
+            {
+                "label": "Dolphin Show Ticket",
+                "minutes": 90,
+                "price": 95,
+                "originalPrice": 115,
+                "discountPercent": 17
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Dolphinarium%20(Dubai%20Dolphin%20Show)/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Dolphinarium%20(Dubai%20Dolphin%20Show)/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Dolphinarium%20(Dubai%20Dolphin%20Show)/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Dolphinarium%20(Dubai%20Dolphin%20Show)/4.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai Dolphinarium offers entertaining dolphin and seal shows where visitors can watch trained marine animals perform incredible tricks.",
+
+        "highlights": [
+            "Live dolphin and seal performances",
+            "Family friendly entertainment",
+            "Located in Creek Park",
+            "Educational marine experience"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Valid ID"
+        ],
+
+        "facilities": [
+            "Indoor Theatre",
+            "Food Court",
+            "Gift Shop"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "3d-world-selfie-museum",
+        "Supplier_Code": "DOJOIN",
+        "slug": "3d-world-selfie-museum",
+        "title": "3D World Selfie Museum In Dubai",
+        "subtitle": "First and Only 3D Selfie Museum in the Middle East",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Al Quoz, Dubai",
+
+        "rating": 5.0,
+        "reviewCount": 1,
+
+        "durationOptions": [
+            {
+                "label": "Standard Entry",
+                "minutes": 90,
+                "price": 89,
+                "originalPrice": 89,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20World%20Selfie%20Museum%20In%20Dubai/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20World%20Selfie%20Museum%20In%20Dubai/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20World%20Selfie%20Museum%20In%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20World%20Selfie%20Museum%20In%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/3D%20World%20Selfie%20Museum%20In%20Dubai/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Refundable"
+        ],
+
+        "overview": "3D World Selfie Museum is an interactive attraction where visitors can take creative photos using illusion-based artworks and immersive 3D environments.",
+
+        "highlights": [
+            "Interactive 3D illusion artworks",
+            "Perfect for photography",
+            "Family-friendly attraction",
+            "First 3D selfie museum in the Middle East"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Smartphone"
+        ],
+
+        "facilities": [
+            "Photo Zones",
+            "Interactive Art Exhibits"
+        ],
+
+        "cancellationPolicy": "Refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": true
+    },
+    {
+        "id": "zayed-national-museum",
+        "Supplier_Code": "DOJOIN",
+        "slug": "zayed-national-museum",
+        "title": "Zayed National Museum",
+        "subtitle": "Celebrating the heritage and culture of the UAE",
+
+        "category": "attraction",
+        "destination": "abu-dhabi",
+        "location": "Saadiyat Island, Abu Dhabi",
+
+        "rating": 4.8,
+        "reviewCount": 25,
+
+        "durationOptions": [
+            {
+                "label": "General Admission",
+                "minutes": 120,
+                "price": 70,
+                "originalPrice": 70,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Zayed%20National%20Museum/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Zayed%20National%20Museum/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Zayed%20National%20Museum/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Zayed%20National%20Museum/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Zayed%20National%20Museum/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Zayed%20National%20Museum/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Zayed%20National%20Museum/7.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Zayed National Museum celebrates the life and legacy of Sheikh Zayed bin Sultan Al Nahyan and showcases the heritage and culture of the United Arab Emirates.",
+
+        "highlights": [
+            "Learn about UAE history and culture",
+            "Interactive museum exhibitions",
+            "Located in Saadiyat Cultural District",
+            "Architectural landmark"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Valid ID"
+        ],
+
+        "facilities": [
+            "Museum Galleries",
+            "Visitor Center",
+            "Gift Shop"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "global-village-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "global-village-dubai",
+        "title": "Global Village Dubai",
+        "subtitle": "Explore cultures from around the world",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Global Village, Dubai",
+
+        "rating": 4.6,
+        "reviewCount": 1567,
+
+        "durationOptions": [
+            {
+                "label": "General Entry",
+                "minutes": 240,
+                "price": 25,
+                "originalPrice": 30,
+                "discountPercent": 17
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/9.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/10.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Global%20Village%20Dubai/11.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Global Village is a multicultural festival park featuring pavilions, international cuisine, live entertainment and shopping.",
+
+        "highlights": [
+            "Explore 90+ cultural pavilions",
+            "International street food",
+            "Live shows and entertainment",
+            "Family-friendly attractions"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Comfortable shoes"
+        ],
+
+        "facilities": [
+            "Food Courts",
+            "Shopping Pavilions",
+            "Amusement Rides"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "the-messi-experience-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "the-messi-experience-dubai",
+        "title": "The Messi Experience Dubai",
+        "subtitle": "Where every football fan's dream becomes an interactive reality",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Dubai Festival City Mall, Dubai",
+
+        "rating": 4.7,
+        "reviewCount": 35,
+
+        "durationOptions": [
+            {
+                "label": "Experience Ticket",
+                "minutes": 75,
+                "price": 129,
+                "originalPrice": 129,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Messi%20Experience%20Dubai/1.jpeg",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Messi%20Experience%20Dubai/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Messi%20Experience%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Messi%20Experience%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Messi%20Experience%20Dubai/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Messi%20Experience%20Dubai/6.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "The Messi Experience is an immersive attraction that takes visitors through the life and career of football legend Lionel Messi using interactive technology, games and projections.",
+
+        "highlights": [
+            "Interactive football themed experience",
+            "Learn about Lionel Messi's career",
+            "Immersive digital technology exhibits",
+            "Perfect for football fans"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Comfortable clothing"
+        ],
+
+        "facilities": [
+            "Interactive Zones",
+            "Gaming Areas",
+            "Merchandise Store"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "ski-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "ski-dubai",
+        "title": "Ski Dubai",
+        "subtitle": "Indoor Ski Resort Experience",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Mall of the Emirates, Dubai",
+
+        "rating": 4.8,
+        "reviewCount": 56,
+
+        "durationOptions": [
+            {
+                "label": "Snow Park Pass",
+                "minutes": 180,
+                "price": 215,
+                "originalPrice": 250,
+                "discountPercent": 14
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Ski%20Dubai/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Ski%20Dubai/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Ski%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Ski%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Ski%20Dubai/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Ski Dubai is the Middle East’s first indoor ski resort offering skiing, snowboarding and snow park experiences inside Mall of the Emirates.",
+
+        "highlights": [
+            "Indoor skiing experience",
+            "Meet and interact with penguins",
+            "Snow park attractions",
+            "Located inside Mall of the Emirates"
+        ],
+
+        "whatToBring": [
+            "Warm clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Snow Park",
+            "Ski Slopes",
+            "Equipment Rental"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "the-palm-monorail",
+        "Supplier_Code": "DOJOIN",
+        "slug": "the-palm-monorail",
+        "title": "The Palm Monorail",
+        "subtitle": "Gateway to Atlantis",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Palm Jumeirah, Dubai",
+
+        "rating": 4.7,
+        "reviewCount": 29,
+
+        "durationOptions": [
+            {
+                "label": "Monorail Ride Ticket",
+                "minutes": 20,
+                "price": 15,
+                "originalPrice": 15,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Palm%20Monorail/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Palm%20Monorail/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Palm%20Monorail/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Palm%20Monorail/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Palm%20Monorail/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Palm%20Monorail/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Palm%20Monorail/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/The%20Palm%20Monorail/8.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "The Palm Monorail is a scenic transportation system connecting Palm Jumeirah to Atlantis The Palm. It offers panoramic views of the island and Dubai skyline while traveling across the iconic palm-shaped island.",
+
+        "highlights": [
+            "Scenic monorail ride across Palm Jumeirah",
+            "Views of Atlantis The Palm and Arabian Gulf",
+            "Convenient transport between Palm attractions",
+            "First monorail system in the Middle East"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Mobile Ticket"
+        ],
+
+        "facilities": [
+            "Monorail Stations",
+            "Observation Windows",
+            "Ticket Counters"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-frame",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-frame",
+        "title": "Dubai Frame",
+        "subtitle": "Dubai's Iconic Architectural Landmark",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Zabeel Park, Dubai",
+
+        "rating": 4.6,
+        "reviewCount": 517,
+
+        "durationOptions": [
+            {
+                "label": "General Admission",
+                "minutes": 60,
+                "price": 46,
+                "originalPrice": 60,
+                "discountPercent": 23
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Frame/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Frame/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Frame/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Frame/4.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai Frame is a famous landmark offering panoramic views of both old and new Dubai from its glass sky bridge located 150 meters above ground.",
+
+        "highlights": [
+            "Panoramic views of Dubai skyline",
+            "Glass floor sky bridge",
+            "Interactive museum exhibitions",
+            "Located in Zabeel Park"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Observation Deck",
+            "Glass Walkway",
+            "Museum Gallery"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+
+    {
+        "id": "arte-museum-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "arte-museum-dubai",
+        "title": "ARTE MUSEUM DUBAI",
+        "subtitle": "Feel, Hear and Sense the Digital Art",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Dubai Mall, Level 2, Dubai",
+
+        "rating": 4.5,
+        "reviewCount": 6,
+
+        "durationOptions": [
+            {
+                "label": "General Entry",
+                "minutes": 90,
+                "price": 149,
+                "originalPrice": 149,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/9.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/10.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/11.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/ARTE%20MUSEUM%20DUBAI/12.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "ARTE MUSEUM DUBAI is an immersive digital art museum where art and technology blend together through interactive exhibitions using sound, aroma, light and visuals.",
+
+        "highlights": [
+            "Immersive digital art exhibitions",
+            "Multi-sensory installations using light and sound",
+            "14 themed exhibition zones",
+            "Located inside Dubai Mall"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Comfortable clothing"
+        ],
+
+        "facilities": [
+            "Digital Exhibits",
+            "Interactive Art Installations",
+            "Cafe"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-aquarium-otter-encounter",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-aquarium-and-underwater-zoo-otter-encounter",
+        "title": "Dubai Aquarium and Underwater Zoo Otter Encounter",
+        "subtitle": "Meet playful otters up close",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Dubai Mall Aquarium, Dubai",
+
+        "rating": 4.7,
+        "reviewCount": 50,
+
+        "durationOptions": [
+            {
+                "label": "Otter Encounter Experience",
+                "minutes": 60,
+                "price": 300,
+                "originalPrice": 300,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Aquarium%20&%20Underwater%20Zoo/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Aquarium%20&%20Underwater%20Zoo/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Aquarium%20&%20Underwater%20Zoo/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Aquarium%20&%20Underwater%20Zoo/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Dubai%20Aquarium%20&%20Underwater%20Zoo/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy an unforgettable wildlife encounter with playful otters at Dubai Aquarium and Underwater Zoo inside Dubai Mall.",
+
+        "highlights": [
+            "Meet adorable otters up close",
+            "Guided wildlife experience",
+            "Educational animal interaction",
+            "Located in Dubai Aquarium"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Valid ID"
+        ],
+
+        "facilities": [
+            "Aquarium",
+            "Animal Interaction Area",
+            "Gift Shop"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "burj-khalifa-at-the-top-gold",
+        "Supplier_Code": "DOJOIN",
+        "slug": "burj-khalifa-at-the-top-gold-level-148",
+        "title": "Burj Khalifa, At The Top Gold (Level 148)",
+        "subtitle": "Premium observation deck experience",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Burj Khalifa, Downtown Dubai",
+
+        "rating": 4.2,
+        "reviewCount": 5,
+
+        "durationOptions": [
+            {
+                "label": "Premium Observation Deck",
+                "minutes": 90,
+                "price": 535,
+                "originalPrice": 535,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Gold%20(Level%20148)/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Gold%20(Level%20148)/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Gold%20(Level%20148)/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Gold%20(Level%20148)/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Gold%20(Level%20148)/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Gold%20(Level%20148)/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Gold%20(Level%20148)/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Gold%20(Level%20148)/8.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Visit the exclusive Level 148 observation deck at Burj Khalifa and enjoy luxury lounge access with breathtaking skyline views.",
+
+        "highlights": [
+            "Access to Level 148 Sky Lounge",
+            "Premium observation deck experience",
+            "Panoramic Dubai skyline views",
+            "Access to Levels 124 and 125"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Sky Lounge",
+            "Observation Deck",
+            "Refreshments"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "burj-khalifa-the-lounge",
+        "Supplier_Code": "DOJOIN",
+        "slug": "burj-khalifa-the-lounge-level-154-153-152",
+        "title": "Burj Khalifa, At The Top Platinum - The Lounge",
+        "subtitle": "Luxury lounge experience at the highest floors",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Burj Khalifa, Downtown Dubai",
+
+        "rating": 5.0,
+        "reviewCount": 1,
+
+        "durationOptions": [
+            {
+                "label": "Luxury Lounge Experience",
+                "minutes": 120,
+                "price": 760,
+                "originalPrice": 760,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Platinum%20-%20The%20Lounge/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Platinum%20-%20The%20Lounge/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Platinum%20-%20The%20Lounge/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Platinum%20-%20The%20Lounge/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Platinum%20-%20The%20Lounge/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Platinum%20-%20The%20Lounge/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Platinum%20-%20The%20Lounge/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Platinum%20-%20The%20Lounge/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Platinum%20-%20The%20Lounge/9.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Burj%20Khalifa,%20At%20The%20Top%20Platinum%20-%20The%20Lounge/10.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience the highest lounge in the world at Burj Khalifa levels 152, 153 and 154 with luxury seating and premium refreshments.",
+
+        "highlights": [
+            "World’s highest lounge experience",
+            "Luxury seating and refreshments",
+            "Exclusive observation deck access",
+            "Premium sunset views"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Luxury Lounge",
+            "Premium Dining",
+            "Observation Deck"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "snow-abu-dhabi",
+        "Supplier_Code": "DOJOIN",
+        "slug": "snow-abu-dhabi",
+        "title": "Snow Abu Dhabi",
+        "subtitle": "Indoor snow park adventure",
+
+        "category": "attraction",
+        "destination": "abu-dhabi",
+        "location": "Reem Mall, Abu Dhabi",
+
+        "rating": 5.0,
+        "reviewCount": 2,
+
+        "durationOptions": [
+            {
+                "label": "Snow Park Entry",
+                "minutes": 180,
+                "price": 199,
+                "originalPrice": 199,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Snow%20Abu%20Dhabi/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Snow%20Abu%20Dhabi/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Snow%20Abu%20Dhabi/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Snow%20Abu%20Dhabi/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Snow%20Abu%20Dhabi/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Snow Abu Dhabi is an indoor snow park featuring winter-themed attractions and activities in a snowy environment.",
+
+        "highlights": [
+            "Indoor snow adventure park",
+            "Snow slides and rides",
+            "Family-friendly winter activities",
+            "Located in Reem Mall"
+        ],
+
+        "whatToBring": [
+            "Warm clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Snow Park",
+            "Winter Rides",
+            "Equipment Rental"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "emirates-park-zoo-resort",
+        "Supplier_Code": "DOJOIN",
+        "slug": "emirates-park-zoo-resort",
+        "title": "Emirates Park Zoo & Resort",
+        "subtitle": "Wildlife experience in Abu Dhabi",
+
+        "category": "attraction",
+        "destination": "abu-dhabi",
+        "location": "Al Bahia, Abu Dhabi",
+
+        "rating": 4.3,
+        "reviewCount": 6,
+
+        "durationOptions": [
+            {
+                "label": "Zoo Entry Ticket",
+                "minutes": 180,
+                "price": 65,
+                "originalPrice": 65,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Emirates%20Park%20Zoo%20&%20Resort/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Emirates%20Park%20Zoo%20&%20Resort/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Emirates%20Park%20Zoo%20&%20Resort/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Emirates%20Park%20Zoo%20&%20Resort/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Emirates%20Park%20Zoo%20&%20Resort/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Emirates Park Zoo & Resort allows visitors to interact with animals and explore a variety of wildlife exhibits.",
+
+        "highlights": [
+            "See over 1700 animals",
+            "Animal feeding experiences",
+            "Family friendly wildlife attraction",
+            "Educational programs"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Comfortable clothing"
+        ],
+
+        "facilities": [
+            "Animal Exhibits",
+            "Resort Stay",
+            "Restaurants"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "museum-of-candy",
+        "Supplier_Code": "DOJOIN",
+        "slug": "museum-of-candy",
+        "title": "Museum of Candy",
+        "subtitle": "Uncover A Vibrant Wonderland Of Sweetness",
+
+        "category": "attraction",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 20,
+
+        "durationOptions": [
+            {
+                "label": "General Admission",
+                "minutes": 90,
+                "price": 119,
+                "originalPrice": 119,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Candy/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Candy/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Candy/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Candy/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Candy/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Candy/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Candy/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Attractions/Museum%20of%20Candy/8.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Step into a colorful world of sweets and creativity at the Museum of Candy in Dubai. This immersive attraction features candy-themed rooms, artistic installations, and interactive spaces perfect for photos and fun experiences.",
+
+        "highlights": [
+            "Explore immersive candy themed rooms",
+            "Take creative photos with candy installations",
+            "Enjoy interactive sweet themed attractions",
+            "Perfect family friendly attraction"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Smartphone",
+            "Valid ID"
+        ],
+
+        "facilities": [
+            "Photo Zones",
+            "Interactive Exhibits",
+            "Gift Shop"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+
+]
 
