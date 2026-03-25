@@ -1981,8 +1981,8 @@ export const PRODUCTS: Product[] = [
                 "label": "Standard Entry",
                 "minutes": 60,
                 "price": 110,
-                "originalPrice": 110,
-                "discountPercent": 0
+                "originalPrice": 138,
+                "discountPercent": 20
             }
         ],
 
@@ -2050,8 +2050,8 @@ export const PRODUCTS: Product[] = [
                 "label": "Combo Entry",
                 "minutes": 180,
                 "price": 378,
-                "originalPrice": 378,
-                "discountPercent": 0
+                "originalPrice": 473,
+                "discountPercent": 20
             }
         ],
 
@@ -2115,8 +2115,8 @@ export const PRODUCTS: Product[] = [
                 "label": "Lake Ride",
                 "minutes": 30,
                 "price": 75,
-                "originalPrice": 75,
-                "discountPercent": 0
+                "originalPrice": 94,
+                "discountPercent": 20
             }
         ],
 
@@ -2181,8 +2181,8 @@ export const PRODUCTS: Product[] = [
                 "label": "Walk Bridge Access",
                 "minutes": 30,
                 "price": 25,
-                "originalPrice": 25,
-                "discountPercent": 0
+                "originalPrice": 31,
+                "discountPercent": 19
             }
         ],
 
@@ -2246,8 +2246,8 @@ export const PRODUCTS: Product[] = [
                 "label": "Standard Entry",
                 "minutes": 120,
                 "price": 99,
-                "originalPrice": 99,
-                "discountPercent": 0
+                "originalPrice": 124,
+                "discountPercent": 20
             }
         ],
 
@@ -4553,6 +4553,6065 @@ export const PRODUCTS: Product[] = [
         "mobileTicket": true,
         "refundable": false
     },
+    {
+        "id": "skydive-dubai-tandem-skydiving-palm-drop-zone",
+        "Supplier_Code": "DOJOIN",
+        "slug": "skydive-dubai-experience-tandem-skydiving-at-the-palm-drop-zone",
+        "title": "Skydive Dubai: Experience Tandem Skydiving at The Palm Drop Zone",
+        "subtitle": "Photos and Videos Included",
+
+        "category": "sky adventure",
+        "destination": "dubai",
+        "location": "Palm Drop Zone, Dubai",
+
+        "rating": 5.0,
+        "reviewCount": 20,
+
+        "durationOptions": [
+            {
+                "label": "Tandem Skydive Experience",
+                "minutes": 180,
+                "price": 2749,
+                "originalPrice": 2749,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Skydive%20Dubai%20Experience/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Skydive%20Dubai%20Experience/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Skydive%20Dubai%20Experience/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Skydive%20Dubai%20Experience/4.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience one of the most thrilling adventure sports in Dubai with tandem skydiving over the Palm Jumeirah. Enjoy breathtaking aerial views while securely harnessed to an experienced instructor.",
+
+        "highlights": [
+            "Tandem skydiving experience over Palm Jumeirah",
+            "Freefall at over 120 miles per hour",
+            "Professional instructors",
+            "Photos and videos included"
+        ],
+
+        "whatToBring": [
+            "Valid Passport or ID",
+            "Comfortable Clothing",
+            "Sports Shoes"
+        ],
+
+        "facilities": [
+            "Professional Instructors",
+            "Safety Equipment",
+            "Photo & Video Package"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "abu-dhabi-helicopter-tour",
+        "Supplier_Code": "DOJOIN",
+        "slug": "abu-dhabi-helicopter-tour",
+        "title": "Abu Dhabi Helicopter Tour",
+        "subtitle": "See the City's Wonders from a New Angle",
+
+        "category": "sky adventure",
+        "destination": "abu dhabi",
+        "location": "Abu Dhabi, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Helicopter City Tour",
+                "minutes": 30,
+                "price": 700,
+                "originalPrice": 700,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/9.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/10.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Abu%20Dhabi%20Helicopter%20Tour/11.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience Abu Dhabi like never before with breathtaking aerial views of the city's iconic landmarks including Sheikh Zayed Grand Mosque, Emirates Palace, and Etihad Towers.",
+
+        "highlights": [
+            "Helicopter ride over Abu Dhabi skyline",
+            "View Sheikh Zayed Grand Mosque",
+            "See Emirates Palace and Etihad Towers",
+            "Aerial sightseeing experience"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Helicopter Flight",
+            "Professional Pilot",
+            "Safety Equipment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-balloon-at-atlantis",
+        "Supplier_Code": "DOJOIN",
+        "slug": "the-dubai-balloon-at-atlantis",
+        "title": "The Dubai Balloon at Atlantis",
+        "subtitle": "Tethered Balloon Experience",
+
+        "category": "sky adventure",
+        "destination": "dubai",
+        "location": "Atlantis, The Palm, Dubai",
+
+        "rating": 4.2,
+        "reviewCount": 6,
+
+        "durationOptions": [
+            {
+                "label": "Balloon Ride",
+                "minutes": 20,
+                "price": 175,
+                "originalPrice": 195,
+                "discountPercent": 10
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/The%20Dubai%20Balloon%20at%20Atlantis/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/The%20Dubai%20Balloon%20at%20Atlantis/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/The%20Dubai%20Balloon%20at%20Atlantis/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/The%20Dubai%20Balloon%20at%20Atlantis/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/The%20Dubai%20Balloon%20at%20Atlantis/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/The%20Dubai%20Balloon%20at%20Atlantis/6.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "The Dubai Balloon offers stunning 300-meter-high aerial views of Dubai's shoreline and skyline near Atlantis The Palm.",
+
+        "highlights": [
+            "Tethered helium balloon ride",
+            "300 meter aerial views",
+            "Views of Palm Jumeirah",
+            "Located near Atlantis Aquaventure"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Passport or ID"
+        ],
+
+        "facilities": [
+            "Balloon Ride",
+            "Viewing Deck",
+            "Safety Equipment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "hot-air-balloon-flights-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "hot-air-balloon-flights-dubai",
+        "title": "Hot Air Balloon Flights Dubai",
+        "subtitle": "Beginning of A New Season",
+
+        "category": "sky adventure",
+        "destination": "dubai",
+        "location": "Dubai Desert Conservation Reserve",
+
+        "rating": 5.0,
+        "reviewCount": 5,
+
+        "durationOptions": [
+            {
+                "label": "Hot Air Balloon Ride",
+                "minutes": 60,
+                "price": 799,
+                "originalPrice": 799,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Hot%20Air%20Balloon%20Flights%20Dubai/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Hot%20Air%20Balloon%20Flights%20Dubai/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Hot%20Air%20Balloon%20Flights%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Hot%20Air%20Balloon%20Flights%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Hot%20Air%20Balloon%20Flights%20Dubai/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Hot%20Air%20Balloon%20Flights%20Dubai/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Hot%20Air%20Balloon%20Flights%20Dubai/7.webp",
+        ],
+
+        "badges": [
+            "24-hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy a scenic hot air balloon flight over Dubai’s desert landscape and witness breathtaking sunrise views from the sky.",
+
+        "highlights": [
+            "Sunrise balloon flight",
+            "Views of Dubai desert",
+            "Professional balloon operators",
+            "Unique aerial desert experience"
+        ],
+
+        "whatToBring": [
+            "Warm clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Balloon Flight",
+            "Pilot Guide",
+            "Safety Equipment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "helicopter-dubai-tour",
+        "Supplier_Code": "DOJOIN",
+        "slug": "helicopter-dubai-tour",
+        "title": "Helicopter Dubai Tour",
+        "subtitle": "Aerial Sightseeing Tour",
+
+        "category": "sky adventure",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 24,
+
+        "durationOptions": [
+            {
+                "label": "Dubai Helicopter Tour",
+                "minutes": 30,
+                "price": 710,
+                "originalPrice": 800,
+                "discountPercent": 11
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Helicopter%20Dubai%20Tour/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Helicopter%20Dubai%20Tour/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Helicopter%20Dubai%20Tour/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Helicopter%20Dubai%20Tour/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Helicopter%20Dubai%20Tour/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Helicopter%20Dubai%20Tour/6.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Explore Dubai from the sky with an unforgettable helicopter sightseeing tour covering iconic landmarks and coastline views.",
+
+        "highlights": [
+            "Dubai skyline helicopter tour",
+            "Views of Burj Al Arab",
+            "Palm Jumeirah aerial views",
+            "Professional helicopter pilots"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Helicopter Flight",
+            "Safety Equipment",
+            "Pilot Guide"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "private-helicopter-tour-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "private-helicopter-tour-dubai",
+        "title": "Private Helicopter Tour Dubai",
+        "subtitle": "6 seater and 7 seater helicopter tour",
+
+        "category": "sky adventure",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 5.0,
+        "reviewCount": 1,
+
+        "durationOptions": [
+            {
+                "label": "Private Helicopter Tour",
+                "minutes": 60,
+                "price": 3145,
+                "originalPrice": 3145,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Private%20Helicopter%20Tour%20Dubai/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Private%20Helicopter%20Tour%20Dubai/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Private%20Helicopter%20Tour%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Private%20Helicopter%20Tour%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Private%20Helicopter%20Tour%20Dubai/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Private%20Helicopter%20Tour%20Dubai/6.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy a luxurious private helicopter tour over Dubai with premium aerial views of the city skyline.",
+
+        "highlights": [
+            "Private helicopter experience",
+            "Luxury aerial sightseeing",
+            "Perfect for celebrations",
+            "Professional pilots"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Private Helicopter",
+            "Pilot Guide",
+            "Luxury Seating"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "xline-dubai-marina-zip-line",
+        "Supplier_Code": "DOJOIN",
+        "slug": "xline-dubai-marina-zip-line-tickets-with-photos-videos",
+        "title": "Dubai Marina Zip Line Tickets with Photos & Videos",
+        "subtitle": "World’s Longest Urban Zipline",
+
+        "category": "sky adventure",
+        "destination": "dubai",
+        "location": "Dubai Marina",
+
+        "rating": 4.9,
+        "reviewCount": 7,
+
+        "durationOptions": [
+            {
+                "label": "Zipline Experience",
+                "minutes": 60,
+                "price": 699,
+                "originalPrice": 699,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Dubai%20Marina%20Zip%20Line/1.jpeg",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Dubai%20Marina%20Zip%20Line/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Dubai%20Marina%20Zip%20Line/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Dubai%20Marina%20Zip%20Line/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Dubai%20Marina%20Zip%20Line/5.webp",
+        ],
+
+        "badges": [
+            "24-hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience the longest urban zipline in the world at Dubai Marina with speeds up to 80 km/h and spectacular skyline views.",
+
+        "highlights": [
+            "World’s longest urban zipline",
+            "80 km/h thrilling ride",
+            "Dubai Marina skyline views",
+            "Photos and videos included"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Sports shoes"
+        ],
+
+        "facilities": [
+            "Safety Equipment",
+            "Zipline Harness",
+            "Photo & Video Package"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "maha-hot-air-balloons",
+        "Supplier_Code": "DOJOIN",
+        "slug": "maha-hot-air-balloons",
+        "title": "Maha Hot Air Balloons",
+        "subtitle": "Dubai Desert Balloon Experience",
+
+        "category": "sky adventure",
+        "destination": "dubai",
+        "location": "Dubai Desert",
+
+        "rating": 4.0,
+        "reviewCount": 4,
+
+        "durationOptions": [
+            {
+                "label": "Hot Air Balloon Ride",
+                "minutes": 60,
+                "price": 650,
+                "originalPrice": 850,
+                "discountPercent": 24
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Maha%20Hot%20Air%20Balloons/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Maha%20Hot%20Air%20Balloons/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Maha%20Hot%20Air%20Balloons/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Maha%20Hot%20Air%20Balloons/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Maha%20Hot%20Air%20Balloons/5.webp",
+        ],
+
+        "badges": [
+            "24-hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy a peaceful hot air balloon ride above Dubai’s desert landscape with panoramic sunrise views.",
+
+        "highlights": [
+            "Sunrise balloon flight",
+            "Dubai desert scenery",
+            "Unique aerial experience",
+            "Professional balloon pilots"
+        ],
+
+        "whatToBring": [
+            "Warm clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Balloon Ride",
+            "Pilot Guide",
+            "Safety Equipment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "gyrocopter-flight-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "gyrocopter-flight-in-dubai",
+        "title": "Gyrocopter Flight in Dubai",
+        "subtitle": "Unique Aerial Flight Experience",
+
+        "category": "sky adventure",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 5.0,
+        "reviewCount": 1,
+
+        "durationOptions": [
+            {
+                "label": "Gyrocopter Flight",
+                "minutes": 30,
+                "price": 1199,
+                "originalPrice": 1199,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Gyrocopter%20Flight%20in%20Dubai/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Gyrocopter%20Flight%20in%20Dubai/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Gyrocopter%20Flight%20in%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Gyrocopter%20Flight%20in%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Sky-Adventure/Gyrocopter%20Flight%20in%20Dubai/5.webp",
+        ],
+
+        "badges": [
+            "24-hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience a unique gyrocopter flight above Dubai coastline and skyline for breathtaking aerial views.",
+
+        "highlights": [
+            "Gyrocopter flight experience",
+            "Dubai coastline views",
+            "Open cockpit adventure",
+            "Professional pilot guidance"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Gyrocopter Flight",
+            "Safety Equipment",
+            "Pilot Guide"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "action-park-target-shooting-archery-axe-throwing",
+        "Supplier_Code": "DOJOIN",
+        "slug": "action-park-target-shooting-archery-axe-throwing",
+        "title": "Action Park Target Shooting, Archery, Axe Throwing",
+        "subtitle": "Experience a thrilling range of target activities, perfect for all skill levels",
+
+        "category": "games",
+        "destination": "dubai",
+        "location": "Action Park, Dubai",
+
+        "rating": 5.0,
+        "reviewCount": 1,
+
+        "durationOptions": [
+            {
+                "label": "Target Shooting & Archery Experience",
+                "minutes": 60,
+                "price": 89,
+                "originalPrice": 89,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/Action%20Park%20Target%20Shooting,%20Archery,%20Axe%20Throwing/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/Action%20Park%20Target%20Shooting,%20Archery,%20Axe%20Throwing/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/Action%20Park%20Target%20Shooting,%20Archery,%20Axe%20Throwing/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/Action%20Park%20Target%20Shooting,%20Archery,%20Axe%20Throwing/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/Action%20Park%20Target%20Shooting,%20Archery,%20Axe%20Throwing/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/Action%20Park%20Target%20Shooting,%20Archery,%20Axe%20Throwing/6.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Archery has been an integral part of Gulf traditions for centuries and Action Park modernizes this experience with a range of thrilling activities including archery, axe throwing, and target shooting for beginners and experts alike.",
+
+        "highlights": [
+            "Archery experience with professional equipment",
+            "Axe throwing activity",
+            "Target shooting range",
+            "Indoor adventure experience suitable for all skill levels"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Comfortable Clothing",
+            "Closed Toe Shoes"
+        ],
+
+        "facilities": [
+            "Indoor Shooting Range",
+            "Archery Lanes",
+            "Axe Throwing Arena",
+            "Safety Equipment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "olioli-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "olioli-interactive-play-centre",
+        "title": "OliOli® Dubai",
+        "subtitle": "Best Experiential Children's Play Museum",
+
+        "category": "games",
+        "destination": "dubai",
+        "location": "Al Quoz, Dubai",
+
+        "rating": 4.8,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "General Entry Ticket",
+                "minutes": 120,
+                "price": 45,
+                "originalPrice": 45,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/OliOli%20Dubai/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/OliOli%20Dubai/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/OliOli%20Dubai/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/OliOli%20Dubai/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/OliOli%20Dubai/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "OliOli® is the first experiential children’s museum where kids can explore, play, and learn through creative and interactive exhibits. The museum features indoor play zones and hands-on galleries designed to stimulate imagination and curiosity.",
+
+        "highlights": [
+            "Interactive children's play museum",
+            "Multiple themed galleries across two floors",
+            "Creative learning activities for kids",
+            "Hands-on educational exhibits"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Comfortable Clothing"
+        ],
+
+        "facilities": [
+            "Interactive Galleries",
+            "Indoor Play Areas",
+            "Educational Exhibits",
+            "Family Facilities"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "vr-wonderland-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "vr-wonderland-dubai",
+        "title": "VR Wonderland",
+        "subtitle": "7D VR Games",
+
+        "category": "games",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "VR Gaming Experience",
+                "minutes": 60,
+                "price": 70,
+                "originalPrice": 70,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/9.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/10.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/11.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/12.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Games/VR%20Wonderland/13.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "VR Wonderland is an immersive entertainment destination offering advanced 7D virtual reality experiences with motion seats and multi-sensory effects, allowing visitors to explore new virtual worlds beyond imagination.",
+
+        "highlights": [
+            "7D virtual reality gaming experience",
+            "Motion seats and immersive effects",
+            "Family friendly entertainment",
+            "Multiple VR games and simulations"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Comfortable Clothing"
+        ],
+
+        "facilities": [
+            "VR Gaming Stations",
+            "Motion Simulator Seats",
+            "Interactive Gaming Arena"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "sky-high-delights-dinner-the-view-the-palm",
+        "Supplier_Code": "DOJOIN",
+        "slug": "sky-high-delights-dinner-the-view-the-palm",
+        "title": "Sky High Delights: Dinner at The View at The Palm",
+        "subtitle": "Dining experience with panoramic views of Palm Jumeirah",
+
+        "category": "restaurants",
+        "destination": "dubai",
+        "location": "The View at The Palm, Palm Jumeirah, Dubai",
+
+        "rating": 4.7,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Dinner Experience",
+                "minutes": 90,
+                "price": 230,
+                "originalPrice": 230,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Restaurants/Sky%20High%20Delights%20Dinner%20at%20The%20View%20at%20The%20Palm/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Restaurants/Sky%20High%20Delights%20Dinner%20at%20The%20View%20at%20The%20Palm/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Restaurants/Sky%20High%20Delights%20Dinner%20at%20The%20View%20at%20The%20Palm/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Restaurants/Sky%20High%20Delights%20Dinner%20at%20The%20View%20at%20The%20Palm/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Restaurants/Sky%20High%20Delights%20Dinner%20at%20The%20View%20at%20The%20Palm/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Restaurants/Sky%20High%20Delights%20Dinner%20at%20The%20View%20at%20The%20Palm/6.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Discover an extraordinary dining experience at The View at The Palm, where you can enjoy delicious food while admiring some of Dubai’s most iconic landmarks. Located 240 meters above ground, the observation deck provides breathtaking 360-degree views of Palm Jumeirah, the Arabian Gulf, and Dubai’s skyline.",
+
+        "highlights": [
+            "Dinner experience at The View at The Palm",
+            "Spectacular 360-degree views of Palm Jumeirah",
+            "Located 240 meters above ground",
+            "Perfect for couples and special occasions"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Smart Casual Dress",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Observation Deck",
+            "Fine Dining Restaurant",
+            "Panoramic Viewing Area"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "hatta-wadi-hub-adventure-paradise-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "hatta-wadi-hub-adventure-paradise-dubai",
+        "title": "Hatta Wadi Hub: Your Adventure Paradise Near Dubai, UAE",
+        "subtitle": "Explore Hiking, Canyoning, Rock Climbing, and More in Hatta's Breathtaking Wadis",
+
+        "category": "adventure",
+        "destination": "dubai",
+        "location": "Hatta Wadi Hub, Hatta, Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Adventure Activity Pass",
+                "minutes": 240,
+                "price": 469,
+                "originalPrice": 469,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Adventures/Hatta%20Wadi%20Hub/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Adventures/Hatta%20Wadi%20Hub/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Adventures/Hatta%20Wadi%20Hub/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Adventures/Hatta%20Wadi%20Hub/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Adventures/Hatta%20Wadi%20Hub/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Adventures/Hatta%20Wadi%20Hub/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Adventures/Hatta%20Wadi%20Hub/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Adventures/Hatta%20Wadi%20Hub/8.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Hatta Wadi Hub is the ultimate adventure destination near Dubai where multiple outdoor activities come together in one place. Visitors can experience thrilling adventures such as hiking, ziplining, rock climbing, canyoning, archery, rope courses, and more. Located about 135 km from Dubai, Hatta offers a stunning mountainous landscape and a refreshing escape from city life.",
+
+        "highlights": [
+            "Outdoor adventure activities in Hatta mountains",
+            "Rock climbing and canyoning experiences",
+            "Zipline and rope course adventures",
+            "Archery and adrenaline-packed challenges",
+            "Beautiful mountain landscapes and nature trails"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Comfortable Sportswear",
+            "Closed-toe Shoes",
+            "Water Bottle",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Adventure Activity Zones",
+            "Climbing Walls",
+            "Zipline Courses",
+            "Safety Equipment",
+            "Visitor Facilities"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-marina-2-hour-catamaran-dinner-cruise",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-marina-2-hour-catamaran-dinner-cruise",
+        "title": "Dubai Marina 2 Hour Catamaran Dinner Cruise",
+        "subtitle": "International Buffet, Live Entertainment onboard, Refreshments and Welcome Drink",
+
+        "category": "dinner cruise",
+        "destination": "dubai",
+        "location": "Dubai Marina, Dubai",
+
+        "rating": 2.6,
+        "reviewCount": 15,
+
+        "durationOptions": [
+            {
+                "label": "2 Hour Dinner Cruise",
+                "minutes": 120,
+                "price": 99,
+                "originalPrice": 99,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%202%20hour%20Catamaran%20Dinner%20Cruise/1.jpeg",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%202%20hour%20Catamaran%20Dinner%20Cruise/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%202%20hour%20Catamaran%20Dinner%20Cruise/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%202%20hour%20Catamaran%20Dinner%20Cruise/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%202%20hour%20Catamaran%20Dinner%20Cruise/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy a relaxing 2-hour catamaran dinner cruise in Dubai Marina featuring an international buffet, live entertainment, and beautiful views of the illuminated skyline.",
+
+        "highlights": [
+            "2-hour catamaran cruise at Dubai Marina",
+            "International buffet dinner",
+            "Live entertainment onboard",
+            "Panoramic views of Dubai Marina skyline"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Indoor & Outdoor Seating",
+            "Buffet Dining Area",
+            "Live Entertainment Stage"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-marina-dinner-cruise-lotus-mega-yacht",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-marina-dinner-cruise-at-lotus-mega-yacht",
+        "title": "Dubai Marina Dinner Cruise at Lotus Mega Yacht",
+        "subtitle": "3hr Cruise with 5-star buffet and refreshments",
+
+        "category": "dinner cruise",
+        "destination": "dubai",
+        "location": "Dubai Marina, Dubai",
+
+        "rating": 4.3,
+        "reviewCount": 23,
+
+        "durationOptions": [
+            {
+                "label": "3 Hour Mega Yacht Dinner Cruise",
+                "minutes": 180,
+                "price": 395,
+                "originalPrice": 395,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Dinner%20Cruise%20at%20Lotus%20Mega%20Yacht/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Dinner%20Cruise%20at%20Lotus%20Mega%20Yacht/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Dinner%20Cruise%20at%20Lotus%20Mega%20Yacht/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Dinner%20Cruise%20at%20Lotus%20Mega%20Yacht/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Dinner%20Cruise%20at%20Lotus%20Mega%20Yacht/5.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Sail aboard the luxurious Lotus Mega Yacht and enjoy a premium dining cruise with buffet cuisine, music, and stunning views of Dubai Marina landmarks.",
+
+        "highlights": [
+            "Luxury mega yacht cruise",
+            "International buffet dinner",
+            "Live DJ and entertainment",
+            "Views of Ain Dubai, JBR, and Palm Jumeirah"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Luxury Yacht Deck",
+            "Buffet Restaurant",
+            "Live DJ Entertainment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-harbour-dhow-cruise-dinner",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-harbour-dhow-cruise-dinner",
+        "title": "Dubai Harbour Dhow Cruise Dinner",
+        "subtitle": "2hr Cruising with Live Entertainment and Refreshments",
+
+        "category": "dinner cruise",
+        "destination": "dubai",
+        "location": "Dubai Harbour, Dubai",
+
+        "rating": 5.0,
+        "reviewCount": 2,
+
+        "durationOptions": [
+            {
+                "label": "2 Hour Dhow Dinner Cruise",
+                "minutes": 120,
+                "price": 95,
+                "originalPrice": 95,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Harbour%20Dhow%20Cruise%20Dinner/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Harbour%20Dhow%20Cruise%20Dinner/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Harbour%20Dhow%20Cruise%20Dinner/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Harbour%20Dhow%20Cruise%20Dinner/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy a traditional wooden dhow dinner cruise at Dubai Harbour with buffet dining and live entertainment while sailing across the Arabian Gulf.",
+
+        "highlights": [
+            "Traditional dhow cruise",
+            "International buffet dinner",
+            "Live entertainment",
+            "Dubai skyline views"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Traditional Dhow Boat",
+            "Buffet Dining",
+            "Live Entertainment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-creek-dinner-oberoi-dhow-cruise",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-creek-dinner-oberoi-dhow-cruise",
+        "title": "Dubai Creek Dinner Oberoi Dhow Cruise",
+        "subtitle": "2-hr Cruise, Full Course Buffet, Live Show, and Welcome Drinks",
+
+        "category": "dinner cruise",
+        "destination": "dubai",
+        "location": "Dubai Creek, Dubai",
+
+        "rating": 3.4,
+        "reviewCount": 18,
+
+        "durationOptions": [
+            {
+                "label": "2 Hour Dinner Cruise",
+                "minutes": 120,
+                "price": 45,
+                "originalPrice": 45,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Creek%20Dinner%20Oberoi%20Dhow%20Cruise/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Creek%20Dinner%20Oberoi%20Dhow%20Cruise/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Creek%20Dinner%20Oberoi%20Dhow%20Cruise/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Creek%20Dinner%20Oberoi%20Dhow%20Cruise/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Creek%20Dinner%20Oberoi%20Dhow%20Cruise/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy a relaxing evening cruise along Dubai Creek with buffet dinner, cultural entertainment, and views of the historic waterfront.",
+
+        "highlights": [
+            "2-hour dhow cruise on Dubai Creek",
+            "Full course buffet dinner",
+            "Live entertainment show",
+            "Traditional Arabian ambiance"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Traditional Dhow Boat",
+            "Buffet Dining Area",
+            "Entertainment Stage"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-marina-xclusive-yacht-sunset-dinner-cruise",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-marina-xclusive-yacht-dinner-cruise",
+        "title": "Dubai Marina Xclusive Yacht Sunset & Dinner Cruise",
+        "subtitle": "Live Cooking Station, Musician on board and International Dinner",
+
+        "category": "dinner cruise",
+        "destination": "dubai",
+        "location": "Dubai Marina, Dubai",
+
+        "rating": 4.9,
+        "reviewCount": 8,
+
+        "durationOptions": [
+            {
+                "label": "Sunset Dinner Yacht Cruise",
+                "minutes": 150,
+                "price": 199,
+                "originalPrice": 210,
+                "discountPercent": 5
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Xclusive%20Yacht%20Sunset%20&%20Dinner%20Cruise/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Xclusive%20Yacht%20Sunset%20&%20Dinner%20Cruise/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Xclusive%20Yacht%20Sunset%20&%20Dinner%20Cruise/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Xclusive%20Yacht%20Sunset%20&%20Dinner%20Cruise/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Xclusive%20Yacht%20Sunset%20&%20Dinner%20Cruise/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience a luxury sunset yacht cruise in Dubai Marina with gourmet dining, live cooking stations, and beautiful skyline views.",
+
+        "highlights": [
+            "Luxury yacht sunset cruise",
+            "Live cooking stations",
+            "International dinner buffet",
+            "Views of Ain Dubai and Marina skyline"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Luxury Yacht",
+            "Buffet Dining",
+            "Live Music"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-creek-2-hour-dinner-dhow-cruise",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-creek-2-hour-dinner-at-dhow-cruise",
+        "title": "Dubai Creek 2 Hour Dinner at Dhow Cruise",
+        "subtitle": "Standard Dinner Buffet, Live Entertainment on Board, Water and Softdrinks",
+
+        "category": "dinner cruise",
+        "destination": "dubai",
+        "location": "Dubai Creek, Dubai",
+
+        "rating": 3.6,
+        "reviewCount": 25,
+
+        "durationOptions": [
+            {
+                "label": "2 Hour Dinner Cruise",
+                "minutes": 120,
+                "price": 45,
+                "originalPrice": 50,
+                "discountPercent": 10
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Creek%202%20hour%20Dinner%20at%20Dhow%20Cruise/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Creek%202%20hour%20Dinner%20at%20Dhow%20Cruise/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Creek%202%20hour%20Dinner%20at%20Dhow%20Cruise/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Creek%202%20hour%20Dinner%20at%20Dhow%20Cruise/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy a traditional dhow cruise along Dubai Creek featuring buffet dining, live entertainment, and views of historic Dubai landmarks.",
+
+        "highlights": [
+            "Traditional dhow cruise experience",
+            "International buffet dinner",
+            "Live cultural entertainment",
+            "Dubai Creek skyline views"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Dhow Cruise Boat",
+            "Dining Area",
+            "Entertainment Stage"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "abu-dhabi-dinner-cruise",
+        "Supplier_Code": "DOJOIN",
+        "slug": "abu-dhabi-dinner-cruise",
+        "title": "Abu Dhabi Dinner Cruise",
+        "subtitle": "Open Buffet Dinner with Water and Softdrinks",
+
+        "category": "dinner cruise",
+        "destination": "abu dhabi",
+        "location": "Abu Dhabi Marina, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Dinner Cruise",
+                "minutes": 120,
+                "price": 159,
+                "originalPrice": 159,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Abu%20Dhabi%20Dinner%20Cruise/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Abu%20Dhabi%20Dinner%20Cruise/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Abu%20Dhabi%20Dinner%20Cruise/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Abu%20Dhabi%20Dinner%20Cruise/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy a relaxing evening dinner cruise in Abu Dhabi with buffet dining, soft drinks, and scenic waterfront views.",
+
+        "highlights": [
+            "Buffet dinner cruise",
+            "Views of Abu Dhabi skyline",
+            "Live entertainment",
+            "Family friendly experience"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Dining Deck",
+            "Buffet Area",
+            "Entertainment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "al-mansour-mega-dhow-dubai-cultural-cruise",
+        "Supplier_Code": "DOJOIN",
+        "slug": "al-mansour-mega-dhow-dubai-cultural-cruise-reimagined",
+        "title": "Al Mansour Mega Dhow – Dubai’s Cultural Cruise Reimagined",
+        "subtitle": "Experience dining, culture, and coastal views aboard one of the largest traditional dhows",
+
+        "category": "dinner cruise",
+        "destination": "dubai",
+        "location": "Dubai Marina / Dubai Harbour",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Mega Dhow Dinner Cruise",
+                "minutes": 120,
+                "price": 99,
+                "originalPrice": 99,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Al%20Mansour%20Mega%20Dhow/1.jpeg",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Al%20Mansour%20Mega%20Dhow/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Al%20Mansour%20Mega%20Dhow/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Al%20Mansour%20Mega%20Dhow/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Al%20Mansour%20Mega%20Dhow/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Al%20Mansour%20Mega%20Dhow/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Al%20Mansour%20Mega%20Dhow/7.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Al Mansour Mega Dhow offers a memorable cultural dining cruise with international buffet, entertainment, and stunning views of Dubai’s coastline.",
+
+        "highlights": [
+            "One of the largest traditional dhows",
+            "International buffet dinner",
+            "Cultural entertainment",
+            "Dubai waterfront views"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Mega Dhow Vessel",
+            "Dining Hall",
+            "Entertainment Area"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-harbour-2-hour-dhow-cruise-blue-water",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-harbour-2-hour-dhow-cruise-in-blue-water",
+        "title": "Dubai Harbour 2 Hour Dhow Cruise in Blue Water",
+        "subtitle": "Open Buffet, Unlimited Softdrinks and Live Entertainment",
+
+        "category": "dinner cruise",
+        "destination": "dubai",
+        "location": "Dubai Harbour, Dubai",
+
+        "rating": 3.7,
+        "reviewCount": 36,
+
+        "durationOptions": [
+            {
+                "label": "2 Hour Dinner Cruise",
+                "minutes": 120,
+                "price": 89,
+                "originalPrice": 98,
+                "discountPercent": 10
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Harbour%202%20Hour%20Dhow%20Cruise%20in%20Blue%20Water/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Harbour%202%20Hour%20Dhow%20Cruise%20in%20Blue%20Water/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Harbour%202%20Hour%20Dhow%20Cruise%20in%20Blue%20Water/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Harbour%202%20Hour%20Dhow%20Cruise%20in%20Blue%20Water/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy a traditional dhow dinner cruise at Dubai Harbour featuring buffet dining, live entertainment, and views of Dubai’s illuminated skyline.",
+
+        "highlights": [
+            "2-hour dhow cruise",
+            "Buffet dinner with unlimited soft drinks",
+            "Live entertainment onboard",
+            "Night skyline views of Dubai Harbour"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Traditional Dhow Boat",
+            "Dining Deck",
+            "Entertainment Stage"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-marina-dinner-dhow-cruise-ocean-express",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-marina-dinner-dhow-cruise-ocean-express",
+        "title": "Dubai Marina Dinner Dhow Cruise at Ocean Express",
+        "subtitle": "2hr Cruising, Traditional Performers, International Buffet and Refreshments",
+
+        "category": "dinner cruise",
+        "destination": "dubai",
+        "location": "Dubai Marina, Dubai, UAE",
+
+        "rating": 4.0,
+        "reviewCount": 7,
+
+        "durationOptions": [
+            {
+                "label": "2 Hour Dinner Dhow Cruise",
+                "minutes": 120,
+                "price": 295,
+                "originalPrice": 295,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Dinner%20Dhow%20Cruise%20at%20Ocean%20Empress/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Dinner%20Dhow%20Cruise%20at%20Ocean%20Empress/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Dinner%20Dhow%20Cruise%20at%20Ocean%20Empress/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Dinner%20Cruise/Dubai%20Marina%20Dinner%20Dhow%20Cruise%20at%20Ocean%20Empress/4.webp",
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Empress Dinner Cruise Dubai offers a luxurious traditional dhow cruise experience along Dubai Marina. Guests can enjoy international buffet dining, traditional entertainment performances, and spectacular views of Dubai landmarks such as Dubai Harbour, Palm Jumeirah, Ain Dubai, Bluewaters Island, and JBR while sailing through the illuminated marina.",
+
+        "highlights": [
+            "2-hour dhow cruise through Dubai Marina",
+            "International buffet dinner onboard",
+            "Traditional live entertainment performances",
+            "Views of Ain Dubai, Palm Jumeirah and JBR skyline",
+            "Luxury dhow with indoor dining area"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Camera",
+            "Comfortable evening attire"
+        ],
+
+        "facilities": [
+            "Luxury Traditional Dhow",
+            "Air-conditioned Dining Area",
+            "Buffet Restaurant",
+            "Entertainment Stage",
+            "Panoramic Marina Views"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "2-nights-3-days-seoul-complete-korea-city-tour-airport-transfers",
+        "Supplier_Code": "DOJOIN",
+        "slug": "2-nights-3-days-seoul-complete-korea-city-tour-airport-transfers",
+        "title": "2 Nights 3 Days Seoul - Complete Korea City Tour with Airport Transfers",
+        "subtitle": "Seoul Highlights: Palaces, Temples & Markets Tour",
+
+        "category": "holiday packages",
+        "destination": "south korea",
+        "location": "Seoul, South Korea",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "3 Day Seoul City Tour Package",
+                "minutes": 4320,
+                "price": 1249,
+                "originalPrice": 1249,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Ultimate%20Korea%20City%20Tour%20with%20Extended%20Free%20Time/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Ultimate%20Korea%20City%20Tour%20with%20Extended%20Free%20Time/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Ultimate%20Korea%20City%20Tour%20with%20Extended%20Free%20Time/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Ultimate%20Korea%20City%20Tour%20with%20Extended%20Free%20Time/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Ultimate%20Korea%20City%20Tour%20with%20Extended%20Free%20Time/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Explore Seoul with a 3-day guided city tour covering famous landmarks including Gyeongbokgung Palace, Jogyesa Temple, N Seoul Tower and traditional markets. The tour includes airport transfers and guided experiences across the cultural highlights of South Korea’s capital.",
+
+        "highlights": [
+            "Visit Gyeongbokgung Palace",
+            "Explore Jogyesa Buddhist Temple",
+            "Panoramic views from N Seoul Tower",
+            "Traditional markets like Insadong & Namdaemun",
+            "Airport transfer included"
+        ],
+
+        "whatToBring": [
+            "Valid Passport",
+            "Comfortable Walking Shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Airport Transfers",
+            "Guided City Tour",
+            "Transport Included",
+            "Hotel Accommodation"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "complete-greece-classical-experience-7-day-athens-archaeological-sites-tour",
+        "Supplier_Code": "DOJOIN",
+        "slug": "7-day-athens-archaeological-sites-tour-with-olympia-delphi-meteora-4-star-luxury",
+        "title": "Complete Greece Classical Experience: 7-Day Athens & Archaeological Sites Tour with Olympia, Delphi & Meteora - 4-Star Luxury",
+        "subtitle": "Discover Ancient Greece's Greatest Treasures",
+
+        "category": "holiday packages",
+        "destination": "greece",
+        "location": "Athens, Greece",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "7 Day Greece Cultural Tour",
+                "minutes": 10080,
+                "price": 3770,
+                "originalPrice": 4000,
+                "discountPercent": 6
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Complete%20Greece%20Classical%20Experience/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Complete%20Greece%20Classical%20Experience/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Complete%20Greece%20Classical%20Experience/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Complete%20Greece%20Classical%20Experience/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience a 7-day cultural journey across Greece visiting Athens, Olympia, Delphi, and Meteora. Enjoy guided tours of historical sites including the Acropolis and Parthenon while staying in premium 4-star accommodations.",
+
+        "highlights": [
+            "Guided tour of the Acropolis & Parthenon",
+            "Visit Olympia archaeological site",
+            "Explore Delphi Temple of Apollo",
+            "Discover Meteora monasteries",
+            "4-Star luxury accommodation"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Comfortable Walking Shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "4-Star Hotel Accommodation",
+            "Guided Tours",
+            "Transportation Included",
+            "Cultural Experiences"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "5-nights-6-days-seoul-ultimate-korea-city-tour-with-extended-free-time",
+        "Supplier_Code": "DOJOIN",
+        "slug": "5-nights-6-days-seoul-ultimate-korea-city-tour-with-extended-free-time",
+        "title": "5 Nights 6 Days Seoul - Ultimate Korea City Tour with Extended Free Time",
+        "subtitle": "Immerse in Seoul's Culture including Gyeongbok Palace, N Seoul Tower & Traditional Markets",
+
+        "category": "holiday packages",
+        "destination": "south korea",
+        "location": "Seoul, South Korea",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "6 Day Seoul Cultural Tour",
+                "minutes": 8640,
+                "price": 2138,
+                "originalPrice": 2138,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Ultimate%20Korea%20City%20Tour%20with%20Extended%20Free%20Time/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Ultimate%20Korea%20City%20Tour%20with%20Extended%20Free%20Time/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Ultimate%20Korea%20City%20Tour%20with%20Extended%20Free%20Time/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Ultimate%20Korea%20City%20Tour%20with%20Extended%20Free%20Time/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Ultimate%20Korea%20City%20Tour%20with%20Extended%20Free%20Time/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Discover Seoul through a well-planned 6-day tour including guided visits to cultural landmarks, traditional markets and modern attractions with additional free time for personal exploration.",
+
+        "highlights": [
+            "Visit Gyeongbokgung Palace",
+            "Explore Bukchon Hanok Village",
+            "Visit N Seoul Tower",
+            "Shop in Insadong and Namdaemun markets",
+            "Free days for city exploration"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Comfortable Shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Hotel Accommodation",
+            "Guided Tours",
+            "Transport Included",
+            "Airport Transfers"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "seoul-discovery-4-night-5-day-tour",
+        "Supplier_Code": "DOJOIN",
+        "slug": "seoul-discovery-4-night-5-day-tour",
+        "title": "4-Night Seoul Discovery Tour",
+        "subtitle": "City Views, Cultural Highlights & Optional Wellness Experiences",
+
+        "category": "holiday packages",
+        "destination": "south korea",
+        "location": "Seoul, South Korea",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "5 Day Seoul Discovery Tour",
+                "minutes": 7200,
+                "price": 5731,
+                "originalPrice": 6731,
+                "discountPercent": 15
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/4-Night%20Seoul%20Discovery%20Tour/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/4-Night%20Seoul%20Discovery%20Tour/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/4-Night%20Seoul%20Discovery%20Tour/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/4-Night%20Seoul%20Discovery%20Tour/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/4-Night%20Seoul%20Discovery%20Tour/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/4-Night%20Seoul%20Discovery%20Tour/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/4-Night%20Seoul%20Discovery%20Tour/7.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience Seoul’s vibrant culture through a 5-day discovery tour including palace visits, traditional markets, modern city landmarks and optional wellness experiences.",
+
+        "highlights": [
+            "Explore Gyeongbokgung Palace",
+            "Visit N Seoul Tower",
+            "Walk through Bukchon Hanok Village",
+            "Experience local markets and cuisine",
+            "Optional wellness and cultural experiences"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Comfortable Shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Hotel Accommodation",
+            "Guided Tours",
+            "Transport Services"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "flight-tickets",
+        "Supplier_Code": "DOJOIN",
+        "slug": "flight-tickets",
+        "title": "Flight Tickets",
+        "subtitle": "Your Gateway to Affordable Airfare",
+
+        "category": "Holiday Packages",
+        "destination": "global",
+        "location": "Worldwide",
+
+        "rating": 4.9,
+        "reviewCount": 44,
+
+        "durationOptions": [
+            {
+                "label": "Air Ticket Booking",
+                "minutes": 0,
+                "price": 300,
+                "originalPrice": 300,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Flight%20Tickets/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Flight%20Tickets/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Flight%20Tickets/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Flight%20Tickets/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Holiday%20Packages/Flight%20Tickets/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Book affordable flight tickets worldwide through our platform. Whether planning a spontaneous trip or a well-planned vacation, we provide easy booking and competitive airfare options.",
+
+        "highlights": [
+            "Affordable international flight bookings",
+            "Easy online reservation process",
+            "Flexible travel options",
+            "Worldwide destinations"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Valid Visa (if required)",
+            "Travel Documents"
+        ],
+
+        "facilities": [
+            "Online Booking",
+            "Customer Support",
+            "Digital Ticketing"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-sharjah-half-day-dubai-city-tour",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-sharjah-half-day-dubai-city-tour",
+        "title": "Dubai/Sharjah: Half Day Dubai City Tour",
+        "subtitle": "with Pick Up and Drop Off",
+
+        "category": "city tour",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 1.0,
+        "reviewCount": 1,
+
+        "durationOptions": [
+            {
+                "label": "Half Day Dubai City Tour",
+                "minutes": 240,
+                "price": 450,
+                "originalPrice": 450,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20Sharjah/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20Sharjah/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20Sharjah/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20Sharjah/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20Sharjah/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Discover Dubai’s incredible mix of modern luxury and cultural heritage with this half-day guided city tour. Visit iconic landmarks and explore traditional markets while learning about the city's fascinating transformation.",
+
+        "highlights": [
+            "Visit iconic Dubai landmarks",
+            "Explore traditional souks and markets",
+            "Professional city guide",
+            "Hotel pick-up and drop-off included"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Comfortable Shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Air-conditioned transport",
+            "Professional guide",
+            "Pick-up and drop-off service"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-abu-dhabi-half-day-dubai-city-tour-from-abu-dhabi",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-abu-dhabi-half-day-dubai-city-tour-from-abu-dhabi",
+        "title": "Dubai/Abu Dhabi : Half Day Dubai City Tour from Abu Dhabi",
+        "subtitle": "with Pick Up and Drop Off",
+
+        "category": "city tour",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 5.0,
+        "reviewCount": 1,
+
+        "durationOptions": [
+            {
+                "label": "Half Day Dubai City Tour",
+                "minutes": 240,
+                "price": 549,
+                "originalPrice": 549,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20Abu%20Dhabi/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20Abu%20Dhabi/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20Abu%20Dhabi/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20Abu%20Dhabi/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Travel from Abu Dhabi to Dubai and experience the city's famous landmarks including historic sites and modern architectural wonders. The tour includes roundtrip hotel transfers and guided sightseeing.",
+
+        "highlights": [
+            "Visit Burj Al Arab and Palm Jumeirah",
+            "Explore Dubai Marina and city skyline",
+            "Roundtrip transfers from Abu Dhabi",
+            "Professional guided tour"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Comfortable Shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Air-conditioned vehicle",
+            "Professional guide",
+            "Pick-up and drop-off"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-city-highlights-tour",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-city-highlights-tour",
+        "title": "Dubai City Tour",
+        "subtitle": "Full-Day Dubai Tour – Iconic Landmarks, Comfortable Ride, and Pickup Included",
+
+        "category": "city tour",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 8,
+
+        "durationOptions": [
+            {
+                "label": "Full Day Dubai City Tour",
+                "minutes": 480,
+                "price": 650,
+                "originalPrice": 650,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20City%20Tour/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20City%20Tour/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Dubai%20City%20Tour/3.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Explore Dubai’s most famous landmarks on a full-day guided tour including Burj Al Arab, Palm Jumeirah, Atlantis The Palm, Dubai Marina, and the Museum of the Future.",
+
+        "highlights": [
+            "Visit Burj Khalifa area and Downtown Dubai",
+            "Photo stop at Burj Al Arab",
+            "Drive through Palm Jumeirah",
+            "Visit Atlantis The Palm",
+            "Explore Dubai Marina"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Comfortable Shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Private vehicle",
+            "Professional driver",
+            "Air-conditioned transport"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-city-highlights-tour",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-city-highlights-tour",
+        "title": "Dubai City Tour",
+        "subtitle": "Full-Day Dubai Tour – Iconic Landmarks, Comfortable Ride, and Pickup Included",
+
+        "category": "city tour",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 8,
+
+        "durationOptions": [
+            {
+                "label": "Full Day Dubai City Tour",
+                "minutes": 480,
+                "price": 650,
+                "originalPrice": 650,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/8.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/9.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/10.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/11.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/City%20Tours/Over%20Night%20Camping%20in%20Hatta/12.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Explore Dubai’s most famous landmarks on a full-day guided tour including Burj Al Arab, Palm Jumeirah, Atlantis The Palm, Dubai Marina, and the Museum of the Future.",
+
+        "highlights": [
+            "Visit Burj Khalifa area and Downtown Dubai",
+            "Photo stop at Burj Al Arab",
+            "Drive through Palm Jumeirah",
+            "Visit Atlantis The Palm",
+            "Explore Dubai Marina"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Comfortable Shoes",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Private vehicle",
+            "Professional driver",
+            "Air-conditioned transport"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-wants-drama-private-luxury-limousine",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-wants-drama-private-luxury-limousine",
+        "title": "Dubai wants Drama - Private Luxury Limousine",
+        "subtitle": "Experience Luxury",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Luxury Limousine Experience",
+                "minutes": 120,
+                "price": 750,
+                "originalPrice": 750,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Private%20Luxury%20Limousine/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Private%20Luxury%20Limousine/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Private%20Luxury%20Limousine/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Private%20Luxury%20Limousine/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Private%20Luxury%20Limousine/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Private%20Luxury%20Limousine/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Private%20Luxury%20Limousine/7.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience unparalleled luxury with a private limousine rental in Dubai. Enjoy spacious interiors, premium entertainment systems, and professional chauffeur service for an unforgettable luxury ride.",
+
+        "highlights": [
+            "Private luxury limousine experience",
+            "Premium interior lighting and entertainment",
+            "Professional chauffeur service",
+            "Ideal for special events and VIP transport"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Booking confirmation"
+        ],
+
+        "facilities": [
+            "Luxury limousine vehicle",
+            "Professional chauffeur",
+            "Premium sound system",
+            "Luxury seating"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "premium-audi-rentals",
+        "Supplier_Code": "DOJOIN",
+        "slug": "premium-audi-rentals",
+        "title": "Premium Audi Rentals in Dubai",
+        "subtitle": "Experience German precision engineering with our premium Audi rentals",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Audi Rental",
+                "minutes": 1440,
+                "price": 1349,
+                "originalPrice": 1349,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Premium%20Audi/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Premium%20Audi/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Premium%20Audi/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Premium%20Audi/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Premium%20Audi/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Drive through Dubai in style with a premium Audi rental. Combining German engineering, luxury interiors, and high performance, Audi vehicles provide a smooth and powerful driving experience.",
+
+        "highlights": [
+            "Premium Audi luxury vehicles",
+            "High performance and comfort",
+            "Ideal for business or leisure travel",
+            "Modern technology and design"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury Audi vehicles",
+            "Air-conditioned interiors",
+            "Advanced navigation systems"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "exclusive-bentley-rentals-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "exclusive-bentley-rentals-in-dubai",
+        "title": "Exclusive Bentley Rentals In Dubai",
+        "subtitle": "Luxury British craftsmanship at your fingertips",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Bentley Rental",
+                "minutes": 1440,
+                "price": 2136,
+                "originalPrice": 2136,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Exclusive%20Bentley/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Exclusive%20Bentley/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Exclusive%20Bentley/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Exclusive%20Bentley/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Exclusive%20Bentley/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience unmatched luxury with a Bentley rental in Dubai. Known for handcrafted interiors and smooth performance, Bentley vehicles offer the ultimate luxury driving experience.",
+
+        "highlights": [
+            "Luxury Bentley vehicles",
+            "Premium handcrafted interiors",
+            "High performance and prestige",
+            "Ideal for VIP experiences"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury Bentley cars",
+            "Premium interiors",
+            "Advanced driving technology"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-lamborghini-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-lamborghini-in-dubai",
+        "title": "Renting Lamborghini In Dubai",
+        "subtitle": "The ultimate supercar experience",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Lamborghini Rental",
+                "minutes": 1440,
+                "price": 3999,
+                "originalPrice": 3999,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Lamborghini/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Lamborghini/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Lamborghini/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Lamborghini/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Lamborghini/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Lamborghini/6.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Lamborghini in Dubai and experience the thrill of Italian supercar performance. Perfect for luxury travel, special events, or unforgettable driving adventures.",
+
+        "highlights": [
+            "Luxury Lamborghini supercars",
+            "High-speed performance",
+            "Premium driving experience",
+            "Perfect for special occasions"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury sports cars",
+            "Premium interiors",
+            "Advanced driving systems"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "hire",
+        "Supplier_Code": "DOJOIN",
+        "slug": "hire",
+        "title": "Hire",
+        "subtitle": "Dubai Airport Transfer Service",
+
+        "category": "car",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Airport Transfer",
+                "minutes": 60,
+                "price": 180,
+                "originalPrice": 240,
+                "discountPercent": 25
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Hire/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Hire/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Hire/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Hire/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Hire/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Convenient airport transfer services in Dubai designed to provide comfortable and reliable transport between the airport and your hotel.",
+
+        "highlights": [
+            "Reliable airport transfer service",
+            "Professional drivers",
+            "Comfortable vehicles",
+            "Door-to-door pickup and drop-off"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Booking confirmation"
+        ],
+
+        "facilities": [
+            "Private vehicle",
+            "Air-conditioned transport",
+            "Professional driver"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "airport-private-transfer-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "airport-private-transfer-in-dubai",
+        "title": "Airport Private Transfer in Dubai",
+        "subtitle": "Dubai Airport Transfers",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai International Airport, Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Private Airport Transfer",
+                "minutes": 60,
+                "price": 143,
+                "originalPrice": 143,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Airport%20Private%20Transfer/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Airport%20Private%20Transfer/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Airport%20Private%20Transfer/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Airport%20Private%20Transfer/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Airport%20Private%20Transfer/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Airport%20Private%20Transfer/7.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Book a private airport transfer in Dubai for a comfortable and convenient journey between Dubai International Airport and your destination.",
+
+        "highlights": [
+            "Private airport transfer service",
+            "Professional chauffeur service",
+            "Comfortable and luxury vehicles",
+            "Reliable and timely pickups"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Flight details",
+            "Booking confirmation"
+        ],
+
+        "facilities": [
+            "Private transport",
+            "Professional driver",
+            "Air-conditioned vehicle"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-chevrolet-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-chevrolet-in-dubai",
+        "title": "Renting Chevrolet In Dubai",
+        "subtitle": "Practical, reliable Chevrolet rentals for family trips, business travel, and everyday convenience",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Chevrolet Rental",
+                "minutes": 1440,
+                "price": 1374,
+                "originalPrice": 1374,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Chevrolet/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Chevrolet/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Chevrolet/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Chevrolet/.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Chevrolet in Dubai and enjoy reliability, comfort, and performance. With options ranging from stylish sedans to powerful SUVs and sports models, Chevrolet rentals provide modern features and smooth driving suitable for city trips and longer journeys.",
+
+        "highlights": [
+            "Wide range of Chevrolet models",
+            "Reliable and comfortable driving experience",
+            "Suitable for family trips or business travel",
+            "Modern safety and comfort features"
+        ],
+
+        "whatToBring": [
+            "Valid Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Air-conditioned vehicles",
+            "Comfortable interiors",
+            "Modern infotainment systems"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-dodge-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-dodge-in-dubai",
+        "title": "Renting Dodge In Dubai",
+        "subtitle": "Bold American performance rentals with powerful engines and striking design",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Dodge Rental",
+                "minutes": 1440,
+                "price": 556,
+                "originalPrice": 556,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Dodge/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Dodge/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Dodge/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Dodge/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Dodge in Dubai and enjoy the power of American muscle cars combined with bold design. Known for strong performance and spacious interiors, Dodge vehicles offer an exciting driving experience.",
+
+        "highlights": [
+            "Powerful American muscle cars",
+            "Aggressive performance and style",
+            "Spacious interiors and modern features",
+            "Perfect for thrill-seeking drivers"
+        ],
+
+        "whatToBring": [
+            "Valid Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Performance vehicles",
+            "Comfortable seating",
+            "Advanced driving technology"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-ford-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-ford-in-dubai",
+        "title": "Renting Ford In Dubai",
+        "subtitle": "Versatile Ford rentals for every journey",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Ford Rental",
+                "minutes": 1440,
+                "price": 556,
+                "originalPrice": 556,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ford/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ford/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ford/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ford/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ford/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ford/6.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Ford in Dubai and enjoy dependable performance, comfort, and versatility. From business-ready sedans to adventure SUVs, Ford rentals provide practicality and reliability.",
+
+        "highlights": [
+            "Versatile vehicle lineup",
+            "Reliable performance",
+            "Comfortable interiors",
+            "Suitable for city and desert trips"
+        ],
+
+        "whatToBring": [
+            "Valid Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Air-conditioned vehicles",
+            "Comfortable seating",
+            "Modern safety features"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-infiniti-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-infiniti-in-dubai",
+        "title": "Renting Infiniti In Dubai",
+        "subtitle": "Discover Japanese luxury with Infiniti rental fleet",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Infiniti Rental",
+                "minutes": 1440,
+                "price": 388,
+                "originalPrice": 388,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Infiniti/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Infiniti/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Infiniti/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Infiniti/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent an Infiniti in Dubai and experience Japanese luxury combined with advanced technology. Infiniti vehicles offer premium comfort, sleek design, and smooth driving performance.",
+
+        "highlights": [
+            "Premium Japanese luxury vehicles",
+            "Smooth and comfortable driving",
+            "Elegant design and interiors",
+            "Advanced safety technology"
+        ],
+
+        "whatToBring": [
+            "Valid Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury interiors",
+            "Advanced infotainment systems",
+            "Premium comfort seating"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-luxury-bmw-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-luxury-bmw-in-dubai",
+        "title": "Renting Luxury BMW In Dubai",
+        "subtitle": "Reserve the ultimate driving machine",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "BMW Rental",
+                "minutes": 1440,
+                "price": 1124,
+                "originalPrice": 1124,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20BMW/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20BMW/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20BMW/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20BMW/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20BMW/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20BMW/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20BMW/7.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a BMW in Dubai and experience the perfect blend of performance, luxury, and innovation. BMW vehicles offer powerful engines, sleek designs, and advanced technology.",
+
+        "highlights": [
+            "Premium German engineering",
+            "High-performance driving experience",
+            "Elegant design and interiors",
+            "Ideal for business or leisure travel"
+        ],
+
+        "whatToBring": [
+            "Valid Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury interiors",
+            "Advanced infotainment systems",
+            "Powerful engines"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-luxury-cadillac-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-luxury-cadillac-in-dubai",
+        "title": "Renting Luxury Cadillac In Dubai",
+        "subtitle": "American luxury with comfort, technology and bold design",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Cadillac Rental",
+                "minutes": 1440,
+                "price": 962,
+                "originalPrice": 962,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20Cadillac/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20Cadillac/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20Cadillac/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20Cadillac/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20Cadillac/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Cadillac in Dubai and enjoy American luxury combined with bold styling and advanced technology. Cadillac vehicles provide spacious interiors and a comfortable premium driving experience.",
+
+        "highlights": [
+            "Luxury American vehicles",
+            "Spacious interiors",
+            "Advanced technology features",
+            "Smooth and comfortable ride"
+        ],
+
+        "whatToBring": [
+            "Valid Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury interiors",
+            "Advanced driver assistance systems",
+            "Premium comfort seating"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-mercedes-benz-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-mercedes-benz-in-dubai",
+        "title": "Renting Mercedes Benz In Dubai",
+        "subtitle": "Classic luxury meets modern innovation with our prestigious Mercedes-Benz rental fleet",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Mercedes Benz Rental",
+                "minutes": 1440,
+                "price": 499,
+                "originalPrice": 499,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Mercedes%20Benz/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Mercedes%20Benz/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Mercedes%20Benz/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Mercedes%20Benz/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Mercedes%20Benz/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Mercedes-Benz in Dubai and enjoy the perfect blend of luxury, performance, and advanced technology. From elegant sedans to powerful SUVs, Mercedes vehicles deliver comfort, style, and refined driving experiences.",
+
+        "highlights": [
+            "Prestigious Mercedes-Benz luxury vehicles",
+            "Elegant design and premium interiors",
+            "Advanced safety and driving technology",
+            "Ideal for luxury city travel"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury interiors",
+            "Advanced infotainment system",
+            "Premium comfort seating"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-jaguar-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-jaguar-in-dubai",
+        "title": "Renting Jaguar In Dubai",
+        "subtitle": "British luxury performance vehicles for discerning clients",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Jaguar Rental",
+                "minutes": 1440,
+                "price": 811,
+                "originalPrice": 811,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Jaguar/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Jaguar/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Jaguar/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Jaguar/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Jaguar in Dubai and enjoy a blend of British luxury, sport performance, and elegant styling. Jaguar vehicles offer refined interiors and dynamic driving experiences.",
+
+        "highlights": [
+            "Luxury British performance cars",
+            "Elegant design and refined interiors",
+            "Powerful engine performance",
+            "Perfect for luxury city driving"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury seating",
+            "Premium interior finish",
+            "Advanced driving systems"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-lexus-lc-500-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-lexus-lc-500-in-dubai",
+        "title": "Renting Lexus LC 500 In Dubai",
+        "subtitle": "Enjoy renowned reliability and refined comfort with our premium Lexus rental options",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Lexus LC 500 Rental",
+                "minutes": 1440,
+                "price": 888,
+                "originalPrice": 888,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Lexus%20LC%20500/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Lexus%20LC%20500/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Lexus%20LC%20500/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Lexus%20LC%20500/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience the perfect balance of luxury, reliability, and performance with a Lexus rental in Dubai. Lexus vehicles offer smooth handling, elegant design, and advanced technology.",
+
+        "highlights": [
+            "Premium Lexus luxury vehicles",
+            "Smooth driving performance",
+            "Elegant design and comfort",
+            "Advanced safety technology"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury interior",
+            "Advanced infotainment",
+            "Comfort seating"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-kia-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-kia-in-dubai",
+        "title": "Renting Kia In Dubai",
+        "subtitle": "Budget-friendly Kia rentals offering exceptional value with modern features",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Kia Rental",
+                "minutes": 1440,
+                "price": 499,
+                "originalPrice": 499,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Kia/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Kia/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Kia/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Kia/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Kia/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Kia in Dubai and enjoy a comfortable, practical, and budget-friendly vehicle for everyday travel. Kia vehicles provide reliability and modern technology.",
+
+        "highlights": [
+            "Affordable and reliable vehicles",
+            "Comfortable interiors",
+            "Modern safety features",
+            "Great for city travel"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Air-conditioned vehicles",
+            "Comfort seating",
+            "Modern infotainment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-maserati-ghibli-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-maserati-ghibli-in-dubai",
+        "title": "Renting Maserati Ghibli In Dubai",
+        "subtitle": "Experience Italian racing heritage with exclusive Maserati rentals",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Maserati Ghibli Rental",
+                "minutes": 1440,
+                "price": 600,
+                "originalPrice": 600,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Maserati%20Ghibli/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Maserati%20Ghibli/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Maserati%20Ghibli/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Maserati%20Ghibli/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Maserati in Dubai and experience Italian elegance with thrilling performance. Maserati vehicles deliver luxurious interiors and powerful engines for a unique driving experience.",
+
+        "highlights": [
+            "Italian luxury sports sedan",
+            "Powerful performance engine",
+            "Luxury interior design",
+            "Perfect for premium travel experiences"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Premium leather interiors",
+            "Advanced infotainment system",
+            "High-performance engine"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-luxury-land-rovers-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-luxury-land-rovers-in-dubai",
+        "title": "Renting Luxury Land Rovers In Dubai",
+        "subtitle": "Luxury meets capability with our premium Land Rover rentals",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Land Rover Rental",
+                "minutes": 1440,
+                "price": 1374,
+                "originalPrice": 1374,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20Land%20Rovers/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20Land%20Rovers/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20Land%20Rovers/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Luxury%20Land%20Rovers/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Land Rover in Dubai and experience luxury combined with rugged off-road capability. Built for both city and desert adventures, Land Rover vehicles offer comfort, performance, and prestige.",
+
+        "highlights": [
+            "Luxury off-road SUVs",
+            "Advanced terrain capability",
+            "Premium interiors",
+            "Ideal for desert and city travel"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury SUV interiors",
+            "Advanced navigation system",
+            "Premium comfort seating"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-nissan-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-nissan-in-dubai",
+        "title": "Renting Nissan In Dubai",
+        "subtitle": "Reliable, practical Nissan rentals for business trips, family vacations, and everyday needs",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Nissan Rental",
+                "minutes": 1440,
+                "price": 499,
+                "originalPrice": 499,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Nissan/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Nissan/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Nissan/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Nissan/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Nissan/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Nissan in Dubai and enjoy a reliable, comfortable, and versatile driving experience. From compact cars to spacious SUVs, Nissan offers modern features, smooth performance, and practicality for every journey.",
+
+        "highlights": [
+            "Reliable and practical vehicles",
+            "Comfortable interiors",
+            "Fuel-efficient options",
+            "Ideal for family or business trips"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Air conditioning",
+            "Comfort seating",
+            "Modern infotainment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "rent-porsche-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "rent-porsche-in-dubai",
+        "title": "Rent Porsche in Dubai",
+        "subtitle": "Unleash legendary performance with our Porsche rentals - precision engineering for driving enthusiasts",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Porsche Rental",
+                "minutes": 1440,
+                "price": 1593,
+                "originalPrice": 1593,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Porsche/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Porsche/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Porsche/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Porsche/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience the thrill of high-performance driving with a Porsche rental in Dubai. Known for its sleek design, powerful engines, and precision engineering, Porsche delivers an exhilarating yet refined ride.",
+
+        "highlights": [
+            "Legendary sports car performance",
+            "Premium luxury interiors",
+            "Precision engineering",
+            "Perfect for luxury driving experiences"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Sport performance engine",
+            "Luxury interior",
+            "Advanced navigation system"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "rent-range-rover-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "rent-range-rover-in-dubai",
+        "title": "Rent Range Rover in Dubai",
+        "subtitle": "Combining luxury with all-terrain capability",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Range Rover Rental",
+                "minutes": 1440,
+                "price": 561,
+                "originalPrice": 561,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Range%20Rover/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Range%20Rover/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Range%20Rover/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Range%20Rover/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Range%20Rover/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Range%20Rover/7.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Range%20Rover/6.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Range Rover in Dubai and enjoy the perfect combination of luxury, power, and off-road capability. With spacious interiors and advanced technology, it delivers comfort and performance on every journey.",
+
+        "highlights": [
+            "Luxury SUV experience",
+            "Advanced terrain capability",
+            "Premium interiors",
+            "Ideal for city and desert driving"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury seating",
+            "Advanced navigation",
+            "All-terrain driving modes"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-ultra-luxury-rolls-royce-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-ultra-luxury-rolls-royce-in-dubai",
+        "title": "Renting Ultra-Luxury Rolls Royce In Dubai",
+        "subtitle": "The pinnacle of automotive prestige",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Rolls Royce Rental",
+                "minutes": 1440,
+                "price": 3824,
+                "originalPrice": 3824,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ultra-Luxury%20Rolls%20Royce/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ultra-Luxury%20Rolls%20Royce/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ultra-Luxury%20Rolls%20Royce/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ultra-Luxury%20Rolls%20Royce/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Ultra-Luxury%20Rolls%20Royce/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience unmatched elegance and luxury by renting a Rolls Royce in Dubai. With opulent interiors, iconic design, and exceptional comfort, every journey becomes an extraordinary experience.",
+
+        "highlights": [
+            "Ultra-luxury automotive experience",
+            "Iconic Rolls Royce craftsmanship",
+            "Supreme comfort and elegance",
+            "Perfect for VIP experiences"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Luxury leather interiors",
+            "Premium sound system",
+            "Advanced comfort features"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-toyota-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-toyota-in-dubai",
+        "title": "Renting Toyota In Dubai",
+        "subtitle": "Dependable Toyota rentals offering peace of mind with exceptional reliability and efficiency",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Toyota Rental",
+                "minutes": 1440,
+                "price": 666,
+                "originalPrice": 666,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Toyota/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Toyota/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Toyota/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Toyota/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Toyota in Dubai for a dependable, efficient, and comfortable driving experience. Toyota vehicles are known for reliability, practicality, and smooth performance.",
+
+        "highlights": [
+            "Reliable and durable vehicles",
+            "Fuel-efficient performance",
+            "Comfortable interiors",
+            "Great for daily travel"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Air conditioning",
+            "Comfort seating",
+            "Modern infotainment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-brabus-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-brabus-in-dubai",
+        "title": "Renting Brabus In Dubai",
+        "subtitle": "Experience the thrill where power meets luxury",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Brabus Rental",
+                "minutes": 1440,
+                "price": 3332,
+                "originalPrice": 3332,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Brabus/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Brabus/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Brabus/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Brabus/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Drive a Brabus in Dubai and experience unmatched performance, luxury, and bold design. Brabus vehicles are tuned for exceptional power and exclusivity.",
+
+        "highlights": [
+            "High-performance luxury vehicles",
+            "Exclusive Brabus tuning",
+            "Premium interiors",
+            "Iconic design and power"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "High-performance engine",
+            "Luxury interior",
+            "Advanced infotainment"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "renting-mini-cooper-in-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "renting-mini-cooper-in-dubai",
+        "title": "Renting Mini Cooper In Dubai",
+        "subtitle": "Stylish, compact city explorers",
+
+        "category": "car rental",
+        "destination": "dubai",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Mini Cooper Rental",
+                "minutes": 1440,
+                "price": 311,
+                "originalPrice": 311,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Mini%20Cooper/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Mini%20Cooper/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Mini%20Cooper/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Mini%20Cooper/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Car%20Rental/Mini%20Cooper/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Rent a Mini Cooper in Dubai for a fun, stylish, and agile driving experience. Its compact design and sporty performance make it perfect for navigating city streets.",
+
+        "highlights": [
+            "Compact stylish design",
+            "Sporty driving experience",
+            "Perfect for city travel",
+            "Comfortable interiors"
+        ],
+
+        "whatToBring": [
+            "Driving License",
+            "Passport",
+            "Credit Card"
+        ],
+
+        "facilities": [
+            "Modern infotainment",
+            "Comfort seating",
+            "Air conditioning"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "bosnia-visa-assist",
+        "Supplier_Code": "DOJOIN",
+        "slug": "bosnia-visa-assist",
+        "title": "Bosnia Visa Assist",
+        "subtitle": "From document prep to embassy appointment, we've got you covered",
+
+        "category": "visa-service",
+        "destination": "bosnia",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Bosnia Visa Assistance",
+                "minutes": 10080,
+                "price": 650,
+                "originalPrice": 650,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Bosnia%20Visa%20Assist/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Bosnia%20Visa%20Assist/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Bosnia%20Visa%20Assist/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Bosnia%20Visa%20Assist/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Bosnia%20Visa%20Assist/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Bosnia%20Visa%20Assist/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Bosnia%20Visa%20Assist/7.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Considering traveling from the United Arab Emirates to Bosnia? DoJoin assists with the visa process including document preparation, submission guidance, and embassy appointment coordination.",
+
+        "highlights": [
+            "Complete visa documentation support",
+            "Embassy appointment assistance",
+            "Guidance throughout visa process",
+            "Quick and professional support"
+        ],
+
+        "whatToBring": [
+            "Valid Passport",
+            "Passport-size Photograph",
+            "Emirates ID Copy",
+            "Residence Visa Copy"
+        ],
+
+        "facilities": [
+            "Visa consultation",
+            "Document verification",
+            "Application support"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "uk-visa-assist",
+        "Supplier_Code": "DOJOIN",
+        "slug": "uk-visa-assist",
+        "title": "UK Visa Assist",
+        "subtitle": "Gateway to the UK",
+
+        "category": "visa-service",
+        "destination": "united-kingdom",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "UK Visa Assistance",
+                "minutes": 10080,
+                "price": 3650,
+                "originalPrice": 3650,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UK%20Visa%20Assist/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UK%20Visa%20Assist/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UK%20Visa%20Assist/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UK%20Visa%20Assist/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UK%20Visa%20Assist/5.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UK%20Visa%20Assist/6.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UK%20Visa%20Assist/7.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "DoJoin provides complete UK visa assistance including document preparation, application support, and guidance for multiple visa types including 6-month, 2-year, and 5-year visas.",
+
+        "highlights": [
+            "Complete visa assistance",
+            "Multiple visa duration options",
+            "Professional document review",
+            "Fast processing guidance"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Passport Photo",
+            "Bank Statement",
+            "Travel Documents"
+        ],
+
+        "facilities": [
+            "Visa consultation",
+            "Document preparation",
+            "Application submission guidance"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "uae-tourist-visa",
+        "Supplier_Code": "DOJOIN",
+        "slug": "uae-tourist-visa",
+        "title": "UAE Tourist Visa",
+        "subtitle": "Easy UAE tourist visa service",
+
+        "category": "visa-service",
+        "destination": "uae",
+        "location": "Dubai, UAE",
+
+        "rating": 4.9,
+        "reviewCount": 21,
+
+        "durationOptions": [
+            {
+                "label": "Tourist Visa Processing",
+                "minutes": 4320,
+                "price": 399,
+                "originalPrice": 399,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UAE%20Tourist%20Visa/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UAE%20Tourist%20Visa/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UAE%20Tourist%20Visa/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/UAE%20Tourist%20Visa/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai and other UAE cities are rapidly growing global tourism destinations. DoJoin provides fast UAE tourist visa processing with reliable support and guidance.",
+
+        "highlights": [
+            "Quick UAE visa processing",
+            "90-day stay option",
+            "Multiple entry options available",
+            "Professional visa assistance"
+        ],
+
+        "whatToBring": [
+            "Passport Copy",
+            "Passport Photo",
+            "Travel Details"
+        ],
+
+        "facilities": [
+            "Visa application support",
+            "Document verification",
+            "Customer support"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "canada-visa-assist",
+        "Supplier_Code": "DOJOIN",
+        "slug": "canada-visa-assist",
+        "title": "Canada Visa Assist",
+        "subtitle": "Quick and Easy Visa Assistance",
+
+        "category": "visa-service",
+        "destination": "canada",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Canada Visa Assistance",
+                "minutes": 10080,
+                "price": 1850,
+                "originalPrice": 1850,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Canada%20Visa%20Assist/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Canada%20Visa%20Assist/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Canada%20Visa%20Assist/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Canada%20Visa%20Assist/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Canada%20Visa%20Assist/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "DoJoin helps travelers apply for Canada visas by assisting with documentation, requirements, and the full application process.",
+
+        "highlights": [
+            "Complete visa support",
+            "Document verification",
+            "Professional guidance",
+            "Travel assistance"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Financial Documents",
+            "Photographs",
+            "Travel Plan"
+        ],
+
+        "facilities": [
+            "Visa consultation",
+            "Application support",
+            "Document preparation"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "australia-visa-assist",
+        "Supplier_Code": "DOJOIN",
+        "slug": "australia-visa-assist",
+        "title": "Australia Visa Assist",
+        "subtitle": "Visa Made Easy",
+
+        "category": "visa-service",
+        "destination": "australia",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Australia Visa Assistance",
+                "minutes": 10080,
+                "price": 1650,
+                "originalPrice": 1650,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Australia%20Visa%20Assist/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Australia%20Visa%20Assist/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Australia%20Visa%20Assist/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Australia%20Visa%20Assist/4.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Australia%20Visa%20Assist/5.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Australia is a top travel destination for adventure, relaxation, and business. DoJoin simplifies the visa process by helping you submit documents and guiding you through the application.",
+
+        "highlights": [
+            "Complete visa assistance",
+            "Application form support",
+            "Document review",
+            "Professional visa consultation"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Passport Photo",
+            "Application Form",
+            "Financial Documents"
+        ],
+
+        "facilities": [
+            "Visa consultation",
+            "Document review",
+            "Application guidance"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "turkey-visa-assist",
+        "Supplier_Code": "DOJOIN",
+        "slug": "turkey-visa-assist",
+        "title": "Turkey Visa Assist",
+        "subtitle": "Easy and Hassle-Free",
+
+        "category": "visa-service",
+        "destination": "turkey",
+        "location": "Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 0,
+
+        "durationOptions": [
+            {
+                "label": "Turkey Visa Assistance",
+                "minutes": 10080,
+                "price": 650,
+                "originalPrice": 650,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Turkey%20Visa%20Assist/1.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Turkey%20Visa%20Assist/2.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Turkey%20Visa%20Assist/3.webp",
+            "https://bfzhzxyjjkcctxnmzafb.supabase.co/storage/v1/object/public/media/products/Visa%20Services/Turkey%20Visa%20Assist/4.webp",
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "DoJoin makes the Turkey visa application process easy by assisting with online application forms, travel arrangements, hotel bookings, and documentation.",
+
+        "highlights": [
+            "Simple visa application process",
+            "Travel and hotel booking assistance",
+            "Professional visa support",
+            "Complete documentation guidance"
+        ],
+
+        "whatToBring": [
+            "Passport",
+            "Passport Photo",
+            "Travel Details",
+            "Financial Documents"
+        ],
+
+        "facilities": [
+            "Visa consultation",
+            "Application support",
+            "Document preparation"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "andaz-the-palm",
+        "Supplier_Code": "DOJOIN",
+        "slug": "andaz-the-palm",
+        "title": "Andaz The Palm",
+        "subtitle": "Luxury beachfront hotel experience at Palm Jumeirah",
+
+        "category": "hotel",
+        "destination": "dubai",
+        "location": "Palm Jumeirah, Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 140,
+
+        "durationOptions": [
+            {
+                "label": "Hotel Stay",
+                "minutes": 1440,
+                "price": 875,
+                "originalPrice": 875,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Experience the ultimate in luxury at Andaz The Palm in Dubai. Located on the iconic Palm Jumeirah, this magnificent hotel offers breathtaking views of the Arabian Gulf and unparalleled hospitality.",
+
+        "highlights": [
+            "Luxury beachfront resort on Palm Jumeirah",
+            "Panoramic views of the Arabian Gulf",
+            "World-class dining experiences",
+            "Premium spa and wellness facilities",
+            "Easy access to Dubai attractions"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Booking confirmation"
+        ],
+
+        "facilities": [
+            "Swimming Pool",
+            "Spa & Wellness Center",
+            "Private Beach",
+            "Restaurants & Bars",
+            "Fitness Center"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "holiday-inn-al-maktoum",
+        "Supplier_Code": "DOJOIN",
+        "slug": "holiday-inn-al-maktoum",
+        "title": "Holiday Inn Al Maktoum",
+        "subtitle": "Comfortable stay near Al Maktoum International Airport",
+
+        "category": "hotel",
+        "destination": "dubai",
+        "location": "Dubai South, Near Al Maktoum International Airport, Dubai",
+
+        "rating": 4.4,
+        "reviewCount": 120,
+
+        "durationOptions": [
+            {
+                "label": "Hotel Stay",
+                "minutes": 1440,
+                "price": 480,
+                "originalPrice": 480,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Located near Al Maktoum International Airport and Dubai Parks & Resorts, Holiday Inn Dubai Al-Maktoum Airport offers comfortable rooms, modern amenities, and convenient access to major attractions.",
+
+        "highlights": [
+            "Close to Al Maktoum International Airport",
+            "Modern comfortable rooms",
+            "Dining and meeting facilities",
+            "Outdoor swimming pool",
+            "Fitness center"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Booking confirmation"
+        ],
+
+        "facilities": [
+            "Swimming Pool",
+            "Restaurant",
+            "Conference Rooms",
+            "Fitness Center",
+            "Airport Accessibility"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "lapita-hotel-dubai-parks-resorts",
+        "Supplier_Code": "DOJOIN",
+        "slug": "lapita-hotel-dubai-parks-resorts",
+        "title": "Lapita Hotel with Free Access to Dubai Parks and Resorts",
+        "subtitle": "Polynesian-themed luxury stay with theme park access",
+
+        "category": "hotel",
+        "destination": "dubai",
+        "location": "Dubai Parks and Resorts, Dubai, UAE",
+
+        "rating": 4.0,
+        "reviewCount": 2,
+
+        "durationOptions": [
+            {
+                "label": "Hotel Stay with Park Access",
+                "minutes": 1440,
+                "price": 1190,
+                "originalPrice": 1390,
+                "discountPercent": 14
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Lapita Hotel immerses guests in the spirit of the Polynesian islands while offering luxury accommodations and direct access to Dubai Parks and Resorts.",
+
+        "highlights": [
+            "Polynesian-themed resort",
+            "Free access to Dubai Parks and Resorts",
+            "Luxury family-friendly accommodation",
+            "Located within the theme park complex"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Booking confirmation"
+        ],
+
+        "facilities": [
+            "Theme Park Access",
+            "Swimming Pools",
+            "Restaurants",
+            "Kids Activities",
+            "Spa"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "abu-dhabi-crown-plaza-theme-park-access",
+        "Supplier_Code": "DOJOIN",
+        "slug": "abu-dhabi-crown-plaza-theme-park-access",
+        "title": "Abu Dhabi Crown Plaza with Free Access to the Theme Parks",
+        "subtitle": "Stay & Play Getaway Offer",
+
+        "category": "hotel",
+        "destination": "abu-dhabi",
+        "location": "Yas Island, Abu Dhabi, UAE",
+
+        "rating": 5.0,
+        "reviewCount": 3,
+
+        "durationOptions": [
+            {
+                "label": "Hotel Stay with Theme Park Access",
+                "minutes": 1440,
+                "price": 1195,
+                "originalPrice": 1541,
+                "discountPercent": 22
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Enjoy luxurious accommodation with breathtaking views in Abu Dhabi while getting access to the exciting Yas Island theme parks.",
+
+        "highlights": [
+            "Stay near Yas Island attractions",
+            "Theme park access included",
+            "Luxury accommodation",
+            "Ideal family getaway"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Booking confirmation"
+        ],
+
+        "facilities": [
+            "Luxury Rooms",
+            "Swimming Pool",
+            "Restaurants",
+            "Theme Park Shuttle",
+            "Spa & Fitness Center"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dibba-mountain-park-resort",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dibba-mountain-park-resort",
+        "title": "Dibba Mountain Park Resort",
+        "subtitle": "Mountain resort retreat experience",
+
+        "category": "hotel",
+        "destination": "fujairah",
+        "location": "Dibba, Fujairah, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 50,
+
+        "durationOptions": [
+            {
+                "label": "Resort Stay",
+                "minutes": 1440,
+                "price": 816,
+                "originalPrice": 816,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dibba Mountain Park Resort offers a peaceful mountain retreat where visitors can relax, enjoy scenic landscapes, and experience outdoor adventures.",
+
+        "highlights": [
+            "Mountain resort location",
+            "Nature views and fresh air",
+            "Family-friendly activities",
+            "Comfortable accommodation"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Comfortable clothing"
+        ],
+
+        "facilities": [
+            "Swimming Pool",
+            "Outdoor Activities",
+            "Restaurant",
+            "Nature Trails"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dibba-mountain-park-resort",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dibba-mountain-park-resort",
+        "title": "Dibba Mountain Park Resort",
+        "subtitle": "Mountain resort retreat experience",
+
+        "category": "hotel",
+        "destination": "fujairah",
+        "location": "Dibba, Fujairah, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 50,
+
+        "durationOptions": [
+            {
+                "label": "Resort Stay",
+                "minutes": 1440,
+                "price": 816,
+                "originalPrice": 816,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dibba Mountain Park Resort offers a peaceful mountain retreat where visitors can relax, enjoy scenic landscapes, and experience outdoor adventures.",
+
+        "highlights": [
+            "Mountain resort location",
+            "Nature views and fresh air",
+            "Family-friendly activities",
+            "Comfortable accommodation"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Comfortable clothing"
+        ],
+
+        "facilities": [
+            "Swimming Pool",
+            "Outdoor Activities",
+            "Restaurant",
+            "Nature Trails"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "relaxation-package-pullman-resort-al-marjan-island",
+        "Supplier_Code": "DOJOIN",
+        "slug": "relaxation-package-pullman-resort-al-marjan-island",
+        "title": "Relaxation Package at Pullman Resort Al Marjan Island",
+        "subtitle": "Experience ultimate relaxation with luxury spa treatments",
+
+        "category": "hotel-package",
+        "destination": "ras-al-khaimah",
+        "location": "Al Marjan Island, Ras Al Khaimah, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 80,
+
+        "durationOptions": [
+            {
+                "label": "Relaxation Package",
+                "minutes": 1440,
+                "price": 669,
+                "originalPrice": 669,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Relax in luxury at Pullman Resort Al Marjan Island with premium spa treatments including aromatherapy, hot stone, Balinese, Swedish, and deep tissue massages.",
+
+        "highlights": [
+            "Luxury beachfront resort",
+            "Spa treatments included",
+            "Relaxing island environment",
+            "Premium hospitality experience"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Comfortable clothing"
+        ],
+
+        "facilities": [
+            "Luxury Spa",
+            "Beach Access",
+            "Swimming Pools",
+            "Restaurants",
+            "Fitness Center"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "al-faya-retreat",
+        "Supplier_Code": "DOJOIN",
+        "slug": "al-faya-retreat",
+        "title": "Al Faya Retreat",
+        "subtitle": "Experience the Ultimate in Classic Elegance",
+
+        "category": "hotel",
+        "destination": "sharjah",
+        "location": "Mleiha Desert, Sharjah, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 25,
+
+        "durationOptions": [
+            {
+                "label": "Retreat Stay",
+                "minutes": 1440,
+                "price": 3499,
+                "originalPrice": 3499,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Al Faya Retreat transforms the desert into a luxurious sanctuary. Located in the Sharjah desert, the retreat blends modern architecture with Bedouin hospitality, offering a unique desert getaway.",
+
+        "highlights": [
+            "Luxury desert retreat",
+            "Spa and wellness facilities",
+            "Private swimming pool",
+            "Authentic Bedouin hospitality",
+            "Stunning desert views"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Comfortable clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Luxury Spa",
+            "Swimming Pool",
+            "Private Suites",
+            "Desert Experience Activities"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "al-faya-retreat",
+        "Supplier_Code": "DOJOIN",
+        "slug": "al-faya-retreat",
+        "title": "Al Faya Retreat",
+        "subtitle": "Experience the Ultimate in Classic Elegance",
+
+        "category": "hotel",
+        "destination": "sharjah",
+        "location": "Mleiha Desert, Sharjah, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 25,
+
+        "durationOptions": [
+            {
+                "label": "Retreat Stay",
+                "minutes": 1440,
+                "price": 3499,
+                "originalPrice": 3499,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Al Faya Retreat transforms the desert into a luxurious sanctuary. Located in the Sharjah desert, the retreat blends modern architecture with Bedouin hospitality, offering a unique desert getaway.",
+
+        "highlights": [
+            "Luxury desert retreat",
+            "Spa and wellness facilities",
+            "Private swimming pool",
+            "Authentic Bedouin hospitality",
+            "Stunning desert views"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Comfortable clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Luxury Spa",
+            "Swimming Pool",
+            "Private Suites",
+            "Desert Experience Activities"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "holiday-inn-express-internet-city",
+        "Supplier_Code": "DOJOIN",
+        "slug": "holiday-inn-express-internet-city",
+        "title": "Holiday Inn Express Int City",
+        "subtitle": "Affordable comfort in Dubai Internet City",
+
+        "category": "hotel",
+        "destination": "dubai",
+        "location": "Dubai Internet City, Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 120,
+
+        "durationOptions": [
+            {
+                "label": "Hotel Stay",
+                "minutes": 1440,
+                "price": 225,
+                "originalPrice": 300,
+                "discountPercent": 25
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Holiday Inn Express Internet City offers comfortable and affordable accommodation with modern facilities in one of Dubai's most dynamic business districts.",
+
+        "highlights": [
+            "Affordable hotel stay in Dubai",
+            "Close to Dubai Internet City metro",
+            "Comfortable rooms and breakfast buffet",
+            "Ideal for business travelers"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Booking confirmation"
+        ],
+
+        "facilities": [
+            "Restaurant",
+            "Business Center",
+            "Fitness Center",
+            "Free WiFi"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "atlantis-the-palm",
+        "Supplier_Code": "DOJOIN",
+        "slug": "atlantis-the-palm",
+        "title": "Atlantis the Palm",
+        "subtitle": "Luxury resort experience on Palm Jumeirah",
+
+        "category": "hotel",
+        "destination": "dubai",
+        "location": "Palm Jumeirah, Dubai, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 500,
+
+        "durationOptions": [
+            {
+                "label": "Hotel Stay",
+                "minutes": 1440,
+                "price": 1860,
+                "originalPrice": 1860,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Atlantis The Palm is one of Dubai's most iconic luxury resorts, offering world-class accommodation, water parks, marine experiences, and fine dining.",
+
+        "highlights": [
+            "Iconic Palm Jumeirah resort",
+            "Aquaventure Waterpark access",
+            "Underwater aquarium experiences",
+            "Luxury suites and restaurants"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Booking confirmation"
+        ],
+
+        "facilities": [
+            "Waterpark",
+            "Aquarium",
+            "Luxury Spa",
+            "Private Beach",
+            "Restaurants"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "atlantis-the-palm",
+        "Supplier_Code": "DOJOIN",
+        "slug": "atlantis-the-palm",
+        "title": "Atlantis the Palm",
+        "subtitle": "Luxury resort experience on Palm Jumeirah",
+
+        "category": "hotel",
+        "destination": "dubai",
+        "location": "Palm Jumeirah, Dubai, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 500,
+
+        "durationOptions": [
+            {
+                "label": "Hotel Stay",
+                "minutes": 1440,
+                "price": 1860,
+                "originalPrice": 1860,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Atlantis The Palm is one of Dubai's most iconic luxury resorts, offering world-class accommodation, water parks, marine experiences, and fine dining.",
+
+        "highlights": [
+            "Iconic Palm Jumeirah resort",
+            "Aquaventure Waterpark access",
+            "Underwater aquarium experiences",
+            "Luxury suites and restaurants"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Booking confirmation"
+        ],
+
+        "facilities": [
+            "Waterpark",
+            "Aquarium",
+            "Luxury Spa",
+            "Private Beach",
+            "Restaurants"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "kingfisher-retreat",
+        "Supplier_Code": "DOJOIN",
+        "slug": "kingfisher-retreat",
+        "title": "Kingfisher Retreat",
+        "subtitle": "Nature escape at a private conservation retreat",
+
+        "category": "hotel",
+        "destination": "sharjah",
+        "location": "Kalba, Sharjah, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 40,
+
+        "durationOptions": [
+            {
+                "label": "Retreat Stay",
+                "minutes": 1440,
+                "price": 670.40,
+                "originalPrice": 790,
+                "discountPercent": 15
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Kingfisher Retreat offers a unique eco-tourism escape in a protected conservation area, providing luxury tents, nature experiences, and peaceful surroundings.",
+
+        "highlights": [
+            "Luxury glamping experience",
+            "Private conservation reserve",
+            "Nature and wildlife exploration",
+            "Peaceful eco-tourism retreat"
+        ],
+
+        "whatToBring": [
+            "Passport or ID",
+            "Comfortable clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Luxury Tents",
+            "Private Pools",
+            "Nature Activities",
+            "Restaurant"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "hotels",
+        "Supplier_Code": "DOJOIN",
+        "slug": "hotels",
+        "title": "Hotels",
+        "subtitle": "Discover Your Dream Stay with DoJoin",
+
+        "category": "hotel",
+        "destination": "uae",
+        "location": "United Arab Emirates",
+
+        "rating": 3.9,
+        "reviewCount": 9,
+
+        "durationOptions": [
+            {
+                "label": "Hotel Booking",
+                "minutes": 1440,
+                "price": 1500,
+                "originalPrice": 1500,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Start a comfortable and luxurious journey with DoJoin. Discover breathtaking destinations and a diverse range of accommodations from budget-friendly hotels to premium luxury stays across the UAE.",
+
+        "highlights": [
+            "Wide range of hotel options",
+            "Luxury and budget accommodations",
+            "Easy booking with instant confirmation",
+            "Trusted travel services with DoJoin"
+        ],
+
+        "whatToBring": [
+            "Valid ID or Passport",
+            "Booking Confirmation"
+        ],
+
+        "facilities": [
+            "Hotel Booking Assistance",
+            "Customer Support",
+            "Multiple Payment Options"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "5-star-stay-radisson-blu-fujairah",
+        "Supplier_Code": "DOJOIN",
+        "slug": "5-star-stay-radisson-blu-fujairah",
+        "title": "5-Star Stay at Radisson Blu Fujairah",
+        "subtitle": "A perfect blend of comfort, ocean views, and world-class hospitality awaits",
+
+        "category": "hotel",
+        "destination": "fujairah",
+        "location": "Radisson Blu Resort, Fujairah, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 50,
+
+        "durationOptions": [
+            {
+                "label": "Hotel Stay",
+                "minutes": 1440,
+                "price": 639,
+                "originalPrice": 639,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Escape to the 5-star Radisson Blu Resort Fujairah with DoJoin and enjoy a relaxing stay along the Arabian Gulf coastline. Choose from comfortable rooms and suites with stunning ocean views and world-class amenities.",
+
+        "highlights": [
+            "Luxury 5-star beachfront resort",
+            "Stunning views of the Arabian Gulf",
+            "Spacious rooms and suites",
+            "Buffet breakfast included",
+            "Perfect for couples and families"
+        ],
+
+        "whatToBring": [
+            "Passport or Emirates ID",
+            "Booking Confirmation",
+            "Personal belongings"
+        ],
+
+        "facilities": [
+            "Private Beach",
+            "Swimming Pools",
+            "Restaurants and Bars",
+            "Fitness Center",
+            "Spa and Wellness Center"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-safari-park",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-safari-park",
+        "title": "Dubai Safari Park",
+        "subtitle": "Wildlife adventure with safaris and live animal encounters",
+
+        "category": "park",
+        "destination": "dubai",
+        "location": "Dubai Safari Park, Al Warqa 5, Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 106,
+
+        "durationOptions": [
+            {
+                "label": "Safari Park Entry Ticket",
+                "minutes": 240,
+                "price": 50,
+                "originalPrice": 50,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai Safari Park offers an exciting wildlife experience with over 3,000 animals from around the world. Visitors can enjoy safari journeys, animal encounters, educational exhibits, and live entertainment.",
+
+        "highlights": [
+            "Over 3,000 animals from around the world",
+            "Safari bus tours",
+            "Wildlife encounters and live presentations",
+            "African, Asian, and Arabian themed villages"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Comfortable clothing",
+            "Camera",
+            "Water bottle"
+        ],
+
+        "facilities": [
+            "Safari Transport",
+            "Restaurants and Cafes",
+            "Gift Shops",
+            "Rest Areas"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "img-worlds-of-adventure",
+        "Supplier_Code": "DOJOIN",
+        "slug": "img-worlds-of-adventure",
+        "title": "IMG Worlds of Adventure",
+        "subtitle": "Dubai's first mega indoor theme park",
+
+        "category": "parks",
+        "destination": "dubai",
+        "location": "IMG Worlds of Adventure, City of Arabia, Dubai, UAE",
+
+        "rating": 4.9,
+        "reviewCount": 42,
+
+        "durationOptions": [
+            {
+                "label": "Theme Park Entry Ticket",
+                "minutes": 360,
+                "price": 365,
+                "originalPrice": 365,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "IMG Worlds of Adventure is Dubai’s largest indoor theme park featuring Marvel and Cartoon Network themed attractions, rides, and immersive entertainment zones.",
+
+        "highlights": [
+            "Marvel superhero themed rides",
+            "Cartoon Network attractions",
+            "Haunted Hotel experience",
+            "Indoor air-conditioned theme park"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Comfortable clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Restaurants",
+            "Souvenir Shops",
+            "Lockers",
+            "Guest Services"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "motiongate-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "motiongate-dubai",
+        "title": "Motiongate Park",
+        "subtitle": "Hollywood inspired theme park experience",
+
+        "category": "parks",
+        "destination": "dubai",
+        "location": "Dubai Parks and Resorts, Sheikh Zayed Road, Dubai, UAE",
+
+        "rating": 4.9,
+        "reviewCount": 21,
+
+        "durationOptions": [
+            {
+                "label": "Theme Park Entry Ticket",
+                "minutes": 360,
+                "price": 295,
+                "originalPrice": 330,
+                "discountPercent": 11
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Motiongate Dubai brings Hollywood movies to life with rides and attractions inspired by famous films such as Shrek, Kung Fu Panda, Ghostbusters, and The Hunger Games.",
+
+        "highlights": [
+            "Hollywood themed attractions",
+            "DreamWorks animation zone",
+            "Thrilling roller coasters",
+            "Family friendly entertainment"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Comfortable clothing"
+        ],
+
+        "facilities": [
+            "Restaurants",
+            "Souvenir Shops",
+            "Ride Lockers",
+            "Guest Services"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "wild-wadi-waterpark",
+        "Supplier_Code": "DOJOIN",
+        "slug": "wild-wadi-waterpark",
+        "title": "Wild Wadi Waterpark",
+        "subtitle": "Dubai's most loved waterpark",
+
+        "category": "water_adventure",
+        "destination": "dubai",
+        "location": "Jumeirah Beach Road, Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 34,
+
+        "durationOptions": [
+            {
+                "label": "Waterpark Entry Ticket",
+                "minutes": 360,
+                "price": 199,
+                "originalPrice": 269,
+                "discountPercent": 26
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Wild Wadi Waterpark is one of Dubai’s most popular waterparks, featuring thrilling rides, wave pools, and family attractions located near the iconic Burj Al Arab.",
+
+        "highlights": [
+            "Over 30 water rides and attractions",
+            "Jumeirah Sceirah speed slide",
+            "Wave pools and lazy river",
+            "Family friendly water activities"
+        ],
+
+        "whatToBring": [
+            "Swimwear",
+            "Towel",
+            "Sunscreen"
+        ],
+
+        "facilities": [
+            "Changing Rooms",
+            "Restaurants",
+            "Lockers",
+            "Shaded Seating Areas"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "atlantis-aquaventure-waterpark",
+        "Supplier_Code": "DOJOIN",
+        "slug": "atlantis-aquaventure-waterpark",
+        "title": "Atlantis Aquaventure Waterpark",
+        "subtitle": "World's largest waterpark adventure",
+
+        "category": "water_adventure",
+        "destination": "dubai",
+        "location": "Atlantis The Palm, Palm Jumeirah, Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 94,
+
+        "durationOptions": [
+            {
+                "label": "Waterpark Entry Ticket",
+                "minutes": 360,
+                "price": 360,
+                "originalPrice": 360,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Atlantis Aquaventure Waterpark features over 100 rides and attractions including record-breaking slides, shark safaris, and thrilling water adventures.",
+
+        "highlights": [
+            "World's largest waterpark",
+            "Over 100 slides and attractions",
+            "Shark Safari experience",
+            "Private beach access"
+        ],
+
+        "whatToBring": [
+            "Swimwear",
+            "Towel",
+            "Sunscreen"
+        ],
+
+        "facilities": [
+            "Changing Rooms",
+            "Restaurants",
+            "Lockers",
+            "Private Beach"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 0,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-garden-glow",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-garden-glow",
+        "title": "Dubai Garden Glow",
+        "subtitle": "Fantasy light park experience",
+
+        "category": "parks",
+        "destination": "dubai",
+        "location": "Zabeel Park, Dubai, UAE",
+
+        "rating": 4.0,
+        "reviewCount": 43,
+
+        "durationOptions": [
+            {
+                "label": "Entry Ticket",
+                "minutes": 180,
+                "price": 70,
+                "originalPrice": 70,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai Garden Glow combines art, light, and imagination to create a magical night park featuring glowing sculptures, light installations, and themed attractions.",
+
+        "highlights": [
+            "Glow Park with illuminated sculptures",
+            "Dinosaur Park exhibits",
+            "Art installations made from recycled materials",
+            "Family friendly evening attraction"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera",
+            "Comfortable walking shoes"
+        ],
+
+        "facilities": [
+            "Restaurants",
+            "Souvenir Shops",
+            "Rest Areas"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-butterfly-garden",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-butterfly-garden",
+        "title": "Dubai Butterfly Garden",
+        "subtitle": "The World's Largest Covered Butterfly Garden",
+
+        "category": "parks",
+        "destination": "dubai",
+        "location": "Dubai Miracle Garden, Al Barsha South 3, Dubai, UAE",
+
+        "rating": 4.5,
+        "reviewCount": 35,
+
+        "durationOptions": [
+            {
+                "label": "Entry Ticket",
+                "minutes": 120,
+                "price": 49,
+                "originalPrice": 49,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "dubai-butterfly-garden-1.jpg",
+            "dubai-butterfly-garden-2.jpg",
+            "dubai-butterfly-garden-3.jpg",
+            "dubai-butterfly-garden-4.jpg",
+            "dubai-butterfly-garden-5.jpg"
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai Butterfly Garden houses nearly 15,000 butterflies from over 50 species inside climate-controlled domes. The garden offers a beautiful natural environment filled with flowers, educational exhibits, and interactive experiences.",
+
+        "highlights": [
+            "Largest covered butterfly garden in the world",
+            "Over 15,000 butterflies across multiple species",
+            "Beautiful flower gardens and themed domes",
+            "Educational exhibits about butterfly life cycles"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera",
+            "Comfortable walking shoes"
+        ],
+
+        "facilities": [
+            "Souvenir shop",
+            "Cafeteria",
+            "Rest areas"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 1,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "seaworld-abu-dhabi",
+        "Supplier_Code": "DOJOIN",
+        "slug": "seaworld-abu-dhabi",
+        "title": "SeaWorld Abu Dhabi",
+        "subtitle": "Marine Life Theme Park Experience",
+
+        "category": "parks",
+        "destination": "abu-dhabi",
+        "location": "Yas Island, Abu Dhabi, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 29,
+
+        "durationOptions": [
+            {
+                "label": "Entry Ticket",
+                "minutes": 300,
+                "price": 375,
+                "originalPrice": 375,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "seaworld-abu-dhabi-1.jpg",
+            "seaworld-abu-dhabi-2.jpg",
+            "seaworld-abu-dhabi-3.jpg",
+            "seaworld-abu-dhabi-4.jpg",
+            "seaworld-abu-dhabi-5.jpg"
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "SeaWorld Abu Dhabi is a next-generation marine life theme park offering immersive experiences across eight themed realms, interactive exhibits, marine animal encounters, and exciting rides.",
+
+        "highlights": [
+            "Eight immersive ocean-themed realms",
+            "Marine animal encounters and aquariums",
+            "Family-friendly rides and attractions",
+            "Interactive conservation and education experiences"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Comfortable clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Restaurants",
+            "Gift shops",
+            "Rest areas"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 1,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "warner-bros-world-abu-dhabi",
+        "Supplier_Code": "DOJOIN",
+        "slug": "warner-bros-world-abu-dhabi",
+        "title": "Warner Bros World Abu Dhabi",
+        "subtitle": "Indoor Movie-Themed Adventure Park",
+
+        "category": "parks",
+        "destination": "abu-dhabi",
+        "location": "Yas Island, Abu Dhabi, UAE",
+
+        "rating": 4.9,
+        "reviewCount": 14,
+
+        "durationOptions": [
+            {
+                "label": "Entry Ticket",
+                "minutes": 300,
+                "price": 345,
+                "originalPrice": 345,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "warner-bros-world-1.jpg",
+            "warner-bros-world-2.jpg",
+            "warner-bros-world-3.jpg",
+            "warner-bros-world-4.jpg"
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Warner Bros World Abu Dhabi is the world's largest indoor theme park featuring iconic characters such as Batman, Superman, Bugs Bunny, and Scooby-Doo across immersive themed lands.",
+
+        "highlights": [
+            "Six themed lands based on Warner Bros characters",
+            "Rides and attractions inspired by DC Comics",
+            "Meet-and-greet with famous cartoon characters",
+            "Indoor air-conditioned theme park"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera",
+            "Comfortable walking shoes"
+        ],
+
+        "facilities": [
+            "Restaurants",
+            "Gift shops",
+            "Restrooms"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 1,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "yas-waterworld",
+        "Supplier_Code": "DOJOIN",
+        "slug": "yas-waterworld",
+        "title": "Yas Waterworld With Free Shuttle",
+        "subtitle": "Ultimate Water Adventure Park",
+
+        "category": "waterpark",
+        "destination": "abu-dhabi",
+        "location": "Yas Island, Abu Dhabi, UAE",
+
+        "rating": 4.0,
+        "reviewCount": 24,
+
+        "durationOptions": [
+            {
+                "label": "Entry Ticket",
+                "minutes": 300,
+                "price": 295,
+                "originalPrice": 295,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "yas-waterworld-1.jpg",
+            "yas-waterworld-2.jpg",
+            "yas-waterworld-3.jpg",
+            "yas-waterworld-4.jpg"
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Yas Waterworld is one of the largest water parks in the UAE featuring thrilling slides, wave pools, family rides, and unique water attractions.",
+
+        "highlights": [
+            "More than 40 rides and slides",
+            "Unique water attractions and wave pools",
+            "Family-friendly water rides",
+            "Located on Yas Island"
+        ],
+
+        "whatToBring": [
+            "Swimwear",
+            "Towel",
+            "Sunscreen"
+        ],
+
+        "facilities": [
+            "Restaurants",
+            "Locker rentals",
+            "Changing rooms"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 1,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "ferrari-world-abu-dhabi",
+        "Supplier_Code": "DOJOIN",
+        "slug": "ferrari-world-abu-dhabi",
+        "title": "Ferrari World Abu Dhabi",
+        "subtitle": "World's First Ferrari Branded Theme Park",
+
+        "category": "parks",
+        "destination": "abu-dhabi",
+        "location": "Yas Island, Abu Dhabi, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 36,
+
+        "durationOptions": [
+            {
+                "label": "Entry Ticket",
+                "minutes": 300,
+                "price": 345,
+                "originalPrice": 345,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "ferrari-world-1.jpg",
+            "ferrari-world-2.jpg",
+            "ferrari-world-3.jpg",
+            "ferrari-world-4.jpg"
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Ferrari World Abu Dhabi is a Ferrari-themed amusement park featuring high-speed roller coasters, racing simulators, and family-friendly attractions.",
+
+        "highlights": [
+            "Home to Formula Rossa, the world's fastest roller coaster",
+            "Ferrari themed rides and attractions",
+            "Family entertainment and racing simulators",
+            "Indoor theme park on Yas Island"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera",
+            "Comfortable clothing"
+        ],
+
+        "facilities": [
+            "Restaurants",
+            "Souvenir stores",
+            "Rest areas"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 1,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "the-green-planet",
+        "Supplier_Code": "DOJOIN",
+        "slug": "the-green-planet",
+        "title": "The Green Planet",
+        "subtitle": "Tropical Bio-Dome Experience",
+
+        "category": "parks",
+        "destination": "dubai",
+        "location": "City Walk, Dubai, UAE",
+
+        "rating": 4.6,
+        "reviewCount": 50,
+
+        "durationOptions": [
+            {
+                "label": "Entry Ticket",
+                "minutes": 120,
+                "price": 155,
+                "originalPrice": 155,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "green-planet-1.jpg",
+            "green-planet-2.jpg",
+            "green-planet-3.jpg",
+            "green-planet-4.jpg"
+        ],
+
+        "badges": [
+            "24-Hour Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "The Green Planet is an indoor tropical rainforest housed in a bio-dome that allows visitors to explore exotic plants, animals, and birds in an immersive ecosystem.",
+
+        "highlights": [
+            "Indoor tropical rainforest bio-dome",
+            "Over 3000 plants and animals",
+            "Bird and reptile encounters",
+            "Educational ecological experience"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Cafe",
+            "Gift shop",
+            "Rest areas"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 24,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "crocodile-park-dubai",
+        "Supplier_Code": "DOJOIN",
+        "slug": "crocodile-park-dubai",
+        "title": "Crocodile Park Dubai",
+        "subtitle": "Wildlife Crocodile Experience",
+
+        "category": "parks",
+        "destination": "dubai",
+        "location": "Dubai Crocodile Park, Dubai, UAE",
+
+        "rating": 4.3,
+        "reviewCount": 7,
+
+        "durationOptions": [
+            {
+                "label": "Entry Ticket",
+                "minutes": 120,
+                "price": 95,
+                "originalPrice": 95,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "crocodile-park-1.jpg",
+            "crocodile-park-2.jpg",
+            "crocodile-park-3.jpg",
+            "crocodile-park-4.jpg",
+            "crocodile-park-5.jpg"
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai Crocodile Park is home to hundreds of Nile crocodiles and features an aquarium, museum, and educational exhibits that showcase the fascinating life of crocodiles.",
+
+        "highlights": [
+            "Over 250 Nile crocodiles",
+            "Crocodile aquarium experience",
+            "Educational crocodile museum",
+            "Family-friendly wildlife attraction"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Comfortable walking shoes"
+        ],
+
+        "facilities": [
+            "Visitor center",
+            "Gift shop",
+            "Restaurants"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 1,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-parks-and-resorts",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-parks-and-resorts",
+        "title": "Dubai Parks and Resorts",
+        "subtitle": "Motiongate | Legoland | Real Madrid World",
+
+        "category": "theme-park",
+        "destination": "dubai",
+        "location": "Dubai Parks and Resorts, Dubai, UAE",
+
+        "rating": 4.4,
+        "reviewCount": 100,
+
+        "durationOptions": [
+            {
+                "label": "1 Park Pass",
+                "minutes": 360,
+                "price": 295,
+                "originalPrice": 330,
+                "discountPercent": 11
+            }
+        ],
+
+        "images": [
+            "dubai-parks-resorts-1.jpg",
+            "dubai-parks-resorts-2.jpg",
+            "dubai-parks-resorts-3.jpg",
+            "dubai-parks-resorts-4.jpg",
+            "dubai-parks-resorts-5.jpg"
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai Parks and Resorts is a massive entertainment complex featuring Motiongate Dubai, Legoland Dubai, Legoland Water Park, and Real Madrid World offering rides, attractions, and entertainment for all ages.",
+
+        "highlights": [
+            "Access to world-class theme parks",
+            "Motiongate Hollywood themed rides",
+            "Legoland family attractions",
+            "Real Madrid World experiences"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Comfortable clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Restaurants",
+            "Shopping outlets",
+            "Rest areas"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 1,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "dubai-miracle-garden",
+        "Supplier_Code": "DOJOIN",
+        "slug": "dubai-miracle-garden",
+        "title": "Dubai Miracle Garden",
+        "subtitle": "The world's largest natural flower garden",
+
+        "category": "parks",
+        "destination": "dubai",
+        "location": "Al Barsha South 3, Dubailand, Dubai, UAE",
+
+        "rating": 4.7,
+        "reviewCount": 368,
+
+        "durationOptions": [
+            {
+                "label": "Entry Ticket",
+                "minutes": 180,
+                "price": 89,
+                "originalPrice": 89,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "dubai-miracle-garden-1.jpg",
+            "dubai-miracle-garden-2.jpg",
+            "dubai-miracle-garden-3.jpg",
+            "dubai-miracle-garden-4.jpg",
+            "dubai-miracle-garden-5.jpg"
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Dubai Miracle Garden is the largest natural flower garden in the world featuring millions of blooming flowers arranged in stunning sculptures and themed displays.",
+
+        "highlights": [
+            "Over 150 million flowers in bloom",
+            "Flower sculptures and themed displays",
+            "Emirates A380 floral installation",
+            "Family-friendly outdoor attraction"
+        ],
+
+        "whatToBring": [
+            "Camera",
+            "Comfortable walking shoes",
+            "Sun protection"
+        ],
+
+        "facilities": [
+            "Restaurants",
+            "Souvenir shops",
+            "Rest areas"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 1,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "yas-island-abu-dhabi-multi-park-pass",
+        "Supplier_Code": "DOJOIN",
+        "slug": "yas-island-abu-dhabi-multi-park-pass",
+        "title": "Yas Island Abu Dhabi Multi Park Pass",
+        "subtitle": "Access to Ferrari World, Warner Bros World, SeaWorld, Yas Waterworld",
+
+        "category": "parks",
+        "destination": "abu-dhabi",
+        "location": "Yas Island, Abu Dhabi, UAE",
+
+        "rating": 4.8,
+        "reviewCount": 26,
+
+        "durationOptions": [
+            {
+                "label": "Multi Park Pass",
+                "minutes": 480,
+                "price": 475,
+                "originalPrice": 475,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "yas-island-multi-pass-1.jpg",
+            "yas-island-multi-pass-2.jpg",
+            "yas-island-multi-pass-3.jpg",
+            "yas-island-multi-pass-4.jpg",
+            "yas-island-multi-pass-5.jpg"
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "The Yas Island Multi Park Pass allows visitors to explore multiple world-famous theme parks including Ferrari World, Warner Bros World, SeaWorld Abu Dhabi, and Yas Waterworld.",
+
+        "highlights": [
+            "Access to multiple Yas Island theme parks",
+            "Ferrari World roller coasters",
+            "SeaWorld marine life experiences",
+            "Warner Bros character themed rides"
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+            "Comfortable clothing",
+            "Camera"
+        ],
+
+        "facilities": [
+            "Restaurants",
+            "Gift shops",
+            "Rest areas"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 1,
+        "mobileTicket": true,
+        "refundable": false
+    },
+    {
+        "id": "creek-park-exotic-bird-show",
+        "Supplier_Code": "DOJOIN",
+        "slug": "creek-park-exotic-bird-show",
+        "title": "Creek Park Exotic Bird Show",
+        "subtitle": "Dubai Dolphinarium Bird Performance",
+
+        "category": "parks",
+        "destination": "dubai",
+        "location": "Dubai Dolphinarium, Creek Park, Dubai, UAE",
+
+        "rating": 3.8,
+        "reviewCount": 5,
+
+        "durationOptions": [
+            {
+                "label": "Entry Ticket",
+                "minutes": 60,
+                "price": 45,
+                "originalPrice": 45,
+                "discountPercent": 0
+            }
+        ],
+
+        "images": [
+            "creek-park-bird-show-1.jpg",
+            "creek-park-bird-show-2.jpg",
+            "creek-park-bird-show-3.jpg",
+            "creek-park-bird-show-4.jpg",
+            "creek-park-bird-show-5.jpg"
+        ],
+
+        "badges": [
+            "Instant Confirmation",
+            "Mobile Tickets Accepted",
+            "Non-refundable"
+        ],
+
+        "overview": "Immerse yourself in a symphony of nature's most exquisite creatures as they showcase their intelligence, grace, and astonishing abilities. Witness the awe-inspiring acrobatics of majestic macaws, the playful antics of cheeky cockatoos, and the precision flight patterns of agile parrots, all within a stunning, purpose-built arena.Prepare to be captivated by the vibrant colors, enchanting melodies, and awe-inspiring beauty of the Exotic Bird Show presented by Dubai Dolphinarium. Step into a world where feathered wonders take flight, showcasing their extraordinary talents and leaving audiences spellbound.",
+        "highlights": [
+            "Marvel at the kaleidoscope of colors that adorn these magnificent birds as they soar through the air, demonstrating their remarkable agility and intelligence.",
+            "Be prepared to be amazed as they showcase an array of jaw-dropping tricks, including mimicry, aerial displays, and astonishing displays of dexterity that will leave you in awe.",
+            "Led by a team of expert trainers, the Exotic Bird Show offers an educational and entertaining experience for the whole family.",
+            "Discover fascinating insights into the birds' natural habitats, learn about their unique characteristics, and gain a deeper appreciation for the conservation efforts dedicated to preserving these extraordinary species."
+        ],
+
+        "whatToBring": [
+            "Valid ID",
+        ],
+
+        "facilities": [
+            "Seating arena",
+            "Refreshment kiosks",
+            "Souvenir shop"
+        ],
+
+        "cancellationPolicy": "Non-refundable.",
+        "confirmationHours": 1,
+        "mobileTicket": true,
+        "refundable": false
+    },
 
 ]
-

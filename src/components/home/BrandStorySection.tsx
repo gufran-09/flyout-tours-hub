@@ -5,11 +5,6 @@ export function BrandStorySection() {
         <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
             {/* Cinematic Background */}
             <div className="absolute inset-0">
-                <img
-                    src="https://images.unsplash.com/photo-1512453979798-5ea904ac22ac?auto=format&fit=crop&q=80&w=2000"
-                    alt="Dubai Skyline Cinematic"
-                    className="w-full h-full object-cover"
-                />
                 {/* Cinematic Dark Overlay */}
                 <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#051025] via-transparent to-[#051025]/20" />

@@ -43,7 +43,8 @@ interface CategoryLayoutProps {
 
 export function CategoryLayout({ title, subtitle, tours, backgroundImage, featuredSection }: CategoryLayoutProps) {
     const [sortBy, setSortBy] = useState("popular");
-    const [priceRange, setPriceRange] = useState([0, 3000]);
+    const maxPriceLimit = Math.max(10000, ...tours.map(t => t.price || 0));
+    const [priceRange, setPriceRange] = useState([0, maxPriceLimit]);
     const [selectedRatings, setSelectedRatings] = useState<number[]>([]);
 
     // Filter and sort tours
@@ -141,7 +142,7 @@ export function CategoryLayout({ title, subtitle, tours, backgroundImage, featur
                                                 value={priceRange}
                                                 onValueChange={setPriceRange}
                                                 min={0}
-                                                max={3000}
+                                                max={maxPriceLimit}
                                                 step={50}
                                             />
                                             <div className="flex justify-between mt-2 text-sm text-muted-foreground">
@@ -207,7 +208,7 @@ export function CategoryLayout({ title, subtitle, tours, backgroundImage, featur
                                             value={priceRange}
                                             onValueChange={setPriceRange}
                                             min={0}
-                                            max={3000}
+                                            max={maxPriceLimit}
                                             step={50}
                                         />
                                         <div className="flex justify-between mt-2 text-sm text-muted-foreground">
@@ -241,13 +242,13 @@ export function CategoryLayout({ title, subtitle, tours, backgroundImage, featur
                                 </div>
 
                                 {/* Clear Filters */}
-                                {(selectedRatings.length > 0 || priceRange[0] > 0 || priceRange[1] < 3000) && (
+                                {(selectedRatings.length > 0 || priceRange[0] > 0 || priceRange[1] < maxPriceLimit) && (
                                     <Button
                                         variant="ghost"
                                         size="sm"
                                         onClick={() => {
                                             setSelectedRatings([]);
-                                            setPriceRange([0, 3000]);
+                                            setPriceRange([0, maxPriceLimit]);
                                         }}
                                         className="w-full mt-4"
                                     >
@@ -270,7 +271,7 @@ export function CategoryLayout({ title, subtitle, tours, backgroundImage, featur
                                     variant="outline"
                                     onClick={() => {
                                         setSelectedRatings([]);
-                                        setPriceRange([0, 3000]);
+                                        setPriceRange([0, maxPriceLimit]);
                                     }}
                                     className="mt-4"
                                 >

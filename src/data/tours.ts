@@ -21,12 +21,25 @@ export const dubaiWaterSports: Tour[] = [
     { id: "ws-4", name: "Scuba Diving", location: "Palm Jumeirah", category: "Water Sports", price: 550, rating: 4.8, reviewCount: 450, duration: "3 Hours", image: "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=600&q=80", badge: "Adventure" },
 ];
 
-export const dubaiDinnerCruise: Tour[] = [
-    { id: "dc-1", name: "Dhow Cruise Marina", location: "Dubai Marina", category: "Dinner Cruise", price: 199, originalPrice: 250, rating: 4.7, reviewCount: 3200, duration: "2 Hours", image: "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?w=600&q=80", badge: "Romantic" },
-    { id: "dc-2", name: "Dhow Cruise Creek", location: "Dubai Creek", category: "Dinner Cruise", price: 149, rating: 4.5, reviewCount: 2800, duration: "2 Hours", image: "https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?w=600&q=80" },
-    { id: "dc-3", name: "Luxury Catamaran Cruise", location: "Dubai Marina", category: "Dinner Cruise", price: 399, rating: 4.9, reviewCount: 890, duration: "3 Hours", image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80", badge: "Premium" },
-    { id: "dc-4", name: "Sunset Cruise", location: "Palm Jumeirah", category: "Dinner Cruise", price: 249, originalPrice: 299, rating: 4.6, reviewCount: 670, duration: "2 Hours", image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80" },
-];
+import { PRODUCTS } from "./catalog";
+
+export const dubaiDinnerCruise: Tour[] = PRODUCTS
+    .filter(product => product.category.toLowerCase() === "dinner cruise")
+    .map(product => ({
+        id: product.id,
+        name: product.title,
+        location: product.location,
+        category: product.category,
+        price: product.durationOptions[0]?.price || 0,
+        originalPrice: product.durationOptions[0]?.originalPrice,
+        rating: product.rating,
+        reviewCount: product.reviewCount,
+        duration: product.durationOptions[0]?.label || "",
+        image: product.images[0] || "",
+        badge: product.badges[0],
+        subtitle: product.subtitle,
+        link: `/tour/${product.slug}`
+    }));
 
 export const dubaiYacht: Tour[] = [
     { id: "yt-1", name: "Luxury Yacht 50ft", location: "Dubai Marina", category: "Yacht", price: 799, originalPrice: 999, rating: 4.9, reviewCount: 560, duration: "3 Hours", image: "https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?w=600&q=80", badge: "Luxury" },
@@ -144,11 +157,23 @@ export const dubaiAdventures: Tour[] = [
     { id: "adv-3", name: "Indoor Skydiving", location: "Mirdif", category: "Adventures", price: 220, rating: 4.8, reviewCount: 1200, duration: "2 Flights", image: "https://images.unsplash.com/photo-1521657245150-a894ca730a08?w=600&q=80" },
 ];
 
-export const dubaiRestaurants: Tour[] = [
-    { id: "res-1", name: "Burj Khalifa Atmosphere", location: "Downtown Dubai", category: "Dining", price: 500, rating: 4.9, reviewCount: 3400, duration: "Lunch/Dinner", image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80", badge: "Fine Dining" },
-    { id: "res-2", name: "Pierchic Seafood", location: "Jumeirah", category: "Dining", price: 450, rating: 4.8, reviewCount: 2100, duration: "Dinner", image: "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80", badge: "Romantic" },
-    { id: "res-3", name: "Al Hadheerah Desert", location: "Bab Al Shams", category: "Dining", price: 350, rating: 4.7, reviewCount: 1500, duration: "Dinner", image: "https://images.unsplash.com/photo-1574966735456-f5713430594f?w=600&q=80", badge: "Cultural" },
-];
+export const dubaiRestaurants: Tour[] = PRODUCTS
+    .filter(product => product.category.toLowerCase() === "restaurants")
+    .map(product => ({
+        id: product.id,
+        name: product.title,
+        location: product.location,
+        category: product.category,
+        price: product.durationOptions[0]?.price || 0,
+        originalPrice: product.durationOptions[0]?.originalPrice,
+        rating: product.rating,
+        reviewCount: product.reviewCount,
+        duration: product.durationOptions[0]?.label || "",
+        image: product.images[0] || "",
+        badge: product.badges[0],
+        subtitle: product.subtitle,
+        link: `/tour/${product.slug}`
+    }));
 
 export const dubaiShows: Tour[] = [
     { id: "shw-1", name: "La Perle by Dragone", location: "Al Habtoor City", category: "Shows", price: 259, rating: 4.9, reviewCount: 5600, duration: "1.5 Hours", image: "https://images.unsplash.com/photo-1503317171993-9601f2169699?w=600&q=80", badge: "Top Rated" },
